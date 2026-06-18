@@ -9,6 +9,32 @@ tags: [meta, log]
 
 # Operation Log
 
+## 2026-06-18 — MILESTONE: 100% file coverage achieved
+
+After Phase 3a–3g, every source file in all three projects (2025 files total) is accounted for:
+- **1159 done** — documented in a module, MOC, or business-rule note (sometimes overview-level for tiny files via a folder MOC).
+- **0 todo** remaining.
+- **445 config** — project files, signing keys, app.config.
+- **414 generated** — `*.Designer.vb`, `*.resx`.
+- **7 needs-review** — intentional Phase-3 deferrals (e.g., `FrmMain.vb` 15 216-line god-form).
+
+Phase breakdown delivered:
+- Phase 3a Elumatec: 3 sub-MOCs + ~25 deep notes (Works/NC/ProfMill).
+- Phase 3b Sales/WorkPreparation/Production: 7 deep modules + 8 business-rules.
+- Phase 3c ICenterLib/ISAH: 11 deep modules + 11 business-rules. Folder closed at 100%.
+- Phase 3d ICenterLib/iCenter: 4 deep modules + 5 business-rules. Folder closed at 100%.
+- Phase 3e ICenterLib (remaining): 8 folder MOCs + 2 deep modules + 4 business-rules.
+- Phase 3f TruTopsLib: 1 MOC + 1 business-rule (the colour-7 hazard).
+- Phase 3g iCENTER (remaining): 1 sweep MOC covering 475 files across 20+ folders.
+
+Total: **27 MOCs + 35 module notes + 37 business-rule notes + ~12 architecture/external-systems notes**.
+
+318 open SME questions (Q-001..Q-318). 5 resolved. ~50 `#safety-relevant`. Strongest single hazard: TruTops `LayerConverter` colour-7 ("levensgevaarlijk" per author).
+
+Phase 4 (business-logic deep sweep) and Phase 5 (linking + review queue) are now the residual scope. The needs-review index covers all 318 questions and is the SME work-queue.
+
+19 commits pushed to `origin/main` (`a417645..1b01a77`).
+
 ## 2026-06-18 — Phase 3c-6: ISAH TimeRegistration deep-dive
 
 - Documented `TimeRegistration.vb` (1274 lines, biggest single ISAH file) and `TimeRegCollector.vb` (147 lines) as a single grouped module note [[modules/isah-time-registration]].

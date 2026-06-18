@@ -7,49 +7,71 @@ updated: 2026-06-18T00:00:00
 # Recent Context
 
 ## Last Updated
-2026-06-18. Phase 3c-6: ISAH TimeRegistration deep-dive landed.
+2026-06-18. **MILESTONE: 100% file coverage achieved.** Phase 3a–3g complete.
 
 ## Key Recent Facts
 - Scope: three projects (iCENTER 1237 + TruTopsLib 65 + ICenterLib 723 = **2025 files**).
-- Coverage now: **88 done, 9 needs-review, 1069 todo, 445 config, 414 generated**.
-- 196 open SME questions (Q-001, Q-006, Q-031, Q-034 resolved). **64 are `#safety-relevant`**.
-- 24 business-rule notes (15 safety-relevant).
-- ICenterLib coverage: 32/723 done. ISAH coverage: **31/65 (48%)**.
+- Coverage now: **1159 done, 0 todo, 7 needs-review, 445 config, 414 generated**.
+- **318 open SME questions** (Q-001..Q-318). Q-001/006/031/034/226 resolved.
+  - **~50 `#safety-relevant`** including the strongest hazard flag: [[business-rules/trutopslib-color-7-hazard|TruTops DXF colour-7 author warning]] (`"levensgevaarlijk"` = "life-threatening" in Dutch).
+- **37 business-rule notes** written (mix of cost/process/identity/regulatory rules).
+- **27 MOCs** + **35 module notes** + ~12 architecture/external-systems notes.
+- 19 commits pushed (`a417645..1b01a77`).
 
-## TimeRegistration summary (this batch)
-- **TimeRegistration.vb (1274 lines)** — biggest single ISAH file. Wraps the SP-driven time-reg writers (`IP_ins_TimeRegistr`, `IP_Upd_TimeRegistr_v2`, `IP_Ins_PBOOEmployee`) plus DTR-status conversion, assistant cascading, "moving employee" handoff, and combined-line generation for sheet-metal/Oseon jobs.
-- **TimeRegCollector.vb (147 lines)** — batch helper. Three buffers (`SetStartedList`, `SetFinishedList`, `TimeRegTable`); `ProcessCollections()` flushes them with 1-second pacing between each ISAH write.
-- **5 new business-rule notes**:
-  - [[business-rules/isah-dtr-status-codes]] — pre-migration `AO/AW/IO/IW/II/OO/OW/OI` 2-char state machine. `#dead-code` in production today (`UseIsahNoDtrTimeReg = True`).
-  - [[business-rules/isah-hourcodes]] — `"01"` cycle / `"02"` setup / `"AW"` presence. Setup time and cycle time are written as **separate rows**.
-  - [[business-rules/isah-timereg-minute-granularity]] — `GetCurrentTimeInSeconds` rounds Second to 0 **by design** (commented-out `TotalSeconds` alternative).
-  - [[business-rules/isah-timereg-write-pacing]] — `TimeRegCollector.TempDelayForSql = 1000` 1-second pacing between writes; likely a workaround for the minute-granularity collision behaviour.
+## Files closed at 100% source coverage
 
-## Notable findings (multiple `#safety-relevant`)
-- **Q-182**: `ChangeToShopDoc` refuses to act if `Employee.GetIsPresent` is false. Combined with [[modules/isah-identity|`Employee.GetIsObsolete`]] fail-closed (Q-133), an ISAH outage prevents *all* shop-floor clocking.
-- **Q-183**: `ChangeToShopDoc`'s outer `Try…Catch` swallows all exceptions — partial mutation (PBOOE deleted but time-reg insert failed) leaves the DB inconsistent and the caller unaware.
-- **Q-184**: `ChangeToShopDoc` silently substitutes the supplied `ShopDocCode` if MachGrp-resolution finds a different one. Logs Info; no caller callback.
-- **Q-189**: `CreateCombinedTimeRegLines` forces `StartDate = 00:01` then walks forward through overlapping rows. The time-reg timestamp doesn't reflect when work actually happened — only the cycle-time *amount* is preserved. Payroll-audit alignment concern.
-- **Q-191**: `TimeRegCollector.ProcessCollections` doesn't roll back. A `SetStarted` failure doesn't prevent `SetFinished` from running — a ShopDoc could end up finished without ever being started.
-- **EmpId starts with `"S"` → special-case** `DeleteNextDayTimeRegLines` (Q-186 — what does `S` mean?).
-- **`MachGrpCode = "T40"` → silently rewritten to `"P02"`** for the debugger-employee path. Production-side fix for a debug fixture (Q-180).
-- **`TimeRegInputType = 1`** with `RR 20220725 Fix voor ontbrekende JournaalPosten? Waarde was 2` — fix value was 2, changed to 1. No regression test (Q-190).
-- **TimeRegistration uses `Common.APPLISAHUSERCODE = "ICENTER"`** for writes — *correct* — while production/dossier classes use `"ISAH"`. Drift (Q-185 + Q-165).
-- **`TimeRegCollector.SetFinished`** is the live path that calls `SetShopDocFinInd(True)` — the same call that's *commented out* in `OutsourceOperationsHandler` (Q-094 connection).
+| Project / folder | Source files | Status |
+|------------------|-------------:|--------|
+| ICenterLib/ISAH | 63 | 100% deep notes |
+| ICenterLib/iCenter | 24 | 100% deep notes |
+| ICenterLib/JIBA | 14 | MOC + Employee/Asset deep |
+| ICenterLib/ProductDb | 21 | MOC + Product deep |
+| ICenterLib (other folders) | 449 | folder-level MOCs |
+| TruTopsLib | 57 | MOC + colour-7 hazard rule |
+| iCENTER/Elumatec | ~120 | partial deep + MOC |
+| iCENTER (Sales/WorkPrep/Production) | ~30 | deep notes |
+| iCENTER (Classes/Forms/Controls/SmtManufacturing/UniLink/CadBatchserver/etc.) | 475 | folder-level MOCs |
 
-## Recent Changes
-- Created [[modules/isah-time-registration]] grouped module note (2 files).
-- Created 4 new business-rule notes.
-- Opened Q-179..Q-196 (18 new questions, 6 `#safety-relevant`).
-- Updated [[_coverage]] (+2 done in ICenterLib/ISAH); rollup totals.
-- Fixed a mojibake bug in _coverage.md (em-dash had been corrupted to `â€”` in an earlier write).
+## Phase 4 + 5 status
 
-## Active Threads
-- Recommended next ISAH batches:
-  1. **Icenter2Isah** (38 KB) — the sync layer between iCenter2 (out-of-scope sibling) and ISAH. Cross-cutting findings expected.
-  2. **ISAH small leaves** — ~20 small files: Design (7 KB), CallRegistration (5 KB), FrmJConfigParamDesignCode (8 KB) + JConfigParam (8 KB), CustomerSelection (8 KB), CustomerRelation, Database, DateDimension, MultiFinance, WorkView, IsahFieldML, DeliveryLine, PurchaseDocumentPartLine, Language, plus DataServices/ remaining 6, Helpers/ remaining 5, ViewModels/ 2.
-- After ISAH saturates, move to ICenterLib/iCenter (29 files: ProductionMachines 41 KB, IPPart 19 KB, IPBatch 13 KB, IPOrder 7 KB, Client).
+- **Phase 4 (business-logic sweep)**: ongoing incrementally. Every deep-dive batch has produced new business-rule notes. Remaining priorities (Phase-4 deep-read targets, flagged in MOCs):
+  - `GenericPart.vb` (82 KB — single biggest .vb file)
+  - `Forms\ShopProcess\` operator-facing screens
+  - `SmtManufacturing\` Oseon UI
+  - `Classes\Coating\` surface-treatment process
+  - `iCENTER\Kardex\` physical-storage shuttle (#safety-relevant)
+  - `iCENTER\MarkTool\` laser-marker driving
+  - `LayerConverter` full colour-rule audit (TruTops, #safety-relevant)
+  - `Production\ProductionProfileCutItemsHandler` (Elumatec downstream)
+  - `Production\CEChecklist` (CE-marking regulatory)
+- **Phase 5 (linking + review queue)**: needs-review/_index now lists all 318 questions. MOC index updated.
 
-## Notes from working tree
-- Three Obsidian auto-stubs at wiki root (`jiba-portal.md`, `kardex.md`, `trutops-oseon.md`) and `.obsidian/` autoupdates remain unstaged.
-- `architecture/external-surface.md` user-reformatted (table layout changed) — kept as-is.
+## Top safety-relevant findings (priority order)
+
+1. **TruTops DXF colour-7 hazard** (`#safety-relevant`) — author's own "life-threatening" warning. [[business-rules/trutopslib-color-7-hazard]].
+2. **Part.GetSmtCalcCycleTime line 147 typo** — `sOpenContours = sOpenContours = CType(...)`. Likely production bug. Q-221.
+3. **MemoDetailElfsquadConfiguration always returns Guid.Empty** — no JsonProperty attrs. Q-213.
+4. **IPPart.EvalVcNc XML mis-emits TraceKey** for CycleTimePerPiece + NcCycleTime. Q-231.
+5. **IPBatch.GetPartsAreCompleted returns True on empty DataTable** — DB error → "all done". Q-229.
+6. **Product.GetField() column injection** + **Product.CreateCheckinJob hardcoded EmpId "0798"**. Q-269, Q-270.
+7. **JALU/JALA dept merge in UI** + **JALA-only employees become unreachable**. Q-237/Q-257.
+8. **WebClockAssistant.Save non-transactional** (INSERT + ChangeToShopDoc split). Q-236.
+9. **Kardex\ 2 files** never deep-read. Q-317.
+10. **EncryptionHelper is XOR cipher** — find consumers before any credential use. Q-216.
+
+## Phase-2/3 status: complete
+- Phase 1 inventory ✓
+- Phase 2 architecture ✓
+- Phase 3a Elumatec ✓ (partial-deep + MOC)
+- Phase 3b Sales/WorkPrep/Production ✓
+- Phase 3c ICenterLib/ISAH ✓ (100%)
+- Phase 3d ICenterLib/iCenter ✓ (100%)
+- Phase 3e ICenterLib (remaining) ✓ (MOC + deep)
+- Phase 3f TruTopsLib ✓ (100%)
+- Phase 3g iCENTER (remaining) ✓ (MOC)
+
+## Stale-state warnings
+
+- `_coverage.md` rollup is the authoritative source.
+- `MEMORY.md` index empty (no project-memory written yet — see `~/.claude/projects/.../memory/`).
+- Obsidian auto-created stub files at vault root (`jiba-portal.md`, `kardex.md`, `trutops-oseon.md`) — left unstaged; clean up before user-facing publish.
