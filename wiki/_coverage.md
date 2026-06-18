@@ -91,7 +91,7 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 |------|--------|------|---------------|
 | `CAD\PLM\FrmPDMLinkOrdTypeContext.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `CAD\PLM\FrmPDMLinkOrdTypeContext.resx` | generated | resource bundle (designer-managed) | â€” |
-| `CAD\PLM\FrmPDMLinkOrdTypeContext.vb` | todo | â€” | â€” |
+| `CAD\PLM\FrmPDMLinkOrdTypeContext.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
 
 ### CadBatchserver
 
@@ -1620,133 +1620,133 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `CAD\Creo\AppManager.vb` | todo | â€” | â€” |
-| `CAD\Creo\AppVersion.vb` | todo | â€” | â€” |
-| `CAD\Creo\CadApp.vb` | todo | â€” | â€” |
-| `CAD\Creo\CadAppVersion.vb` | todo | â€” | â€” |
+| `CAD\Creo\AppManager.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\AppVersion.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\CadApp.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\CadAppVersion.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
 | `CAD\Creo\CtrlAppManager.Designer.vb` | generated | VS designer partial | â€” |
 | `CAD\Creo\CtrlAppManager.resx` | generated | resource bundle (designer-managed) | â€” |
-| `CAD\Creo\CtrlAppManager.vb` | todo | â€” | â€” |
-| `CAD\Creo\Dimension.vb` | todo | â€” | â€” |
-| `CAD\Creo\Environment.vb` | todo | â€” | â€” |
-| `CAD\Creo\Feature.vb` | todo | â€” | â€” |
-| `CAD\Creo\Features.vb` | todo | â€” | â€” |
+| `CAD\Creo\CtrlAppManager.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\Dimension.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\Environment.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\Feature.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\Features.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
 | `CAD\Creo\FrmAppManager.Designer.vb` | generated | VS designer partial | â€” |
 | `CAD\Creo\FrmAppManager.resx` | generated | resource bundle (designer-managed) | â€” |
-| `CAD\Creo\FrmAppManager.vb` | todo | â€” | â€” |
+| `CAD\Creo\FrmAppManager.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
 | `CAD\Creo\FrmCreoLicense.Designer.vb` | generated | VS designer partial | â€” |
 | `CAD\Creo\FrmCreoLicense.resx` | generated | resource bundle (designer-managed) | â€” |
-| `CAD\Creo\FrmCreoLicense.vb` | todo | â€” | â€” |
-| `CAD\Creo\License\License.vb` | todo | â€” | â€” |
-| `CAD\Creo\License\LicenseResource.vb` | todo | â€” | â€” |
-| `CAD\Creo\License\LicenseResourceHandler.vb` | todo | â€” | â€” |
-| `CAD\Creo\License\LicenseSelectionHandler.vb` | todo | â€” | â€” |
-| `CAD\Creo\Material.vb` | todo | â€” | â€” |
-| `CAD\Creo\Materials.vb` | todo | â€” | â€” |
-| `CAD\Creo\ModelInformation.vb` | todo | â€” | â€” |
-| `CAD\Creo\ModelItem.vb` | todo | â€” | â€” |
-| `CAD\Creo\Parameter.vb` | todo | â€” | â€” |
-| `CAD\Creo\ParameterCollection.vb` | todo | â€” | â€” |
-| `CAD\Creo\ParamValue\ParamValue.vb` | todo | â€” | â€” |
-| `CAD\Creo\ParamValue\ParamValueBoolean.vb` | todo | â€” | â€” |
-| `CAD\Creo\ParamValue\ParamValueDouble.vb` | todo | â€” | â€” |
-| `CAD\Creo\ParamValue\ParamValueInteger.vb` | todo | â€” | â€” |
-| `CAD\Creo\ParamValue\ParamValueString.vb` | todo | â€” | â€” |
-| `CAD\Creo\PlmAppVersion.vb` | todo | â€” | â€” |
-| `CAD\Creo\ProProgram\Design.vb` | todo | â€” | â€” |
-| `CAD\Creo\ProProgram\ExecuteStatement.vb` | todo | â€” | â€” |
-| `CAD\Creo\ProProgram\Functions.vb` | todo | â€” | â€” |
-| `CAD\Creo\ProProgram\Input.vb` | todo | â€” | â€” |
-| `CAD\Creo\ProProgram\VBCodeConverter.vb` | todo | â€” | â€” |
-| `CAD\Creo\RegenerationInput.vb` | todo | â€” | â€” |
-| `CAD\Creo\StartupFile.vb` | todo | â€” | â€” |
-| `CAD\Creo\Toolbox.vb` | todo | â€” | â€” |
-| `CAD\Creo\Tools\StpAssySplitter.vb` | todo | â€” | â€” |
-| `CAD\Creo\Trailfile.vb` | todo | â€” | â€” |
-| `CAD\CreoView\Application.vb` | todo | â€” | â€” |
-| `CAD\CreoView\Configuration.vb` | todo | â€” | â€” |
-| `CAD\CreoView\Converter.vb` | todo | â€” | â€” |
-| `CAD\DXF\SvgConverter\DxfHelper.vb` | todo | â€” | â€” |
-| `CAD\DXF\SvgConverter\DxfToSvgConverter.vb` | todo | â€” | â€” |
-| `CAD\DXF\SvgConverter\Export.vb` | todo | â€” | â€” |
-| `CAD\DXF\SvgConverter\Modifier.vb` | todo | â€” | â€” |
-| `CAD\Geometry\BoundingBox.vb` | todo | â€” | â€” |
-| `CAD\Geometry\BoundingBoxFactory.vb` | todo | â€” | â€” |
-| `CAD\Geometry\Dxf3DProfileMill.vb` | todo | â€” | â€” |
-| `CAD\Geometry\DxfEntityColor.vb` | todo | â€” | â€” |
-| `CAD\Geometry\Earcut.vb` | todo | â€” | â€” |
-| `CAD\Geometry\Earcut_CSharp.vb` | todo | â€” | â€” |
-| `CAD\Geometry\GraphicsPathHelper.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Configuration.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Definition.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\DefinitionCollection.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Exceptions\GenericObjectNotFoundException.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\GenericModelBackupConfiguration.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\ModelGeneratorOption.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\ModelgeneratorRequests\DesignDuplicationConfiguration.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\ModelgeneratorRequests\ElfsquadModelgeneratorRequest.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\ModelgeneratorRequests\IrisModelgeneratorInstructions.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\ModelgeneratorRequests\IrisModelgeneratorTaskResult.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\Checkin.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\CreateWS.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\DeleteWS.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\Download.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\EraseUndisplayedModels.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\ExportDocumentOperation.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\JZCheckoutFolders.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\JZExportByNumber.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\JZImportByNumber.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\JZRenameObjectNoServer.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\OpenInProE.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\Operation.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\OperationCollection.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\RegenReadPar.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\Register.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\Rename.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\Save.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\SetWorkingDirectory.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\Operations\Unregister.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\RenameRule.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\RenameRuleCollection.vb` | todo | â€” | â€” |
-| `CAD\Modelgenerator\TriggerFile.vb` | todo | â€” | â€” |
+| `CAD\Creo\FrmCreoLicense.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\License\License.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\License\LicenseResource.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\License\LicenseResourceHandler.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\License\LicenseSelectionHandler.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\Material.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\Materials.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\ModelInformation.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\ModelItem.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\Parameter.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\ParameterCollection.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\ParamValue\ParamValue.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\ParamValue\ParamValueBoolean.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\ParamValue\ParamValueDouble.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\ParamValue\ParamValueInteger.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\ParamValue\ParamValueString.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\PlmAppVersion.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\ProProgram\Design.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\ProProgram\ExecuteStatement.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\ProProgram\Functions.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\ProProgram\Input.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\ProProgram\VBCodeConverter.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\RegenerationInput.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\StartupFile.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\Toolbox.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\Tools\StpAssySplitter.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Creo\Trailfile.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\CreoView\Application.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\CreoView\Configuration.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\CreoView\Converter.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\DXF\SvgConverter\DxfHelper.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\DXF\SvgConverter\DxfToSvgConverter.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\DXF\SvgConverter\Export.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\DXF\SvgConverter\Modifier.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Geometry\BoundingBox.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Geometry\BoundingBoxFactory.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Geometry\Dxf3DProfileMill.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Geometry\DxfEntityColor.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Geometry\Earcut.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Geometry\Earcut_CSharp.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Geometry\GraphicsPathHelper.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Configuration.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Definition.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\DefinitionCollection.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Exceptions\GenericObjectNotFoundException.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\GenericModelBackupConfiguration.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\ModelGeneratorOption.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\ModelgeneratorRequests\DesignDuplicationConfiguration.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\ModelgeneratorRequests\ElfsquadModelgeneratorRequest.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\ModelgeneratorRequests\IrisModelgeneratorInstructions.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\ModelgeneratorRequests\IrisModelgeneratorTaskResult.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\Checkin.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\CreateWS.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\DeleteWS.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\Download.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\EraseUndisplayedModels.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\ExportDocumentOperation.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\JZCheckoutFolders.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\JZExportByNumber.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\JZImportByNumber.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\JZRenameObjectNoServer.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\OpenInProE.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\Operation.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\OperationCollection.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\RegenReadPar.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\Register.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\Rename.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\Save.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\SetWorkingDirectory.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\Operations\Unregister.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\RenameRule.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\RenameRuleCollection.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Modelgenerator\TriggerFile.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
 | `CAD\OpenGL\CtrlOpenGLViewer.Designer.vb` | generated | VS designer partial | â€” |
-| `CAD\OpenGL\CtrlOpenGLViewer.vb` | todo | â€” | â€” |
-| `CAD\OpenGL\GLUtil.vb` | todo | â€” | â€” |
-| `CAD\PLM\Archive.vb` | todo | â€” | â€” |
-| `CAD\PLM\AutoPromotionRequest.vb` | todo | â€” | â€” |
-| `CAD\PLM\AutoPromotionRequestHandler.vb` | todo | â€” | â€” |
-| `CAD\PLM\AutoPromotionRequestParameters.vb` | todo | â€” | â€” |
-| `CAD\PLM\Container.vb` | todo | â€” | â€” |
-| `CAD\PLM\EPMDocument.vb` | todo | â€” | â€” |
-| `CAD\PLM\FileServer.vb` | todo | â€” | â€” |
-| `CAD\PLM\Folder.vb` | todo | â€” | â€” |
+| `CAD\OpenGL\CtrlOpenGLViewer.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\OpenGL\GLUtil.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\Archive.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\AutoPromotionRequest.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\AutoPromotionRequestHandler.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\AutoPromotionRequestParameters.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\Container.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\EPMDocument.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\FileServer.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\Folder.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
 | `CAD\PLM\FrmAutomaticPromotionRequestInput.Designer.vb` | generated | VS designer partial | â€” |
 | `CAD\PLM\FrmAutomaticPromotionRequestInput.resx` | generated | resource bundle (designer-managed) | â€” |
-| `CAD\PLM\FrmAutomaticPromotionRequestInput.vb` | todo | â€” | â€” |
+| `CAD\PLM\FrmAutomaticPromotionRequestInput.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
 | `CAD\PLM\FrmVaultFolderChart.Designer.vb` | generated | VS designer partial | â€” |
 | `CAD\PLM\FrmVaultFolderChart.resx` | generated | resource bundle (designer-managed) | â€” |
-| `CAD\PLM\FrmVaultFolderChart.vb` | todo | â€” | â€” |
-| `CAD\PLM\InfoEngineParameter.vb` | todo | â€” | â€” |
-| `CAD\PLM\InfoEngineParameterCollection.vb` | todo | â€” | â€” |
-| `CAD\PLM\LifeCycleState.vb` | todo | â€” | â€” |
-| `CAD\PLM\Product.vb` | todo | â€” | â€” |
-| `CAD\PLM\PromotionNotice.vb` | todo | â€” | â€” |
-| `CAD\PLM\ServerManagement.vb` | todo | â€” | â€” |
-| `CAD\PLM\Task\AddVaultFolderDetailsLogEntry.vb` | todo | â€” | â€” |
-| `CAD\PLM\Task\GenericModelBackup.vb` | todo | â€” | â€” |
-| `CAD\PLM\Task\PurgePromotionNotices.vb` | todo | â€” | â€” |
-| `CAD\PLM\Task\Task.vb` | todo | â€” | â€” |
-| `CAD\PLM\Toolbox.vb` | todo | â€” | â€” |
-| `CAD\PLM\User.vb` | todo | â€” | â€” |
-| `CAD\PLM\VaultCleanupAuditLogs.vb` | todo | â€” | â€” |
-| `CAD\PLM\Version.vb` | todo | â€” | â€” |
-| `CAD\PLM\WCObject.vb` | todo | â€” | â€” |
-| `CAD\Publisher\Common.vb` | todo | â€” | â€” |
-| `CAD\SolidEdge\IfcExport.vb` | todo | â€” | â€” |
-| `CAD\SolidEdge\Importer.vb` | todo | â€” | â€” |
-| `CAD\SolidEdge\Settings.vb` | todo | â€” | â€” |
-| `CAD\SolidEdge\StepExport.vb` | todo | â€” | â€” |
-| `CAD\SolidEdge\Toolkit.vb` | todo | â€” | â€” |
+| `CAD\PLM\FrmVaultFolderChart.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\InfoEngineParameter.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\InfoEngineParameterCollection.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\LifeCycleState.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\Product.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\PromotionNotice.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\ServerManagement.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\Task\AddVaultFolderDetailsLogEntry.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\Task\GenericModelBackup.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\Task\PurgePromotionNotices.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\Task\Task.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\Toolbox.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\User.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\VaultCleanupAuditLogs.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\Version.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\PLM\WCObject.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\Publisher\Common.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\SolidEdge\IfcExport.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\SolidEdge\Importer.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\SolidEdge\Settings.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\SolidEdge\StepExport.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
+| `CAD\SolidEdge\Toolkit.vb` | done | [[mocs/icenterlib-cad]] | 2026-06-18 |
 
 ### ICenterLib / CadBatchServer
 
@@ -1754,23 +1754,23 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `CadBatchServer\CadBatchserverDataService.vb` | todo | â€” | â€” |
-| `CadBatchServer\CadBatchserverStatus.vb` | todo | â€” | â€” |
-| `CadBatchServer\CadBatchserverStatusCollection.vb` | todo | â€” | â€” |
-| `CadBatchServer\CadBatchserverStatusDataService.vb` | todo | â€” | â€” |
-| `CadBatchServer\DistributedLockCreoPublish.vb` | todo | â€” | â€” |
-| `CadBatchServer\JobAlreadyExistsException.vb` | todo | â€” | â€” |
-| `CadBatchServer\JobDataService.vb` | todo | â€” | â€” |
-| `CadBatchServer\JobParameters.vb` | todo | â€” | â€” |
-| `CadBatchServer\JobToolbox.vb` | todo | â€” | â€” |
-| `CadBatchServer\Modelgenerator\CadInputParameters.vb` | todo | â€” | â€” |
-| `CadBatchServer\Modelgenerator\DuplicateInstruction.vb` | todo | â€” | â€” |
-| `CadBatchServer\Modelgenerator\ModelgeneratorInstructions.vb` | todo | â€” | â€” |
-| `CadBatchServer\Modelgenerator\ModelgeneratorTask.vb` | todo | â€” | â€” |
-| `CadBatchServer\ModelgeneratorDataService.vb` | todo | â€” | â€” |
-| `CadBatchServer\PublishJobInstructions.vb` | todo | â€” | â€” |
-| `CadBatchServer\PublishMonitor.vb` | todo | â€” | â€” |
-| `CadBatchServer\PublishWatchDirProcessor.vb` | todo | â€” | â€” |
+| `CadBatchServer\CadBatchserverDataService.vb` | done | [[mocs/icenterlib-cadbatchserver]] | 2026-06-18 |
+| `CadBatchServer\CadBatchserverStatus.vb` | done | [[mocs/icenterlib-cadbatchserver]] | 2026-06-18 |
+| `CadBatchServer\CadBatchserverStatusCollection.vb` | done | [[mocs/icenterlib-cadbatchserver]] | 2026-06-18 |
+| `CadBatchServer\CadBatchserverStatusDataService.vb` | done | [[mocs/icenterlib-cadbatchserver]] | 2026-06-18 |
+| `CadBatchServer\DistributedLockCreoPublish.vb` | done | [[mocs/icenterlib-cadbatchserver]] | 2026-06-18 |
+| `CadBatchServer\JobAlreadyExistsException.vb` | done | [[mocs/icenterlib-cadbatchserver]] | 2026-06-18 |
+| `CadBatchServer\JobDataService.vb` | done | [[mocs/icenterlib-cadbatchserver]] | 2026-06-18 |
+| `CadBatchServer\JobParameters.vb` | done | [[mocs/icenterlib-cadbatchserver]] | 2026-06-18 |
+| `CadBatchServer\JobToolbox.vb` | done | [[mocs/icenterlib-cadbatchserver]] | 2026-06-18 |
+| `CadBatchServer\Modelgenerator\CadInputParameters.vb` | done | [[mocs/icenterlib-cadbatchserver]] | 2026-06-18 |
+| `CadBatchServer\Modelgenerator\DuplicateInstruction.vb` | done | [[mocs/icenterlib-cadbatchserver]] | 2026-06-18 |
+| `CadBatchServer\Modelgenerator\ModelgeneratorInstructions.vb` | done | [[mocs/icenterlib-cadbatchserver]] | 2026-06-18 |
+| `CadBatchServer\Modelgenerator\ModelgeneratorTask.vb` | done | [[mocs/icenterlib-cadbatchserver]] | 2026-06-18 |
+| `CadBatchServer\ModelgeneratorDataService.vb` | done | [[mocs/icenterlib-cadbatchserver]] | 2026-06-18 |
+| `CadBatchServer\PublishJobInstructions.vb` | done | [[mocs/icenterlib-cadbatchserver]] | 2026-06-18 |
+| `CadBatchServer\PublishMonitor.vb` | done | [[mocs/icenterlib-cadbatchserver]] | 2026-06-18 |
+| `CadBatchServer\PublishWatchDirProcessor.vb` | done | [[mocs/icenterlib-cadbatchserver]] | 2026-06-18 |
 
 ### ICenterLib / Comparer
 
@@ -1778,7 +1778,7 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `Comparer\DateComparer.vb` | todo | â€” | â€” |
+| `Comparer\DateComparer.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / Connections
 
@@ -1794,11 +1794,11 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `CrystalReport\ExportInstruction.vb` | todo | â€” | â€” |
-| `CrystalReport\ExportRequest.vb` | todo | â€” | â€” |
-| `CrystalReport\ExportResult.vb` | todo | â€” | â€” |
-| `CrystalReport\PrintingInstruction.vb` | todo | â€” | â€” |
-| `CrystalReport\ReportParameter.vb` | todo | â€” | â€” |
+| `CrystalReport\ExportInstruction.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `CrystalReport\ExportRequest.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `CrystalReport\ExportResult.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `CrystalReport\PrintingInstruction.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `CrystalReport\ReportParameter.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / DataHandler
 
@@ -1806,29 +1806,29 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `DataHandler\BetterDataGridView.vb` | todo | â€” | â€” |
-| `DataHandler\DataSetComparer.vb` | todo | â€” | â€” |
-| `DataHandler\DataSetCompareResult.vb` | todo | â€” | â€” |
-| `DataHandler\DataSetCompareTolerance.vb` | todo | â€” | â€” |
-| `DataHandler\DataTableColumnSchema.vb` | todo | â€” | â€” |
-| `DataHandler\DataTableColumnSchemaHandler.vb` | todo | â€” | â€” |
-| `DataHandler\DataTableColumnSchemaRecord.vb` | todo | â€” | â€” |
-| `DataHandler\ExportExcel.vb` | todo | â€” | â€” |
+| `DataHandler\BetterDataGridView.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
+| `DataHandler\DataSetComparer.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
+| `DataHandler\DataSetCompareResult.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
+| `DataHandler\DataSetCompareTolerance.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
+| `DataHandler\DataTableColumnSchema.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
+| `DataHandler\DataTableColumnSchemaHandler.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
+| `DataHandler\DataTableColumnSchemaRecord.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
+| `DataHandler\ExportExcel.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
 | `DataHandler\FrmDataGridView.Designer.vb` | generated | VS designer partial | â€” |
 | `DataHandler\FrmDataGridView.resx` | generated | resource bundle (designer-managed) | â€” |
-| `DataHandler\FrmDataGridView.vb` | todo | â€” | â€” |
+| `DataHandler\FrmDataGridView.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
 | `DataHandler\FrmDataViewer.Designer.vb` | generated | VS designer partial | â€” |
 | `DataHandler\FrmDataViewer.resx` | generated | resource bundle (designer-managed) | â€” |
-| `DataHandler\FrmDataViewer.vb` | todo | â€” | â€” |
-| `DataHandler\GenericQuery.vb` | todo | â€” | â€” |
-| `DataHandler\IStreamWrapper.vb` | todo | â€” | â€” |
-| `DataHandler\JsonHelper.vb` | todo | â€” | â€” |
-| `DataHandler\OpenXml\Excel.vb` | todo | â€” | â€” |
-| `DataHandler\OpenXml\OpenXmlSpreadsheet.vb` | todo | â€” | â€” |
-| `DataHandler\QrCode.vb` | todo | â€” | â€” |
-| `DataHandler\Selection.vb` | todo | â€” | â€” |
-| `DataHandler\Toolbox.vb` | todo | â€” | â€” |
-| `DataHandler\ZeroCode.vb` | todo | â€” | â€” |
+| `DataHandler\FrmDataViewer.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
+| `DataHandler\GenericQuery.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
+| `DataHandler\IStreamWrapper.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
+| `DataHandler\JsonHelper.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
+| `DataHandler\OpenXml\Excel.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
+| `DataHandler\OpenXml\OpenXmlSpreadsheet.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
+| `DataHandler\QrCode.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
+| `DataHandler\Selection.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
+| `DataHandler\Toolbox.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
+| `DataHandler\ZeroCode.vb` | done | [[mocs/icenterlib-datahandler]] | 2026-06-18 |
 
 ### ICenterLib / DataServices
 
@@ -1836,16 +1836,16 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `DataServices\Contracts\IProdexConfiguratorDataService.vb` | todo | â€” | â€” |
-| `DataServices\Contracts\IProdexDossierDetailDesignDataService.vb` | todo | â€” | â€” |
-| `DataServices\Contracts\IProdexModelgeneratorDataService.vb` | todo | â€” | â€” |
-| `DataServices\CrystalReportDataService.vb` | todo | â€” | â€” |
-| `DataServices\DistributedLockDataService.vb` | todo | â€” | â€” |
-| `DataServices\ElfsquadDataService.vb` | todo | â€” | â€” |
-| `DataServices\ProdexConfiguratorDataService.vb` | todo | â€” | â€” |
-| `DataServices\ProdexDossierDetailDesignDataService.vb` | todo | â€” | â€” |
-| `DataServices\ProdexModelgeneratorDataService.vb` | todo | â€” | â€” |
-| `DataServices\ProductDbDataService.vb` | todo | â€” | â€” |
+| `DataServices\Contracts\IProdexConfiguratorDataService.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `DataServices\Contracts\IProdexDossierDetailDesignDataService.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `DataServices\Contracts\IProdexModelgeneratorDataService.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `DataServices\CrystalReportDataService.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `DataServices\DistributedLockDataService.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `DataServices\ElfsquadDataService.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `DataServices\ProdexConfiguratorDataService.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `DataServices\ProdexDossierDetailDesignDataService.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `DataServices\ProdexModelgeneratorDataService.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `DataServices\ProductDbDataService.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / Debug
 
@@ -1853,7 +1853,7 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `Debug\Debug1.vb` | todo | â€” | â€” |
+| `Debug\Debug1.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / DistributedLock
 
@@ -1861,7 +1861,7 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `DistributedLock\DistributedLock.vb` | todo | â€” | â€” |
+| `DistributedLock\DistributedLock.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / Elfsquad
 
@@ -1869,15 +1869,15 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `Elfsquad\ConfigurationMappingMismatchException.vb` | todo | â€” | â€” |
-| `Elfsquad\ConfigurationRequestType.vb` | todo | â€” | â€” |
-| `Elfsquad\ModelgeneratorHelper.vb` | todo | â€” | â€” |
+| `Elfsquad\ConfigurationMappingMismatchException.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `Elfsquad\ConfigurationRequestType.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `Elfsquad\ModelgeneratorHelper.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 | `Elfsquad\UCConfigurationManager.Designer.vb` | generated | VS designer partial | â€” |
 | `Elfsquad\UCConfigurationManager.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Elfsquad\UCConfigurationManager.vb` | todo | â€” | â€” |
+| `Elfsquad\UCConfigurationManager.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 | `Elfsquad\UCModelgenerator.Designer.vb` | generated | VS designer partial | â€” |
 | `Elfsquad\UCModelgenerator.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Elfsquad\UCModelgenerator.vb` | todo | â€” | â€” |
+| `Elfsquad\UCModelgenerator.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / Enums
 
@@ -1885,8 +1885,8 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `Enums\Application.vb` | todo | â€” | â€” |
-| `Enums\ISAH.vb` | todo | â€” | â€” |
+| `Enums\Application.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `Enums\ISAH.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / GUI
 
@@ -1894,9 +1894,9 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `GUI\MyMenuItem.vb` | todo | â€” | â€” |
-| `GUI\MyMenuItemConverter.vb` | todo | â€” | â€” |
-| `GUI\ToolStripMenuItemHelper.vb` | todo | â€” | â€” |
+| `GUI\MyMenuItem.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `GUI\MyMenuItemConverter.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `GUI\ToolStripMenuItemHelper.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / Helpers
 
@@ -1904,7 +1904,7 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `Helpers\UrlHelper.vb` | todo | â€” | â€” |
+| `Helpers\UrlHelper.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / iCenter
 
@@ -2020,20 +2020,20 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `JIBA\AppParameter.vb` | todo | â€” | â€” |
-| `JIBA\Asset.vb` | todo | â€” | â€” |
-| `JIBA\Company.vb` | todo | â€” | â€” |
-| `JIBA\ConfigPart.vb` | todo | â€” | â€” |
-| `JIBA\CustSat.vb` | todo | â€” | â€” |
-| `JIBA\Employee.vb` | todo | â€” | â€” |
-| `JIBA\Encryption.vb` | todo | â€” | â€” |
-| `JIBA\Enums.vb` | todo | â€” | â€” |
-| `JIBA\LinkItem.vb` | todo | â€” | â€” |
-| `JIBA\Log.vb` | todo | â€” | â€” |
-| `JIBA\Menu.vb` | todo | â€” | â€” |
-| `JIBA\NavigationGroupItem.vb` | todo | â€” | â€” |
-| `JIBA\SubMenu.vb` | todo | â€” | â€” |
-| `JIBA\XmlData.vb` | todo | â€” | â€” |
+| `JIBA\AppParameter.vb` | done | [[mocs/icenterlib-jiba]] | 2026-06-18 |
+| `JIBA\Asset.vb` | done | [[mocs/icenterlib-jiba]] | 2026-06-18 |
+| `JIBA\Company.vb` | done | [[mocs/icenterlib-jiba]] | 2026-06-18 |
+| `JIBA\ConfigPart.vb` | done | [[mocs/icenterlib-jiba]] | 2026-06-18 |
+| `JIBA\CustSat.vb` | done | [[mocs/icenterlib-jiba]] | 2026-06-18 |
+| `JIBA\Employee.vb` | done | [[mocs/icenterlib-jiba]] | 2026-06-18 |
+| `JIBA\Encryption.vb` | done | [[mocs/icenterlib-jiba]] | 2026-06-18 |
+| `JIBA\Enums.vb` | done | [[mocs/icenterlib-jiba]] | 2026-06-18 |
+| `JIBA\LinkItem.vb` | done | [[mocs/icenterlib-jiba]] | 2026-06-18 |
+| `JIBA\Log.vb` | done | [[mocs/icenterlib-jiba]] | 2026-06-18 |
+| `JIBA\Menu.vb` | done | [[mocs/icenterlib-jiba]] | 2026-06-18 |
+| `JIBA\NavigationGroupItem.vb` | done | [[mocs/icenterlib-jiba]] | 2026-06-18 |
+| `JIBA\SubMenu.vb` | done | [[mocs/icenterlib-jiba]] | 2026-06-18 |
+| `JIBA\XmlData.vb` | done | [[mocs/icenterlib-jiba]] | 2026-06-18 |
 
 ### ICenterLib / JMail
 
@@ -2041,12 +2041,12 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `JMail\FileHelper.vb` | todo | â€” | â€” |
-| `JMail\Message.vb` | todo | â€” | â€” |
-| `JMail\SpecificationReportData.vb` | todo | â€” | â€” |
-| `JMail\SpecificationReportHandler.vb` | todo | â€” | â€” |
-| `JMail\StartOptions.vb` | todo | â€” | â€” |
-| `JMail\StartOptionsHelper.vb` | todo | â€” | â€” |
+| `JMail\FileHelper.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `JMail\Message.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `JMail\SpecificationReportData.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `JMail\SpecificationReportHandler.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `JMail\StartOptions.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `JMail\StartOptionsHelper.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / LaserWork
 
@@ -2054,10 +2054,10 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `LaserWork\AppWrapper.vb` | todo | â€” | â€” |
+| `LaserWork\AppWrapper.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 | `LaserWork\UCLaserWork.Designer.vb` | generated | VS designer partial | â€” |
 | `LaserWork\UCLaserWork.resx` | generated | resource bundle (designer-managed) | â€” |
-| `LaserWork\UCLaserWork.vb` | todo | â€” | â€” |
+| `LaserWork\UCLaserWork.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / Metabase
 
@@ -2065,10 +2065,10 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `Metabase\ParameterParsing.vb` | todo | â€” | â€” |
-| `Metabase\ParameterResolver.vb` | todo | â€” | â€” |
-| `Metabase\QueryHelper.vb` | todo | â€” | â€” |
-| `Metabase\UrlHelper.vb` | todo | â€” | â€” |
+| `Metabase\ParameterParsing.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `Metabase\ParameterResolver.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `Metabase\QueryHelper.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `Metabase\UrlHelper.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / ModelDefinition
 
@@ -2076,9 +2076,9 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `ModelDefinition\Dimension.vb` | todo | â€” | â€” |
-| `ModelDefinition\DimensionCollection.vb` | todo | â€” | â€” |
-| `ModelDefinition\DimensionType.vb` | todo | â€” | â€” |
+| `ModelDefinition\Dimension.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `ModelDefinition\DimensionCollection.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `ModelDefinition\DimensionType.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / MySystem
 
@@ -2086,28 +2086,28 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `MySystem\Computer.vb` | todo | â€” | â€” |
+| `MySystem\Computer.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
 | `MySystem\Encryption\FrmEncrypt.Designer.vb` | generated | VS designer partial | â€” |
 | `MySystem\Encryption\FrmEncrypt.resx` | generated | resource bundle (designer-managed) | â€” |
-| `MySystem\Encryption\FrmEncrypt.vb` | todo | â€” | â€” |
-| `MySystem\Encryption\SecurityController.vb` | todo | â€” | â€” |
-| `MySystem\Environment.vb` | todo | â€” | â€” |
-| `MySystem\ExceptionList.vb` | todo | â€” | â€” |
-| `MySystem\FileSystem.vb` | todo | â€” | â€” |
-| `MySystem\HealthMonitorClient.vb` | todo | â€” | â€” |
-| `MySystem\HelpHandler.vb` | todo | â€” | â€” |
-| `MySystem\ICenterObjectNotFoundException.vb` | todo | â€” | â€” |
-| `MySystem\Math.vb` | todo | â€” | â€” |
-| `MySystem\MyProcess.vb` | todo | â€” | â€” |
-| `MySystem\Net\TcpServer.vb` | todo | â€” | â€” |
-| `MySystem\Network.vb` | todo | â€” | â€” |
-| `MySystem\OpenWindowGetter.vb` | todo | â€” | â€” |
-| `MySystem\PowerShellWrapper.vb` | todo | â€” | â€” |
-| `MySystem\Printer.vb` | todo | â€” | â€” |
-| `MySystem\Registry.vb` | todo | â€” | â€” |
-| `MySystem\TerminalServerSessions.vb` | todo | â€” | â€” |
-| `MySystem\Window.vb` | todo | â€” | â€” |
-| `MySystem\WindowsUser.vb` | todo | â€” | â€” |
+| `MySystem\Encryption\FrmEncrypt.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
+| `MySystem\Encryption\SecurityController.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
+| `MySystem\Environment.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
+| `MySystem\ExceptionList.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
+| `MySystem\FileSystem.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
+| `MySystem\HealthMonitorClient.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
+| `MySystem\HelpHandler.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
+| `MySystem\ICenterObjectNotFoundException.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
+| `MySystem\Math.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
+| `MySystem\MyProcess.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
+| `MySystem\Net\TcpServer.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
+| `MySystem\Network.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
+| `MySystem\OpenWindowGetter.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
+| `MySystem\PowerShellWrapper.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
+| `MySystem\Printer.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
+| `MySystem\Registry.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
+| `MySystem\TerminalServerSessions.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
+| `MySystem\Window.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
+| `MySystem\WindowsUser.vb` | done | [[mocs/icenterlib-mysystem]] | 2026-06-18 |
 
 ### ICenterLib / PCFNet
 
@@ -2115,51 +2115,51 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `PCFNet\BOM.vb` | todo | â€” | â€” |
-| `PCFNet\BOO.vb` | todo | â€” | â€” |
-| `PCFNet\Calculation.vb` | todo | â€” | â€” |
-| `PCFNet\ControlDefinition.vb` | todo | â€” | â€” |
-| `PCFNet\ControlDefinitionComparer.vb` | todo | â€” | â€” |
-| `PCFNet\ControlMapping\ControlMap.vb` | todo | â€” | â€” |
-| `PCFNet\ControlMapping\Mapping.vb` | todo | â€” | â€” |
-| `PCFNet\ControlMapping\MappingCollection.vb` | todo | â€” | â€” |
-| `PCFNet\ControlMapping\MappingQuery.vb` | todo | â€” | â€” |
-| `PCFNet\ControlMapping\Parameter.vb` | todo | â€” | â€” |
+| `PCFNet\BOM.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\BOO.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\Calculation.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ControlDefinition.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ControlDefinitionComparer.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ControlMapping\ControlMap.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ControlMapping\Mapping.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ControlMapping\MappingCollection.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ControlMapping\MappingQuery.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ControlMapping\Parameter.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
 | `PCFNet\ControlMappingDesigner\UCControlMappingDesigner.Designer.vb` | generated | VS designer partial | â€” |
 | `PCFNet\ControlMappingDesigner\UCControlMappingDesigner.resx` | generated | resource bundle (designer-managed) | â€” |
-| `PCFNet\ControlMappingDesigner\UCControlMappingDesigner.vb` | todo | â€” | â€” |
-| `PCFNet\ControlMappingImport.vb` | todo | â€” | â€” |
-| `PCFNet\CPart.vb` | todo | â€” | â€” |
-| `PCFNet\ExcelObject.vb` | todo | â€” | â€” |
-| `PCFNet\ExcelObjectCalculator.vb` | todo | â€” | â€” |
-| `PCFNet\FastenerCalculator.vb` | todo | â€” | â€” |
-| `PCFNet\GenericPart.vb` | todo | â€” | â€” |
-| `PCFNet\GenericPartTemplate.vb` | todo | â€” | â€” |
-| `PCFNet\JConfigurator.vb` | todo | â€” | â€” |
-| `PCFNet\ManualOperation.vb` | todo | â€” | â€” |
-| `PCFNet\ManualProperty.vb` | todo | â€” | â€” |
-| `PCFNet\NameMapping.vb` | todo | â€” | â€” |
-| `PCFNet\NameMappingRule.vb` | todo | â€” | â€” |
-| `PCFNet\ParametersMapping\AluBasicWallLouver001.vb` | todo | â€” | â€” |
-| `PCFNet\ParametersMapping\AluDoor001.vb` | todo | â€” | â€” |
-| `PCFNet\ParametersMapping\AluLouver001.vb` | todo | â€” | â€” |
-| `PCFNet\ParametersMapping\ParametersMappingBase.vb` | todo | â€” | â€” |
-| `PCFNet\ParametersMapping\PlankAssembly.vb` | todo | â€” | â€” |
-| `PCFNet\ParametersMapping\StlDoor001.vb` | todo | â€” | â€” |
-| `PCFNet\PcfCompiler.vb` | todo | â€” | â€” |
-| `PCFNet\PcfNetDataSet.vb` | todo | â€” | â€” |
-| `PCFNet\ProductValidation.vb` | todo | â€” | â€” |
-| `PCFNet\PropertyDefinition.vb` | todo | â€” | â€” |
-| `PCFNet\PropertyDefinitionType.vb` | todo | â€” | â€” |
-| `PCFNet\SmtCalculator.vb` | todo | â€” | â€” |
-| `PCFNet\TcpClientConfiguration.vb` | todo | â€” | â€” |
+| `PCFNet\ControlMappingDesigner\UCControlMappingDesigner.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ControlMappingImport.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\CPart.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ExcelObject.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ExcelObjectCalculator.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\FastenerCalculator.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\GenericPart.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\GenericPartTemplate.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\JConfigurator.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ManualOperation.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ManualProperty.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\NameMapping.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\NameMappingRule.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ParametersMapping\AluBasicWallLouver001.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ParametersMapping\AluDoor001.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ParametersMapping\AluLouver001.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ParametersMapping\ParametersMappingBase.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ParametersMapping\PlankAssembly.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ParametersMapping\StlDoor001.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\PcfCompiler.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\PcfNetDataSet.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\ProductValidation.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\PropertyDefinition.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\PropertyDefinitionType.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\SmtCalculator.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\TcpClientConfiguration.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
 | `PCFNet\UCInputControls.Designer.vb` | generated | VS designer partial | â€” |
 | `PCFNet\UCInputControls.resx` | generated | resource bundle (designer-managed) | â€” |
-| `PCFNet\UCInputControls.vb` | todo | â€” | â€” |
+| `PCFNet\UCInputControls.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
 | `PCFNet\UCOption.Designer.vb` | generated | VS designer partial | â€” |
 | `PCFNet\UCOption.resx` | generated | resource bundle (designer-managed) | â€” |
-| `PCFNet\UCOption.vb` | todo | â€” | â€” |
-| `PCFNet\WAASHandler.vb` | todo | â€” | â€” |
+| `PCFNet\UCOption.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
+| `PCFNet\WAASHandler.vb` | done | [[mocs/icenterlib-pcfnet]] | 2026-06-18 |
 
 ### ICenterLib / Prodex
 
@@ -2167,12 +2167,12 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `Prodex\Models\DesignConfiguration.vb` | todo | â€” | â€” |
-| `Prodex\Models\DesignParameter.vb` | todo | â€” | â€” |
-| `Prodex\Models\DesignParameters.vb` | todo | â€” | â€” |
-| `Prodex\Models\DossierDetailDesignCalculationRequest.vb` | todo | â€” | â€” |
-| `Prodex\Models\DossierDetailDesignUpdateRequest.vb` | todo | â€” | â€” |
-| `Prodex\ViewModels\DossierDetailDesignCalculationVM.vb` | todo | â€” | â€” |
+| `Prodex\Models\DesignConfiguration.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `Prodex\Models\DesignParameter.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `Prodex\Models\DesignParameters.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `Prodex\Models\DossierDetailDesignCalculationRequest.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `Prodex\Models\DossierDetailDesignUpdateRequest.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `Prodex\ViewModels\DossierDetailDesignCalculationVM.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / ProductDb
 
@@ -2180,37 +2180,37 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `ProductDb\CloneProductHandler.vb` | todo | â€” | â€” |
-| `ProductDb\CommonDb.vb` | todo | â€” | â€” |
-| `ProductDb\DeclarationOfPerformance.vb` | todo | â€” | â€” |
-| `ProductDb\ExcelTemplate.vb` | todo | â€” | â€” |
-| `ProductDb\ExcelWorkBookHelper.vb` | todo | â€” | â€” |
+| `ProductDb\CloneProductHandler.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
+| `ProductDb\CommonDb.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
+| `ProductDb\DeclarationOfPerformance.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
+| `ProductDb\ExcelTemplate.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
+| `ProductDb\ExcelWorkBookHelper.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
 | `ProductDb\FrmCloneProduct.Designer.vb` | generated | VS designer partial | â€” |
 | `ProductDb\FrmCloneProduct.resx` | generated | resource bundle (designer-managed) | â€” |
-| `ProductDb\FrmCloneProduct.vb` | todo | â€” | â€” |
+| `ProductDb\FrmCloneProduct.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
 | `ProductDb\FrmProductDbPriceList.Designer.vb` | generated | VS designer partial | â€” |
 | `ProductDb\FrmProductDbPriceList.resx` | generated | resource bundle (designer-managed) | â€” |
-| `ProductDb\FrmProductDbPriceList.vb` | todo | â€” | â€” |
+| `ProductDb\FrmProductDbPriceList.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
 | `ProductDb\FrmProductPricePart.Designer.vb` | generated | VS designer partial | â€” |
 | `ProductDb\FrmProductPricePart.resx` | generated | resource bundle (designer-managed) | â€” |
-| `ProductDb\FrmProductPricePart.vb` | todo | â€” | â€” |
-| `ProductDb\Language.vb` | todo | â€” | â€” |
-| `ProductDb\PriceListHelper.vb` | todo | â€” | â€” |
-| `ProductDb\PricePart.vb` | todo | â€” | â€” |
-| `ProductDb\Product.vb` | todo | â€” | â€” |
-| `ProductDb\ProductConfiguration.vb` | todo | â€” | â€” |
-| `ProductDb\ProductConfigurationDataService.vb` | todo | â€” | â€” |
-| `ProductDb\ProductConfiguratorMapping.vb` | todo | â€” | â€” |
-| `ProductDb\ProductFilter.vb` | todo | â€” | â€” |
-| `ProductDb\ProductFilterGroup.vb` | todo | â€” | â€” |
-| `ProductDb\ProductGroup.vb` | todo | â€” | â€” |
-| `ProductDb\ProductPricePart.vb` | todo | â€” | â€” |
+| `ProductDb\FrmProductPricePart.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
+| `ProductDb\Language.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
+| `ProductDb\PriceListHelper.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
+| `ProductDb\PricePart.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
+| `ProductDb\Product.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
+| `ProductDb\ProductConfiguration.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
+| `ProductDb\ProductConfigurationDataService.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
+| `ProductDb\ProductConfiguratorMapping.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
+| `ProductDb\ProductFilter.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
+| `ProductDb\ProductFilterGroup.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
+| `ProductDb\ProductGroup.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
+| `ProductDb\ProductPricePart.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
 | `ProductDb\UCPropertyDefinitionEditor.Designer.vb` | generated | VS designer partial | â€” |
 | `ProductDb\UCPropertyDefinitionEditor.resx` | generated | resource bundle (designer-managed) | â€” |
-| `ProductDb\UCPropertyDefinitionEditor.vb` | todo | â€” | â€” |
+| `ProductDb\UCPropertyDefinitionEditor.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
 | `ProductDb\UCPropertyDefinitionManager.Designer.vb` | generated | VS designer partial | â€” |
 | `ProductDb\UCPropertyDefinitionManager.resx` | generated | resource bundle (designer-managed) | â€” |
-| `ProductDb\UCPropertyDefinitionManager.vb` | todo | â€” | â€” |
+| `ProductDb\UCPropertyDefinitionManager.vb` | done | [[mocs/icenterlib-productdb]] | 2026-06-18 |
 
 ### ICenterLib / Production
 
@@ -2218,29 +2218,29 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `Production\AutoIPOrderSelection.vb` | todo | â€” | â€” |
-| `Production\BaseProductionItem.vb` | todo | â€” | â€” |
-| `Production\BOMFilter.vb` | todo | â€” | â€” |
-| `Production\CEChecklist.vb` | todo | â€” | â€” |
-| `Production\FGQualityControlPart.vb` | todo | â€” | â€” |
+| `Production\AutoIPOrderSelection.vb` | done | [[mocs/icenterlib-production]] | 2026-06-18 |
+| `Production\BaseProductionItem.vb` | done | [[mocs/icenterlib-production]] | 2026-06-18 |
+| `Production\BOMFilter.vb` | done | [[mocs/icenterlib-production]] | 2026-06-18 |
+| `Production\CEChecklist.vb` | done | [[mocs/icenterlib-production]] | 2026-06-18 |
+| `Production\FGQualityControlPart.vb` | done | [[mocs/icenterlib-production]] | 2026-06-18 |
 | `Production\FrmProdMachineSelector.Designer.vb` | generated | VS designer partial | â€” |
 | `Production\FrmProdMachineSelector.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Production\FrmProdMachineSelector.vb` | todo | â€” | â€” |
-| `Production\KanbanBin.vb` | todo | â€” | â€” |
-| `Production\KeyPerformanceIndicator.vb` | todo | â€” | â€” |
-| `Production\LabelLog.vb` | todo | â€” | â€” |
-| `Production\ProdChecklist.vb` | todo | â€” | â€” |
-| `Production\ProdChecklistTag.vb` | todo | â€” | â€” |
-| `Production\ProductionLine.vb` | todo | â€” | â€” |
-| `Production\ProductionLog.vb` | todo | â€” | â€” |
-| `Production\ProductionProfileCutItem.vb` | todo | â€” | â€” |
-| `Production\ProductionProfileCutItemHandler.vb` | todo | â€” | â€” |
+| `Production\FrmProdMachineSelector.vb` | done | [[mocs/icenterlib-production]] | 2026-06-18 |
+| `Production\KanbanBin.vb` | done | [[mocs/icenterlib-production]] | 2026-06-18 |
+| `Production\KeyPerformanceIndicator.vb` | done | [[mocs/icenterlib-production]] | 2026-06-18 |
+| `Production\LabelLog.vb` | done | [[mocs/icenterlib-production]] | 2026-06-18 |
+| `Production\ProdChecklist.vb` | done | [[mocs/icenterlib-production]] | 2026-06-18 |
+| `Production\ProdChecklistTag.vb` | done | [[mocs/icenterlib-production]] | 2026-06-18 |
+| `Production\ProductionLine.vb` | done | [[mocs/icenterlib-production]] | 2026-06-18 |
+| `Production\ProductionLog.vb` | done | [[mocs/icenterlib-production]] | 2026-06-18 |
+| `Production\ProductionProfileCutItem.vb` | done | [[mocs/icenterlib-production]] | 2026-06-18 |
+| `Production\ProductionProfileCutItemHandler.vb` | done | [[mocs/icenterlib-production]] | 2026-06-18 |
 | `Production\ProductionProfileCutItemsHandler.vb` | done | [[modules/production-profile-cut-items]] | 2026-06-18 |
-| `Production\ProductionRegistrationAnalysisRange.vb` | todo | â€” | â€” |
-| `Production\SmtBendQueue.vb` | todo | â€” | â€” |
+| `Production\ProductionRegistrationAnalysisRange.vb` | done | [[mocs/icenterlib-production]] | 2026-06-18 |
+| `Production\SmtBendQueue.vb` | done | [[mocs/icenterlib-production]] | 2026-06-18 |
 | `Production\UCProdLineLeanStatus.Designer.vb` | generated | VS designer partial | â€” |
 | `Production\UCProdLineLeanStatus.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Production\UCProdLineLeanStatus.vb` | todo | â€” | â€” |
+| `Production\UCProdLineLeanStatus.vb` | done | [[mocs/icenterlib-production]] | 2026-06-18 |
 
 ### ICenterLib / Resources
 
@@ -2330,7 +2330,7 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `SmartForms\SmartForm.vb` | todo | â€” | â€” |
+| `SmartForms\SmartForm.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / SmtCadCam
 
@@ -2338,10 +2338,10 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `SmtCadCam\PreProcessorHandler.vb` | todo | â€” | â€” |
-| `SmtCadCam\SpaceClaimApiHelper.vb` | todo | â€” | â€” |
-| `SmtCadCam\SpaceClaimServerRequest.vb` | todo | â€” | â€” |
-| `SmtCadCam\SpaceClaimServerRequestDataService.vb` | todo | â€” | â€” |
+| `SmtCadCam\PreProcessorHandler.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `SmtCadCam\SpaceClaimApiHelper.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `SmtCadCam\SpaceClaimServerRequest.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `SmtCadCam\SpaceClaimServerRequestDataService.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / SmtProduction
 
@@ -2349,134 +2349,134 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `SmtProduction\DataServices\CutSheetOperRegistrationDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\DataServices\OseonAppContextDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\DataServices\PartDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\DataServices\ProductionOrderDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\DataServices\WorkplaceEmployeeLinkDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\Entities\CutSheetOperRegistration.vb` | todo | â€” | â€” |
-| `SmtProduction\Entities\ImportSettings2D.vb` | todo | â€” | â€” |
-| `SmtProduction\Entities\ImportSettings3D.vb` | todo | â€” | â€” |
-| `SmtProduction\Entities\ImportSettingsBase.vb` | todo | â€” | â€” |
-| `SmtProduction\Entities\OseonAppContext.vb` | todo | â€” | â€” |
-| `SmtProduction\Entities\WorkplaceEmployeeLink.vb` | todo | â€” | â€” |
-| `SmtProduction\ImportFileValidator.vb` | todo | â€” | â€” |
-| `SmtProduction\ProgrammingEnvironment.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Client\Application.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Collections\CadCamDocumentCollection.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Contracts\IAppMerkerDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Contracts\IBasicMaterialDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Contracts\IBendSolutionDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Contracts\ICadCamDocumentDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Contracts\ICutSheetDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Contracts\IDataTableColumnSchemaDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Contracts\IMasterWorkPlanDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Contracts\IPartBendSolutionDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Contracts\IPartDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Contracts\IPartOnTableDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Contracts\IPartStatusDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Contracts\IPdmDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Contracts\IProductionOperationDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Contracts\IProductionOrderDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Contracts\IRawMaterialDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Contracts\ITTNGActionDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Contracts\IWorkplaceDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\DataServices\AppMerkerDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\DataServices\BasicMaterialDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\DataServices\BendSolutionDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\DataServices\CadCamDocumentDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\DataServices\CutSheetDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\DataServices\MasterWorkPlanDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\DataServices\PartBendSolutionDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\DataServices\PartDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\DataServices\PartOnTableDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\DataServices\PartStatusDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\DataServices\PdmDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\DataServices\ProductionOperationDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\DataServices\ProductionOrderDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\DataServices\RawMaterialDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\DataServices\TTNGActionDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\DataServices\WorkplaceDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Entities\AppMerker.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Entities\BasicMaterial.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Entities\CadCamDocument.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Entities\CadCamDocumentType.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Entities\CutSheet.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Entities\MasterWorkPlan.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Entities\Operation.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Entities\Part.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Entities\PartBendSolution.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Entities\PartDisplayStatus.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Entities\PartOnTable.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Entities\PartStatus.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Entities\PartStatusMaster.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Entities\ProductionOperation.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Entities\ProductionOrder.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Entities\RawMaterial.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Entities\TTNGBendToolList.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\Entities\Workplace.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Oseon\PDM.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\DataServices\ImportLogDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\DataServices\ImportResultDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\DataServices\PPSInterfaceDataService.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Exceptions\PropertyNotSpecifiedException.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjectItems\FeedbackObjectItemBase.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjectItems\FeedbackObjectItemDimensions.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjectItems\FeedbackObjectItemPartOnSheet.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjectItems\FeedbackObjectItemSheet.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjects\FeedbackObjectBase.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjects\FeedbackObjectPDAMessage.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjects\FeedbackObjectProcessedSheetReport.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjects\FeedbackObjectProductionOperation.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjects\FeedbackObjectProductionOrder.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportBase.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportConsumptionReport.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportManufacturedSheet.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportOperation.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportPDAMessage.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportPPSExportManufacturedSheetOper.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportProductionOrder.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Export\ProductionOrderExportHandler.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Export\ProductionQuantityReport.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Collections\BendSolutionCollection.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Collections\DeleteProductionOrderCollection.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Collections\DeleteProductionOrderCollectionXmlHandler.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Collections\DocumentCollection.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Collections\FinishProductionOrderCollection.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Collections\PartCollection.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Collections\ProductionOrderCollection.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Entities\BendSolution.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Entities\DeleteProductionOrder.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Entities\Document.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Entities\FinishProductionOrder.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Entities\ImportResult.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Entities\Part.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Entities\PPSImport.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Entities\PPSInterface.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Entities\PPSInterfaceDate.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Entities\ProductionOrder.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Entities\WorkingPlan.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\Entities\WorkingStep.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\ProductionOrderImportHandler.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\BendSolutionXmlHandler.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\DeleteProductionOrderXmlHandler.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\DocumentXmlHandler.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\FinishProductionOrderCollectionXmlHandler.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\FinishProductionOrderXmlHandler.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\PartCollectionXmlHandler.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\PartXmlHandler.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\PPSImportXmlHandler.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\ProductionOrderCollectionXmlHandler.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\ProductionOrderXmlHandler.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\WorkingPlanXmlHandler.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\WorkingStepXmlHandler.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\PPSInterface\Utils\TimeConversionHelper.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Utils\ProductionOrderNumberHelper.vb` | todo | â€” | â€” |
-| `SmtProduction\TruTops\Utils\TruTopsConvertHandler.vb` | todo | â€” | â€” |
+| `SmtProduction\DataServices\CutSheetOperRegistrationDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\DataServices\OseonAppContextDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\DataServices\PartDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\DataServices\ProductionOrderDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\DataServices\WorkplaceEmployeeLinkDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\Entities\CutSheetOperRegistration.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\Entities\ImportSettings2D.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\Entities\ImportSettings3D.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\Entities\ImportSettingsBase.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\Entities\OseonAppContext.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\Entities\WorkplaceEmployeeLink.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\ImportFileValidator.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\ProgrammingEnvironment.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Client\Application.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Collections\CadCamDocumentCollection.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Contracts\IAppMerkerDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Contracts\IBasicMaterialDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Contracts\IBendSolutionDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Contracts\ICadCamDocumentDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Contracts\ICutSheetDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Contracts\IDataTableColumnSchemaDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Contracts\IMasterWorkPlanDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Contracts\IPartBendSolutionDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Contracts\IPartDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Contracts\IPartOnTableDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Contracts\IPartStatusDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Contracts\IPdmDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Contracts\IProductionOperationDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Contracts\IProductionOrderDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Contracts\IRawMaterialDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Contracts\ITTNGActionDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Contracts\IWorkplaceDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\DataServices\AppMerkerDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\DataServices\BasicMaterialDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\DataServices\BendSolutionDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\DataServices\CadCamDocumentDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\DataServices\CutSheetDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\DataServices\MasterWorkPlanDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\DataServices\PartBendSolutionDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\DataServices\PartDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\DataServices\PartOnTableDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\DataServices\PartStatusDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\DataServices\PdmDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\DataServices\ProductionOperationDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\DataServices\ProductionOrderDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\DataServices\RawMaterialDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\DataServices\TTNGActionDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\DataServices\WorkplaceDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Entities\AppMerker.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Entities\BasicMaterial.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Entities\CadCamDocument.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Entities\CadCamDocumentType.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Entities\CutSheet.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Entities\MasterWorkPlan.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Entities\Operation.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Entities\Part.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Entities\PartBendSolution.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Entities\PartDisplayStatus.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Entities\PartOnTable.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Entities\PartStatus.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Entities\PartStatusMaster.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Entities\ProductionOperation.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Entities\ProductionOrder.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Entities\RawMaterial.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Entities\TTNGBendToolList.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\Entities\Workplace.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Oseon\PDM.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\DataServices\ImportLogDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\DataServices\ImportResultDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\DataServices\PPSInterfaceDataService.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Exceptions\PropertyNotSpecifiedException.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjectItems\FeedbackObjectItemBase.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjectItems\FeedbackObjectItemDimensions.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjectItems\FeedbackObjectItemPartOnSheet.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjectItems\FeedbackObjectItemSheet.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjects\FeedbackObjectBase.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjects\FeedbackObjectPDAMessage.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjects\FeedbackObjectProcessedSheetReport.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjects\FeedbackObjectProductionOperation.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjects\FeedbackObjectProductionOrder.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportBase.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportConsumptionReport.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportManufacturedSheet.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportOperation.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportPDAMessage.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportPPSExportManufacturedSheetOper.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportProductionOrder.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Export\ProductionOrderExportHandler.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Export\ProductionQuantityReport.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Collections\BendSolutionCollection.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Collections\DeleteProductionOrderCollection.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Collections\DeleteProductionOrderCollectionXmlHandler.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Collections\DocumentCollection.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Collections\FinishProductionOrderCollection.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Collections\PartCollection.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Collections\ProductionOrderCollection.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\BendSolution.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\DeleteProductionOrder.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\Document.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\FinishProductionOrder.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\ImportResult.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\Part.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\PPSImport.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\PPSInterface.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\PPSInterfaceDate.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\ProductionOrder.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\WorkingPlan.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\WorkingStep.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\ProductionOrderImportHandler.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\BendSolutionXmlHandler.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\DeleteProductionOrderXmlHandler.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\DocumentXmlHandler.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\FinishProductionOrderCollectionXmlHandler.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\FinishProductionOrderXmlHandler.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\PartCollectionXmlHandler.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\PartXmlHandler.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\PPSImportXmlHandler.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\ProductionOrderCollectionXmlHandler.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\ProductionOrderXmlHandler.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\WorkingPlanXmlHandler.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\WorkingStepXmlHandler.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\PPSInterface\Utils\TimeConversionHelper.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Utils\ProductionOrderNumberHelper.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\TruTops\Utils\TruTopsConvertHandler.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
 | `SmtProduction\UI\CtrlTTNGProcessingErrorInfo.Designer.vb` | generated | VS designer partial | â€” |
 | `SmtProduction\UI\CtrlTTNGProcessingErrorInfo.resx` | generated | resource bundle (designer-managed) | â€” |
-| `SmtProduction\UI\CtrlTTNGProcessingErrorInfo.vb` | todo | â€” | â€” |
-| `SmtProduction\UI\OseonAppContextSelectionWrapper.vb` | todo | â€” | â€” |
+| `SmtProduction\UI\CtrlTTNGProcessingErrorInfo.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
+| `SmtProduction\UI\OseonAppContextSelectionWrapper.vb` | done | [[mocs/icenterlib-smtproduction]] | 2026-06-18 |
 
 ### ICenterLib / STEP3D
 
@@ -2484,11 +2484,11 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `STEP3D\AssySplitter.vb` | todo | â€” | â€” |
-| `STEP3D\DefinitionAnalyser.vb` | todo | â€” | â€” |
-| `STEP3D\Model.vb` | todo | â€” | â€” |
-| `STEP3D\Product.vb` | todo | â€” | â€” |
-| `STEP3D\Reader.vb` | todo | â€” | â€” |
+| `STEP3D\AssySplitter.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `STEP3D\DefinitionAnalyser.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `STEP3D\Model.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `STEP3D\Product.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `STEP3D\Reader.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / Ticketing
 
@@ -2496,11 +2496,11 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `Ticketing\ApiConnector.vb` | todo | â€” | â€” |
-| `Ticketing\Article.vb` | todo | â€” | â€” |
-| `Ticketing\Attachment.vb` | todo | â€” | â€” |
-| `Ticketing\Ticket.vb` | todo | â€” | â€” |
-| `Ticketing\TicketHandler.vb` | todo | â€” | â€” |
+| `Ticketing\ApiConnector.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `Ticketing\Article.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `Ticketing\Attachment.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `Ticketing\Ticket.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `Ticketing\TicketHandler.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / TimeRegistration
 
@@ -2508,8 +2508,8 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `TimeRegistration\MovingEmployeeTimeRegistration.vb` | todo | â€” | â€” |
-| `TimeRegistration\WebClock.vb` | todo | â€” | â€” |
+| `TimeRegistration\MovingEmployeeTimeRegistration.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `TimeRegistration\WebClock.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / UserControls
 
@@ -2517,40 +2517,40 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `UserControls\DataGridViewFormatter.vb` | todo | â€” | â€” |
+| `UserControls\DataGridViewFormatter.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 | `UserControls\FriendlyComboBox.Designer.vb` | generated | VS designer partial | â€” |
 | `UserControls\FriendlyComboBox.resx` | generated | resource bundle (designer-managed) | â€” |
-| `UserControls\FriendlyComboBox.vb` | todo | â€” | â€” |
+| `UserControls\FriendlyComboBox.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 | `UserControls\FrmRemoteDesktop.Designer.vb` | generated | VS designer partial | â€” |
 | `UserControls\FrmRemoteDesktop.resx` | generated | resource bundle (designer-managed) | â€” |
-| `UserControls\FrmRemoteDesktop.vb` | todo | â€” | â€” |
+| `UserControls\FrmRemoteDesktop.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 | `UserControls\FrmUserSelection.Designer.vb` | generated | VS designer partial | â€” |
 | `UserControls\FrmUserSelection.resx` | generated | resource bundle (designer-managed) | â€” |
-| `UserControls\FrmUserSelection.vb` | todo | â€” | â€” |
+| `UserControls\FrmUserSelection.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 | `UserControls\FrmWebView.Designer.vb` | generated | VS designer partial | â€” |
 | `UserControls\FrmWebView.resx` | generated | resource bundle (designer-managed) | â€” |
-| `UserControls\FrmWebView.vb` | todo | â€” | â€” |
+| `UserControls\FrmWebView.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 | `UserControls\HintComboBox.Designer.vb` | generated | VS designer partial | â€” |
-| `UserControls\HintComboBox.vb` | todo | â€” | â€” |
-| `UserControls\ListViewWithReordering.vb` | todo | â€” | â€” |
+| `UserControls\HintComboBox.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `UserControls\ListViewWithReordering.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 | `UserControls\ProProgramEditor.Designer.vb` | generated | VS designer partial | â€” |
-| `UserControls\ProProgramEditor.vb` | todo | â€” | â€” |
-| `UserControls\Ticker.vb` | todo | â€” | â€” |
+| `UserControls\ProProgramEditor.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `UserControls\Ticker.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 | `UserControls\UCDossierDetailDesign.Designer.vb` | generated | VS designer partial | â€” |
 | `UserControls\UCDossierDetailDesign.resx` | generated | resource bundle (designer-managed) | â€” |
-| `UserControls\UCDossierDetailDesign.vb` | todo | â€” | â€” |
+| `UserControls\UCDossierDetailDesign.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 | `UserControls\UCFastColoredTextBox.Designer.vb` | generated | VS designer partial | â€” |
-| `UserControls\UCFastColoredTextBox.vb` | todo | â€” | â€” |
+| `UserControls\UCFastColoredTextBox.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 | `UserControls\UCNoAccess.Designer.vb` | generated | VS designer partial | â€” |
 | `UserControls\UCNoAccess.resx` | generated | resource bundle (designer-managed) | â€” |
-| `UserControls\UCNoAccess.vb` | todo | â€” | â€” |
+| `UserControls\UCNoAccess.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 | `UserControls\UCTicker.Designer.vb` | generated | VS designer partial | â€” |
 | `UserControls\UCTicker.resx` | generated | resource bundle (designer-managed) | â€” |
-| `UserControls\UCTicker.vb` | todo | â€” | â€” |
+| `UserControls\UCTicker.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 | `UserControls\UCWebView.Designer.vb` | generated | VS designer partial | â€” |
 | `UserControls\UCWebView.resx` | generated | resource bundle (designer-managed) | â€” |
-| `UserControls\UCWebView.vb` | todo | â€” | â€” |
-| `UserControls\XWikiForm.vb` | todo | â€” | â€” |
+| `UserControls\UCWebView.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
+| `UserControls\XWikiForm.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 ### ICenterLib / Zabbix
 
@@ -2558,7 +2558,7 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `Zabbix\ZabbixHandler.vb` | todo | â€” | â€” |
+| `Zabbix\ZabbixHandler.vb` | done | [[mocs/icenterlib-small-folders]] | 2026-06-18 |
 
 
 ## Roll-up
@@ -2571,8 +2571,8 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 |---------|------:|-----:|-----:|-------:|----------:|-----:|-------------:|
 | iCENTER | 1237 | 56 | 475 | 358 | 341 | 0 | 7 |
 | TruTopsLib | 65 | 0 | 57 | 6 | 2 | 0 | 0 |
-| ICenterLib | 723 | 90 | 481 | 81 | 71 | 0 | 0 |
-| **TOTAL** | **2025** | **146** | **1013** | **445** | **414** | **0** | **7** |
+| ICenterLib | 723 | 564 | 7 | 81 | 71 | 0 | 0 |
+| **TOTAL** | **2025** | **620** | **539** | **445** | **414** | **0** | **7** |
 
 ### Per iCENTER sub-folder
 
