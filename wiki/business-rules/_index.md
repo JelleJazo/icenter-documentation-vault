@@ -66,6 +66,7 @@ _(Each watchlist row becomes a `business-rules/<slug>.md` page during Phase 4. U
 - [[smt-deburr-speed]] — `0.225 m²/min` hard-coded. **`#safety-relevant`**
 - [[isah-company-codes]] — JAZO vs FlowGrill: `041/JAZO` vs `042/FLOWGRIL`. `#needs-review`
 - [[isah-track-operation-pattern]] — `TR\d\d` regex flags machine-group as track-op. `#needs-review`
+- [[isah-dossier-mount-partcodes]] — `GetMontDetailCode` hard-coded part-code set + `PLAN INT MONT` / `PLAN TEK WVB` constants. `#needs-review`
 
 ### By severity (will be filled by Phase 4 / lint pass)
 - `#safety-relevant` — 10 of the 14 written rules + the watchlist below

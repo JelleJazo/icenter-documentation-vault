@@ -24,6 +24,16 @@ _(Append as you go. Newest at the top.)_
 
 | ID | Date | Page | Question | Severity / tag |
 |----|------|------|----------|----------------|
+| **Q-157** | 2026-06-18 | [[../business-rules/isah-dossier-mount-partcodes]] | Unify the hard-coded mount-detail part-codes and the `Plan*PartCode` constants into a shared registry? | low |
+| **Q-156** | 2026-06-18 | [[../business-rules/isah-dossier-mount-partcodes]] | SME-friendly meanings for `MONTAGE TP`, `090`, `PLAN EXT MONT`, `CSA00011`. Is the set complete? | medium |
+| **Q-155** | 2026-06-18 | [[../modules/isah-dossier]] | `DossierDetailExtraHelper` uses an iCenter-DB BaseAddress switch while connections use the in-process `UseIsahTestDb`. Coordinated? | medium |
+| **Q-154** | 2026-06-18 | [[../modules/isah-dossier]] | `DossierDetailExtraPassword` is base64-encoded in `My.Settings`, used as encryption key for ISAH-app URLs. `app.config` = key + ciphertext together. | safety-relevant |
+| **Q-153** | 2026-06-18 | [[../modules/isah-dossier]] | `ST_0099_DossierDetailExtra` — what do `ST_` prefix and `0099` numeric suffix mean? | low |
+| **Q-152** | 2026-06-18 | [[../modules/isah-dossier]] | `DesignCode = "DUMMY"` sentinel for "don't print". Document the convention. | low |
+| **Q-151** | 2026-06-18 | [[../modules/isah-dossier]] | `LogProgramCode` magic numbers (340000, 11220000) — document convention. | low |
+| **Q-150** | 2026-06-18 | [[../modules/isah-dossier]] | `DossierDetail.New(DetailCode, DetailSubCode, DossierCode)` parameter order is inverted vs other ISAH classes. | low |
+| **Q-149** | 2026-06-18 | [[../modules/isah-dossier]] | `PartCode NOT LIKE 'CA-%' AND NOT LIKE 'CH-%'` in `GetDesignCodes` — meaning of CA/CH prefixes? | low |
+| **Q-148** | 2026-06-18 | [[../modules/isah-dossier]] | `GetYearFromQuotOrdNr` assumes `"20" + 2-digit prefix`. Y2100 breakage. | low |
 | **Q-147** | 2026-06-18 | [[../business-rules/isah-track-operation-pattern]] | Should `TrackOperationRegex` be anchored (`^TR\d\d$`)? | low |
 | **Q-146** | 2026-06-18 | [[../business-rules/isah-company-codes]] | `Company.New(CompanyName)` defaults to JAZO via `Case Else`. Throw on unknown enum? | medium |
 | **Q-145** | 2026-06-18 | [[../business-rules/isah-track-operation-pattern]] | Document downstream consequences of `IsTrackOperation = True`. | medium |

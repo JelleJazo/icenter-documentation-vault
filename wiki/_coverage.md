@@ -1967,17 +1967,17 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `ISAH\DateDimension.vb` | todo | — | — |
 | `ISAH\DeliveryLine.vb` | todo | — | — |
 | `ISAH\Design.vb` | todo | — | — |
-| `ISAH\DossierDetail.vb` | todo | — | — |
-| `ISAH\DossierDetailExtra.vb` | todo | — | — |
-| `ISAH\DossierDetailExtraDto.vb` | todo | — | — |
-| `ISAH\DossierDocFolder.vb` | todo | — | — |
-| `ISAH\DossierMain.vb` | todo | — | — |
+| `ISAH\DossierDetail.vb` | done | [[modules/isah-dossier]] | 2026-06-18 |
+| `ISAH\DossierDetailExtra.vb` | done | [[modules/isah-dossier]] | 2026-06-18 |
+| `ISAH\DossierDetailExtraDto.vb` | done | [[modules/isah-dossier]] | 2026-06-18 |
+| `ISAH\DossierDocFolder.vb` | done | [[modules/isah-dossier]] | 2026-06-18 |
+| `ISAH\DossierMain.vb` | done | [[modules/isah-dossier]] | 2026-06-18 |
 | `ISAH\Employee.vb` | done | [[modules/isah-identity]] | 2026-06-18 |
 | `ISAH\FrmJConfigParamDesignCode.Designer.vb` | generated | VS designer partial | — |
 | `ISAH\FrmJConfigParamDesignCode.resx` | generated | resource bundle (designer-managed) | — |
 | `ISAH\FrmJConfigParamDesignCode.vb` | todo | — | — |
 | `ISAH\Handlers\UpdateProdLeadTimeHandler.vb` | todo | — | — |
-| `ISAH\Helpers\DossierDetailExtraHelper.vb` | todo | — | — |
+| `ISAH\Helpers\DossierDetailExtraHelper.vb` | done | [[modules/isah-dossier]] | 2026-06-18 |
 | `ISAH\Helpers\EncryptionHelper.vb` | todo | — | — |
 | `ISAH\Helpers\TextStyling\HtmlPlainTextHelper.vb` | todo | — | — |
 | `ISAH\Helpers\TextStyling\IPlainTextHelper.vb` | todo | — | — |
@@ -2571,8 +2571,8 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 |---------|------:|-----:|-----:|-------:|----------:|-----:|-------------:|
 | iCENTER | 1237 | 56 | 475 | 358 | 341 | 0 | 7 |
 | TruTopsLib | 65 | 0 | 57 | 6 | 2 | 0 | 0 |
-| ICenterLib | 723 | 11 | 558 | 81 | 71 | 0 | 2 |
-| **TOTAL** | **2025** | **67** | **1090** | **445** | **414** | **0** | **9** |
+| ICenterLib | 723 | 17 | 552 | 81 | 71 | 0 | 2 |
+| **TOTAL** | **2025** | **73** | **1084** | **445** | **414** | **0** | **9** |
 
 ### Per iCENTER sub-folder
 

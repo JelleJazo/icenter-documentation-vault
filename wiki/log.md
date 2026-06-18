@@ -9,6 +9,15 @@ tags: [meta, log]
 
 # Operation Log
 
+## 2026-06-18 — Phase 3c-3: ISAH dossier hierarchy
+
+- Documented the ISAH dossier hierarchy (6 files) as a single grouped module note [[modules/isah-dossier]]: DossierMain + DossierDetail + DossierDetailExtra + DossierDetailExtraDto + DossierDocFolder + Helpers/DossierDetailExtraHelper.
+- Wrote 1 new business-rule note: [[business-rules/isah-dossier-mount-partcodes]] — hard-coded `{MONTAGE TP, 090, PLAN EXT MONT, CSA00011}` mount-detail set + the `PLAN INT MONT` / `PLAN TEK WVB` plan-line constants.
+- Opened 10 new Q-148..Q-157 (1 `#safety-relevant`: Q-154 — DossierDetailExtraPassword is base64-encoded in app.config and used as the URL-encryption key, putting key + ciphertext together).
+- Other notable findings: Q-148 `GetYearFromQuotOrdNr` Y2100 bug; Q-149 unknown CA-/CH- PartCode prefix convention; Q-150 inverted constructor parameter order on DossierDetail; Q-151 magic LogProgramCode numbers (340000, 11220000); Q-152 `DesignCode = "DUMMY"` sentinel; Q-153 unknown `ST_0099_` prefix; Q-155 unrelated test/prod switches (iCenter-DB BaseAddress vs in-process Connections.UseIsahTestDb).
+- Coverage delta: +6 done. Totals: 73 done / 1084 todo / 445 config / 414 generated / 9 needs-review of 2025.
+- **Next:** ISAH production hierarchy (ProductionHeader 45 KB, PBOO 31 KB, PBOM 11 KB, PBOS 11 KB, BillOfOper 9 KB, BillOfMat 26 KB) — closes the dossier-to-shopdoc chain.
+
 ## 2026-06-18 — Phase 3c-2: ICenterLib/ISAH foundation entities
 
 - Opened ICenterLib's ISAH folder (65 files). Created [[mocs/icenterlib-isah]] sub-MOC with size + role catalogue + recommended doc roadmap.
