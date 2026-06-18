@@ -13,6 +13,17 @@ Append-only chronological record. **Newest entries at the top.** Never edit past
 
 ---
 
+## 2026-06-18 — Phase 3a-4: Elumatec NC structure + emission batch
+
+- Created [[mocs/elumatec-ncpipeline]] cataloguing 20 files across `Elumatec\NcStructure\` (6 files) and `Elumatec\AufSerializer\` (14 files).
+- Wrote 3 module notes:
+  - [[modules/elumatec-ncstructure-hierarchy]] — `Job`/`Bar`/`Cut`/`Plane`/`PlaneCollection` in-memory model. Documented the public surface of all five classes, the `Bar.AddCut` plane-transfer invariant (Q-055), the `PlaneCollection.GetPlaneByWSide → WSide-7` mapping (Q-051 — only handles custom planes), and that `Cut` implements `ICloneable` (used by replacements).
+  - [[modules/elumatec-elucadfile]] — the `.ecw` text-format parser. Hand-rolled state machine. Numeric cells accept arithmetic expressions via `DataTable.Compute` (Q-053). Parse errors silently → 0 (Q-060). Empty-line terminates Work blocks (Q-054).
+  - [[modules/elumatec-nc-program-family]] — the AUF + EluXml serialiser families (14 helper files + 2 main + 1 abstract). Documented format detection (`<?xml` prefix), the AUF state-machine markers (`[BEGIN_AUFTRAG]` / `[BEGIN_PROGRAMM]` / `[BEGIN_KONTUR]`), and the German key inventory. **Critical finding: `NcProgramEluXml.GetNCStringWithIaNr` is a stub that returns input unchanged** (Q-050, `#safety-relevant`). EluXml `ComputeCycleTime` is what feeds the `UseSbzCalculatedDuration = True` global; AUF equivalent not yet seen (Q-062).
+- Opened 15 new Q-050..Q-064 (7 `#safety-relevant`).
+- Coverage delta: +20 done (Job, Bar, Cut, Plane, PlaneCollection, EluCadFile, NcProgram, NcProgramAuf, NcProgramEluXml, Programm, Kontur, ZeileAuftrag, ZeileProgramm, ZeileKontur, ZeileTTab, EluXmlProgram, EluXmlProgramDetail, EluXmlJob, EluXmlJobItem, EluXmlJobSubItem). Totals: 34 done / 1126 todo / 445 config / 414 generated / 6 needs-review of 2025.
+- **Next:** `ProfMillJob.vb` (70 KB) + `ProfMillConverter.vb` (67 KB) — the runtime orchestration that bridges WorksReplacement and the NC structure built here.
+
 ## 2026-06-18 — Phase 3a-3: Elumatec Works/Replacements pipeline batch
 
 - Created [[mocs/elumatec-works]] catalogueing all 40 `Works\` files (13 feature classes + 19 replacement macros + base classes + UI helpers).

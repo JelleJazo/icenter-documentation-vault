@@ -7,40 +7,37 @@ updated: 2026-06-18T00:00:00
 # Recent Context
 
 ## Last Updated
-2026-06-18. Phase 3a-3: Elumatec Works/Replacements pipeline batch landed and pushed.
+2026-06-18. Phase 3a-4: Elumatec NC structure + emission batch landed.
 
 ## Key Recent Facts
 - Scope: three projects (iCENTER 1237 + TruTopsLib 65 + ICenterLib 723 = **2025 files**).
-- Coverage now: **14 done, 6 needs-review, 1146 todo, 445 config, 414 generated**.
-- 49 open SME questions (Q-001 + Q-006 resolved; Q-019..Q-049 opened across the Elumatec batches). 22 are `#safety-relevant`.
-- **Elumatec subsystem MOC + Works sub-MOC** — [[mocs/elumatec]] and [[mocs/elumatec-works]].
-- **Critical distinction discovered**: there are **two separate "large rectangle" rules** that look similar but differ in scope and effect:
-  - `Rectangle.SetWBroach` (all profiles, `app.config` 260×20, sets `WBroach=1` flag)
-  - `LargeRectangle.ApplyTo` (only door-needle profiles 100116/100285/100103, hard-coded 200×20, *replaces* Rectangle with FreeForm polyline)
-  The existing [[business-rules/elu-large-rectangle-classification]] note has been corrected to flag the distinction; new [[business-rules/elu-largerect-freeform-replacement]] covers the second rule. Q-044 asks whether they should be aligned.
-- **Flow-drill replacement** documented end-to-end ([[modules/elumatec-replacement-flowdrill]] + [[business-rules/elu-flowdrill-replacement]]). Ø9.3 mm or deep holes get rewritten to macros `EC00601` (with countersink) or `EC00054` (without). Non-countersunk Ø9.3 holes are *silently deactivated* (Q-041, `#safety-relevant`). Heavy profile-specific recovery for misrecognition (100142, 100381).
-- **Macro `.ncd` file** at `Profiles\Resources\AutoReplaceMacros.ncd` (relative path) is part of the deployment surface — referenced by `WorksReplacement.GetWorksByMacro` and used by Flowdrill / AluGeneral / others. Macro IDs `EC00601`, `EC00054` confirmed in use. `#safety-relevant`. Q-034 asks about path resolution.
-- **`AluGeneral.vb`** (119 KB) overview only documented ([[modules/elumatec-replacement-alu-general]]). It's a giant `Select Case BIdentNo` accumulating 5+ years of production-floor exceptions. Each `Case` is a candidate business rule (Q-046 to enumerate ~20).
-- **Work base class** has 25 abstract methods. `SplitSteps(MaxStepDepth As Double)` is the consumer of `Sbz14x.MaxStepDepth` — partial answer to Q-031.
-- 11 profile IDs documented in the Works MOC table (100103/104/105/114/115/116/142/143/180/285/292/293/294/381/999). Each is a Phase-4 domain-concept candidate.
+- Coverage now: **34 done, 6 needs-review, 1126 todo, 445 config, 414 generated**.
+- 64 open SME questions (Q-001 + Q-006 resolved). 27 are `#safety-relevant`.
+- **Elumatec subsystem now has three sub-MOCs**: [[mocs/elumatec]] (top), [[mocs/elumatec-works]] (Works/Replacements pipeline), [[mocs/elumatec-ncpipeline]] (NC structure + emission).
+- Elumatec subfolder coverage: **29 done / 89 todo / 5 needs-review** out of 157. Roughly 1/3 documented.
+
+## NC pipeline summary (this batch)
+- **In-memory hierarchy**: `Job` (collection of Bars by PartCode) → `Bar` (one profile bar) → `Cut` (one piece) → `Work` (one feature). `Plane` is the bar-face coordinate-system; `PlaneCollection` holds custom planes only (standard sides 1-6 implicit; `GetPlaneByWSide(WSide → WSide-7)` returns Nothing for sides 1-6 — Q-051).
+- **`.ecw` parser** (`EluCadFile.ReadFromArray`): hand-rolled state machine, German-keyword section headers, empty-line-terminates-Work. Numeric cells accept arithmetic expressions via `DataTable.Compute` (Q-053). Parse errors silently → 0 (Q-060).
+- **AUF format** (`NcProgramAuf` + Programm/Kontur/ZeileAuftrag/ZeileProgramm/ZeileKontur/ZeileTTab): older, section-block German text. Markers `[BEGIN_AUFTRAG]`, `[BEGIN_PROGRAMM]`, `[BEGIN_KONTUR]`. Parsed by a 7-flag state machine. `vbCrLf`-only line splits (Q-064).
+- **EluXml format** (`NcProgramEluXml` + EluXmlProgram/ProgramDetail/Job/JobItem/JobSubItem): newer, XML. Auto-detected via `<?xml` prefix. Implements `ComputeCycleTime` (the AUF path may not — Q-062). `GetNCStringWithIaNr` is a stub that returns input unchanged (Q-050, `#safety-relevant`).
+- **`UseSbzCalculatedDuration = True`** global routes scheduling estimates to `NcProgramEluXml.ComputeCycleTime` — confirms the EluXml path is load-bearing for production planning.
 
 ## Recent Changes
-- Created [[mocs/elumatec-works]] (sub-MOC, catalogues 40 files).
-- Created 5 module notes: [[modules/elumatec-work-base]], [[modules/elumatec-works-replacement-base]], [[modules/elumatec-replacement-flowdrill]], [[modules/elumatec-replacement-large-rectangle]], [[modules/elumatec-replacement-alu-general]].
-- Created 2 business-rule notes: [[business-rules/elu-flowdrill-replacement]], [[business-rules/elu-largerect-freeform-replacement]].
-- Corrected [[business-rules/elu-large-rectangle-classification]] to flag the two-rule distinction.
-- Opened Q-034..Q-049 (16 new questions, 9 `#safety-relevant`).
-- Updated [[_coverage]] (+4 Elumatec done, +1 needs-review); [[index]] and rollup.
+- Created [[mocs/elumatec-ncpipeline]] (sub-MOC for 20 files).
+- Created 3 module notes: [[modules/elumatec-ncstructure-hierarchy]] (Job/Bar/Cut/Plane), [[modules/elumatec-elucadfile]] (.ecw parser), [[modules/elumatec-nc-program-family]] (AUF + EluXml serialisers).
+- Opened Q-050..Q-064 (15 new questions, 7 `#safety-relevant`). Most notable: Q-050 (EluXml IA-number stub), Q-053 (ECW arithmetic-expression grammar), Q-057 (Plane translation expressions), Q-060 (silent parse-error → 0), Q-062 (AUF cycle-time path).
+- Updated [[_coverage]] (+20 done in Elumatec/NcStructure + AufSerializer); rollup totals.
+- Updated [[mocs/_index]] to list the new sub-MOC.
 
 ## Active Threads
 - Recommended next Elumatec batches (Phase 3a continued):
-  1. **NC structure + emission** — `NcStructure\Cut.vb` (40 KB), `Bar.vb` (20 KB), `Job.vb`, `Plane.vb`; `AufSerializer\NcProgramAuf.vb` (27 KB), `NcProgramEluXml.vb`.
-  2. **`ProfMillJob` (70 KB) + `ProfMillConverter` (67 KB)** — runtime job representation and the converter that drives `SplitSteps` (closing Q-031).
-  3. **Per-feature subclasses** — Circle, Drill, Rectangle (complete it), SlottedHole, FreeForm, Sawcut. Each likely 1 small note.
-  4. **Remaining replacement macros** — DoublePnotch, AluHinge, OpdekH, RDHS27Notch, AluSRkom, AluHUPO, ExtraLength, AluSinglePnotch, plus the Stl-side variants.
-  5. **`AutoProfMillProgApproval.vb`** — auto-approval of profile-mill programs. `#safety-relevant`.
-  6. **`Database\Profile.vb`** (54 KB) + tool DB + offsets + fixtures.
-- Once Elumatec saturates, **SmtManufacturing** (63 `.vb`, `#safety-relevant`) and the **TruTops Oseon** types in ICenterLib are next.
+  1. **`ProfMillJob` (70 KB) + `ProfMillConverter` (67 KB)** — runtime job orchestration; bridges the NcStructure model and the WorksReplacement pipeline. This will close Q-031 (callsites of `Sbz14x.MaxStepDepth`) and likely surface more business rules.
+  2. **Per-feature Work subclasses** — Circle, Drill, SlottedHole, FreeForm, Sawcut, Group, Macro, Deburr, FreeFormPoint. Each ~5-25 KB. Complete `Rectangle.vb` too.
+  3. **Remaining replacement macros** — DoublePnotch, AluHinge, OpdekH, RDHS27Notch, AluSRkom, AluHUPO, ExtraLength, AluSinglePnotch + Stl-side (StlGeneral, StlHinge, StlDoublePnotch, StlFlowDrill).
+  4. **`AutoProfMillProgApproval.vb`** — auto-approval. `#safety-relevant`.
+  5. **`Database\Profile.vb`** (54 KB) + tool DB + offsets + fixtures.
+- Once Elumatec saturates, **SmtManufacturing** (63 `.vb`, `#safety-relevant`) and **TruTops Oseon** types in ICenterLib next.
 
 ## Notes from working tree
 - Three Obsidian auto-stubs at wiki root (`jiba-portal.md`, `kardex.md`, `trutops-oseon.md`) and `.obsidian/` autoupdates remain unstaged.

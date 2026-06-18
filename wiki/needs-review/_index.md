@@ -24,6 +24,21 @@ _(Append as you go. Newest at the top.)_
 
 | ID | Date | Page | Question | Severity / tag |
 |----|------|------|----------|----------------|
+| **Q-064** | 2026-06-18 | [[../modules/elumatec-nc-program-family]] | AUF parser splits input by `vbCrLf` only. UNIX-line-ending `.auf` files would be one giant line. Confirm Elumatec only emits CRLF. | low |
+| **Q-063** | 2026-06-18 | [[../modules/elumatec-nc-program-family]] | `NcProgramEluXml.ReadFromString` sets top-level `Description`/`Comment`/`CNo` from the *last* matched program in a multi-Job file. Intentional? | medium |
+| **Q-062** | 2026-06-18 | [[../modules/elumatec-nc-program-family]] | `NcProgramAuf.ComputeCycleTime` implementation not yet seen; confirm AUF machines contribute to `UseSbzCalculatedDuration` reporting. | safety-relevant |
+| **Q-061** | 2026-06-18 | [[../modules/elumatec-elucadfile]] | FreeForm-point continuation relies on `MyFreeForm` persisting between Work blocks. What happens if a `:WORK` of another type appears mid-FreeForm? | medium |
+| **Q-060** | 2026-06-18 | [[../modules/elumatec-elucadfile]] | ECW parse errors silently become `0`. Is there a logging/alert path that should fire instead? | safety-relevant |
+| **Q-059** | 2026-06-18 | [[../modules/elumatec-ncstructure-hierarchy]] | `Bar.GetNcwText` performs I/O (`OffsetFile.Read`, `FixtureCollection.ReadAll`) per bar. Cache for large multi-bar jobs? | low |
+| **Q-058** | 2026-06-18 | [[../modules/elumatec-ncstructure-hierarchy]] | `Job` carries a private `oELUCAD = New EluCadApp` field; constructed on every Job. Safe to share/pool? | low |
+| **Q-057** | 2026-06-18 | [[../modules/elumatec-ncstructure-hierarchy]] | `Plane.GetFromXmlNode` evaluates `WPTransX/Y/Z` as expressions via `Works.Work.GetCalcContext()`. Document the expression grammar. | safety-relevant |
+| **Q-056** | 2026-06-18 | [[../modules/elumatec-ncstructure-hierarchy]] | `Cut.StatusCode.MissingProeManufData` references Pro/E (pre-Creo). Still relevant after Creo migration? | low |
+| **Q-055** | 2026-06-18 | [[../modules/elumatec-ncstructure-hierarchy]] | `Bar.AddCut` moves the Cut's Planes onto the Bar. Confirm invariant that Cut.Planes is always `Nothing` after add. | medium |
+| **Q-054** | 2026-06-18 | [[../mocs/elumatec-ncpipeline]] | Empty-line-terminates-Work semantics in ECW parser. Confirm intentional, and that the Elumatec writer always emits a trailing blank line. | medium |
+| **Q-053** | 2026-06-18 | [[../mocs/elumatec-ncpipeline]] | `EluCadFile.GetDoubleValue` accepts arithmetic expressions via `DataTable.Compute`. Document the expression grammar SMEs can rely on. | safety-relevant |
+| **Q-052** | 2026-06-18 | [[../mocs/elumatec-ncpipeline]] | `Job.cncdriver = "1.1elu"` (ECW) vs `"1.1"` (NCW). Does the Elumatec post-processor branch on this value? | medium |
+| **Q-051** | 2026-06-18 | [[../mocs/elumatec-ncpipeline]] | `PlaneCollection.GetPlaneByWSide(WSide → WSide-7)` only handles custom planes (WSide ≥ 7). Standard sides 1-6 return `Nothing`. Intentional or bug? | medium |
+| **Q-050** | 2026-06-18 | [[../mocs/elumatec-ncpipeline]] | `NcProgramEluXml.GetNCStringWithIaNr` is a stub (returns input unchanged). Is appending IA-numbers to EluXml programs silently broken? | safety-relevant |
 | **Q-049** | 2026-06-18 | [[../business-rules/elu-largerect-freeform-replacement]] | LargeRectangle tool-assign silent failure (`WToolID = ""`) — should this alert instead of producing a deactivated rectangle? | safety-relevant |
 | **Q-048** | 2026-06-18 | [[../modules/elumatec-replacement-alu-general]] | Hard-coded `xValue=15`, `yValue=-20` for `100180` Koker drainage holes — match live profile drawings? | safety-relevant |
 | **Q-047** | 2026-06-18 | [[../modules/elumatec-replacement-alu-general]] | `Y=-47` / `Y=-46.5` "nokje breekt" magic — confirm the breakage mode (tool/drill/workpiece?) and document. | safety-relevant |
@@ -102,3 +117,8 @@ _(Append as you go. Newest at the top.)_
 | Q-047 | [[../modules/elumatec-replacement-alu-general]] | `Y=-47/-46.5` "nokje breekt" magic |
 | Q-048 | [[../modules/elumatec-replacement-alu-general]] | `100180` Koker drainage-hole magic numbers |
 | Q-049 | [[../business-rules/elu-largerect-freeform-replacement]] | LargeRectangle silent tool-assign failure |
+| Q-050 | [[../mocs/elumatec-ncpipeline]] | EluXml IA-number patcher is a stub |
+| Q-053 | [[../mocs/elumatec-ncpipeline]] | ECW arithmetic-expression grammar |
+| Q-057 | [[../modules/elumatec-ncstructure-hierarchy]] | Plane translation expression grammar |
+| Q-060 | [[../modules/elumatec-elucadfile]] | ECW parse errors silently → 0 |
+| Q-062 | [[../modules/elumatec-nc-program-family]] | AUF cycle-time path not yet verified |
