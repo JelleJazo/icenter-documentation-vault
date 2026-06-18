@@ -24,6 +24,22 @@ _(Append as you go. Newest at the top.)_
 
 | ID | Date | Page | Question | Severity / tag |
 |----|------|------|----------|----------------|
+| **Q-049** | 2026-06-18 | [[../business-rules/elu-largerect-freeform-replacement]] | LargeRectangle tool-assign silent failure (`WToolID = ""`) — should this alert instead of producing a deactivated rectangle? | safety-relevant |
+| **Q-048** | 2026-06-18 | [[../modules/elumatec-replacement-alu-general]] | Hard-coded `xValue=15`, `yValue=-20` for `100180` Koker drainage holes — match live profile drawings? | safety-relevant |
+| **Q-047** | 2026-06-18 | [[../modules/elumatec-replacement-alu-general]] | `Y=-47` / `Y=-46.5` "nokje breekt" magic — confirm the breakage mode (tool/drill/workpiece?) and document. | safety-relevant |
+| **Q-046** | 2026-06-18 | [[../modules/elumatec-replacement-alu-general]] | Enumerate every `Case "1*"` branch in `AluGeneral.vb` (~20 cases) and create one business-rule note per. | safety-relevant |
+| **Q-045** | 2026-06-18 | [[../modules/elumatec-replacement-large-rectangle]] | `AddRelativePoint(5/10, ...)` exit-point in LargeRectangle — what does the 5 vs 10 mm difference mean? | low |
+| **Q-044** | 2026-06-18 | [[../modules/elumatec-replacement-large-rectangle]] | Two different "large rectangle" thresholds: `>200×>20` (hard-coded) here vs `≥260×≥20` (`app.config`) in `Rectangle.SetWBroach`. Aligned intentionally? | safety-relevant |
+| **Q-043** | 2026-06-18 | [[../modules/elumatec-replacement-flowdrill]] | `UseFlowDrillWithCountersink = True` was once `False`. Confirm integrated countersinking is stable enough today. | safety-relevant |
+| **Q-042** | 2026-06-18 | [[../modules/elumatec-replacement-flowdrill]] | Magic depth values in Flowdrill recovery (`>59`, `=2`, `=2.1`, `>10`) — what feature-recognition patterns do they correspond to? | medium |
+| **Q-041** | 2026-06-18 | [[../modules/elumatec-replacement-flowdrill]] | Non-countersunk Ø9.3 hole silently deactivated — intentional, or is there a downstream manual-add path? | safety-relevant |
+| **Q-040** | 2026-06-18 | [[../modules/elumatec-works-replacement-base]] | `WorksReplacement.dtTools` cached at construction — ever stale across a long batchserver session? | safety-relevant |
+| **Q-039** | 2026-06-18 | [[../modules/elumatec-works-replacement-base]] | `GetWorksByMacro` / `GetGroupByMacro` swallow exceptions silently — switch to log-and-rethrow? | safety-relevant |
+| **Q-038** | 2026-06-18 | [[../mocs/elumatec-works]] | `FrmTestDrwProfile.vb` looks dev-only — confirm `#dead-code` candidate. | low |
+| **Q-037** | 2026-06-18 | [[../mocs/elumatec-works]] | Stl-side machines register a much smaller replacement list than Alu. Intentional, or under-implemented? | medium |
+| **Q-036** | 2026-06-18 | [[../mocs/elumatec-works]] | Confirm replacement registration order in `Sbz140Alu.New` is intentional (AluGeneral last). | safety-relevant |
+| **Q-035** | 2026-06-18 | [[../mocs/elumatec-works]] | What does `BIdentNo = "100381"` represent? Paired with 100142 in Flowdrill rear-side recovery. | low |
+| **Q-034** | 2026-06-18 | [[../mocs/elumatec-works]] | `Profiles\Resources\AutoReplaceMacros.ncd` is a relative path — to what? Confirm resolution via `AppVersion`. | safety-relevant |
 | **Q-033** | 2026-06-18 | [[../business-rules/elu-large-rectangle-classification]] | Should the 260×20 mm rule be `OR` instead of `AND`? Long thin slots would currently stay contoured. | safety-relevant |
 | **Q-032** | 2026-06-18 | [[../business-rules/elu-large-rectangle-classification]] | Confirm 260×20 mm thresholds are correct for all four machine variants (ALU, STL, RVS, SBZ141). | safety-relevant |
 | **Q-031** | 2026-06-18 | [[../business-rules/elu-max-step-depth]] | Enumerate every callsite of `Sbz14x.MaxStepDepth` (likely in `Works\Replacements\AluGeneral.vb` / `StlGeneral.vb` / `ProfMillConverter.vb`). | medium |
@@ -75,3 +91,14 @@ _(Append as you go. Newest at the top.)_
 | Q-030 | [[../business-rules/elu-max-step-depth]] | 1.6 / 6 mm step depths — still current? |
 | Q-032 | [[../business-rules/elu-large-rectangle-classification]] | 260×20 mm large-rect thresholds correct for all 4 variants? |
 | Q-033 | [[../business-rules/elu-large-rectangle-classification]] | `AND` vs `OR` for large-rect classifier |
+| Q-034 | [[../mocs/elumatec-works]] | AutoReplaceMacros.ncd relative path |
+| Q-036 | [[../mocs/elumatec-works]] | replacement registration order |
+| Q-039 | [[../modules/elumatec-works-replacement-base]] | silent macro-file exception swallowing |
+| Q-040 | [[../modules/elumatec-works-replacement-base]] | dtTools cache staleness |
+| Q-041 | [[../modules/elumatec-replacement-flowdrill]] | silent-deactivate non-countersunk flow-drill |
+| Q-043 | [[../modules/elumatec-replacement-flowdrill]] | UseFlowDrillWithCountersink hard-coded `True` |
+| Q-044 | [[../modules/elumatec-replacement-large-rectangle]] | two large-rect thresholds |
+| Q-046 | [[../modules/elumatec-replacement-alu-general]] | enumerate every `Case` in AluGeneral |
+| Q-047 | [[../modules/elumatec-replacement-alu-general]] | `Y=-47/-46.5` "nokje breekt" magic |
+| Q-048 | [[../modules/elumatec-replacement-alu-general]] | `100180` Koker drainage-hole magic numbers |
+| Q-049 | [[../business-rules/elu-largerect-freeform-replacement]] | LargeRectangle silent tool-assign failure |

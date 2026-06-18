@@ -13,6 +13,24 @@ Append-only chronological record. **Newest entries at the top.** Never edit past
 
 ---
 
+## 2026-06-18 — Phase 3a-3: Elumatec Works/Replacements pipeline batch
+
+- Created [[mocs/elumatec-works]] catalogueing all 40 `Works\` files (13 feature classes + 19 replacement macros + base classes + UI helpers).
+- Wrote 5 module notes:
+  - [[modules/elumatec-work-base]] — `Work.vb` abstract base (92 KB); documented the ~25 `MustOverride` surface, `Sides` / `SidesNl` / `Direction` enums (English and Dutch share integer codes), the `Replaced` sticky flag, and the `RuntimeManipulations` hook.
+  - [[modules/elumatec-works-replacement-base]] — `WorksReplacement` thin abstract base (only 55 lines). Established the macro-file dependency (`AutoReplaceMacros.ncd`) and the `DeleteWorks`/`AddWorks`/`ReplaceDict` mutation pattern that all replacements follow.
+  - [[modules/elumatec-replacement-flowdrill]] — dense walkthrough of `Flowdrill.vb`. Heavy profile-specific recovery for BIdentNo 100142/100381 misrecognition. Documented the `UseFlowDrillWithCountersink` hard-coded local + the silent deactivation path for non-countersunk Ø9.3 holes.
+  - [[modules/elumatec-replacement-large-rectangle]] — `LargeRectangle.vb`. Profile-restricted (100116/100285/100103). Hard-coded `>200×>20` thresholds. Two FreeForm shape variants (sharp vs rounded corners).
+  - [[modules/elumatec-replacement-alu-general]] — overview only for the 119 KB catch-all. Documented the structure (one big `Select Case BIdentNo`) and the first ~120 lines of branches; per-branch notes deferred to Q-046 (~20 case branches estimated).
+- Wrote 2 new business-rule notes:
+  - [[business-rules/elu-flowdrill-replacement]] — Ø9.3 mm / deep holes → flow-drill macros `EC00601`/`EC00054`. Non-countersunk holes silently deactivated.
+  - [[business-rules/elu-largerect-freeform-replacement]] — door-needle large rectangles → FreeForm polylines.
+- **Corrected** [[business-rules/elu-large-rectangle-classification]] — flagged the two-rules distinction (SetWBroach all-profile vs LargeRectangle profile-restricted). Q-044 asks whether the two thresholds should be aligned.
+- Opened 16 new Q-034..Q-049 (9 `#safety-relevant`). Notable: silent exception swallowing in macro-file reads (Q-039), silent deactivation of non-countersunk flow-drill holes (Q-041), two divergent "large rectangle" thresholds (Q-044), hard-coded magic geometry in AluGeneral (Q-047/Q-048).
+- Coverage delta: +4 done (Work.vb, WorksReplacement.vb, Flowdrill.vb, LargeRectangle.vb), +1 needs-review (AluGeneral.vb). Totals: 14 done / 1146 todo / 445 config / 414 generated / 6 needs-review of 2025.
+- Pushed all earlier commits (Phase 1 through Phase 3a-2) to origin/main before this batch.
+- **Next:** NC structure + emission (`NcStructure\*`, `AufSerializer\*`), then `ProfMillJob` + `ProfMillConverter`.
+
 ## 2026-06-18 — Phase 3a: first Elumatec batch
 
 - Built the Elumatec subsystem hub at [[mocs/elumatec]] — catalogues all 140 `.vb` files across 8 sub-folders and the recommended Phase-3 ordering.

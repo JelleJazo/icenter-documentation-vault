@@ -15,7 +15,8 @@ A MOC is a subsystem hub: a single page that gathers everything (modules, rules,
 
 Confirmed from the Phase 2 architecture pass — each maps to a top-level `iCENTER\` folder cluster:
 
-- **[[elumatec|Elumatec subsystem]]** — `Elumatec/` (+ `Modules/`, `Production/ProfileMilling`) — CAD→NC pipeline for SBZ140 / SBZ141 machines + the saw COM watcher. `#safety-relevant`. **Hub note written 2026-06-18.**
+- **[[elumatec|Elumatec subsystem]]** — `Elumatec/` (+ `Modules/`, `Production/ProfileMilling`) — CAD→NC pipeline for SBZ140 / SBZ141 machines + the saw COM watcher. `#safety-relevant`. **Hub written 2026-06-18.**
+  - **[[elumatec-works|Elumatec Works/Replacements pipeline]]** — feature classes (Circle/Drill/Rectangle/...) + 19 replacement macros. `#safety-relevant`. **Sub-hub written 2026-06-18.**
 - **Sheet-metal (SMT) subsystem** — `SmtManufacturing/`, `Modules\Main.vb` Oseon services, parts of `CadBatchserver/Job*Smt*` — Trumpf / TruTops Oseon integration. `#safety-relevant`
 - **CAD pipeline** — `CAD/`, `CadBatchserver/`, `CAM/`, Creo integration. `#safety-relevant`
 - **Engineering → Production handoff** — `Engineering/`, `WorkPreparation/`, `Production/`, ProductionDossier entities.

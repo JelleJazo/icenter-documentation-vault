@@ -14,9 +14,21 @@ updated: 2026-06-18
 
 # Large-rectangle classification → broach in one pass
 
+> **⚠️ Important distinction:** there are **two separate "large rectangle" rules** in the Elumatec subsystem that look similar but do different things.
+>
+> | This page | Companion |
+> |-----------|-----------|
+> | `Rectangle.SetWBroach` | `LargeRectangle.ApplyTo` |
+> | **all profiles** | only profiles 100116 / 100285 / 100103 |
+> | thresholds in `app.config` (`260 × 20`) | hard-coded (`> 200 × > 20`) |
+> | sets `WBroach = 1` flag on the same Rectangle | **replaces** Rectangle with a FreeForm polyline |
+> | [[elu-large-rectangle-classification|this rule]] | [[elu-largerect-freeform-replacement]] |
+>
+> A rectangle on a door-needle profile that is 250 × 21 mm fires *only* the FreeForm-replacement rule (not the broach classifier). A rectangle on any other profile that is 300 × 21 mm fires *only* the broach classifier.
+
 ## Rule
 
-A rectangular pocket on an Elumatec profile-mill workpiece is classified as **"large"** (and machined as a single broach instead of contoured) when its **length ≥ 260 mm AND its width ≥ 20 mm**. The threshold is encoded in `app.config` settings `EluLargeRectangleMinLength` and `EluLargeRectangleMinWidth`.
+A rectangular pocket on an Elumatec profile-mill workpiece is classified as **"large"** (and machined as a single broach instead of contoured) when its **length ≥ 260 mm AND its width ≥ 20 mm**. The threshold is encoded in `app.config` settings `EluLargeRectangleMinLength` and `EluLargeRectangleMinWidth`. Applies to **all** profiles.
 
 ## Where it lives
 
@@ -97,4 +109,6 @@ Logged in [[../needs-review/_index]].
 
 - [[../modules/elumatec-machine-base|`Sbz14x` family]] (Rectangle is called from the machine-specific pipeline)
 - [[elu-max-step-depth]] — companion threshold rule
+- [[elu-largerect-freeform-replacement]] — the *other* large-rectangle rule (profile-restricted, FreeForm replacement)
 - [[../mocs/elumatec|Elumatec subsystem MOC]]
+- [[../mocs/elumatec-works|Works MOC]]

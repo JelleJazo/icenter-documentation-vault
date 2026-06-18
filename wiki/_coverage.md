@@ -596,7 +596,7 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `Elumatec\Works\Line.vb` | todo | — | — |
 | `Elumatec\Works\Macro.vb` | todo | — | — |
 | `Elumatec\Works\Rectangle.vb` | todo | — | — |
-| `Elumatec\Works\Replacements\AluGeneral.vb` | todo | — | — |
+| `Elumatec\Works\Replacements\AluGeneral.vb` | needs-review | [[modules/elumatec-replacement-alu-general]] (overview only; per-branch notes pending) | — |
 | `Elumatec\Works\Replacements\AluHinge.vb` | todo | — | — |
 | `Elumatec\Works\Replacements\AluHUPO.vb` | todo | — | — |
 | `Elumatec\Works\Replacements\AluSinglePnotch.vb` | todo | — | — |
@@ -607,9 +607,9 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `Elumatec\Works\Replacements\ExtraLength.vb` | todo | — | — |
 | `Elumatec\Works\Replacements\ExtraLengthMacro.vb` | todo | — | — |
 | `Elumatec\Works\Replacements\ExtraLengthMacroFactory.vb` | todo | — | — |
-| `Elumatec\Works\Replacements\Flowdrill.vb` | todo | — | — |
+| `Elumatec\Works\Replacements\Flowdrill.vb` | done | [[modules/elumatec-replacement-flowdrill]] | 2026-06-18 |
 | `Elumatec\Works\Replacements\IDoorPlankCalibrationMessage.vb` | todo | — | — |
-| `Elumatec\Works\Replacements\LargeRectangle.vb` | todo | — | — |
+| `Elumatec\Works\Replacements\LargeRectangle.vb` | done | [[modules/elumatec-replacement-large-rectangle]] | 2026-06-18 |
 | `Elumatec\Works\Replacements\OpdekH.vb` | todo | — | — |
 | `Elumatec\Works\Replacements\RDHS27Notch.vb` | todo | — | — |
 | `Elumatec\Works\Replacements\RuntimeManipulation.vb` | todo | — | — |
@@ -622,11 +622,11 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `Elumatec\Works\Replacements\UCDoorPlankCalibration.Designer.vb` | generated | VS Forms designer partial | — |
 | `Elumatec\Works\Replacements\UCDoorPlankCalibration.resx` | generated | resource bundle (designer-managed) | — |
 | `Elumatec\Works\Replacements\UCDoorPlankCalibration.vb` | todo | — | — |
-| `Elumatec\Works\Replacements\WorksReplacement.vb` | todo | — | — |
+| `Elumatec\Works\Replacements\WorksReplacement.vb` | done | [[modules/elumatec-works-replacement-base]] | 2026-06-18 |
 | `Elumatec\Works\Replacements\WorksTranslation.vb` | todo | — | — |
 | `Elumatec\Works\Sawcut.vb` | todo | — | — |
 | `Elumatec\Works\SlottedHole.vb` | todo | — | — |
-| `Elumatec\Works\Work.vb` | todo | — | — |
+| `Elumatec\Works\Work.vb` | done | [[modules/elumatec-work-base]] | 2026-06-18 |
 
 ### Engineering
 
@@ -2569,10 +2569,10 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 
 | Project | Total | Done | Todo | Config | Generated | Dead | Needs-review |
 |---------|------:|-----:|-----:|-------:|----------:|-----:|-------------:|
-| iCENTER | 1237 | 10 | 523 | 358 | 341 | 0 | 5 |
+| iCENTER | 1237 | 14 | 518 | 358 | 341 | 0 | 6 |
 | TruTopsLib | 65 | 0 | 57 | 6 | 2 | 0 | 0 |
 | ICenterLib | 723 | 0 | 571 | 81 | 71 | 0 | 0 |
-| **TOTAL** | **2025** | **10** | **1151** | **445** | **414** | **0** | **5** |
+| **TOTAL** | **2025** | **14** | **1146** | **445** | **414** | **0** | **6** |
 
 ### Per iCENTER sub-folder
 
@@ -2588,7 +2588,7 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 | Controls | 114 | 0 | 42 | 0 | 72 | 0 | 0 |
 | DataMigration | 50 | 0 | 50 | 0 | 0 | 0 | 0 |
 | DesignComments | 10 | 0 | 4 | 0 | 6 | 0 | 0 |
-| Elumatec | 157 | 5 | 114 | 0 | 34 | 0 | 4 |
+| Elumatec | 157 | 9 | 109 | 0 | 34 | 0 | 5 |
 | Engineering | 21 | 0 | 9 | 0 | 12 | 0 | 0 |
 | Forms | 188 | 0 | 64 | 0 | 124 | 0 | 0 |
 | IcImporter | 6 | 0 | 4 | 0 | 2 | 0 | 0 |
@@ -2605,4 +2605,4 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 | VentDuctConfigurator | 4 | 0 | 2 | 0 | 2 | 0 | 0 |
 | WebClock | 13 | 0 | 5 | 0 | 8 | 0 | 0 |
 | WorkPreparation | 6 | 0 | 4 | 0 | 2 | 0 | 0 |
-| iCENTER **TOTAL** | **1237** | **10** | **523** | **358** | **341** | **0** | **5** |
+| iCENTER **TOTAL** | **1237** | **14** | **518** | **358** | **341** | **0** | **6** |
