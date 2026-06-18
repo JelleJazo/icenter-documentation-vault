@@ -13,6 +13,26 @@ Append-only chronological record. **Newest entries at the top.** Never edit past
 
 ---
 
+## 2026-06-18 — Phase 3a-5: Elumatec ProfMillJob + ProfMillConverter batch
+
+- Wrote 2 module notes:
+  - [[modules/elumatec-profmill-converter]] — the orchestrator. Documented `Optimize()` (entry point, validates + picks machine + dual-emits + invokes ConvertCut) and the 17-step `ConvertCut` pipeline (each step with one-line role + flagged subtleties from inline CB-dated comments).
+  - [[modules/elumatec-profmill-job]] — the runtime container. Overview-only for 1352 lines / ~60 methods grouped into 12 behavioural clusters: construction, NC export (4), import (2), NCX post-processing (6), manual AUF override (2), cycle time (4), production-machine timing (1), runtime manipulations (4), navigation (5), job merging (1), status flags (8), misc (5).
+- **Q-031 resolved**: `Sbz14x.MaxStepDepth` is consumed only in `ProfMillConverter.SetMaxStepDepth` (line 907), and only as the fallback when `UseTMaxCut = False` (currently hard-coded to `True`). Primary source in production is per-tool `oMachine.ToolDb.GetMaxCut(WToolID)` from the `.nct` tool DB.
+- **Q-034 resolved**: `AutoReplacementMacroFile = ICenterLib.CAD.Creo.Environment.GetProManufDir + app.config[AutoReplaceMacros]`. Macro file lives in **Creo's pro-manuf install directory**, not in iCenter's deployment tree.
+- Wrote 3 new business-rule notes:
+  - [[business-rules/elu-tool-max-cut-depth]] — the live primary step-depth rule.
+  - [[business-rules/elu-forster-thumbhole-step-depth]] — the dead-code Forster override on the fallback branch. `#dead-code` tagged.
+  - [[business-rules/elu-dual-emit-sbz140-sbz141]] — Sbz140Alu also emits for Sbz141Alu when `AppVersion.UseFileBasedSettings`. Asymmetric (Q-080).
+- **Corrected** [[business-rules/elu-max-step-depth]] — added a prominent banner stating the rule is fallback-only and currently inactive in production.
+- Opened 17 new Q-065..Q-081 (13 `#safety-relevant`). Notable:
+  - Q-071 — manual AUF override silently replaces generated output, no audit trail. `#safety-relevant`
+  - Q-075 — `GetMaxCut = 0` → `SplitSteps` skipped → silent single-pass full-depth cut. `#safety-relevant`
+  - Q-074 — `SetReleaseLevel` can trigger Windchill auto-approval; document trigger conditions. `#safety-relevant`
+  - Q-068 — `SetWMillDir = -1` now applies to aluminium (per CB 2023-02-28). `#safety-relevant`
+- Coverage delta: +2 done (ProfMillConverter, ProfMillJob). Totals: 36 done / 1124 todo / 445 config / 414 generated / 6 needs-review of 2025.
+- **Next:** per-feature Work subclasses (Circle, Drill, SlottedHole, FreeForm, Sawcut, Group, Macro, Deburr, FreeFormPoint) + remaining replacement macros (DoublePnotch, AluHinge, OpdekH, ...).
+
 ## 2026-06-18 — Phase 3a-4: Elumatec NC structure + emission batch
 
 - Created [[mocs/elumatec-ncpipeline]] cataloguing 20 files across `Elumatec\NcStructure\` (6 files) and `Elumatec\AufSerializer\` (14 files).

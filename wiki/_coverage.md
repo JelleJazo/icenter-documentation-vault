@@ -574,8 +574,8 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `Elumatec\Optimizer\frmSawJobOptimizer.resx` | generated | resource bundle (designer-managed) | — |
 | `Elumatec\Optimizer\frmSawJobOptimizer.vb` | todo | — | — |
 | `Elumatec\ProfileMatcher.vb` | todo | — | — |
-| `Elumatec\ProfMillConverter.vb` | todo | — | — |
-| `Elumatec\ProfMillJob.vb` | todo | — | — |
+| `Elumatec\ProfMillConverter.vb` | done | [[modules/elumatec-profmill-converter]] | 2026-06-18 |
+| `Elumatec\ProfMillJob.vb` | done | [[modules/elumatec-profmill-job]] | 2026-06-18 |
 | `Elumatec\ReferenceDxf.vb` | todo | — | — |
 | `Elumatec\SawListReport.vb` | todo | — | — |
 | `Elumatec\SectionCutOffBox.vb` | todo | — | — |
@@ -2569,10 +2569,10 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 
 | Project | Total | Done | Todo | Config | Generated | Dead | Needs-review |
 |---------|------:|-----:|-----:|-------:|----------:|-----:|-------------:|
-| iCENTER | 1237 | 34 | 498 | 358 | 341 | 0 | 6 |
+| iCENTER | 1237 | 36 | 496 | 358 | 341 | 0 | 6 |
 | TruTopsLib | 65 | 0 | 57 | 6 | 2 | 0 | 0 |
 | ICenterLib | 723 | 0 | 571 | 81 | 71 | 0 | 0 |
-| **TOTAL** | **2025** | **34** | **1126** | **445** | **414** | **0** | **6** |
+| **TOTAL** | **2025** | **36** | **1124** | **445** | **414** | **0** | **6** |
 
 ### Per iCENTER sub-folder
 
@@ -2588,7 +2588,7 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 | Controls | 114 | 0 | 42 | 0 | 72 | 0 | 0 |
 | DataMigration | 50 | 0 | 50 | 0 | 0 | 0 | 0 |
 | DesignComments | 10 | 0 | 4 | 0 | 6 | 0 | 0 |
-| Elumatec | 157 | 29 | 89 | 0 | 34 | 0 | 5 |
+| Elumatec | 157 | 31 | 87 | 0 | 34 | 0 | 5 |
 | Engineering | 21 | 0 | 9 | 0 | 12 | 0 | 0 |
 | Forms | 188 | 0 | 64 | 0 | 124 | 0 | 0 |
 | IcImporter | 6 | 0 | 4 | 0 | 2 | 0 | 0 |
@@ -2605,4 +2605,4 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 | VentDuctConfigurator | 4 | 0 | 2 | 0 | 2 | 0 | 0 |
 | WebClock | 13 | 0 | 5 | 0 | 8 | 0 | 0 |
 | WorkPreparation | 6 | 0 | 4 | 0 | 2 | 0 | 0 |
-| iCENTER **TOTAL** | **1237** | **34** | **498** | **358** | **341** | **0** | **6** |
+| iCENTER **TOTAL** | **1237** | **36** | **496** | **358** | **341** | **0** | **6** |

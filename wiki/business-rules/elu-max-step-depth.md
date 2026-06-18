@@ -15,11 +15,13 @@ created: 2026-06-18
 updated: 2026-06-18
 ---
 
-# Max step depth per material (Elumatec SBZ140 / 141)
+# Max step depth per material (Elumatec SBZ140 / 141) — FALLBACK rule
+
+> **⚠️ Corrected 2026-06-18 (Phase 3a-5).** This rule was originally documented as iCenter's *primary* mechanism for setting step depth. After reading [[../modules/elumatec-profmill-converter|`ProfMillConverter.SetMaxStepDepth`]] (line 907 of `ProfMillConverter.vb`), the actual code shows that **per-tool `TMaxCut` from the tool DB is the primary source**, and these app.config values are only the **fallback** (active when `UseTMaxCut = False`). The inline comment `'CB\MW: aangezet` ("turned on") shows `UseTMaxCut = True` was deliberately enabled. In production today, this rule is therefore likely **inactive / dead code**. **Q-065** (and the new [[elu-tool-max-cut-depth]] rule) confirm with SME.
 
 ## Rule
 
-Every Elumatec machine variant exposes a fixed **maximum cutting step depth** that depends on the workpiece material. Aluminium machines step up to **6 mm** per pass; steel and stainless steel machines step up to **1.6 mm**.
+When `ProfMillConverter.SetMaxStepDepth` runs with **`UseTMaxCut = False`** (the fallback branch), every Elumatec machine variant exposes a fixed **maximum cutting step depth** that depends on the workpiece material. Aluminium machines step up to **6 mm** per pass; steel and stainless steel machines step up to **1.6 mm**.
 
 ## Where it lives
 
@@ -65,8 +67,10 @@ Because the property is `ReadOnly` and read from `My.Settings.Properties(...).De
 
 ## Triggers / when it fires
 
-- Read at NC-program generation time by anything in `Works\` / `Works\Replacements\` that calculates pass count for a deep feature. Phase-3 follow-up: enumerate every callsite of `Sbz14x.MaxStepDepth` (current grep finds the four property declarations only; callsites likely live in `Work.vb` / `AluGeneral.vb` / `StlGeneral.vb` / `ProfMillConverter.vb`).
-- Indirectly via the abstract `Sbz14x.MaxStepDepth` MustOverride property — any new machine variant must supply a value.
+- **Only when `UseTMaxCut = False`** inside `ProfMillConverter.SetMaxStepDepth` (`ProfMillConverter.vb` line 910). The flag is currently hard-coded to `True` in source, so this fallback branch is **not reached in production**. If a developer flipped the local to `False`, the per-machine `MaxStepDepth` would apply.
+- Also indirectly via the abstract `Sbz14x.MaxStepDepth` `MustOverride` property — any new machine variant must supply a value, even if it's never reached.
+
+Q-031 (callsites of `Sbz14x.MaxStepDepth`) was resolved during Phase 3a-5: the only callsite is `ProfMillConverter.SetMaxStepDepth`.
 
 ## Effects
 
@@ -95,7 +99,10 @@ Logged in [[../needs-review/_index]].
 
 ## Related
 
-- [[../modules/elumatec-machine-base|`Sbz14x` family]]
+- [[../modules/elumatec-machine-base|`Sbz14x` family]] — declares `MaxStepDepth`
+- [[../modules/elumatec-profmill-converter|`ProfMillConverter.SetMaxStepDepth`]] — the only callsite; primary path uses per-tool TMaxCut
+- [[elu-tool-max-cut-depth]] — **the actual production rule** (per-tool TMaxCut from tool DB)
+- [[elu-forster-thumbhole-step-depth]] — sibling rule on the same fallback branch (also dead in production)
 - [[../mocs/elumatec|Elumatec subsystem MOC]]
 - [[../external-systems/elumatec-sbz140|Elumatec SBZ140 / SBZ141]]
 - [[elu-large-rectangle-classification]] — companion threshold rule

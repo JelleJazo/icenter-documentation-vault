@@ -24,6 +24,23 @@ _(Append as you go. Newest at the top.)_
 
 | ID | Date | Page | Question | Severity / tag |
 |----|------|------|----------|----------------|
+| **Q-081** | 2026-06-18 | [[../business-rules/elu-dual-emit-sbz140-sbz141]] | Confirm `ExportNC` per-machine output filepaths don't collide in dual-emit. | safety-relevant |
+| **Q-080** | 2026-06-18 | [[../business-rules/elu-dual-emit-sbz140-sbz141]] | Dual-emit is asymmetric: Sbz140Alu→both, Sbz141Alu→itself only. Intentional? | safety-relevant |
+| **Q-079** | 2026-06-18 | [[../business-rules/elu-forster-thumbhole-step-depth]] | If Forster override is dead in production, remove it or migrate it into the per-tool path? | safety-relevant |
+| **Q-078** | 2026-06-18 | [[../business-rules/elu-forster-thumbhole-step-depth]] | Which `BIdentNo`s correspond to "Forster profiel" thumb-holes? Replace geometric signature with profile-ID check. | safety-relevant |
+| **Q-077** | 2026-06-18 | [[../business-rules/elu-tool-max-cut-depth]] | `SkipSplitSteps = True` on a Work — which code paths set it, and what's the upstream guarantee? | safety-relevant |
+| **Q-076** | 2026-06-18 | [[../business-rules/elu-tool-max-cut-depth]] | How is the tool DB (`*.nct`) maintained? Confirm change-control around `TMaxCut` edits. | safety-relevant |
+| **Q-075** | 2026-06-18 | [[../business-rules/elu-tool-max-cut-depth]] | `GetMaxCut(WToolID) = 0` → `SplitSteps` skipped → single-pass full-depth cut. Fail loudly instead? | safety-relevant |
+| **Q-074** | 2026-06-18 | [[../modules/elumatec-profmill-job]] | `SetReleaseLevel` can trigger Windchill auto-approval. Document trigger conditions and audit trail. | safety-relevant |
+| **Q-073** | 2026-06-18 | [[../modules/elumatec-profmill-job]] | `KeepAufAsSeperateFile = True` always-on. Should this be conditional on `Functions.DebugMode` (per inline comment)? | low |
+| **Q-072** | 2026-06-18 | [[../modules/elumatec-profmill-job]] | `ProfMillConverter.ProfMillJob` returns only the *last* optimised job; dual-emit loses the first. Confirm callers don't need both. | safety-relevant |
+| **Q-071** | 2026-06-18 | [[../modules/elumatec-profmill-job]] | Manual AUF override — files in `ManualProgFolder` silently replace generated output. Audit trail? | safety-relevant |
+| **Q-070** | 2026-06-18 | [[../modules/elumatec-profmill-converter]] | `SetWHelixIntr` reads `DefaultWHelixIntr` from iCenter DB `AppSettings` — document as business rule. | safety-relevant |
+| **Q-069** | 2026-06-18 | [[../modules/elumatec-profmill-converter]] | `SuppressMultiSidedMacros` body commented out; only empty Try/Catch remains. Remove or restore? | medium |
+| **Q-068** | 2026-06-18 | [[../modules/elumatec-profmill-converter]] | `SetWMillDir = -1` now applies to aluminium per CB 2023-02-28. Confirm matches current factory practice. | safety-relevant |
+| **Q-067** | 2026-06-18 | [[../modules/elumatec-profmill-converter]] | `MyCut.CCopies = 1` "tijdelijke fix" for EluXml signature mismatch. Still needed? | medium |
+| **Q-066** | 2026-06-18 | [[../modules/elumatec-profmill-converter]] | `AppVersion.UseFileBasedSettings` gates dual-emit. What determines this flag? | safety-relevant |
+| **Q-065** | 2026-06-18 | [[../modules/elumatec-profmill-converter]] | Is `UseTMaxCut = False` ever set in production? If never, the Forster override is dead. | safety-relevant |
 | **Q-064** | 2026-06-18 | [[../modules/elumatec-nc-program-family]] | AUF parser splits input by `vbCrLf` only. UNIX-line-ending `.auf` files would be one giant line. Confirm Elumatec only emits CRLF. | low |
 | **Q-063** | 2026-06-18 | [[../modules/elumatec-nc-program-family]] | `NcProgramEluXml.ReadFromString` sets top-level `Description`/`Comment`/`CNo` from the *last* matched program in a multi-Job file. Intentional? | medium |
 | **Q-062** | 2026-06-18 | [[../modules/elumatec-nc-program-family]] | `NcProgramAuf.ComputeCycleTime` implementation not yet seen; confirm AUF machines contribute to `UseSbzCalculatedDuration` reporting. | safety-relevant |
@@ -54,10 +71,10 @@ _(Append as you go. Newest at the top.)_
 | **Q-037** | 2026-06-18 | [[../mocs/elumatec-works]] | Stl-side machines register a much smaller replacement list than Alu. Intentional, or under-implemented? | medium |
 | **Q-036** | 2026-06-18 | [[../mocs/elumatec-works]] | Confirm replacement registration order in `Sbz140Alu.New` is intentional (AluGeneral last). | safety-relevant |
 | **Q-035** | 2026-06-18 | [[../mocs/elumatec-works]] | What does `BIdentNo = "100381"` represent? Paired with 100142 in Flowdrill rear-side recovery. | low |
-| **Q-034** | 2026-06-18 | [[../mocs/elumatec-works]] | `Profiles\Resources\AutoReplaceMacros.ncd` is a relative path — to what? Confirm resolution via `AppVersion`. | safety-relevant |
+| **Q-034** | 2026-06-18 | [[../modules/elumatec-profmill-converter]] | _(resolved 2026-06-18)_ — `AutoReplacementMacroFile = Creo.Environment.GetProManufDir + app.config[AutoReplaceMacros]`. The macro file lives in **Creo's pro-manuf directory**, not in iCenter's deployment. Confirmed via `ProfMillConverter.AutoReplacementMacroFile` (line 1350). | safety-relevant (resolved) |
 | **Q-033** | 2026-06-18 | [[../business-rules/elu-large-rectangle-classification]] | Should the 260×20 mm rule be `OR` instead of `AND`? Long thin slots would currently stay contoured. | safety-relevant |
 | **Q-032** | 2026-06-18 | [[../business-rules/elu-large-rectangle-classification]] | Confirm 260×20 mm thresholds are correct for all four machine variants (ALU, STL, RVS, SBZ141). | safety-relevant |
-| **Q-031** | 2026-06-18 | [[../business-rules/elu-max-step-depth]] | Enumerate every callsite of `Sbz14x.MaxStepDepth` (likely in `Works\Replacements\AluGeneral.vb` / `StlGeneral.vb` / `ProfMillConverter.vb`). | medium |
+| **Q-031** | 2026-06-18 | [[../modules/elumatec-profmill-converter]] | _(resolved 2026-06-18)_ — Only callsite is `ProfMillConverter.SetMaxStepDepth` (line 907), which uses `MaxStepDepth` only as a fallback when `UseTMaxCut = False`. The primary source is per-tool `oMachine.ToolDb.GetMaxCut(WToolID)` — documented in [[../business-rules/elu-tool-max-cut-depth]]. | medium (resolved) |
 | **Q-030** | 2026-06-18 | [[../business-rules/elu-max-step-depth]] | Are 1.6 mm (STL) and 6 mm (ALU) the values actually in use today, or have they been overridden in deployed `app.config`? | safety-relevant |
 | **Q-029** | 2026-06-18 | [[../modules/elumatec-machine-base]] | `WorksReplaceList` ordering: confirm with SME the order in each `Sbz*.New` is intentional and load-bearing. | safety-relevant |
 | **Q-028** | 2026-06-18 | [[../modules/elumatec-machine-base]] | `CreateNCX` Auf path runs the post-processor 3–4× with the same `OutputFile`. Confirm post-proc *appends* and isn't *overwriting* between calls. | safety-relevant |
@@ -122,3 +139,17 @@ _(Append as you go. Newest at the top.)_
 | Q-057 | [[../modules/elumatec-ncstructure-hierarchy]] | Plane translation expression grammar |
 | Q-060 | [[../modules/elumatec-elucadfile]] | ECW parse errors silently → 0 |
 | Q-062 | [[../modules/elumatec-nc-program-family]] | AUF cycle-time path not yet verified |
+| Q-065 | [[../modules/elumatec-profmill-converter]] | Forster override dead since `UseTMaxCut=True` |
+| Q-066 | [[../modules/elumatec-profmill-converter]] | `UseFileBasedSettings` dual-emit gate |
+| Q-068 | [[../modules/elumatec-profmill-converter]] | `SetWMillDir = -1` now applies to aluminium |
+| Q-070 | [[../modules/elumatec-profmill-converter]] | `DefaultWHelixIntr` business rule |
+| Q-071 | [[../modules/elumatec-profmill-job]] | Manual AUF override / audit trail |
+| Q-072 | [[../modules/elumatec-profmill-job]] | `ProfMillConverter.ProfMillJob` loses dual-emit first job |
+| Q-074 | [[../modules/elumatec-profmill-job]] | `SetReleaseLevel` auto-approval |
+| Q-075 | [[../business-rules/elu-tool-max-cut-depth]] | `GetMaxCut = 0` → silent single-pass full-depth |
+| Q-076 | [[../business-rules/elu-tool-max-cut-depth]] | Tool DB change-control around TMaxCut |
+| Q-077 | [[../business-rules/elu-tool-max-cut-depth]] | `SkipSplitSteps` upstream guarantee |
+| Q-078 | [[../business-rules/elu-forster-thumbhole-step-depth]] | Identify Forster BIdentNos |
+| Q-079 | [[../business-rules/elu-forster-thumbhole-step-depth]] | Forster override: remove or migrate |
+| Q-080 | [[../business-rules/elu-dual-emit-sbz140-sbz141]] | Dual-emit asymmetry |
+| Q-081 | [[../business-rules/elu-dual-emit-sbz140-sbz141]] | Dual-emit per-machine filepath collision check |

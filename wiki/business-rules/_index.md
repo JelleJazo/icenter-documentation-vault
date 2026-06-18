@@ -50,11 +50,15 @@ _(Each watchlist row becomes a `business-rules/<slug>.md` page during Phase 4. U
 
 ### Written so far
 
-- [[elu-max-step-depth]] — `EluMaxStepDepth*` per-material step-depth limits. **`#safety-relevant`**
+- [[elu-tool-max-cut-depth]] — per-tool `TMaxCut` from the tool DB; **the live primary step-depth rule**. **`#safety-relevant`**
+- [[elu-max-step-depth]] — `EluMaxStepDepth*` per-material step-depth limits (now documented as a **fallback** rule, currently inactive). **`#safety-relevant`**
+- [[elu-forster-thumbhole-step-depth]] — hard-coded Forster-profile thumb-hole override (currently dead since it lives on the inactive fallback branch). **`#safety-relevant` `#dead-code`**
 - [[elu-large-rectangle-classification]] — large-rectangle → `WBroach=1` classifier (all profiles, `app.config` thresholds). **`#safety-relevant`**
 - [[elu-largerect-freeform-replacement]] — large-rectangle → FreeForm replacement (only door-needle profiles, hard-coded thresholds). **`#safety-relevant`**
 - [[elu-flowdrill-replacement]] — Ø9.3 mm / deep holes → flow-drill macro. **`#safety-relevant`**
+- [[elu-dual-emit-sbz140-sbz141]] — Sbz140Alu jobs additionally emit for Sbz141Alu when `AppVersion.UseFileBasedSettings`. **`#safety-relevant`**
 
 ### By severity (will be filled by Phase 4 / lint pass)
-- `#safety-relevant` — [[elu-max-step-depth]], [[elu-large-rectangle-classification]], [[elu-largerect-freeform-replacement]], [[elu-flowdrill-replacement]] _(plus the watchlist above)_
-- `#needs-review` — all watchlist rows + the four written rules above
+- `#safety-relevant` — all 7 written rules above _(plus the watchlist below)_
+- `#needs-review` — all watchlist rows + the 7 written rules above
+- `#dead-code` — [[elu-forster-thumbhole-step-depth]]
