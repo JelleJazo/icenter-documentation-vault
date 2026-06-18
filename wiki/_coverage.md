@@ -39,11 +39,20 @@ Then convert each line into a row in the appropriate sub-folder table below. **D
 
 ## Inventory
 
-_One table per top-level sub-folder of `iCENTER\`. Files at the root of `iCENTER\` are listed under `(root)`. The Phase 1 pass populates `status` heuristically: `generated` for `*.Designer.vb` and `*.resx`; `config` for assets, project metadata, and signing keys; `todo` for everything else (mostly `.vb` source). Heuristics get verified during Phase 3._
+Scope was widened on 2026-06-18 to three projects per [[../CLAUDE]]:
 
-**Inventory snapshot:** 1237 total files / 707 `.vb` / 169 `.resx` / 354 image assets / 7 misc. Source: `Get-ChildItem -Recurse` on 2026-06-18, excluding `bin`, `obj`, `.vs`, `packages`, `My Project`, `Web References`.
+| Project | Root | Files | Notes |
+|---------|------|------:|-------|
+| **iCENTER** | `C:\DevOps\iCenter\iCenter\iCENTER\` | 1237 | WinForms shell + integrations |
+| **TruTopsLib** | `C:\DevOps\iCenter\iCenter\TruTopsLib\` | 65 | Trumpf TruTops file parsing; mixed `.vb`/`.cs` |
+| **ICenterLib** | `C:\Users\jelle-r\source\repos\JIBA\iCenter And Tools\ICenterLib\ICenterLib\` | 723 | Shared library: ISAH/JIBA/CAD/SmtProduction/PCFNet plumbing |
+| **TOTAL** | | **2025** | |
+
+Tables below are grouped per project. Phase 1 status heuristic: `generated` for `*.Designer.vb|cs` + `*.resx`; `config` for assets, project metadata, signing keys, solution files; `todo` for everything else.
 
 ---
+
+# Project: iCENTER
 
 ### (root)
 
@@ -1474,9 +1483,1098 @@ _One table per top-level sub-folder of `iCENTER\`. Files at the root of `iCENTER
 
 
 ---
+
+
+---
+
+# Project: TruTopsLib
+
+**Total files: 65**
+
+### TruTopsLib / (root)
+
+**Total: 16** &nbsp; | &nbsp; .vb: 3 | .cs: 5 | .resx: 
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `app.config` | config | config / project metadata | — |
+| `FileReaderHelper.cs` | todo | — | — |
+| `FileReaderHelper.vb` | todo | — | — |
+| `JAZO Zevenaar bv.snk` | config | signing key | — |
+| `LayerConverter.cs` | todo | — | — |
+| `LayerConverter.vb` | todo | — | — |
+| `MigrationFix.cs` | todo | — | — |
+| `MigrationFix.vb` | todo | — | — |
+| `PMILabel.cs` | todo | — | — |
+| `PMILabelCollection.cs` | todo | — | — |
+| `Resources.Designer.cs` | generated | VS designer partial | — |
+| `Resources.resx` | generated | resource bundle (designer-managed) | — |
+| `TruTopsLib.csproj` | config | config / project metadata | — |
+| `TruTopsLib.vbproj` | config | config / project metadata | — |
+| `TruTopsLib.vbproj.vspscc` | config | config / project metadata | — |
+| `TruTopsLib2.sln` | config | config / project metadata | — |
+
+### TruTopsLib / GeoInterpreter
+
+**Total: 10** &nbsp; | &nbsp; .vb: 5 | .cs: 5 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `GeoInterpreter\FlatGeometry.cs` | todo | — | — |
+| `GeoInterpreter\FlatGeometry.vb` | todo | — | — |
+| `GeoInterpreter\FlatGeometryDxfExport.cs` | todo | — | — |
+| `GeoInterpreter\FlatGeometryDxfExport.vb` | todo | — | — |
+| `GeoInterpreter\FlatGeometryGeoExport.cs` | todo | — | — |
+| `GeoInterpreter\FlatGeometryGeoExport.vb` | todo | — | — |
+| `GeoInterpreter\FlatGeometryReader.cs` | todo | — | — |
+| `GeoInterpreter\FlatGeometryReader.vb` | todo | — | — |
+| `GeoInterpreter\IFlatGeometryExport.cs` | todo | — | — |
+| `GeoInterpreter\IFlatGeometryExport.vb` | todo | — | — |
+
+### TruTopsLib / PMI
+
+**Total: 5** &nbsp; | &nbsp; .vb: 5 | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `PMI\IPmiLabel.vb` | todo | — | — |
+| `PMI\PMILabel.vb` | todo | — | — |
+| `PMI\PMILabelCollection.vb` | todo | — | — |
+| `PMI\PmiLabelCountersink.vb` | todo | — | — |
+| `PMI\PmiLabelThreadNote.vb` | todo | — | — |
+
+### TruTopsLib / TopsFile
+
+**Total: 34** &nbsp; | &nbsp; .vb: 17 | .cs: 17 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `TopsFile\BendLine.cs` | todo | — | — |
+| `TopsFile\BendLine.vb` | todo | — | — |
+| `TopsFile\Body.cs` | todo | — | — |
+| `TopsFile\Body.vb` | todo | — | — |
+| `TopsFile\Bounds.cs` | todo | — | — |
+| `TopsFile\Bounds.vb` | todo | — | — |
+| `TopsFile\Contour.cs` | todo | — | — |
+| `TopsFile\Contour.vb` | todo | — | — |
+| `TopsFile\DataTypeHandler.cs` | todo | — | — |
+| `TopsFile\DataTypeHandler.vb` | todo | — | — |
+| `TopsFile\Parameters.cs` | todo | — | — |
+| `TopsFile\Parameters.vb` | todo | — | — |
+| `TopsFile\Point.cs` | todo | — | — |
+| `TopsFile\Point.vb` | todo | — | — |
+| `TopsFile\PointCollection.cs` | todo | — | — |
+| `TopsFile\PointCollection.vb` | todo | — | — |
+| `TopsFile\Properties.cs` | todo | — | — |
+| `TopsFile\Properties.vb` | todo | — | — |
+| `TopsFile\SubContour\Arc.cs` | todo | — | — |
+| `TopsFile\SubContour\Arc.vb` | todo | — | — |
+| `TopsFile\SubContour\Circle.cs` | todo | — | — |
+| `TopsFile\SubContour\Circle.vb` | todo | — | — |
+| `TopsFile\SubContour\Fillet.cs` | todo | — | — |
+| `TopsFile\SubContour\Fillet.vb` | todo | — | — |
+| `TopsFile\SubContour\Line.cs` | todo | — | — |
+| `TopsFile\SubContour\Line.vb` | todo | — | — |
+| `TopsFile\SubContour\SubContour.cs` | todo | — | — |
+| `TopsFile\SubContour\SubContour.vb` | todo | — | — |
+| `TopsFile\SubContour\Text.cs` | todo | — | — |
+| `TopsFile\SubContour\Text.vb` | todo | — | — |
+| `TopsFile\TextCollection.cs` | todo | — | — |
+| `TopsFile\TextCollection.vb` | todo | — | — |
+| `TopsFile\TTInfo.cs` | todo | — | — |
+| `TopsFile\TTInfo.vb` | todo | — | — |
+
+
+
+---
+
+# Project: ICenterLib
+
+**Total files: 723**
+
+### ICenterLib / (root)
+
+**Total: 15** &nbsp; | &nbsp; .vb: 9 | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `app.config` | config | config / project metadata | — |
+| `AppSettings.vb` | todo | — | — |
+| `Common.vb` | todo | — | — |
+| `ComputerSetting.vb` | todo | — | — |
+| `Connections.vb` | todo | — | — |
+| `ICenterLib.vbproj` | config | config / project metadata | — |
+| `ICenterLib.vbproj.user` | config | config / project metadata | — |
+| `ICenterLib.vbproj.vspscc` | config | config / project metadata | — |
+| `Images.vb` | todo | — | — |
+| `JAZO Zevenaar bv.snk` | config | signing key | — |
+| `Log.vb` | todo | — | — |
+| `Main.vb` | todo | — | — |
+| `packages.config` | config | config / project metadata | — |
+| `PdfTools.vb` | todo | — | — |
+| `UserSetting.vb` | todo | — | — |
+
+### ICenterLib / CAD
+
+**Total: 127** &nbsp; | &nbsp; .vb: 116 | .cs: 0 | .resx: 5
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `CAD\Creo\AppManager.vb` | todo | — | — |
+| `CAD\Creo\AppVersion.vb` | todo | — | — |
+| `CAD\Creo\CadApp.vb` | todo | — | — |
+| `CAD\Creo\CadAppVersion.vb` | todo | — | — |
+| `CAD\Creo\CtrlAppManager.Designer.vb` | generated | VS designer partial | — |
+| `CAD\Creo\CtrlAppManager.resx` | generated | resource bundle (designer-managed) | — |
+| `CAD\Creo\CtrlAppManager.vb` | todo | — | — |
+| `CAD\Creo\Dimension.vb` | todo | — | — |
+| `CAD\Creo\Environment.vb` | todo | — | — |
+| `CAD\Creo\Feature.vb` | todo | — | — |
+| `CAD\Creo\Features.vb` | todo | — | — |
+| `CAD\Creo\FrmAppManager.Designer.vb` | generated | VS designer partial | — |
+| `CAD\Creo\FrmAppManager.resx` | generated | resource bundle (designer-managed) | — |
+| `CAD\Creo\FrmAppManager.vb` | todo | — | — |
+| `CAD\Creo\FrmCreoLicense.Designer.vb` | generated | VS designer partial | — |
+| `CAD\Creo\FrmCreoLicense.resx` | generated | resource bundle (designer-managed) | — |
+| `CAD\Creo\FrmCreoLicense.vb` | todo | — | — |
+| `CAD\Creo\License\License.vb` | todo | — | — |
+| `CAD\Creo\License\LicenseResource.vb` | todo | — | — |
+| `CAD\Creo\License\LicenseResourceHandler.vb` | todo | — | — |
+| `CAD\Creo\License\LicenseSelectionHandler.vb` | todo | — | — |
+| `CAD\Creo\Material.vb` | todo | — | — |
+| `CAD\Creo\Materials.vb` | todo | — | — |
+| `CAD\Creo\ModelInformation.vb` | todo | — | — |
+| `CAD\Creo\ModelItem.vb` | todo | — | — |
+| `CAD\Creo\Parameter.vb` | todo | — | — |
+| `CAD\Creo\ParameterCollection.vb` | todo | — | — |
+| `CAD\Creo\ParamValue\ParamValue.vb` | todo | — | — |
+| `CAD\Creo\ParamValue\ParamValueBoolean.vb` | todo | — | — |
+| `CAD\Creo\ParamValue\ParamValueDouble.vb` | todo | — | — |
+| `CAD\Creo\ParamValue\ParamValueInteger.vb` | todo | — | — |
+| `CAD\Creo\ParamValue\ParamValueString.vb` | todo | — | — |
+| `CAD\Creo\PlmAppVersion.vb` | todo | — | — |
+| `CAD\Creo\ProProgram\Design.vb` | todo | — | — |
+| `CAD\Creo\ProProgram\ExecuteStatement.vb` | todo | — | — |
+| `CAD\Creo\ProProgram\Functions.vb` | todo | — | — |
+| `CAD\Creo\ProProgram\Input.vb` | todo | — | — |
+| `CAD\Creo\ProProgram\VBCodeConverter.vb` | todo | — | — |
+| `CAD\Creo\RegenerationInput.vb` | todo | — | — |
+| `CAD\Creo\StartupFile.vb` | todo | — | — |
+| `CAD\Creo\Toolbox.vb` | todo | — | — |
+| `CAD\Creo\Tools\StpAssySplitter.vb` | todo | — | — |
+| `CAD\Creo\Trailfile.vb` | todo | — | — |
+| `CAD\CreoView\Application.vb` | todo | — | — |
+| `CAD\CreoView\Configuration.vb` | todo | — | — |
+| `CAD\CreoView\Converter.vb` | todo | — | — |
+| `CAD\DXF\SvgConverter\DxfHelper.vb` | todo | — | — |
+| `CAD\DXF\SvgConverter\DxfToSvgConverter.vb` | todo | — | — |
+| `CAD\DXF\SvgConverter\Export.vb` | todo | — | — |
+| `CAD\DXF\SvgConverter\Modifier.vb` | todo | — | — |
+| `CAD\Geometry\BoundingBox.vb` | todo | — | — |
+| `CAD\Geometry\BoundingBoxFactory.vb` | todo | — | — |
+| `CAD\Geometry\Dxf3DProfileMill.vb` | todo | — | — |
+| `CAD\Geometry\DxfEntityColor.vb` | todo | — | — |
+| `CAD\Geometry\Earcut.vb` | todo | — | — |
+| `CAD\Geometry\Earcut_CSharp.vb` | todo | — | — |
+| `CAD\Geometry\GraphicsPathHelper.vb` | todo | — | — |
+| `CAD\Modelgenerator\Configuration.vb` | todo | — | — |
+| `CAD\Modelgenerator\Definition.vb` | todo | — | — |
+| `CAD\Modelgenerator\DefinitionCollection.vb` | todo | — | — |
+| `CAD\Modelgenerator\Exceptions\GenericObjectNotFoundException.vb` | todo | — | — |
+| `CAD\Modelgenerator\GenericModelBackupConfiguration.vb` | todo | — | — |
+| `CAD\Modelgenerator\ModelGeneratorOption.vb` | todo | — | — |
+| `CAD\Modelgenerator\ModelgeneratorRequests\DesignDuplicationConfiguration.vb` | todo | — | — |
+| `CAD\Modelgenerator\ModelgeneratorRequests\ElfsquadModelgeneratorRequest.vb` | todo | — | — |
+| `CAD\Modelgenerator\ModelgeneratorRequests\IrisModelgeneratorInstructions.vb` | todo | — | — |
+| `CAD\Modelgenerator\ModelgeneratorRequests\IrisModelgeneratorTaskResult.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\Checkin.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\CreateWS.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\DeleteWS.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\Download.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\EraseUndisplayedModels.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\ExportDocumentOperation.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\JZCheckoutFolders.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\JZExportByNumber.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\JZImportByNumber.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\JZRenameObjectNoServer.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\OpenInProE.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\Operation.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\OperationCollection.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\RegenReadPar.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\Register.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\Rename.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\Save.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\SetWorkingDirectory.vb` | todo | — | — |
+| `CAD\Modelgenerator\Operations\Unregister.vb` | todo | — | — |
+| `CAD\Modelgenerator\RenameRule.vb` | todo | — | — |
+| `CAD\Modelgenerator\RenameRuleCollection.vb` | todo | — | — |
+| `CAD\Modelgenerator\TriggerFile.vb` | todo | — | — |
+| `CAD\OpenGL\CtrlOpenGLViewer.Designer.vb` | generated | VS designer partial | — |
+| `CAD\OpenGL\CtrlOpenGLViewer.vb` | todo | — | — |
+| `CAD\OpenGL\GLUtil.vb` | todo | — | — |
+| `CAD\PLM\Archive.vb` | todo | — | — |
+| `CAD\PLM\AutoPromotionRequest.vb` | todo | — | — |
+| `CAD\PLM\AutoPromotionRequestHandler.vb` | todo | — | — |
+| `CAD\PLM\AutoPromotionRequestParameters.vb` | todo | — | — |
+| `CAD\PLM\Container.vb` | todo | — | — |
+| `CAD\PLM\EPMDocument.vb` | todo | — | — |
+| `CAD\PLM\FileServer.vb` | todo | — | — |
+| `CAD\PLM\Folder.vb` | todo | — | — |
+| `CAD\PLM\FrmAutomaticPromotionRequestInput.Designer.vb` | generated | VS designer partial | — |
+| `CAD\PLM\FrmAutomaticPromotionRequestInput.resx` | generated | resource bundle (designer-managed) | — |
+| `CAD\PLM\FrmAutomaticPromotionRequestInput.vb` | todo | — | — |
+| `CAD\PLM\FrmVaultFolderChart.Designer.vb` | generated | VS designer partial | — |
+| `CAD\PLM\FrmVaultFolderChart.resx` | generated | resource bundle (designer-managed) | — |
+| `CAD\PLM\FrmVaultFolderChart.vb` | todo | — | — |
+| `CAD\PLM\InfoEngineParameter.vb` | todo | — | — |
+| `CAD\PLM\InfoEngineParameterCollection.vb` | todo | — | — |
+| `CAD\PLM\LifeCycleState.vb` | todo | — | — |
+| `CAD\PLM\Product.vb` | todo | — | — |
+| `CAD\PLM\PromotionNotice.vb` | todo | — | — |
+| `CAD\PLM\ServerManagement.vb` | todo | — | — |
+| `CAD\PLM\Task\AddVaultFolderDetailsLogEntry.vb` | todo | — | — |
+| `CAD\PLM\Task\GenericModelBackup.vb` | todo | — | — |
+| `CAD\PLM\Task\PurgePromotionNotices.vb` | todo | — | — |
+| `CAD\PLM\Task\Task.vb` | todo | — | — |
+| `CAD\PLM\Toolbox.vb` | todo | — | — |
+| `CAD\PLM\User.vb` | todo | — | — |
+| `CAD\PLM\VaultCleanupAuditLogs.vb` | todo | — | — |
+| `CAD\PLM\Version.vb` | todo | — | — |
+| `CAD\PLM\WCObject.vb` | todo | — | — |
+| `CAD\Publisher\Common.vb` | todo | — | — |
+| `CAD\SolidEdge\IfcExport.vb` | todo | — | — |
+| `CAD\SolidEdge\Importer.vb` | todo | — | — |
+| `CAD\SolidEdge\Settings.vb` | todo | — | — |
+| `CAD\SolidEdge\StepExport.vb` | todo | — | — |
+| `CAD\SolidEdge\Toolkit.vb` | todo | — | — |
+
+### ICenterLib / CadBatchServer
+
+**Total: 17** &nbsp; | &nbsp; .vb: 17 | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `CadBatchServer\CadBatchserverDataService.vb` | todo | — | — |
+| `CadBatchServer\CadBatchserverStatus.vb` | todo | — | — |
+| `CadBatchServer\CadBatchserverStatusCollection.vb` | todo | — | — |
+| `CadBatchServer\CadBatchserverStatusDataService.vb` | todo | — | — |
+| `CadBatchServer\DistributedLockCreoPublish.vb` | todo | — | — |
+| `CadBatchServer\JobAlreadyExistsException.vb` | todo | — | — |
+| `CadBatchServer\JobDataService.vb` | todo | — | — |
+| `CadBatchServer\JobParameters.vb` | todo | — | — |
+| `CadBatchServer\JobToolbox.vb` | todo | — | — |
+| `CadBatchServer\Modelgenerator\CadInputParameters.vb` | todo | — | — |
+| `CadBatchServer\Modelgenerator\DuplicateInstruction.vb` | todo | — | — |
+| `CadBatchServer\Modelgenerator\ModelgeneratorInstructions.vb` | todo | — | — |
+| `CadBatchServer\Modelgenerator\ModelgeneratorTask.vb` | todo | — | — |
+| `CadBatchServer\ModelgeneratorDataService.vb` | todo | — | — |
+| `CadBatchServer\PublishJobInstructions.vb` | todo | — | — |
+| `CadBatchServer\PublishMonitor.vb` | todo | — | — |
+| `CadBatchServer\PublishWatchDirProcessor.vb` | todo | — | — |
+
+### ICenterLib / Comparer
+
+**Total: 1** &nbsp; | &nbsp; .vb:  | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `Comparer\DateComparer.vb` | todo | — | — |
+
+### ICenterLib / Connections
+
+**Total: 1** &nbsp; | &nbsp; .vb:  | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `Connections\WebClients\WindchillWebClientProvider.vb` | todo | — | — |
+
+### ICenterLib / CrystalReport
+
+**Total: 5** &nbsp; | &nbsp; .vb: 5 | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `CrystalReport\ExportInstruction.vb` | todo | — | — |
+| `CrystalReport\ExportRequest.vb` | todo | — | — |
+| `CrystalReport\ExportResult.vb` | todo | — | — |
+| `CrystalReport\PrintingInstruction.vb` | todo | — | — |
+| `CrystalReport\ReportParameter.vb` | todo | — | — |
+
+### ICenterLib / DataHandler
+
+**Total: 23** &nbsp; | &nbsp; .vb: 19 | .cs: 0 | .resx: 2
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `DataHandler\BetterDataGridView.vb` | todo | — | — |
+| `DataHandler\DataSetComparer.vb` | todo | — | — |
+| `DataHandler\DataSetCompareResult.vb` | todo | — | — |
+| `DataHandler\DataSetCompareTolerance.vb` | todo | — | — |
+| `DataHandler\DataTableColumnSchema.vb` | todo | — | — |
+| `DataHandler\DataTableColumnSchemaHandler.vb` | todo | — | — |
+| `DataHandler\DataTableColumnSchemaRecord.vb` | todo | — | — |
+| `DataHandler\ExportExcel.vb` | todo | — | — |
+| `DataHandler\FrmDataGridView.Designer.vb` | generated | VS designer partial | — |
+| `DataHandler\FrmDataGridView.resx` | generated | resource bundle (designer-managed) | — |
+| `DataHandler\FrmDataGridView.vb` | todo | — | — |
+| `DataHandler\FrmDataViewer.Designer.vb` | generated | VS designer partial | — |
+| `DataHandler\FrmDataViewer.resx` | generated | resource bundle (designer-managed) | — |
+| `DataHandler\FrmDataViewer.vb` | todo | — | — |
+| `DataHandler\GenericQuery.vb` | todo | — | — |
+| `DataHandler\IStreamWrapper.vb` | todo | — | — |
+| `DataHandler\JsonHelper.vb` | todo | — | — |
+| `DataHandler\OpenXml\Excel.vb` | todo | — | — |
+| `DataHandler\OpenXml\OpenXmlSpreadsheet.vb` | todo | — | — |
+| `DataHandler\QrCode.vb` | todo | — | — |
+| `DataHandler\Selection.vb` | todo | — | — |
+| `DataHandler\Toolbox.vb` | todo | — | — |
+| `DataHandler\ZeroCode.vb` | todo | — | — |
+
+### ICenterLib / DataServices
+
+**Total: 10** &nbsp; | &nbsp; .vb: 10 | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `DataServices\Contracts\IProdexConfiguratorDataService.vb` | todo | — | — |
+| `DataServices\Contracts\IProdexDossierDetailDesignDataService.vb` | todo | — | — |
+| `DataServices\Contracts\IProdexModelgeneratorDataService.vb` | todo | — | — |
+| `DataServices\CrystalReportDataService.vb` | todo | — | — |
+| `DataServices\DistributedLockDataService.vb` | todo | — | — |
+| `DataServices\ElfsquadDataService.vb` | todo | — | — |
+| `DataServices\ProdexConfiguratorDataService.vb` | todo | — | — |
+| `DataServices\ProdexDossierDetailDesignDataService.vb` | todo | — | — |
+| `DataServices\ProdexModelgeneratorDataService.vb` | todo | — | — |
+| `DataServices\ProductDbDataService.vb` | todo | — | — |
+
+### ICenterLib / Debug
+
+**Total: 1** &nbsp; | &nbsp; .vb:  | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `Debug\Debug1.vb` | todo | — | — |
+
+### ICenterLib / DistributedLock
+
+**Total: 1** &nbsp; | &nbsp; .vb:  | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `DistributedLock\DistributedLock.vb` | todo | — | — |
+
+### ICenterLib / Elfsquad
+
+**Total: 9** &nbsp; | &nbsp; .vb: 5 | .cs: 0 | .resx: 2
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `Elfsquad\ConfigurationMappingMismatchException.vb` | todo | — | — |
+| `Elfsquad\ConfigurationRequestType.vb` | todo | — | — |
+| `Elfsquad\ModelgeneratorHelper.vb` | todo | — | — |
+| `Elfsquad\UCConfigurationManager.Designer.vb` | generated | VS designer partial | — |
+| `Elfsquad\UCConfigurationManager.resx` | generated | resource bundle (designer-managed) | — |
+| `Elfsquad\UCConfigurationManager.vb` | todo | — | — |
+| `Elfsquad\UCModelgenerator.Designer.vb` | generated | VS designer partial | — |
+| `Elfsquad\UCModelgenerator.resx` | generated | resource bundle (designer-managed) | — |
+| `Elfsquad\UCModelgenerator.vb` | todo | — | — |
+
+### ICenterLib / Enums
+
+**Total: 2** &nbsp; | &nbsp; .vb: 2 | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `Enums\Application.vb` | todo | — | — |
+| `Enums\ISAH.vb` | todo | — | — |
+
+### ICenterLib / GUI
+
+**Total: 3** &nbsp; | &nbsp; .vb: 3 | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `GUI\MyMenuItem.vb` | todo | — | — |
+| `GUI\MyMenuItemConverter.vb` | todo | — | — |
+| `GUI\ToolStripMenuItemHelper.vb` | todo | — | — |
+
+### ICenterLib / Helpers
+
+**Total: 1** &nbsp; | &nbsp; .vb:  | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `Helpers\UrlHelper.vb` | todo | — | — |
+
+### ICenterLib / iCenter
+
+**Total: 29** &nbsp; | &nbsp; .vb: 24 | .cs: 0 | .resx: 2
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `iCenter\BillOfOper.vb` | todo | — | — |
+| `iCenter\Client.vb` | todo | — | — |
+| `iCenter\CtrlImageIdentification.designer.vb` | generated | VS designer partial | — |
+| `iCenter\CtrlImageIdentification.resx` | generated | resource bundle (designer-managed) | — |
+| `iCenter\CtrlImageIdentification.vb` | todo | — | — |
+| `iCenter\CtrlRadButtonIdent.designer.vb` | generated | VS designer partial | — |
+| `iCenter\CtrlRadButtonIdent.vb` | todo | — | — |
+| `iCenter\DataServices\CoatingLayerThicknessDataService.vb` | todo | — | — |
+| `iCenter\DossierContactFavorite.vb` | todo | — | — |
+| `iCenter\ExternalReference.vb` | todo | — | — |
+| `iCenter\ExternalReferences.vb` | todo | — | — |
+| `iCenter\FrmIdentification.designer.vb` | generated | VS designer partial | — |
+| `iCenter\FrmIdentification.resx` | generated | resource bundle (designer-managed) | — |
+| `iCenter\FrmIdentification.vb` | todo | — | — |
+| `iCenter\IPBatch.vb` | todo | — | — |
+| `iCenter\IPOrder.vb` | todo | — | — |
+| `iCenter\IPPacket.vb` | todo | — | — |
+| `iCenter\IPPart.vb` | todo | — | — |
+| `iCenter\Part.vb` | todo | — | — |
+| `iCenter\ProductionMachineMultiPurpose.vb` | todo | — | — |
+| `iCenter\ProductionMachines.vb` | todo | — | — |
+| `iCenter\Servicedesk.vb` | todo | — | — |
+| `iCenter\SurfaceTreatmentDefinition.vb` | todo | — | — |
+| `iCenter\TimeRegistration.vb` | todo | — | — |
+| `iCenter\WebClockAssistant\WebClockAssistantAnonymousHandler.vb` | todo | — | — |
+| `iCenter\WebClockAssistant\WebClockAssistantGenericHandler.vb` | todo | — | — |
+| `iCenter\WebClockAssistant\WebClockAssistantRepository.vb` | todo | — | — |
+| `iCenter\WebClockAssistant\WebClockAssistantUserSelectionHandler.vb` | todo | — | — |
+| `iCenter\XmlFile.vb` | todo | — | — |
+
+### ICenterLib / ISAH
+
+**Total: 65** &nbsp; | &nbsp; .vb: 63 | .cs: 0 | .resx: 
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `ISAH\BillOfMat.vb` | todo | — | — |
+| `ISAH\BillOfOper.vb` | todo | — | — |
+| `ISAH\CallRegistration.vb` | todo | — | — |
+| `ISAH\Company.vb` | todo | — | — |
+| `ISAH\Contact.vb` | todo | — | — |
+| `ISAH\Customer.vb` | todo | — | — |
+| `ISAH\CustomerRelation.vb` | todo | — | — |
+| `ISAH\CustomerSelection.vb` | todo | — | — |
+| `ISAH\Database.vb` | todo | — | — |
+| `ISAH\DataServices\EmployeeDataService.vb` | todo | — | — |
+| `ISAH\DataServices\IsahCustomisingElfsquadDataService.vb` | todo | — | — |
+| `ISAH\DataServices\MemoDetailDataService.vb` | todo | — | — |
+| `ISAH\DataServices\PartDataService.vb` | todo | — | — |
+| `ISAH\DataServices\PartDispatchCollectorDataService.vb` | todo | — | — |
+| `ISAH\DataServices\ToolboxDataService.vb` | todo | — | — |
+| `ISAH\DataServices\UpdateProdLeadTimeDataService.vb` | todo | — | — |
+| `ISAH\DateDimension.vb` | todo | — | — |
+| `ISAH\DeliveryLine.vb` | todo | — | — |
+| `ISAH\Design.vb` | todo | — | — |
+| `ISAH\DossierDetail.vb` | todo | — | — |
+| `ISAH\DossierDetailExtra.vb` | todo | — | — |
+| `ISAH\DossierDetailExtraDto.vb` | todo | — | — |
+| `ISAH\DossierDocFolder.vb` | todo | — | — |
+| `ISAH\DossierMain.vb` | todo | — | — |
+| `ISAH\Employee.vb` | todo | — | — |
+| `ISAH\FrmJConfigParamDesignCode.Designer.vb` | generated | VS designer partial | — |
+| `ISAH\FrmJConfigParamDesignCode.resx` | generated | resource bundle (designer-managed) | — |
+| `ISAH\FrmJConfigParamDesignCode.vb` | todo | — | — |
+| `ISAH\Handlers\UpdateProdLeadTimeHandler.vb` | todo | — | — |
+| `ISAH\Helpers\DossierDetailExtraHelper.vb` | todo | — | — |
+| `ISAH\Helpers\EncryptionHelper.vb` | todo | — | — |
+| `ISAH\Helpers\TextStyling\HtmlPlainTextHelper.vb` | todo | — | — |
+| `ISAH\Helpers\TextStyling\IPlainTextHelper.vb` | todo | — | — |
+| `ISAH\Helpers\TextStyling\PlainTextHelper.vb` | todo | — | — |
+| `ISAH\Helpers\TextStyling\RtfPlainTextHelper.vb` | todo | — | — |
+| `ISAH\Icenter2Isah.vb` | todo | — | — |
+| `ISAH\IsahFieldML.vb` | todo | — | — |
+| `ISAH\JConfigParam.vb` | todo | — | — |
+| `ISAH\Language.vb` | todo | — | — |
+| `ISAH\MachGrp.vb` | todo | — | — |
+| `ISAH\MemoDetailElfsquadConfiguration.vb` | todo | — | — |
+| `ISAH\MultiFinance.vb` | todo | — | — |
+| `ISAH\Part.vb` | todo | — | — |
+| `ISAH\PartDispatch.vb` | todo | — | — |
+| `ISAH\PartDispatchCollectorDataService.vb` | todo | — | — |
+| `ISAH\PartSelection.vb` | todo | — | — |
+| `ISAH\PartVendor.vb` | todo | — | — |
+| `ISAH\PBOM.vb` | todo | — | — |
+| `ISAH\PBOO.vb` | todo | — | — |
+| `ISAH\PBOS.vb` | todo | — | — |
+| `ISAH\ProductionHeader.vb` | todo | — | — |
+| `ISAH\PurchaseDocumentPartLine.vb` | todo | — | — |
+| `ISAH\PurDoc.vb` | todo | — | — |
+| `ISAH\Selection.vb` | todo | — | — |
+| `ISAH\Setting.vb` | todo | — | — |
+| `ISAH\ShopDoc.vb` | todo | — | — |
+| `ISAH\ShopDocCollection.vb` | todo | — | — |
+| `ISAH\TimeRegCollector.vb` | todo | — | — |
+| `ISAH\TimeRegistration.vb` | todo | — | — |
+| `ISAH\User.vb` | todo | — | — |
+| `ISAH\Vendor.vb` | todo | — | — |
+| `ISAH\ViewModels\CustomerAddressViewModel.vb` | todo | — | — |
+| `ISAH\ViewModels\PartBasicViewModel.vb` | todo | — | — |
+| `ISAH\WeighingFactor.vb` | todo | — | — |
+| `ISAH\WorkView.vb` | todo | — | — |
+
+### ICenterLib / JIBA
+
+**Total: 14** &nbsp; | &nbsp; .vb: 14 | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `JIBA\AppParameter.vb` | todo | — | — |
+| `JIBA\Asset.vb` | todo | — | — |
+| `JIBA\Company.vb` | todo | — | — |
+| `JIBA\ConfigPart.vb` | todo | — | — |
+| `JIBA\CustSat.vb` | todo | — | — |
+| `JIBA\Employee.vb` | todo | — | — |
+| `JIBA\Encryption.vb` | todo | — | — |
+| `JIBA\Enums.vb` | todo | — | — |
+| `JIBA\LinkItem.vb` | todo | — | — |
+| `JIBA\Log.vb` | todo | — | — |
+| `JIBA\Menu.vb` | todo | — | — |
+| `JIBA\NavigationGroupItem.vb` | todo | — | — |
+| `JIBA\SubMenu.vb` | todo | — | — |
+| `JIBA\XmlData.vb` | todo | — | — |
+
+### ICenterLib / JMail
+
+**Total: 6** &nbsp; | &nbsp; .vb: 6 | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `JMail\FileHelper.vb` | todo | — | — |
+| `JMail\Message.vb` | todo | — | — |
+| `JMail\SpecificationReportData.vb` | todo | — | — |
+| `JMail\SpecificationReportHandler.vb` | todo | — | — |
+| `JMail\StartOptions.vb` | todo | — | — |
+| `JMail\StartOptionsHelper.vb` | todo | — | — |
+
+### ICenterLib / LaserWork
+
+**Total: 4** &nbsp; | &nbsp; .vb: 2 | .cs: 0 | .resx: 
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `LaserWork\AppWrapper.vb` | todo | — | — |
+| `LaserWork\UCLaserWork.Designer.vb` | generated | VS designer partial | — |
+| `LaserWork\UCLaserWork.resx` | generated | resource bundle (designer-managed) | — |
+| `LaserWork\UCLaserWork.vb` | todo | — | — |
+
+### ICenterLib / Metabase
+
+**Total: 4** &nbsp; | &nbsp; .vb: 4 | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `Metabase\ParameterParsing.vb` | todo | — | — |
+| `Metabase\ParameterResolver.vb` | todo | — | — |
+| `Metabase\QueryHelper.vb` | todo | — | — |
+| `Metabase\UrlHelper.vb` | todo | — | — |
+
+### ICenterLib / ModelDefinition
+
+**Total: 3** &nbsp; | &nbsp; .vb: 3 | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `ModelDefinition\Dimension.vb` | todo | — | — |
+| `ModelDefinition\DimensionCollection.vb` | todo | — | — |
+| `ModelDefinition\DimensionType.vb` | todo | — | — |
+
+### ICenterLib / MySystem
+
+**Total: 22** &nbsp; | &nbsp; .vb: 20 | .cs: 0 | .resx: 
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `MySystem\Computer.vb` | todo | — | — |
+| `MySystem\Encryption\FrmEncrypt.Designer.vb` | generated | VS designer partial | — |
+| `MySystem\Encryption\FrmEncrypt.resx` | generated | resource bundle (designer-managed) | — |
+| `MySystem\Encryption\FrmEncrypt.vb` | todo | — | — |
+| `MySystem\Encryption\SecurityController.vb` | todo | — | — |
+| `MySystem\Environment.vb` | todo | — | — |
+| `MySystem\ExceptionList.vb` | todo | — | — |
+| `MySystem\FileSystem.vb` | todo | — | — |
+| `MySystem\HealthMonitorClient.vb` | todo | — | — |
+| `MySystem\HelpHandler.vb` | todo | — | — |
+| `MySystem\ICenterObjectNotFoundException.vb` | todo | — | — |
+| `MySystem\Math.vb` | todo | — | — |
+| `MySystem\MyProcess.vb` | todo | — | — |
+| `MySystem\Net\TcpServer.vb` | todo | — | — |
+| `MySystem\Network.vb` | todo | — | — |
+| `MySystem\OpenWindowGetter.vb` | todo | — | — |
+| `MySystem\PowerShellWrapper.vb` | todo | — | — |
+| `MySystem\Printer.vb` | todo | — | — |
+| `MySystem\Registry.vb` | todo | — | — |
+| `MySystem\TerminalServerSessions.vb` | todo | — | — |
+| `MySystem\Window.vb` | todo | — | — |
+| `MySystem\WindowsUser.vb` | todo | — | — |
+
+### ICenterLib / PCFNet
+
+**Total: 45** &nbsp; | &nbsp; .vb: 39 | .cs: 0 | .resx: 3
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `PCFNet\BOM.vb` | todo | — | — |
+| `PCFNet\BOO.vb` | todo | — | — |
+| `PCFNet\Calculation.vb` | todo | — | — |
+| `PCFNet\ControlDefinition.vb` | todo | — | — |
+| `PCFNet\ControlDefinitionComparer.vb` | todo | — | — |
+| `PCFNet\ControlMapping\ControlMap.vb` | todo | — | — |
+| `PCFNet\ControlMapping\Mapping.vb` | todo | — | — |
+| `PCFNet\ControlMapping\MappingCollection.vb` | todo | — | — |
+| `PCFNet\ControlMapping\MappingQuery.vb` | todo | — | — |
+| `PCFNet\ControlMapping\Parameter.vb` | todo | — | — |
+| `PCFNet\ControlMappingDesigner\UCControlMappingDesigner.Designer.vb` | generated | VS designer partial | — |
+| `PCFNet\ControlMappingDesigner\UCControlMappingDesigner.resx` | generated | resource bundle (designer-managed) | — |
+| `PCFNet\ControlMappingDesigner\UCControlMappingDesigner.vb` | todo | — | — |
+| `PCFNet\ControlMappingImport.vb` | todo | — | — |
+| `PCFNet\CPart.vb` | todo | — | — |
+| `PCFNet\ExcelObject.vb` | todo | — | — |
+| `PCFNet\ExcelObjectCalculator.vb` | todo | — | — |
+| `PCFNet\FastenerCalculator.vb` | todo | — | — |
+| `PCFNet\GenericPart.vb` | todo | — | — |
+| `PCFNet\GenericPartTemplate.vb` | todo | — | — |
+| `PCFNet\JConfigurator.vb` | todo | — | — |
+| `PCFNet\ManualOperation.vb` | todo | — | — |
+| `PCFNet\ManualProperty.vb` | todo | — | — |
+| `PCFNet\NameMapping.vb` | todo | — | — |
+| `PCFNet\NameMappingRule.vb` | todo | — | — |
+| `PCFNet\ParametersMapping\AluBasicWallLouver001.vb` | todo | — | — |
+| `PCFNet\ParametersMapping\AluDoor001.vb` | todo | — | — |
+| `PCFNet\ParametersMapping\AluLouver001.vb` | todo | — | — |
+| `PCFNet\ParametersMapping\ParametersMappingBase.vb` | todo | — | — |
+| `PCFNet\ParametersMapping\PlankAssembly.vb` | todo | — | — |
+| `PCFNet\ParametersMapping\StlDoor001.vb` | todo | — | — |
+| `PCFNet\PcfCompiler.vb` | todo | — | — |
+| `PCFNet\PcfNetDataSet.vb` | todo | — | — |
+| `PCFNet\ProductValidation.vb` | todo | — | — |
+| `PCFNet\PropertyDefinition.vb` | todo | — | — |
+| `PCFNet\PropertyDefinitionType.vb` | todo | — | — |
+| `PCFNet\SmtCalculator.vb` | todo | — | — |
+| `PCFNet\TcpClientConfiguration.vb` | todo | — | — |
+| `PCFNet\UCInputControls.Designer.vb` | generated | VS designer partial | — |
+| `PCFNet\UCInputControls.resx` | generated | resource bundle (designer-managed) | — |
+| `PCFNet\UCInputControls.vb` | todo | — | — |
+| `PCFNet\UCOption.Designer.vb` | generated | VS designer partial | — |
+| `PCFNet\UCOption.resx` | generated | resource bundle (designer-managed) | — |
+| `PCFNet\UCOption.vb` | todo | — | — |
+| `PCFNet\WAASHandler.vb` | todo | — | — |
+
+### ICenterLib / Prodex
+
+**Total: 6** &nbsp; | &nbsp; .vb: 6 | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `Prodex\Models\DesignConfiguration.vb` | todo | — | — |
+| `Prodex\Models\DesignParameter.vb` | todo | — | — |
+| `Prodex\Models\DesignParameters.vb` | todo | — | — |
+| `Prodex\Models\DossierDetailDesignCalculationRequest.vb` | todo | — | — |
+| `Prodex\Models\DossierDetailDesignUpdateRequest.vb` | todo | — | — |
+| `Prodex\ViewModels\DossierDetailDesignCalculationVM.vb` | todo | — | — |
+
+### ICenterLib / ProductDb
+
+**Total: 31** &nbsp; | &nbsp; .vb: 21 | .cs: 0 | .resx: 5
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `ProductDb\CloneProductHandler.vb` | todo | — | — |
+| `ProductDb\CommonDb.vb` | todo | — | — |
+| `ProductDb\DeclarationOfPerformance.vb` | todo | — | — |
+| `ProductDb\ExcelTemplate.vb` | todo | — | — |
+| `ProductDb\ExcelWorkBookHelper.vb` | todo | — | — |
+| `ProductDb\FrmCloneProduct.Designer.vb` | generated | VS designer partial | — |
+| `ProductDb\FrmCloneProduct.resx` | generated | resource bundle (designer-managed) | — |
+| `ProductDb\FrmCloneProduct.vb` | todo | — | — |
+| `ProductDb\FrmProductDbPriceList.Designer.vb` | generated | VS designer partial | — |
+| `ProductDb\FrmProductDbPriceList.resx` | generated | resource bundle (designer-managed) | — |
+| `ProductDb\FrmProductDbPriceList.vb` | todo | — | — |
+| `ProductDb\FrmProductPricePart.Designer.vb` | generated | VS designer partial | — |
+| `ProductDb\FrmProductPricePart.resx` | generated | resource bundle (designer-managed) | — |
+| `ProductDb\FrmProductPricePart.vb` | todo | — | — |
+| `ProductDb\Language.vb` | todo | — | — |
+| `ProductDb\PriceListHelper.vb` | todo | — | — |
+| `ProductDb\PricePart.vb` | todo | — | — |
+| `ProductDb\Product.vb` | todo | — | — |
+| `ProductDb\ProductConfiguration.vb` | todo | — | — |
+| `ProductDb\ProductConfigurationDataService.vb` | todo | — | — |
+| `ProductDb\ProductConfiguratorMapping.vb` | todo | — | — |
+| `ProductDb\ProductFilter.vb` | todo | — | — |
+| `ProductDb\ProductFilterGroup.vb` | todo | — | — |
+| `ProductDb\ProductGroup.vb` | todo | — | — |
+| `ProductDb\ProductPricePart.vb` | todo | — | — |
+| `ProductDb\UCPropertyDefinitionEditor.Designer.vb` | generated | VS designer partial | — |
+| `ProductDb\UCPropertyDefinitionEditor.resx` | generated | resource bundle (designer-managed) | — |
+| `ProductDb\UCPropertyDefinitionEditor.vb` | todo | — | — |
+| `ProductDb\UCPropertyDefinitionManager.Designer.vb` | generated | VS designer partial | — |
+| `ProductDb\UCPropertyDefinitionManager.resx` | generated | resource bundle (designer-managed) | — |
+| `ProductDb\UCPropertyDefinitionManager.vb` | todo | — | — |
+
+### ICenterLib / Production
+
+**Total: 23** &nbsp; | &nbsp; .vb: 19 | .cs: 0 | .resx: 2
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `Production\AutoIPOrderSelection.vb` | todo | — | — |
+| `Production\BaseProductionItem.vb` | todo | — | — |
+| `Production\BOMFilter.vb` | todo | — | — |
+| `Production\CEChecklist.vb` | todo | — | — |
+| `Production\FGQualityControlPart.vb` | todo | — | — |
+| `Production\FrmProdMachineSelector.Designer.vb` | generated | VS designer partial | — |
+| `Production\FrmProdMachineSelector.resx` | generated | resource bundle (designer-managed) | — |
+| `Production\FrmProdMachineSelector.vb` | todo | — | — |
+| `Production\KanbanBin.vb` | todo | — | — |
+| `Production\KeyPerformanceIndicator.vb` | todo | — | — |
+| `Production\LabelLog.vb` | todo | — | — |
+| `Production\ProdChecklist.vb` | todo | — | — |
+| `Production\ProdChecklistTag.vb` | todo | — | — |
+| `Production\ProductionLine.vb` | todo | — | — |
+| `Production\ProductionLog.vb` | todo | — | — |
+| `Production\ProductionProfileCutItem.vb` | todo | — | — |
+| `Production\ProductionProfileCutItemHandler.vb` | todo | — | — |
+| `Production\ProductionProfileCutItemsHandler.vb` | todo | — | — |
+| `Production\ProductionRegistrationAnalysisRange.vb` | todo | — | — |
+| `Production\SmtBendQueue.vb` | todo | — | — |
+| `Production\UCProdLineLeanStatus.Designer.vb` | generated | VS designer partial | — |
+| `Production\UCProdLineLeanStatus.resx` | generated | resource bundle (designer-managed) | — |
+| `Production\UCProdLineLeanStatus.vb` | todo | — | — |
+
+### ICenterLib / Resources
+
+**Total: 75** &nbsp; | &nbsp; .vb: 0 | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `Resources\1downarrow1-32.png` | config | image/icon asset | — |
+| `Resources\1leftarrow-32.png` | config | image/icon asset | — |
+| `Resources\1rightarrow-32.png` | config | image/icon asset | — |
+| `Resources\1uparrow-32.png` | config | image/icon asset | — |
+| `Resources\2008-09-23 JAZO witte omranding 3cm.jpg` | config | image/icon asset | — |
+| `Resources\2dowarrow-32.png` | config | image/icon asset | — |
+| `Resources\2leftarrow-32.png` | config | image/icon asset | — |
+| `Resources\2rightarrow-32.png` | config | image/icon asset | — |
+| `Resources\2uparrow-32.png` | config | image/icon asset | — |
+| `Resources\Add Button-24.png` | config | image/icon asset | — |
+| `Resources\Add_green_16.png` | config | image/icon asset | — |
+| `Resources\Batch_128.png` | config | image/icon asset | — |
+| `Resources\Bullet-Black-16.png` | config | image/icon asset | — |
+| `Resources\button_cancel-24.png` | config | image/icon asset | — |
+| `Resources\Check-16.png` | config | image/icon asset | — |
+| `Resources\checkbox_checked.gif` | config | image/icon asset | — |
+| `Resources\checkbox_checked_png.png` | config | image/icon asset | — |
+| `Resources\checkbox_unchecked.gif` | config | image/icon asset | — |
+| `Resources\checkbox_unchecked_png.png` | config | image/icon asset | — |
+| `Resources\Copy_32.png` | config | image/icon asset | — |
+| `Resources\creo_logo_16.png` | config | image/icon asset | — |
+| `Resources\creo_logo_32.jpg` | config | image/icon asset | — |
+| `Resources\creo_regen_jz_16.png` | config | image/icon asset | — |
+| `Resources\creo_regen_jz_24.png` | config | image/icon asset | — |
+| `Resources\creo_with_regen_jz_16.png` | config | image/icon asset | — |
+| `Resources\Edit-32.png` | config | image/icon asset | — |
+| `Resources\elfsquad-logo-16.png` | config | image/icon asset | — |
+| `Resources\elfsquad-logo-large.png` | config | image/icon asset | — |
+| `Resources\ErrorX-32.png` | config | image/icon asset | — |
+| `Resources\excel_16.png` | config | image/icon asset | — |
+| `Resources\excel_24.png` | config | image/icon asset | — |
+| `Resources\excel_32.png` | config | image/icon asset | — |
+| `Resources\excel_64.png` | config | image/icon asset | — |
+| `Resources\fabpartseverity_1.png` | config | image/icon asset | — |
+| `Resources\fabpartseverity_2.png` | config | image/icon asset | — |
+| `Resources\fabpartstatus_1.png` | config | image/icon asset | — |
+| `Resources\fabpartstatus_12.png` | config | image/icon asset | — |
+| `Resources\fabpartstatus_13.png` | config | image/icon asset | — |
+| `Resources\fabpartstatus_14.png` | config | image/icon asset | — |
+| `Resources\fabpartstatus_2.png` | config | image/icon asset | — |
+| `Resources\fabpartstatus_20.png` | config | image/icon asset | — |
+| `Resources\fabpartstatus_3.png` | config | image/icon asset | — |
+| `Resources\fabpartstatus_4.png` | config | image/icon asset | — |
+| `Resources\fabpartstatus_5.png` | config | image/icon asset | — |
+| `Resources\fabpartstatus_6.png` | config | image/icon asset | — |
+| `Resources\fabpartstatus_7.png` | config | image/icon asset | — |
+| `Resources\fabpartstatus_70.png` | config | image/icon asset | — |
+| `Resources\fabpartstatus_8.png` | config | image/icon asset | — |
+| `Resources\Female_64.png` | config | image/icon asset | — |
+| `Resources\filesave-16.png` | config | image/icon asset | — |
+| `Resources\filesave-32.png` | config | image/icon asset | — |
+| `Resources\Gnome-Stock-Person-64.png` | config | image/icon asset | — |
+| `Resources\gridview.jpg` | config | image/icon asset | — |
+| `Resources\iCenter.ico` | config | image/icon asset | — |
+| `Resources\import_24.png` | config | image/icon asset | — |
+| `Resources\info_blue_16.png` | config | image/icon asset | — |
+| `Resources\info_blue_161.png` | config | image/icon asset | — |
+| `Resources\info_blue-32.png` | config | image/icon asset | — |
+| `Resources\Interface-builder_16.png` | config | image/icon asset | — |
+| `Resources\merge-icon-16x16.png` | config | image/icon asset | — |
+| `Resources\merge-icon-32x32.png` | config | image/icon asset | — |
+| `Resources\Modelgenerator-creo-icon.png` | config | image/icon asset | — |
+| `Resources\Person-Undefined-Male-Light-64.png` | config | image/icon asset | — |
+| `Resources\Refresh-32.png` | config | image/icon asset | — |
+| `Resources\Resources-32.png` | config | image/icon asset | — |
+| `Resources\Setting-16.png` | config | image/icon asset | — |
+| `Resources\Setting-64.png` | config | image/icon asset | — |
+| `Resources\texture_alu01.bmp` | config | image/icon asset | — |
+| `Resources\warning_anim_32.gif` | config | image/icon asset | — |
+| `Resources\Warning-32 (1).png` | config | image/icon asset | — |
+| `Resources\Warning-64.png` | config | image/icon asset | — |
+| `Resources\Windchill11.png` | config | image/icon asset | — |
+| `Resources\Zammad_icon_24.png` | config | image/icon asset | — |
+| `Resources\Zammad_icon_32.png` | config | image/icon asset | — |
+| `Resources\Zammad_icon_64.png` | config | image/icon asset | — |
+
+### ICenterLib / SmartForms
+
+**Total: 1** &nbsp; | &nbsp; .vb:  | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `SmartForms\SmartForm.vb` | todo | — | — |
+
+### ICenterLib / SmtCadCam
+
+**Total: 4** &nbsp; | &nbsp; .vb: 4 | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `SmtCadCam\PreProcessorHandler.vb` | todo | — | — |
+| `SmtCadCam\SpaceClaimApiHelper.vb` | todo | — | — |
+| `SmtCadCam\SpaceClaimServerRequest.vb` | todo | — | — |
+| `SmtCadCam\SpaceClaimServerRequestDataService.vb` | todo | — | — |
+
+### ICenterLib / SmtProduction
+
+**Total: 128** &nbsp; | &nbsp; .vb: 126 | .cs: 0 | .resx: 
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `SmtProduction\DataServices\CutSheetOperRegistrationDataService.vb` | todo | — | — |
+| `SmtProduction\DataServices\OseonAppContextDataService.vb` | todo | — | — |
+| `SmtProduction\DataServices\PartDataService.vb` | todo | — | — |
+| `SmtProduction\DataServices\ProductionOrderDataService.vb` | todo | — | — |
+| `SmtProduction\DataServices\WorkplaceEmployeeLinkDataService.vb` | todo | — | — |
+| `SmtProduction\Entities\CutSheetOperRegistration.vb` | todo | — | — |
+| `SmtProduction\Entities\ImportSettings2D.vb` | todo | — | — |
+| `SmtProduction\Entities\ImportSettings3D.vb` | todo | — | — |
+| `SmtProduction\Entities\ImportSettingsBase.vb` | todo | — | — |
+| `SmtProduction\Entities\OseonAppContext.vb` | todo | — | — |
+| `SmtProduction\Entities\WorkplaceEmployeeLink.vb` | todo | — | — |
+| `SmtProduction\ImportFileValidator.vb` | todo | — | — |
+| `SmtProduction\ProgrammingEnvironment.vb` | todo | — | — |
+| `SmtProduction\TruTops\Client\Application.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Collections\CadCamDocumentCollection.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Contracts\IAppMerkerDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Contracts\IBasicMaterialDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Contracts\IBendSolutionDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Contracts\ICadCamDocumentDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Contracts\ICutSheetDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Contracts\IDataTableColumnSchemaDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Contracts\IMasterWorkPlanDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Contracts\IPartBendSolutionDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Contracts\IPartDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Contracts\IPartOnTableDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Contracts\IPartStatusDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Contracts\IPdmDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Contracts\IProductionOperationDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Contracts\IProductionOrderDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Contracts\IRawMaterialDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Contracts\ITTNGActionDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Contracts\IWorkplaceDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\DataServices\AppMerkerDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\DataServices\BasicMaterialDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\DataServices\BendSolutionDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\DataServices\CadCamDocumentDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\DataServices\CutSheetDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\DataServices\MasterWorkPlanDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\DataServices\PartBendSolutionDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\DataServices\PartDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\DataServices\PartOnTableDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\DataServices\PartStatusDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\DataServices\PdmDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\DataServices\ProductionOperationDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\DataServices\ProductionOrderDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\DataServices\RawMaterialDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\DataServices\TTNGActionDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\DataServices\WorkplaceDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Entities\AppMerker.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Entities\BasicMaterial.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Entities\CadCamDocument.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Entities\CadCamDocumentType.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Entities\CutSheet.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Entities\MasterWorkPlan.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Entities\Operation.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Entities\Part.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Entities\PartBendSolution.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Entities\PartDisplayStatus.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Entities\PartOnTable.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Entities\PartStatus.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Entities\PartStatusMaster.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Entities\ProductionOperation.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Entities\ProductionOrder.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Entities\RawMaterial.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Entities\TTNGBendToolList.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\Entities\Workplace.vb` | todo | — | — |
+| `SmtProduction\TruTops\Oseon\PDM.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\DataServices\ImportLogDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\DataServices\ImportResultDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\DataServices\PPSInterfaceDataService.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Exceptions\PropertyNotSpecifiedException.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjectItems\FeedbackObjectItemBase.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjectItems\FeedbackObjectItemDimensions.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjectItems\FeedbackObjectItemPartOnSheet.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjectItems\FeedbackObjectItemSheet.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjects\FeedbackObjectBase.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjects\FeedbackObjectPDAMessage.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjects\FeedbackObjectProcessedSheetReport.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjects\FeedbackObjectProductionOperation.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Export\FeedbackObjects\FeedbackObjectProductionOrder.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportBase.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportConsumptionReport.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportManufacturedSheet.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportOperation.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportPDAMessage.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportPPSExportManufacturedSheetOper.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Export\PPSExport\PPSExportProductionOrder.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Export\ProductionOrderExportHandler.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Export\ProductionQuantityReport.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Collections\BendSolutionCollection.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Collections\DeleteProductionOrderCollection.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Collections\DeleteProductionOrderCollectionXmlHandler.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Collections\DocumentCollection.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Collections\FinishProductionOrderCollection.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Collections\PartCollection.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Collections\ProductionOrderCollection.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\BendSolution.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\DeleteProductionOrder.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\Document.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\FinishProductionOrder.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\ImportResult.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\Part.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\PPSImport.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\PPSInterface.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\PPSInterfaceDate.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\ProductionOrder.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\WorkingPlan.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\Entities\WorkingStep.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\ProductionOrderImportHandler.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\BendSolutionXmlHandler.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\DeleteProductionOrderXmlHandler.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\DocumentXmlHandler.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\FinishProductionOrderCollectionXmlHandler.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\FinishProductionOrderXmlHandler.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\PartCollectionXmlHandler.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\PartXmlHandler.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\PPSImportXmlHandler.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\ProductionOrderCollectionXmlHandler.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\ProductionOrderXmlHandler.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\WorkingPlanXmlHandler.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Import\XmlHandlers\WorkingStepXmlHandler.vb` | todo | — | — |
+| `SmtProduction\TruTops\PPSInterface\Utils\TimeConversionHelper.vb` | todo | — | — |
+| `SmtProduction\TruTops\Utils\ProductionOrderNumberHelper.vb` | todo | — | — |
+| `SmtProduction\TruTops\Utils\TruTopsConvertHandler.vb` | todo | — | — |
+| `SmtProduction\UI\CtrlTTNGProcessingErrorInfo.Designer.vb` | generated | VS designer partial | — |
+| `SmtProduction\UI\CtrlTTNGProcessingErrorInfo.resx` | generated | resource bundle (designer-managed) | — |
+| `SmtProduction\UI\CtrlTTNGProcessingErrorInfo.vb` | todo | — | — |
+| `SmtProduction\UI\OseonAppContextSelectionWrapper.vb` | todo | — | — |
+
+### ICenterLib / STEP3D
+
+**Total: 5** &nbsp; | &nbsp; .vb: 5 | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `STEP3D\AssySplitter.vb` | todo | — | — |
+| `STEP3D\DefinitionAnalyser.vb` | todo | — | — |
+| `STEP3D\Model.vb` | todo | — | — |
+| `STEP3D\Product.vb` | todo | — | — |
+| `STEP3D\Reader.vb` | todo | — | — |
+
+### ICenterLib / Ticketing
+
+**Total: 5** &nbsp; | &nbsp; .vb: 5 | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `Ticketing\ApiConnector.vb` | todo | — | — |
+| `Ticketing\Article.vb` | todo | — | — |
+| `Ticketing\Attachment.vb` | todo | — | — |
+| `Ticketing\Ticket.vb` | todo | — | — |
+| `Ticketing\TicketHandler.vb` | todo | — | — |
+
+### ICenterLib / TimeRegistration
+
+**Total: 2** &nbsp; | &nbsp; .vb: 2 | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `TimeRegistration\MovingEmployeeTimeRegistration.vb` | todo | — | — |
+| `TimeRegistration\WebClock.vb` | todo | — | — |
+
+### ICenterLib / UserControls
+
+**Total: 34** &nbsp; | &nbsp; .vb: 15 | .cs: 0 | .resx: 8
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `UserControls\DataGridViewFormatter.vb` | todo | — | — |
+| `UserControls\FriendlyComboBox.Designer.vb` | generated | VS designer partial | — |
+| `UserControls\FriendlyComboBox.resx` | generated | resource bundle (designer-managed) | — |
+| `UserControls\FriendlyComboBox.vb` | todo | — | — |
+| `UserControls\FrmRemoteDesktop.Designer.vb` | generated | VS designer partial | — |
+| `UserControls\FrmRemoteDesktop.resx` | generated | resource bundle (designer-managed) | — |
+| `UserControls\FrmRemoteDesktop.vb` | todo | — | — |
+| `UserControls\FrmUserSelection.Designer.vb` | generated | VS designer partial | — |
+| `UserControls\FrmUserSelection.resx` | generated | resource bundle (designer-managed) | — |
+| `UserControls\FrmUserSelection.vb` | todo | — | — |
+| `UserControls\FrmWebView.Designer.vb` | generated | VS designer partial | — |
+| `UserControls\FrmWebView.resx` | generated | resource bundle (designer-managed) | — |
+| `UserControls\FrmWebView.vb` | todo | — | — |
+| `UserControls\HintComboBox.Designer.vb` | generated | VS designer partial | — |
+| `UserControls\HintComboBox.vb` | todo | — | — |
+| `UserControls\ListViewWithReordering.vb` | todo | — | — |
+| `UserControls\ProProgramEditor.Designer.vb` | generated | VS designer partial | — |
+| `UserControls\ProProgramEditor.vb` | todo | — | — |
+| `UserControls\Ticker.vb` | todo | — | — |
+| `UserControls\UCDossierDetailDesign.Designer.vb` | generated | VS designer partial | — |
+| `UserControls\UCDossierDetailDesign.resx` | generated | resource bundle (designer-managed) | — |
+| `UserControls\UCDossierDetailDesign.vb` | todo | — | — |
+| `UserControls\UCFastColoredTextBox.Designer.vb` | generated | VS designer partial | — |
+| `UserControls\UCFastColoredTextBox.vb` | todo | — | — |
+| `UserControls\UCNoAccess.Designer.vb` | generated | VS designer partial | — |
+| `UserControls\UCNoAccess.resx` | generated | resource bundle (designer-managed) | — |
+| `UserControls\UCNoAccess.vb` | todo | — | — |
+| `UserControls\UCTicker.Designer.vb` | generated | VS designer partial | — |
+| `UserControls\UCTicker.resx` | generated | resource bundle (designer-managed) | — |
+| `UserControls\UCTicker.vb` | todo | — | — |
+| `UserControls\UCWebView.Designer.vb` | generated | VS designer partial | — |
+| `UserControls\UCWebView.resx` | generated | resource bundle (designer-managed) | — |
+| `UserControls\UCWebView.vb` | todo | — | — |
+| `UserControls\XWikiForm.vb` | todo | — | — |
+
+### ICenterLib / Zabbix
+
+**Total: 1** &nbsp; | &nbsp; .vb:  | .cs: 0 | .resx: 0
+
+| File | Status | Note | Last reviewed |
+|------|--------|------|---------------|
+| `Zabbix\ZabbixHandler.vb` | todo | — | — |
+
+
 ## Roll-up
 
-_Heuristic snapshot from the Phase 1 pass. Refined by [[meta/conventions|the lint pass]] as files transition out of `todo`._
+_Heuristic snapshot updated whenever new projects come into scope or files transition out of `todo`._
+
+### By project
+
+| Project | Total | Done | Todo | Config | Generated | Dead | Needs-review |
+|---------|------:|-----:|-----:|-------:|----------:|-----:|-------------:|
+| iCENTER | 1237 | 5 | 532 | 358 | 341 | 0 | 1 |
+| TruTopsLib | 65 | 0 | 57 | 6 | 2 | 0 | 0 |
+| ICenterLib | 723 | 0 | 571 | 81 | 71 | 0 | 0 |
+| **TOTAL** | **2025** | **5** | **1160** | **445** | **414** | **0** | **1** |
+
+### Per iCENTER sub-folder
 
 | Folder | Total | Done | Todo | Config | Generated | Dead | Needs-review |
 |--------|------:|-----:|-----:|-------:|----------:|-----:|-------------:|
@@ -1507,4 +2605,4 @@ _Heuristic snapshot from the Phase 1 pass. Refined by [[meta/conventions|the lin
 | VentDuctConfigurator | 4 | 0 | 2 | 0 | 2 | 0 | 0 |
 | WebClock | 13 | 0 | 5 | 0 | 8 | 0 | 0 |
 | WorkPreparation | 6 | 0 | 4 | 0 | 2 | 0 | 0 |
-| **TOTAL** | **1237** | **5** | **532** | **358** | **341** | **0** | **1** |
+| iCENTER **TOTAL** | **1237** | **5** | **532** | **358** | **341** | **0** | **1** |

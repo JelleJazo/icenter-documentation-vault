@@ -5,6 +5,8 @@ status: draft
 module: ""
 source-paths:
   - "C:\\DevOps\\iCenter\\iCenter\\iCENTER"
+  - "C:\\DevOps\\iCenter\\iCenter\\TruTopsLib"
+  - "C:\\Users\\jelle-r\\source\\repos\\JIBA\\iCenter And Tools\\ICenterLib\\ICenterLib"
 last-reviewed: ""
 tags: [overview, needs-review]
 created: 2026-06-18
@@ -21,7 +23,7 @@ A long-running VB.NET Windows-Forms application that sits at the centre of JAZO 
 
 It is one executable (`iCenter.exe`, .NET 4.8, x86, WinExe) that can run in [several modes](architecture/runtime-modes.md): the default interactive UI, a CAD batch worker (`-m cadbatchserver`), a self-updater (`-m updateicenter`), plus generic/COM-port post-main workers gated by globals.
 
-> This wiki covers the `iCENTER\` VB.NET project only. Two companion projects (`ICenterLib`, `TruTopsLib`) carry the bulk of the data-access and PLM/CAD plumbing and are referenced into the build but **out of scope** per [[../CLAUDE]]. See [[needs-review/_index]] **Q-001**.
+> Scope widened on 2026-06-18 to include the two companion VB.NET projects (`ICenterLib` and `TruTopsLib`) per [[../CLAUDE|standing instructions]]. ICenterLib (723 files, 35 top-level folders) hosts most of the data-access and PLM/CAD plumbing; TruTopsLib (65 files, mixed `.vb` + `.cs`) parses Trumpf TruTops file formats. Total inventory: 2025 files. See [[needs-review/_index]] Q-001 (resolved) and Q-018 (new — build-path discrepancy on ICenterLib).
 
 ## What it controls
 

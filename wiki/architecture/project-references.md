@@ -17,14 +17,16 @@ updated: 2026-06-18
 
 Everything `iCenter.exe` compiles against — the in-tree companion projects, the DFS-hosted house DLLs, the NuGet packages, and the GAC / .NET framework refs. Anything that *isn't* in the in-scope `iCENTER\` folder but still ends up in the EXE is here.
 
-## In-tree companion projects (`<ProjectReference>`)
+## Companion projects (`<ProjectReference>`)
 
-| Project | Project-file path | GUID |
-|---------|-------------------|------|
-| **`ICenterLib`** | `C:\DevOps\ICenterLib\ICenterLib\ICenterLib.vbproj` | `9f3078de-2386-4ff8-b66d-a6df9e100953` |
-| **`TruTopsLib`** | `C:\DevOps\iCenter\iCenter\TruTopsLib\TruTopsLib.vbproj` | `afd6ec7d-cfd8-4184-a029-13e2503bb0e4` |
+| Project | Project-file path (vbproj) | GUID | Scope |
+|---------|----------------------------|------|-------|
+| **`ICenterLib`** | `C:\Users\jelle-r\source\repos\JIBA\iCenter And Tools\ICenterLib\ICenterLib\ICenterLib.vbproj` ⚠️ | `9f3078de-2386-4ff8-b66d-a6df9e100953` | **in scope** (added 2026-06-18) |
+| **`TruTopsLib`** | `C:\DevOps\iCenter\iCenter\TruTopsLib\TruTopsLib.vbproj` | `afd6ec7d-cfd8-4184-a029-13e2503bb0e4` | **in scope** (added 2026-06-18) |
 
-**These projects are out of scope** per [[../../CLAUDE]] but their types are everywhere in the iCENTER source. The `Imports` block in `iCenter.vbproj` (lines 277–289) makes them ambiently available:
+> ⚠️ The reference inside `iCenter.vbproj` line 3335 (`..\..\ICenterLib\ICenterLib\ICenterLib.vbproj`) and `iCENTER.sln` line 11 (`..\ICenterLib\ICenterLib\ICenterLib.vbproj`) both resolve to `C:\DevOps\iCenter\ICenterLib\ICenterLib\` — a path that does **not** exist on this machine. The actual source lives under the user's personal `source\repos\` tree. The build relies on this directory being present on each developer's box; CI behavior unclear. `#needs-review` (tracked as **Q-018**).
+
+Both projects are now part of this wiki's scope per the 2026-06-18 [[../../CLAUDE|standing-instructions]] update. Their types are everywhere in the iCENTER source. The `Imports` block in `iCenter.vbproj` (lines 277–289) makes them ambiently available:
 
 ```xml
 <Import Include="ICenterLib" />
@@ -43,9 +45,9 @@ ICenterLib.SmtProduction.Entities
 ICenterLib.SmtProduction.UI
 ```
 
-So `ClsICenter`, `ClsISAH`, `JMail`, the Oseon SMT integration, the central `Common` helpers, the PLM bridge, the application-culture singleton, and most of the data-access layer all live in `ICenterLib`, not here. Phase-3 module notes will need to **say "see ICenterLib" rather than try to document the symbol** — but each such pointer should be **explicit**, so the wiki stays honest about how much logic actually lives outside its boundary.
+So `ClsICenter`, `ClsISAH`, `JMail`, the Oseon SMT integration, the central `Common` helpers, the PLM bridge, the application-culture singleton, and most of the data-access layer all live in `ICenterLib`. Module notes targeting iCENTER types should link to corresponding `modules/icenterlib-*` notes once those are written; Phase-3 prioritisation will likely traverse iCENTER and ICenterLib together when they're closely coupled (e.g. anything in `iCENTER\Elumatec\` that calls into `ICenterLib.CAD.*`).
 
-> **Q-001 (Tracked in [[../needs-review/_index]]):** confirm scope decision with SME. Options: (a) document `ICenterLib` and `TruTopsLib` here too; (b) keep them out of scope but maintain an inventory page that lists every `ICenterLib.X` symbol referenced from iCENTER and the file/line; (c) defer to a sibling wiki.
+> **Q-001 — resolved 2026-06-18.** Decision: both companion projects are in scope. See [[../needs-review/_index]] Q-001 row.
 
 ## House DLLs from the DFS share
 
@@ -82,7 +84,7 @@ See `packages.config`. The notable additions:
 
 ## Open questions
 
-- **Q-001 (open):** in-or-out for `ICenterLib` and `TruTopsLib`.
+- **Q-018:** the `ICenterLib` project-reference path (`..\..\ICenterLib\ICenterLib\...`) resolves to a non-existent directory; the real source is under the user's personal repo tree. Where is the canonical / build-server copy? `#needs-review`
 - **Q-013:** house DLLs are loaded from a live DFS share with no version-pinning beyond the path. Is the DFS folder treated as immutable per-version (the path includes the version), or do operators update in place? `#needs-review`
 - **Q-014:** `System.Xml.dll` referenced from the v4.6.2 reference-assemblies folder while `TargetFrameworkVersion=v4.8`. Drift? Confirm.
 

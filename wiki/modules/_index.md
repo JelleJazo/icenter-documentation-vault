@@ -11,6 +11,11 @@ updated: 2026-06-18
 
 One note per major source file or tight group of files. Each entry mirrors a row in [[../_coverage|_coverage.md]].
 
+## Companion projects (added 2026-06-18)
+
+- **TruTopsLib** — `C:\DevOps\iCenter\iCenter\TruTopsLib\` (65 files). 4 sub-areas: `(root)`, `GeoInterpreter/`, `PMI/`, `TopsFile/`. Mixed `.vb` + `.cs`. Phase-3 notes will live under `modules/trutopslib-*`.
+- **ICenterLib** — `C:\Users\jelle-r\source\repos\JIBA\iCenter And Tools\ICenterLib\ICenterLib\` (723 files across 35 top-level folders). Phase-3 notes under `modules/icenterlib-*`. High-priority sub-areas for Elumatec-related work: `CAD/`, `ICenter/`, `ISAH/`, `SmtProduction/`, `PCFNet/`, `Production/`.
+
 ## Grouped by `iCENTER\` sub-folder
 
 > Counts reflect the Phase 1 inventory of `.vb` source files (excluding `.Designer.vb` partials and `.resx`). See [[../_coverage]] for the authoritative file list per folder.

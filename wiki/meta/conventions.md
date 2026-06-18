@@ -32,8 +32,10 @@ Every note **must** start with at minimum:
 type: <one of the types above>
 status: <todo | draft | done | needs-review>
 module: "<project path, e.g. JAZO.iCenter.Domain>"   # for module/rule/concept notes
-source-paths:                                         # for any note that points at code
+source-paths:                                         # for any note that points at code; use the absolute path inside one of the in-scope roots
   - "C:\\DevOps\\iCenter\\iCenter\\iCENTER\\path\\to\\File.vb"
+  - "C:\\DevOps\\iCenter\\iCenter\\TruTopsLib\\path\\to\\File.vb"
+  - "C:\\Users\\jelle-r\\source\\repos\\JIBA\\iCenter And Tools\\ICenterLib\\ICenterLib\\path\\to\\File.vb"
 tags: [<at least one>]
 last-reviewed: YYYY-MM-DD                             # set when status flips to done
 ---

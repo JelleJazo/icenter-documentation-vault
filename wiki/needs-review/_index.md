@@ -24,6 +24,7 @@ _(Append as you go. Newest at the top.)_
 
 | ID | Date | Page | Question | Severity / tag |
 |----|------|------|----------|----------------|
+| **Q-018** | 2026-06-18 | [[../architecture/project-references]] | The `ICenterLib` project-reference path in `iCenter.vbproj` / `iCENTER.sln` resolves to a non-existent directory; the actual source is under the user's personal `source\repos\` tree. Where is the canonical / build-server copy? | release-engineering |
 | **Q-017** | 2026-06-18 | [[../architecture/external-surface]] | For each `#safety-relevant` external system, what is the failure mode if it goes down? | safety-relevant |
 | **Q-016** | 2026-06-18 | [[../architecture/external-surface]] | Is the embedded PDF-XChange license valid for redistribution? Confirm with vendor. | compliance |
 | **Q-015** | 2026-06-18 | [[../architecture/external-surface]] | Is the `pvs/pvs` XWiki account read-only or write-capable? | security |
@@ -40,7 +41,7 @@ _(Append as you go. Newest at the top.)_
 | **Q-004** | 2026-06-18 | [[../architecture/entry-points]] | Is `Functions.UpdateIcenter()` (the `-m updateicenter` path) still in use after the 2023-07 cert expiry? | medium |
 | **Q-003** | 2026-06-18 | [[../architecture/entry-points]] | What conditions inside `FrmMain` flip `BatchServerMode` / `ComWatcherMode`? | medium |
 | **Q-002** | 2026-06-18 | [[../architecture/entry-points]] | Who launches `-m cadbatchserver`? Scheduled task? Service wrapper? User `JZPUBLISH`? | medium |
-| **Q-001** | 2026-06-18 | [[../architecture/_index]] | Are companion projects `ICenterLib` and `TruTopsLib` in scope for this wiki? They host ~80% of business logic. | scope |
+| **Q-001** | 2026-06-18 | [[../architecture/_index]] | _(resolved 2026-06-18)_ — Both `ICenterLib` and `TruTopsLib` widened **into scope** per user direction. ICenterLib source located at `C:\Users\jelle-r\source\repos\JIBA\iCenter And Tools\ICenterLib\ICenterLib` — see new **Q-018** about the build-path discrepancy. | scope (resolved) |
 | **Q-000** | 2026-06-18 | [[../overview]] | _(superseded)_ — Was the older `C:\DevOps\iCenter` codebase in scope, or only `iCenter2`? Resolved: per updated CLAUDE.md, scope is `C:\DevOps\iCenter\iCenter\iCENTER` only; `iCenter2` is out. | scope (resolved) |
 
 ## Safety-relevant queue

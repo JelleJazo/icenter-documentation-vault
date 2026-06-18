@@ -11,7 +11,11 @@ tags: [meta, index]
 
 The master catalog. Every page in the wiki is reachable from here (directly or via a sub-index).
 
-> **Source codebase:** `C:\DevOps\iCenter\iCenter\iCENTER\` — single VB.NET WinForms project (`iCenter.vbproj`) with ~30 sub-folders covering CAD/CAM, Sales, WorkPreparation, Production, Engineering, and external-system integrations.
+> **Source codebases (scope widened 2026-06-18):**
+> 1. `C:\DevOps\iCenter\iCenter\iCENTER\` — iCenter WinForms shell (`iCenter.vbproj`).
+> 2. `C:\DevOps\iCenter\iCenter\TruTopsLib\` — Trumpf TruTops file parser (`.vb` + `.cs`).
+> 3. `C:\Users\jelle-r\source\repos\JIBA\iCenter And Tools\ICenterLib\ICenterLib\` — shared lib hosting ISAH/JIBA/CAD/SmtProduction/PCFNet plumbing.
+>
 > **Mission:** Full file coverage + business-logic surfacing. See [[../CLAUDE|standing instructions]].
 
 ---
@@ -43,8 +47,11 @@ The master catalog. Every page in the wiki is reachable from here (directly or v
 
 See [[_coverage]] for authoritative status. Summary updated by the lint pass.
 
-| Sub-folder | Files | Done | Todo | Needs-review |
-|------------|------:|-----:|-----:|-------------:|
-| **iCENTER (all)** | **1237** | 5 | 532 | 1 |
+| Project | Files | Done | Todo | Needs-review |
+|---------|------:|-----:|-----:|-------------:|
+| iCENTER | 1237 | 5 | 532 | 1 |
+| TruTopsLib | 65 | 0 | 57 | 0 |
+| ICenterLib | 723 | 0 | 571 | 0 |
+| **TOTAL** | **2025** | **5** | **1160** | **1** |
 
-> 532 todo entries are mostly `.vb` source. 341 are `generated` (`*.Designer.vb` + `*.resx`) and 358 are `config` (assets, project metadata, signing keys). 5 root/`Modules` files documented in Phase 2 (see [[architecture/_index]]); `FrmMain.vb` flagged `needs-review` pending its Phase-3 split. Full per-folder breakdown lives in [[_coverage]].
+> 1160 `todo` entries are mostly `.vb` source (with some `.cs` in TruTopsLib). 414 are `generated` (`*.Designer.vb|cs` + `*.resx`) and 445 are `config` (assets, project metadata, signing keys, solution files). Full per-folder breakdown lives in [[_coverage]].

@@ -24,7 +24,7 @@ Cross-cutting structural views of the `iCENTER` project. Each note here is a *vi
 
 ## Open questions
 
-- Are companion projects [[project-references|`ICenterLib` and `TruTopsLib`]] in scope for this wiki? Per the updated [[../../CLAUDE|standing instructions]] only `iCENTER\` is in scope, but ~80% of business logic flows *through* `ICenterLib.*` types. Tracked as **Q-001** in [[../needs-review/_index]].
+- [[project-references|`ICenterLib` and `TruTopsLib`]] are now in scope (Q-001 resolved 2026-06-18). New **Q-018** open about ICenterLib's mismatched build-reference path.
 - Should the disabled ClickOnce signing pipeline (lines 3383–3391 of `iCenter.vbproj`) be documented? Likely a release-engineering / SME concern.
 
 ## Related

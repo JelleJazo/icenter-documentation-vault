@@ -4,9 +4,11 @@
 
 Build a complete Obsidian wiki for this legacy codebase, which controls business processes in a production factory (sales, engineering, work preparation, production, transport).
 
-The folders to analyze are inside:
+The folders to analyze are:
 
-C:\DevOps\iCenter\iCenter\iCENTER
+1. `C:\DevOps\iCenter\iCenter\iCENTER` — the iCenter WinForms application (root project).
+2. `C:\DevOps\iCenter\iCenter\TruTopsLib` — companion VB.NET+C# library (Trumpf TruTops file parsing).
+3. `C:\Users\jelle-r\source\repos\JIBA\iCenter And Tools\ICenterLib\ICenterLib` — companion VB.NET library; hosts most of the data-access, ISAH/JIBA/PCFNet/SmtProduction/CAD/PLM plumbing referenced by iCENTER.
 
 Two non-negotiable goals:
 
