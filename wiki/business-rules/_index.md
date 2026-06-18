@@ -57,8 +57,11 @@ _(Each watchlist row becomes a `business-rules/<slug>.md` page during Phase 4. U
 - [[elu-largerect-freeform-replacement]] — large-rectangle → FreeForm replacement (only door-needle profiles, hard-coded thresholds). **`#safety-relevant`**
 - [[elu-flowdrill-replacement]] — Ø9.3 mm / deep holes → flow-drill macro. **`#safety-relevant`**
 - [[elu-dual-emit-sbz140-sbz141]] — Sbz140Alu jobs additionally emit for Sbz141Alu when `AppVersion.UseFileBasedSettings`. **`#safety-relevant`**
+- [[sales-team-codes]] — hard-coded `{031, 032, 033}` sales teams. `#needs-review`
+- [[outsource-ext-oper-part-code]] — `UITBESTEDING01` hard-coded outsource part code. **`#safety-relevant`**
+- [[icenter-operation-machgrp-mapping]] — `iCenterOperationId → MachGrpCodes` mapping (1, 9, 31 only). **`#safety-relevant`**
 
 ### By severity (will be filled by Phase 4 / lint pass)
-- `#safety-relevant` — all 7 written rules above _(plus the watchlist below)_
-- `#needs-review` — all watchlist rows + the 7 written rules above
+- `#safety-relevant` — 9 of the 10 written rules + the watchlist below
+- `#needs-review` — all watchlist rows + the 10 written rules above
 - `#dead-code` — [[elu-forster-thumbhole-step-depth]]

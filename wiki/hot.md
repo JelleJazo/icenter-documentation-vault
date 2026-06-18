@@ -7,42 +7,51 @@ updated: 2026-06-18T00:00:00
 # Recent Context
 
 ## Last Updated
-2026-06-18. Phase 3a-5: Elumatec ProfMillJob + ProfMillConverter batch landed.
+2026-06-18. Phase 3b-1: Office → shop-floor handoff batch landed (Sales / Engineering / WorkPreparation / Production).
 
 ## Key Recent Facts
 - Scope: three projects (iCENTER 1237 + TruTopsLib 65 + ICenterLib 723 = **2025 files**).
-- Coverage now: **36 done, 6 needs-review, 1124 todo, 445 config, 414 generated**.
-- 81 open SME questions (Q-001 + Q-006 resolved + Q-031 + Q-034 resolved this batch). **32 are `#safety-relevant`**.
-- Elumatec subfolder coverage: **31 done / 87 todo / 5 needs-review** out of 157. **About 1/3 of Elumatec documented.**
-- 7 business-rule notes now live, all `#safety-relevant`.
+- Coverage now: **56 done, 7 needs-review, 1103 todo, 445 config, 414 generated**.
+- 106 open SME questions (Q-001, Q-006, Q-031, Q-034 resolved). **42 are `#safety-relevant`**.
+- 10 business-rule notes (9 safety-relevant).
+- Elumatec subsystem stopped at 31/157 done per user direction; now pivoted to office-to-shop-floor.
+- Coverage in this batch:
+  - **Sales**: 1/1 done.
+  - **Engineering**: 8 done + 1 needs-review out of 9 .vb non-Designer files.
+  - **WorkPreparation**: 4/4 done.
+  - **Production** (root + ProfileMilling): 6/6 done.
 
-## ProfMillJob + ProfMillConverter summary (this batch)
-- **`ProfMillConverter.Optimize()`** is the single entry point that drives the CAD→NC pipeline for one model.
-- **`ConvertCut(machine, cut)`** is a 17-step pipeline (in [[modules/elumatec-profmill-converter]] table). Steps include ReplaceSpecialWorks, RemoveSawCuts, AssignTools, RotateWorksOnBottomside, DeleteDuplicates, SortWorks, SetWDepthPost, **SetMaxStepDepth**, SetWBroach, SetWHelixIntr, SetWMillDir, SetWRotationOfFlowDrillWorksOnBackside, SetWorkNos, ReplaceMill (steel-only), SetWContour, MinimizeMillTools, SuppressMultiSidedMacros (commented-out body!).
-- **Q-031 resolved**: `Sbz14x.MaxStepDepth` is consumed *only* in `ProfMillConverter.SetMaxStepDepth`, and *only* as the fallback (`UseTMaxCut = False` branch). **Primary source is per-tool `oMachine.ToolDb.GetMaxCut(WToolID)` from the `.nct` tool database** — corrected [[business-rules/elu-max-step-depth]] and added new [[business-rules/elu-tool-max-cut-depth]].
-- **Q-034 resolved**: `AutoReplacementMacroFile = Creo.Environment.GetProManufDir + app.config[AutoReplaceMacros]` → macro file lives in **Creo's pro-manuf install directory**, not iCenter's deployment.
-- **Dual-emit discovered**: `Sbz140Alu` jobs additionally emit for `Sbz141Alu` when `AppVersion.UseFileBasedSettings`. Asymmetric (Sbz141Alu→only itself; Q-080). Documented in [[business-rules/elu-dual-emit-sbz140-sbz141]].
-- **Forster thumb-hole override** (`MaxStepDepth = 6` for Rectangle features with `WY1∈(48,50)` AND `WDepth>10` AND `WW3=5`) lives in the fallback branch — currently dead. New `#dead-code`-tagged note [[business-rules/elu-forster-thumbhole-step-depth]].
-- **Manual AUF override path**: `GetManualAufExists(ecwFilePath)` checks `\\jazo.local\dfs\pm\Elumatec_SBZ140\Aanpassen\` for a hand-edited `.auf` that silently replaces iCenter output. No audit trail. `#safety-relevant` (Q-071).
-- **`SuppressMultiSidedMacros` body entirely commented out** — only an empty Try/Catch remains (Q-069).
-- **`KeepAufAsSeperateFile = True`** always-on with comment `' Functions.DebugMode` — was supposed to be debug-only but isn't (Q-073).
+## Office → shop-floor summary (this batch)
+- **Sub-MOC** at [[mocs/office-to-shopfloor]] catalogues the full handoff: ISAH order → Sales team → Engineering owner → WorkPreparation (outsource / op-substitution) → Production (per-machine cut-items + UniLink CSV import).
+- **Sales/FrmCustomerTeam** assigns customers to teams `031/032/033` (hard-coded) via ISAH `T_Customer`.
+- **WorkPreparation/IPBatchCollector** is a single SQL query against ISAH `T_ProductionHeader + JZ_ProdRefNr + T_ProdBillOfOper`. Only surfaces rows with a `JZ_ProdRefNr` entry (Q-099).
+- **WorkPreparation/OutsourceOperationsHandler** is the big one (~540 lines): packages STEP+PDF docs per vendor, creates ISAH PurDoc via `PurOrd.CreatePurOrdByExtOperParts("UITBESTEDING01", ...)`, drops zip into `IsahDoc\Purchase\<PurOrdNr>\01\`, marks ShopDoc as started + IPparts as completed. Hard-coded: `UITBESTEDING01`, `AutoSendEmail=False`, `MICROSOFTPRINTTOPDF` sticker printer, only `ProfileId=1` implemented.
+- **WorkPreparation/OperationSubstitutionHandler** swaps `<From>` for `<To>` machine-group across DataTables. **Likely bug found** (Q-095, safety-relevant): `SubstituteInSurfTreatmentPart` iterates `dtSurfTreatmentOper` and vice versa — swapped sources.
+- **Production/ProductionProfileCutItemsHandler** implements only 3 iCenter operations (1→A01,A07; 9→S01; 31→A07,A01). Operations 1 and 31 have **same set, reversed order** (Q-106). Constructor `MachineId = Math.Max(iPPartId, 0)` looks like a copy-paste error (Q-101).
+- **Production/ProfileMilling** (5 files) is the **UniLink CSV import pipeline** — iCenter → CAM counterpart to the Elumatec output. Validates every profile has `Series` filled AND a matching DXF in UniLink, else throws. `PMMExportHandler` wipes all `<PMMEXPORT3D>` XML attributes when updating (Q-103).
+- **Engineering**: 9 files. Notable: `FrmDrwCheck` embeds PDF-XChange ActiveX with the license key from `app.config`; `FrmDesignCodeTool` is a WebView2 wrapper around `tekeningnummers.jazo.com` with JavaScript injection (brittle, Q-090); `ModelCopies/CopyLocalizer` has 1 active sub-class and 1 dead (`UitsparingVoorplaatMeerpslAlu`, Q-089).
 
 ## Recent Changes
-- Created 2 module notes: [[modules/elumatec-profmill-converter]] (the orchestrator), [[modules/elumatec-profmill-job]] (the runtime container, ~60 methods).
-- Created 3 new business-rule notes: [[business-rules/elu-tool-max-cut-depth]], [[business-rules/elu-forster-thumbhole-step-depth]], [[business-rules/elu-dual-emit-sbz140-sbz141]].
-- **Corrected** [[business-rules/elu-max-step-depth]] — added a prominent banner noting the rule is fallback-only and currently inactive.
-- Resolved Q-031 and Q-034. Opened Q-065..Q-081 (17 new questions, 13 `#safety-relevant`).
-- Updated [[_coverage]] (+2 Elumatec done); rollup totals.
-- Updated [[business-rules/_index]] and [[needs-review/_index]].
+- Created [[mocs/office-to-shopfloor]] sub-MOC.
+- Created 7 module notes: [[modules/sales-customer-team]], [[modules/workprep-outsource-operations]], [[modules/workprep-operation-substitution]], [[modules/workprep-ipbatch-collector]], [[modules/production-profile-cut-items]], [[modules/production-profile-milling-import]], [[modules/engineering-overview]].
+- Created 3 business-rule notes: [[business-rules/sales-team-codes]], [[business-rules/outsource-ext-oper-part-code]], [[business-rules/icenter-operation-machgrp-mapping]].
+- Opened Q-082..Q-106 (25 new questions, 11 `#safety-relevant`).
+- Updated [[_coverage]] (+20 done in 4 folders); rollup totals.
+- Updated [[mocs/_index]], [[business-rules/_index]], [[needs-review/_index]].
+
+## Notable findings (probable bugs)
+- **Q-095** — `OperationSubstitutionHandler`: `*Part` iterates `dtSurfTreatmentOper` and `*Oper` iterates `dtSurfTreatmentPart`. Either harmless (both tables share the column) or a real bug (each updates the wrong table). `#safety-relevant`
+- **Q-101** — `ProductionProfileCutItemsHandler.New`: `MachineId = Math.Max(iPPartId, 0)` — looks like `iPPartId` was meant to be `machineId`. `#safety-relevant`
+- **Q-100** — `ProductionProfileCutItemsHandler.Write`: `Clear(MachineId)` runs unconditionally; a model-lookup failure wipes the machine's previous cut-items. `#safety-relevant`
 
 ## Active Threads
-- Recommended next Elumatec batches:
-  1. **Per-feature Work subclasses** — Circle, Drill, SlottedHole, FreeForm, Sawcut, Group, Macro, Deburr, FreeFormPoint (and complete Rectangle). Each ~5-25 KB. Should close the abstract-surface gaps documented in [[modules/elumatec-work-base]].
-  2. **Remaining replacement macros** — DoublePnotch (19 KB), AluHinge (18 KB), OpdekH, RDHS27Notch, AluSRkom, AluHUPO, ExtraLength, AluSinglePnotch + Stl-side (StlGeneral 13 KB, StlHinge, StlDoublePnotch, StlFlowDrill).
-  3. **`AutoProfMillProgApproval.vb`** (25 KB) — auto-approval of profile-mill programs. `#safety-relevant`.
-  4. **`Database\Profile.vb`** (54 KB) — the central profile DB entity + tool DB + offsets + fixtures.
-  5. **`ClsSawList.vb`** (24 KB), **`CtrlProfMillElu.vb`** (43 KB), **`CtrlProfMillCam.vb`** (37 KB) — UI surfaces.
-- Once Elumatec saturates, **SmtManufacturing** (63 `.vb`, `#safety-relevant`) and **TruTops Oseon** types in ICenterLib next.
+- Recommended next batches:
+  1. **CadBatchserver** (27 files) — the headless mode + 16 `Job*.vb` classes (JobAutoManufacturing, JobCreateProdOrd, JobPublishCreo, JobSendEmail, JobRebootMonitor, etc.). Each `Job*` is a candidate business rule. This is the scheduled-work side of iCenter.
+  2. **Classes/** (111 files) — core domain classes. Needs a sub-MOC due to size. Subfolders: Coating/, Connectivity/, PreSelectMachGrpCodes/, Production/, StickersAndLabels/, Toolbox/.
+  3. **Forms/** (127 .vb non-Designer) — the dialog gallery, including the ShopProcess sub-folder.
+  4. **SmtManufacturing** (63 files) — sheet metal subsystem.
+  5. **Companion projects** — ICenterLib (723 files) and TruTopsLib (65 files) are in scope but completely untouched. ISAH/JIBA/CAD/SmtProduction plumbing all lives there.
 
 ## Notes from working tree
 - Three Obsidian auto-stubs at wiki root (`jiba-portal.md`, `kardex.md`, `trutops-oseon.md`) and `.obsidian/` autoupdates remain unstaged.
+- `architecture/external-surface.md` was reformatted by the user / a linter (table markdown changed) — leaving as-is per intent.

@@ -13,6 +13,30 @@ Append-only chronological record. **Newest entries at the top.** Never edit past
 
 ---
 
+## 2026-06-18 — Phase 3b-1: Office → shop-floor handoff (Sales / Engineering / WorkPreparation / Production)
+
+- User stopped Elumatec deep-dive at 31/157 files ("is in-depth enough"). Pivoted to office-to-shop-floor workflow.
+- Created [[mocs/office-to-shopfloor]] sub-MOC covering 20 files across 4 folders.
+- Wrote 7 module notes:
+  - [[modules/sales-customer-team]] — hard-coded sales team codes 031/032/033.
+  - [[modules/workprep-outsource-operations]] — the big outsourcing pipeline (OutsourceOperationsHandler + FrmOutsourceOperations). Per-vendor STEP+PDF packaging, PurOrd creation, IsahDoc drop, ShopDoc/IPpart state updates.
+  - [[modules/workprep-operation-substitution]] — swap machine-group operations. **Likely bug Q-095**: swapped surface-treatment table sources.
+  - [[modules/workprep-ipbatch-collector]] — single SQL query against ISAH `T_ProdBillOfOper` (joins six tables).
+  - [[modules/production-profile-cut-items]] — per-machine cut-items handler. Only operations 1/9/31 implemented. **Likely bug Q-101**: `MachineId = Math.Max(iPPartId, 0)` copy-paste.
+  - [[modules/production-profile-milling-import]] — UniLink CSV import pipeline (5 files). The iCenter→UniLink counterpart to the Elumatec NC pipeline.
+  - [[modules/engineering-overview]] — 9 Engineering forms incl. `FrmDrwCheck` (PDF-XChange ActiveX viewer), `FrmDesignCodeTool` (WebView2 to tekeningnummers.jazo.com), `ModelCopies/CopyLocalizer` family.
+- Wrote 3 new business-rule notes:
+  - [[business-rules/sales-team-codes]] — `{031, 032, 033}`.
+  - [[business-rules/outsource-ext-oper-part-code]] — `UITBESTEDING01` hard-coded.
+  - [[business-rules/icenter-operation-machgrp-mapping]] — `1→A01,A07`, `9→S01`, `31→A07,A01`.
+- Opened 25 new questions Q-082..Q-106 (11 `#safety-relevant`). Most notable:
+  - **Q-095** swapped surface-treatment tables in OperationSubstitutionHandler.
+  - **Q-100, Q-101** copy-paste / unconditional-clear in ProductionProfileCutItemsHandler.
+  - **Q-094** `SetShopDocFinInd(True)` commented out — is ShopDoc ever marked finished?
+  - **Q-090** brittle JavaScript injection against `tekeningnummers.jazo.com`.
+- Coverage delta: +20 done (1 Sales + 4 WorkPreparation + 6 Production + 8 Engineering + 1 needs-review). Totals: 56 done / 1103 todo / 445 config / 414 generated / 7 needs-review of 2025.
+- **Next:** user-chosen (CadBatchserver, Classes/, SmtManufacturing, or companion projects).
+
 ## 2026-06-18 — Phase 3a-5: Elumatec ProfMillJob + ProfMillConverter batch
 
 - Wrote 2 module notes:

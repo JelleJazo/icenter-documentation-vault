@@ -24,6 +24,31 @@ _(Append as you go. Newest at the top.)_
 
 | ID | Date | Page | Question | Severity / tag |
 |----|------|------|----------|----------------|
+| **Q-106** | 2026-06-18 | [[../business-rules/icenter-operation-machgrp-mapping]] | Ordering of MachGrpCodes between operations 1 and 31 — is `GetMBomMultilevel` order-sensitive? | safety-relevant |
+| **Q-105** | 2026-06-18 | [[../modules/engineering-overview]] | `frmGenericStatus`'s commented-out PDF-XChange viewer activation — deliberately disabled or forgotten? | low |
+| **Q-104** | 2026-06-18 | [[../modules/engineering-overview]] | Order-number convention: position 2 = `"0"` means quote, otherwise order. Confirm with SME. | low |
+| **Q-103** | 2026-06-18 | [[../modules/production-profile-milling-import]] | `PMMExportHandler.ProcessFile` wipes all `<PMMEXPORT3D>` attributes before setting `name`. Should others be preserved? | medium |
+| **Q-102** | 2026-06-18 | [[../modules/production-profile-milling-import]] | Document SME workflow for the per-generic `AutoAddIaNr` flag. | medium |
+| **Q-101** | 2026-06-18 | [[../modules/production-profile-cut-items]] | `MachineId = Math.Max(iPPartId, 0)` looks like a copy-paste error — `MachineId` itself isn't normalised. | safety-relevant |
+| **Q-100** | 2026-06-18 | [[../modules/production-profile-cut-items]] | `Clear(MachineId)` runs unconditionally; a model-lookup failure wipes the machine's previous cut items. | safety-relevant |
+| **Q-099** | 2026-06-18 | [[../modules/workprep-ipbatch-collector]] | Query filter requires a `JZ_ProdRefNr` row — confirm rule "only jobs with assigned ref-nr are outsourceable". | medium |
+| **Q-098** | 2026-06-18 | [[../modules/workprep-ipbatch-collector]] | Empty `SearchValue` returns no rows. Confirm intentional. | medium |
+| **Q-097** | 2026-06-18 | [[../modules/workprep-operation-substitution]] | `KeepSetupTime` flag only acts when `KeepCycleTime` is also true. Intentional? | medium |
+| **Q-096** | 2026-06-18 | [[../modules/workprep-outsource-operations]] | `WriteExchangeFile` uses default encoding (Windows-1252 on Dutch box). Vendors expecting UTF-8 may see mojibake. | medium |
+| **Q-095** | 2026-06-18 | [[../modules/workprep-operation-substitution]] | Two surface-treatment subs use swapped table sources. Bug or harmless? | safety-relevant |
+| **Q-094** | 2026-06-18 | [[../modules/workprep-outsource-operations]] | `SetShopDocFinInd(True)` commented out (line 405). Is the ShopDoc ever marked finished, or has it moved elsewhere? | safety-relevant |
+| **Q-093** | 2026-06-18 | [[../modules/workprep-outsource-operations]] | `FrmOutsourceOperations.GetLazyMachGrpFilterIn` — what determines the list? User-editable or hard-coded? | medium |
+| **Q-092** | 2026-06-18 | [[../modules/sales-customer-team]] | `DTFilter` declared at class scope and shadowed in `New()`. Remove the field? | low |
+| **Q-091** | 2026-06-18 | [[../modules/sales-customer-team]] | What does the "apply" action actually call on ISAH? | low |
+| **Q-090** | 2026-06-18 | [[../modules/engineering-overview]] | `FrmDesignCodeTool` brittle JavaScript injection against tekeningnummers.jazo.com. Document contract. | medium |
+| **Q-089** | 2026-06-18 | [[../modules/engineering-overview]] | `UitsparingVoorplaatMeerpslAlu` registered-out in CopyLocalizer. Confirm truly dead code. | low |
+| **Q-088** | 2026-06-18 | [[../modules/engineering-overview]] | `BatchServerMode` temporarily flipped to `True` during ModelCopies searches — why? | medium |
+| **Q-087** | 2026-06-18 | [[../modules/workprep-outsource-operations]] | `WaitForPurDocFolder` polls every 500ms for 20s. What happens during ISAH peak load? | medium |
+| **Q-086** | 2026-06-18 | [[../modules/workprep-outsource-operations]] | CSV exchange-file schema (8 columns) is hard-coded. Vendors changing format → silent breakage. | medium |
+| **Q-085** | 2026-06-18 | [[../business-rules/icenter-operation-machgrp-mapping]] | Confirm iCenter operation IDs 1/9/31 are the only ones. Provide SME-friendly names. | safety-relevant |
+| **Q-084** | 2026-06-18 | [[../modules/workprep-outsource-operations]] | Only `ProfileId = 1` is implemented for outsourcing. What other ProfileIds exist? | safety-relevant |
+| **Q-083** | 2026-06-18 | [[../business-rules/outsource-ext-oper-part-code]] | Is there ever a need for a second outsource part code (other than `UITBESTEDING01`)? | safety-relevant |
+| **Q-082** | 2026-06-18 | [[../business-rules/sales-team-codes]] | Confirm `031/032/033` are the only sales teams. Surface their SME-friendly names. | medium |
 | **Q-081** | 2026-06-18 | [[../business-rules/elu-dual-emit-sbz140-sbz141]] | Confirm `ExportNC` per-machine output filepaths don't collide in dual-emit. | safety-relevant |
 | **Q-080** | 2026-06-18 | [[../business-rules/elu-dual-emit-sbz140-sbz141]] | Dual-emit is asymmetric: Sbz140Alu→both, Sbz141Alu→itself only. Intentional? | safety-relevant |
 | **Q-079** | 2026-06-18 | [[../business-rules/elu-forster-thumbhole-step-depth]] | If Forster override is dead in production, remove it or migrate it into the per-tool path? | safety-relevant |
@@ -153,3 +178,11 @@ _(Append as you go. Newest at the top.)_
 | Q-079 | [[../business-rules/elu-forster-thumbhole-step-depth]] | Forster override: remove or migrate |
 | Q-080 | [[../business-rules/elu-dual-emit-sbz140-sbz141]] | Dual-emit asymmetry |
 | Q-081 | [[../business-rules/elu-dual-emit-sbz140-sbz141]] | Dual-emit per-machine filepath collision check |
+| Q-083 | [[../business-rules/outsource-ext-oper-part-code]] | `UITBESTEDING01` hard-coded ext-operation part code |
+| Q-084 | [[../modules/workprep-outsource-operations]] | Only `ProfileId = 1` outsourcing implemented |
+| Q-085 | [[../business-rules/icenter-operation-machgrp-mapping]] | iCenter operation IDs (1/9/31 only) |
+| Q-094 | [[../modules/workprep-outsource-operations]] | `SetShopDocFinInd(True)` commented out |
+| Q-095 | [[../modules/workprep-operation-substitution]] | Swapped surface-treatment table sources (bug?) |
+| Q-100 | [[../modules/production-profile-cut-items]] | Unconditional `Clear(MachineId)` |
+| Q-101 | [[../modules/production-profile-cut-items]] | `MachineId = Math.Max(iPPartId, 0)` copy-paste |
+| Q-106 | [[../business-rules/icenter-operation-machgrp-mapping]] | Operation 1 vs 31 MachGrpCode ordering |

@@ -636,25 +636,25 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 |------|--------|------|---------------|
 | `Engineering\FrmDesignCodeTool.designer.vb` | generated | VS Forms designer partial | — |
 | `Engineering\FrmDesignCodeTool.resx` | generated | resource bundle (designer-managed) | — |
-| `Engineering\FrmDesignCodeTool.vb` | todo | — | — |
+| `Engineering\FrmDesignCodeTool.vb` | done | [[modules/engineering-overview]] | 2026-06-18 |
 | `Engineering\FrmDrwCheck.Designer.vb` | generated | VS Forms designer partial | — |
 | `Engineering\FrmDrwCheck.resx` | generated | resource bundle (designer-managed) | — |
-| `Engineering\FrmDrwCheck.vb` | todo | — | — |
+| `Engineering\FrmDrwCheck.vb` | done | [[modules/engineering-overview]] | 2026-06-18 |
 | `Engineering\frmEngGeneratedProductOverview.Designer.vb` | generated | VS Forms designer partial | — |
 | `Engineering\frmEngGeneratedProductOverview.resx` | generated | resource bundle (designer-managed) | — |
-| `Engineering\frmEngGeneratedProductOverview.vb` | todo | — | — |
+| `Engineering\frmEngGeneratedProductOverview.vb` | done | [[modules/engineering-overview]] | 2026-06-18 |
 | `Engineering\frmGenericStatus.Designer.vb` | generated | VS Forms designer partial | — |
 | `Engineering\frmGenericStatus.resx` | generated | resource bundle (designer-managed) | — |
-| `Engineering\frmGenericStatus.vb` | todo | — | — |
+| `Engineering\frmGenericStatus.vb` | done | [[modules/engineering-overview]] | 2026-06-18 |
 | `Engineering\FrmOrdersAsBuilt.designer.vb` | generated | VS Forms designer partial | — |
 | `Engineering\FrmOrdersAsBuilt.resx` | generated | resource bundle (designer-managed) | — |
-| `Engineering\FrmOrdersAsBuilt.vb` | todo | — | — |
+| `Engineering\FrmOrdersAsBuilt.vb` | done | [[modules/engineering-overview]] | 2026-06-18 |
 | `Engineering\frmSelectAnnotGenericStatus.Designer.vb` | generated | VS Forms designer partial | — |
 | `Engineering\frmSelectAnnotGenericStatus.resx` | generated | resource bundle (designer-managed) | — |
-| `Engineering\frmSelectAnnotGenericStatus.vb` | todo | — | — |
-| `Engineering\ModelCopies\CopyLocalizer.vb` | todo | — | — |
-| `Engineering\ModelCopies\GenericSmtPartFinder.vb` | todo | — | — |
-| `Engineering\ModelCopies\UitsparingVoorplaatMeerpslAlu.vb` | todo | — | — |
+| `Engineering\frmSelectAnnotGenericStatus.vb` | needs-review | [[modules/engineering-overview]] (deferred — likely selector before frmGenericStatus) | — |
+| `Engineering\ModelCopies\CopyLocalizer.vb` | done | [[modules/engineering-overview]] | 2026-06-18 |
+| `Engineering\ModelCopies\GenericSmtPartFinder.vb` | done | [[modules/engineering-overview]] | 2026-06-18 |
+| `Engineering\ModelCopies\UitsparingVoorplaatMeerpslAlu.vb` | done | [[modules/engineering-overview]] | 2026-06-18 |
 
 ### Forms
 
@@ -927,12 +927,12 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `Production\ProductionProfileCutItemsHandler.vb` | todo | — | — |
-| `Production\ProfileMilling\ExternalReferenceHelper.vb` | todo | — | — |
-| `Production\ProfileMilling\ICAMImport.vb` | todo | — | — |
-| `Production\ProfileMilling\ImportData.vb` | todo | — | — |
-| `Production\ProfileMilling\ImportHandler.vb` | todo | — | — |
-| `Production\ProfileMilling\PMMExportHandler.vb` | todo | — | — |
+| `Production\ProductionProfileCutItemsHandler.vb` | done | [[modules/production-profile-cut-items]] | 2026-06-18 |
+| `Production\ProfileMilling\ExternalReferenceHelper.vb` | done | [[modules/production-profile-milling-import]] | 2026-06-18 |
+| `Production\ProfileMilling\ICAMImport.vb` | done | [[modules/production-profile-milling-import]] | 2026-06-18 |
+| `Production\ProfileMilling\ImportData.vb` | done | [[modules/production-profile-milling-import]] | 2026-06-18 |
+| `Production\ProfileMilling\ImportHandler.vb` | done | [[modules/production-profile-milling-import]] | 2026-06-18 |
+| `Production\ProfileMilling\PMMExportHandler.vb` | done | [[modules/production-profile-milling-import]] | 2026-06-18 |
 
 ### Resources
 
@@ -1303,7 +1303,7 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 |------|--------|------|---------------|
 | `Sales\FrmCustomerTeam.Designer.vb` | generated | VS Forms designer partial | — |
 | `Sales\FrmCustomerTeam.resx` | generated | resource bundle (designer-managed) | — |
-| `Sales\FrmCustomerTeam.vb` | todo | — | — |
+| `Sales\FrmCustomerTeam.vb` | done | [[modules/sales-customer-team]] | 2026-06-18 |
 
 ### SmtManufacturing
 
@@ -1475,10 +1475,10 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 |------|--------|------|---------------|
 | `WorkPreparation\FrmOutsourceOperations.Designer.vb` | generated | VS Forms designer partial | — |
 | `WorkPreparation\FrmOutsourceOperations.resx` | generated | resource bundle (designer-managed) | — |
-| `WorkPreparation\FrmOutsourceOperations.vb` | todo | — | — |
-| `WorkPreparation\IPBatchCollector.vb` | todo | — | — |
-| `WorkPreparation\OperationSubstitutionHandler.vb` | todo | — | — |
-| `WorkPreparation\OutsourceOperationsHandler.vb` | todo | — | — |
+| `WorkPreparation\FrmOutsourceOperations.vb` | done | [[modules/workprep-outsource-operations]] | 2026-06-18 |
+| `WorkPreparation\IPBatchCollector.vb` | done | [[modules/workprep-ipbatch-collector]] | 2026-06-18 |
+| `WorkPreparation\OperationSubstitutionHandler.vb` | done | [[modules/workprep-operation-substitution]] | 2026-06-18 |
+| `WorkPreparation\OutsourceOperationsHandler.vb` | done | [[modules/workprep-outsource-operations]] | 2026-06-18 |
 
 
 
@@ -2235,7 +2235,7 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `Production\ProductionLog.vb` | todo | — | — |
 | `Production\ProductionProfileCutItem.vb` | todo | — | — |
 | `Production\ProductionProfileCutItemHandler.vb` | todo | — | — |
-| `Production\ProductionProfileCutItemsHandler.vb` | todo | — | — |
+| `Production\ProductionProfileCutItemsHandler.vb` | done | [[modules/production-profile-cut-items]] | 2026-06-18 |
 | `Production\ProductionRegistrationAnalysisRange.vb` | todo | — | — |
 | `Production\SmtBendQueue.vb` | todo | — | — |
 | `Production\UCProdLineLeanStatus.Designer.vb` | generated | VS designer partial | — |
@@ -2569,10 +2569,10 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 
 | Project | Total | Done | Todo | Config | Generated | Dead | Needs-review |
 |---------|------:|-----:|-----:|-------:|----------:|-----:|-------------:|
-| iCENTER | 1237 | 36 | 496 | 358 | 341 | 0 | 6 |
+| iCENTER | 1237 | 56 | 475 | 358 | 341 | 0 | 7 |
 | TruTopsLib | 65 | 0 | 57 | 6 | 2 | 0 | 0 |
 | ICenterLib | 723 | 0 | 571 | 81 | 71 | 0 | 0 |
-| **TOTAL** | **2025** | **36** | **1124** | **445** | **414** | **0** | **6** |
+| **TOTAL** | **2025** | **56** | **1103** | **445** | **414** | **0** | **7** |
 
 ### Per iCENTER sub-folder
 
@@ -2589,20 +2589,20 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 | DataMigration | 50 | 0 | 50 | 0 | 0 | 0 | 0 |
 | DesignComments | 10 | 0 | 4 | 0 | 6 | 0 | 0 |
 | Elumatec | 157 | 31 | 87 | 0 | 34 | 0 | 5 |
-| Engineering | 21 | 0 | 9 | 0 | 12 | 0 | 0 |
+| Engineering | 21 | 8 | 0 | 0 | 12 | 0 | 1 |
 | Forms | 188 | 0 | 64 | 0 | 124 | 0 | 0 |
 | IcImporter | 6 | 0 | 4 | 0 | 2 | 0 | 0 |
 | Kardex | 4 | 0 | 2 | 0 | 2 | 0 | 0 |
 | MarkTool | 5 | 0 | 3 | 0 | 2 | 0 | 0 |
 | Modules | 3 | 1 | 2 | 0 | 0 | 0 | 0 |
 | PCFNetStudio | 17 | 0 | 7 | 0 | 10 | 0 | 0 |
-| Production | 6 | 0 | 6 | 0 | 0 | 0 | 0 |
+| Production | 6 | 6 | 0 | 0 | 0 | 0 | 0 |
 | Resources | 354 | 0 | 0 | 354 | 0 | 0 | 0 |
-| Sales | 3 | 0 | 1 | 0 | 2 | 0 | 0 |
+| Sales | 3 | 1 | 0 | 0 | 2 | 0 | 0 |
 | SmtManufacturing | 78 | 0 | 47 | 0 | 31 | 0 | 0 |
 | SolaDataConnector | 2 | 0 | 2 | 0 | 0 | 0 | 0 |
 | UniLink | 30 | 0 | 28 | 0 | 2 | 0 | 0 |
 | VentDuctConfigurator | 4 | 0 | 2 | 0 | 2 | 0 | 0 |
 | WebClock | 13 | 0 | 5 | 0 | 8 | 0 | 0 |
-| WorkPreparation | 6 | 0 | 4 | 0 | 2 | 0 | 0 |
-| iCENTER **TOTAL** | **1237** | **36** | **496** | **358** | **341** | **0** | **6** |
+| WorkPreparation | 6 | 4 | 0 | 0 | 2 | 0 | 0 |
+| iCENTER **TOTAL** | **1237** | **56** | **475** | **358** | **341** | **0** | **7** |
