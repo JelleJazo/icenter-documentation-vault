@@ -48,6 +48,11 @@ Surfaced during the Phase 2 architecture pass. Each is a candidate for a dedicat
 
 _(Each watchlist row becomes a `business-rules/<slug>.md` page during Phase 4. Use the [[../_templates/business-rule|template]] and link back here.)_
 
+### Written so far
+
+- [[elu-max-step-depth]] — `EluMaxStepDepth*` per-material step-depth limits. **`#safety-relevant`**
+- [[elu-large-rectangle-classification]] — large-rectangle → broach classifier. **`#safety-relevant`**
+
 ### By severity (will be filled by Phase 4 / lint pass)
-- `#safety-relevant` — _none yet written; ~10 candidates in watchlist above_
-- `#needs-review` — _all watchlist rows_
+- `#safety-relevant` — [[elu-max-step-depth]], [[elu-large-rectangle-classification]] _(plus the watchlist above)_
+- `#needs-review` — all watchlist rows + the two written rules above

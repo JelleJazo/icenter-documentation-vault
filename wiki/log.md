@@ -13,6 +13,20 @@ Append-only chronological record. **Newest entries at the top.** Never edit past
 
 ---
 
+## 2026-06-18 — Phase 3a: first Elumatec batch
+
+- Built the Elumatec subsystem hub at [[mocs/elumatec]] — catalogues all 140 `.vb` files across 8 sub-folders and the recommended Phase-3 ordering.
+- Wrote 3 module notes:
+  - [[modules/elumatec-com-watcher]] — `FrmComWatcher` + `ClsComWatcher` + `CRs232`. **Resolves Q-006**: it's a serial COM-port watcher for the saw (MachineId 2, COM1, 9600 8-N-1). Most of its original behaviour is commented out (Q-019).
+  - [[modules/elumatec-cad-app]] — overview-only for the 128 KB `EluCadApp.vb` god-class. Marked `needs-review` until per-cluster sub-notes land.
+  - [[modules/elumatec-machine-base]] — abstract `Sbz14x` + 4 concrete variants (Sbz140Alu/Stl/Rvs, Sbz141Alu). Documented the NC-program generation pipeline (`CreateNCX` spawns external `NcxExePath` 3–4× per file) and the per-variant constants (one explicitly labelled `'Guess`).
+- Wrote 2 business-rule notes (both `#safety-relevant`):
+  - [[business-rules/elu-max-step-depth]] — `EluMaxStepDepth*` 1.6mm STL / 6mm ALU. Same setting reused for Sbz140Stl and Sbz140Rvs (Q-027). `Double.Parse` without culture (Q-030 / culture-fragility note).
+  - [[business-rules/elu-large-rectangle-classification]] — `EluLargeRectangle*` 260×20mm `AND`-thresholds. Q-033 questions whether `AND` should be `OR`.
+- Opened 15 new SME questions Q-019..Q-033 (11 `#safety-relevant`). Resolved Q-006.
+- Coverage delta: +5 done (FrmComWatcher.vb, ClsComWatcher.vb, CRs232.vb, Sbz14x.vb, Sbz140Alu.vb), +4 needs-review (EluCadApp.vb, Sbz140Stl/Rvs, Sbz141Alu). Totals: 10 done / 1151 todo / 445 config / 414 generated / 5 needs-review of 2025.
+- **Next:** continue Elumatec — `Works\` + `Works\Replacements\` pipeline (highest safety value), then NC structure + emission, then ProfMillJob/Converter.
+
 ## 2026-06-18 — Scope widened to TruTopsLib + ICenterLib
 
 - User direction: widen scope to include `TruTopsLib` and `ICenterLib` (resolving [[needs-review/_index|Q-001]]).

@@ -49,9 +49,9 @@ See [[_coverage]] for authoritative status. Summary updated by the lint pass.
 
 | Project | Files | Done | Todo | Needs-review |
 |---------|------:|-----:|-----:|-------------:|
-| iCENTER | 1237 | 5 | 532 | 1 |
+| iCENTER | 1237 | 10 | 523 | 5 |
 | TruTopsLib | 65 | 0 | 57 | 0 |
 | ICenterLib | 723 | 0 | 571 | 0 |
-| **TOTAL** | **2025** | **5** | **1160** | **1** |
+| **TOTAL** | **2025** | **10** | **1151** | **5** |
 
 > 1160 `todo` entries are mostly `.vb` source (with some `.cs` in TruTopsLib). 414 are `generated` (`*.Designer.vb|cs` + `*.resx`) and 445 are `config` (assets, project metadata, signing keys, solution files). Full per-folder breakdown lives in [[_coverage]].

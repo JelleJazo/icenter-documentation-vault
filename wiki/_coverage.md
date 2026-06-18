@@ -486,7 +486,7 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `Elumatec\AufSerializer\ZeileProgramm.vb` | todo | — | — |
 | `Elumatec\AufSerializer\ZeileTTab.vb` | todo | — | — |
 | `Elumatec\AutoProfMillProgApproval.vb` | todo | — | — |
-| `Elumatec\ClsComWatcher.vb` | todo | — | — |
+| `Elumatec\ClsComWatcher.vb` | done | [[modules/elumatec-com-watcher]] | 2026-06-18 |
 | `Elumatec\ClsDgxShoppingList.vb` | todo | — | — |
 | `Elumatec\ClsDgxStickerPrinter.vb` | todo | — | — |
 | `Elumatec\ClsEluLanguage.vb` | todo | — | — |
@@ -494,7 +494,7 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `Elumatec\ControlProfSaw.Designer.vb` | generated | VS Forms designer partial | — |
 | `Elumatec\ControlProfSaw.resx` | generated | resource bundle (designer-managed) | — |
 | `Elumatec\ControlProfSaw.vb` | todo | — | — |
-| `Elumatec\CRs232.vb` | todo | — | — |
+| `Elumatec\CRs232.vb` | done | third-party (Corrado Cavalli ©2003); [[modules/elumatec-com-watcher]] | 2026-06-18 |
 | `Elumatec\CtrlEluOpenGLViewer.Designer.vb` | generated | VS Forms designer partial | — |
 | `Elumatec\CtrlEluOpenGLViewer.resx` | generated | resource bundle (designer-managed) | — |
 | `Elumatec\CtrlEluOpenGLViewer.vb` | todo | — | — |
@@ -520,12 +520,12 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `Elumatec\DXF\EluDxfEntity.vb` | todo | — | — |
 | `Elumatec\DXF\EluDxfPolyline.vb` | todo | — | — |
 | `Elumatec\DXF\EluDxfVertex.vb` | todo | — | — |
-| `Elumatec\EluCadApp.vb` | todo | — | — |
+| `Elumatec\EluCadApp.vb` | needs-review | overview only in [[modules/elumatec-cad-app]]; per-cluster sub-notes pending | — |
 | `Elumatec\EluCadSetting.vb` | todo | — | — |
 | `Elumatec\FileFormat.vb` | todo | — | — |
 | `Elumatec\FrmComWatcher.Designer.vb` | generated | VS Forms designer partial | — |
 | `Elumatec\FrmComWatcher.resx` | generated | resource bundle (designer-managed) | — |
-| `Elumatec\FrmComWatcher.vb` | todo | — | — |
+| `Elumatec\FrmComWatcher.vb` | done | [[modules/elumatec-com-watcher]] | 2026-06-18 |
 | `Elumatec\frmDgxStack.Designer.vb` | generated | VS Forms designer partial | — |
 | `Elumatec\frmDgxStack.resx` | generated | resource bundle (designer-managed) | — |
 | `Elumatec\frmDgxStack.vb` | todo | — | — |
@@ -552,11 +552,11 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `Elumatec\frmSawQtyDoneExt.vb` | todo | — | — |
 | `Elumatec\LicenseHelper.vb` | todo | — | — |
 | `Elumatec\LicenseManagementCenter.vb` | todo | — | — |
-| `Elumatec\Machine\Sbz140Alu.vb` | todo | — | — |
-| `Elumatec\Machine\Sbz140Rvs.vb` | todo | — | — |
-| `Elumatec\Machine\Sbz140Stl.vb` | todo | — | — |
-| `Elumatec\Machine\Sbz141Alu.vb` | todo | — | — |
-| `Elumatec\Machine\Sbz14x.vb` | todo | — | — |
+| `Elumatec\Machine\Sbz140Alu.vb` | done | [[modules/elumatec-machine-base]] | 2026-06-18 |
+| `Elumatec\Machine\Sbz140Rvs.vb` | needs-review | [[modules/elumatec-machine-base]] (values not transcribed; Q-027) | — |
+| `Elumatec\Machine\Sbz140Stl.vb` | needs-review | [[modules/elumatec-machine-base]] (values not transcribed; Q-027) | — |
+| `Elumatec\Machine\Sbz141Alu.vb` | needs-review | [[modules/elumatec-machine-base]] (values not transcribed) | — |
+| `Elumatec\Machine\Sbz14x.vb` | done | [[modules/elumatec-machine-base]] | 2026-06-18 |
 | `Elumatec\MacroDatabase.vb` | todo | — | — |
 | `Elumatec\NcStructure\Bar.vb` | todo | — | — |
 | `Elumatec\NcStructure\Cut.vb` | todo | — | — |
@@ -2569,10 +2569,10 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 
 | Project | Total | Done | Todo | Config | Generated | Dead | Needs-review |
 |---------|------:|-----:|-----:|-------:|----------:|-----:|-------------:|
-| iCENTER | 1237 | 5 | 532 | 358 | 341 | 0 | 1 |
+| iCENTER | 1237 | 10 | 523 | 358 | 341 | 0 | 5 |
 | TruTopsLib | 65 | 0 | 57 | 6 | 2 | 0 | 0 |
 | ICenterLib | 723 | 0 | 571 | 81 | 71 | 0 | 0 |
-| **TOTAL** | **2025** | **5** | **1160** | **445** | **414** | **0** | **1** |
+| **TOTAL** | **2025** | **10** | **1151** | **445** | **414** | **0** | **5** |
 
 ### Per iCENTER sub-folder
 
@@ -2588,7 +2588,7 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 | Controls | 114 | 0 | 42 | 0 | 72 | 0 | 0 |
 | DataMigration | 50 | 0 | 50 | 0 | 0 | 0 | 0 |
 | DesignComments | 10 | 0 | 4 | 0 | 6 | 0 | 0 |
-| Elumatec | 157 | 0 | 123 | 0 | 34 | 0 | 0 |
+| Elumatec | 157 | 5 | 114 | 0 | 34 | 0 | 4 |
 | Engineering | 21 | 0 | 9 | 0 | 12 | 0 | 0 |
 | Forms | 188 | 0 | 64 | 0 | 124 | 0 | 0 |
 | IcImporter | 6 | 0 | 4 | 0 | 2 | 0 | 0 |
@@ -2605,4 +2605,4 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 | VentDuctConfigurator | 4 | 0 | 2 | 0 | 2 | 0 | 0 |
 | WebClock | 13 | 0 | 5 | 0 | 8 | 0 | 0 |
 | WorkPreparation | 6 | 0 | 4 | 0 | 2 | 0 | 0 |
-| iCENTER **TOTAL** | **1237** | **5** | **532** | **358** | **341** | **0** | **1** |
+| iCENTER **TOTAL** | **1237** | **10** | **523** | **358** | **341** | **0** | **5** |
