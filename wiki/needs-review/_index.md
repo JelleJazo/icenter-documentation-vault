@@ -24,6 +24,22 @@ _(Append as you go. Newest at the top.)_
 
 | ID | Date | Page | Question | Severity / tag |
 |----|------|------|----------|----------------|
+| **Q-147** | 2026-06-18 | [[../business-rules/isah-track-operation-pattern]] | Should `TrackOperationRegex` be anchored (`^TR\d\d$`)? | low |
+| **Q-146** | 2026-06-18 | [[../business-rules/isah-company-codes]] | `Company.New(CompanyName)` defaults to JAZO via `Case Else`. Throw on unknown enum? | medium |
+| **Q-145** | 2026-06-18 | [[../business-rules/isah-track-operation-pattern]] | Document downstream consequences of `IsTrackOperation = True`. | medium |
+| **Q-144** | 2026-06-18 | [[../modules/isah-machgrp]] | `TrackOperationRegex` recompiles on each access — promote to `Shared ReadOnly`? | low |
+| **Q-143** | 2026-06-18 | [[../modules/isah-shop-and-pur-doc]] | `ShopDoc.GetOrderType()` defaults to `SalesOrder` on error — fail-open intentional? | medium |
+| **Q-142** | 2026-06-18 | [[../modules/isah-shop-and-pur-doc]] | `ShopDoc.SetShopDocStartedInd(started)` ignores its argument — supports only `True`. | medium |
+| **Q-141** | 2026-06-18 | [[../modules/isah-identity]] | `Employee.GetIsPresent` uses local `DateTime.Now` for `RegDate` — time-zone safe? | low |
+| **Q-140** | 2026-06-18 | [[../modules/isah-identity]] | Adding a third JAZO company requires editing `Company.vb` in 5 places. Drive from `T_Selection`? | medium |
+| **Q-139** | 2026-06-18 | [[../modules/isah-lookups]] | `Setting` is a single-method class. Add the other ISAH settings? | low |
+| **Q-138** | 2026-06-18 | [[../modules/isah-lookups]] | `Setting.GetStandCapacityType` uses magic `@SettingCode = "1"`. Add a named constant. | low |
+| **Q-137** | 2026-06-18 | [[../mocs/icenterlib-isah]] | ISAH SP naming convention: `IP_*` `JIP_*` `SIP_*` — document. | low |
+| **Q-136** | 2026-06-18 | [[../modules/isah-shop-and-pur-doc]] | `ShopDoc` state actually lives on `T_ProdBillOfOper`. Document PBOO/ShopDoc relationship. | medium |
+| **Q-135** | 2026-06-18 | [[../modules/isah-machgrp]] | `MachGrp` obsolete via `Description LIKE '~%'` — document `~` prefix convention. | low |
+| **Q-134** | 2026-06-18 | [[../modules/isah-identity]] | `User.GetJobDescription` filters on `MemoTypeCode='JEM10' AND LangCode='NL'`. Document JEM10. | low |
+| **Q-133** | 2026-06-18 | [[../modules/isah-identity]] | `Employee.GetIsObsolete` fail-closed (transient ISAH outage → every employee obsolete). Intentional? | safety-relevant |
+| **Q-132** | 2026-06-18 | [[../mocs/icenterlib-isah]] | `UseIsahNoDtrTimeReg=True` → DTR-status time-reg query path is dead code. Remove? | low |
 | **Q-131** | 2026-06-18 | [[../business-rules/smt-deburr-speed]] | Should `SmtDeburrSpeed` be runtime-tunable via `T_ApplicationSettings`? | medium |
 | **Q-130** | 2026-06-18 | [[../business-rules/smt-deburr-speed]] | Should `SmtDeburrSpeed` be material-aware (alu vs steel vs stainless)? | safety-relevant |
 | **Q-129** | 2026-06-18 | [[../business-rules/icenterlib-maintenance-window]] | Enumerate callsites of `IsInsideMaintenanceWindow` and document what each one gates. | medium |

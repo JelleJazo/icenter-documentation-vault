@@ -1951,9 +1951,9 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `ISAH\BillOfMat.vb` | todo | — | — |
 | `ISAH\BillOfOper.vb` | todo | — | — |
 | `ISAH\CallRegistration.vb` | todo | — | — |
-| `ISAH\Company.vb` | todo | — | — |
+| `ISAH\Company.vb` | done | [[modules/isah-identity]] | 2026-06-18 |
 | `ISAH\Contact.vb` | todo | — | — |
-| `ISAH\Customer.vb` | todo | — | — |
+| `ISAH\Customer.vb` | needs-review | referenced in [[modules/isah-identity]] (Phase-3 follow-up — not deep-read) | — |
 | `ISAH\CustomerRelation.vb` | todo | — | — |
 | `ISAH\CustomerSelection.vb` | todo | — | — |
 | `ISAH\Database.vb` | todo | — | — |
@@ -1972,7 +1972,7 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `ISAH\DossierDetailExtraDto.vb` | todo | — | — |
 | `ISAH\DossierDocFolder.vb` | todo | — | — |
 | `ISAH\DossierMain.vb` | todo | — | — |
-| `ISAH\Employee.vb` | todo | — | — |
+| `ISAH\Employee.vb` | done | [[modules/isah-identity]] | 2026-06-18 |
 | `ISAH\FrmJConfigParamDesignCode.Designer.vb` | generated | VS designer partial | — |
 | `ISAH\FrmJConfigParamDesignCode.resx` | generated | resource bundle (designer-managed) | — |
 | `ISAH\FrmJConfigParamDesignCode.vb` | todo | — | — |
@@ -1987,7 +1987,7 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `ISAH\IsahFieldML.vb` | todo | — | — |
 | `ISAH\JConfigParam.vb` | todo | — | — |
 | `ISAH\Language.vb` | todo | — | — |
-| `ISAH\MachGrp.vb` | todo | — | — |
+| `ISAH\MachGrp.vb` | done | [[modules/isah-machgrp]] | 2026-06-18 |
 | `ISAH\MemoDetailElfsquadConfiguration.vb` | todo | — | — |
 | `ISAH\MultiFinance.vb` | todo | — | — |
 | `ISAH\Part.vb` | todo | — | — |
@@ -2000,15 +2000,15 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `ISAH\PBOS.vb` | todo | — | — |
 | `ISAH\ProductionHeader.vb` | todo | — | — |
 | `ISAH\PurchaseDocumentPartLine.vb` | todo | — | — |
-| `ISAH\PurDoc.vb` | todo | — | — |
-| `ISAH\Selection.vb` | todo | — | — |
-| `ISAH\Setting.vb` | todo | — | — |
-| `ISAH\ShopDoc.vb` | todo | — | — |
+| `ISAH\PurDoc.vb` | done | [[modules/isah-shop-and-pur-doc]] | 2026-06-18 |
+| `ISAH\Selection.vb` | done | [[modules/isah-lookups]] | 2026-06-18 |
+| `ISAH\Setting.vb` | done | [[modules/isah-lookups]] | 2026-06-18 |
+| `ISAH\ShopDoc.vb` | done | [[modules/isah-shop-and-pur-doc]] | 2026-06-18 |
 | `ISAH\ShopDocCollection.vb` | todo | — | — |
 | `ISAH\TimeRegCollector.vb` | todo | — | — |
 | `ISAH\TimeRegistration.vb` | todo | — | — |
-| `ISAH\User.vb` | todo | — | — |
-| `ISAH\Vendor.vb` | todo | — | — |
+| `ISAH\User.vb` | done | [[modules/isah-identity]] | 2026-06-18 |
+| `ISAH\Vendor.vb` | needs-review | referenced in [[modules/isah-identity]] (Phase-3 follow-up — not deep-read) | — |
 | `ISAH\ViewModels\CustomerAddressViewModel.vb` | todo | — | — |
 | `ISAH\ViewModels\PartBasicViewModel.vb` | todo | — | — |
 | `ISAH\WeighingFactor.vb` | todo | — | — |
@@ -2571,8 +2571,8 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 |---------|------:|-----:|-----:|-------:|----------:|-----:|-------------:|
 | iCENTER | 1237 | 56 | 475 | 358 | 341 | 0 | 7 |
 | TruTopsLib | 65 | 0 | 57 | 6 | 2 | 0 | 0 |
-| ICenterLib | 723 | 3 | 568 | 81 | 71 | 0 | 0 |
-| **TOTAL** | **2025** | **59** | **1100** | **445** | **414** | **0** | **7** |
+| ICenterLib | 723 | 11 | 558 | 81 | 71 | 0 | 2 |
+| **TOTAL** | **2025** | **67** | **1090** | **445** | **414** | **0** | **9** |
 
 ### Per iCENTER sub-folder
 

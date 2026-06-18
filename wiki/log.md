@@ -9,6 +9,21 @@ tags: [meta, log]
 
 # Operation Log
 
+## 2026-06-18 — Phase 3c-2: ICenterLib/ISAH foundation entities
+
+- Opened ICenterLib's ISAH folder (65 files). Created [[mocs/icenterlib-isah]] sub-MOC with size + role catalogue + recommended doc roadmap.
+- Wrote 4 module notes covering 10 ISAH entities:
+  - [[modules/isah-lookups]] — Selection (universal `T_Selection` accessor via `IP_sel_SelectionRecord`) + Setting (single-method stub).
+  - [[modules/isah-identity]] — Employee + User + Customer + Vendor + Company. Hard-coded JAZO/`041` and FlowGrill/`042`. Employee has dead DTR-status SQL branches (Q-132). User is pure static; `GetJobDescription` reads `MemoTypeCode='JEM10' AND LangCode='NL'` (Q-134).
+  - [[modules/isah-shop-and-pur-doc]] — ShopDoc + PurDoc. **Key finding**: ShopDoc state actually lives on `T_ProdBillOfOper` (Q-136). `SetShopDocStartedInd(started)` ignores its argument (Q-142).
+  - [[modules/isah-machgrp]] — MachGrp + the `TR\d\d` track-operation regex.
+- Wrote 2 new business-rule notes:
+  - [[business-rules/isah-company-codes]] — JAZO `041/JAZO` vs FlowGrill `042/FLOWGRIL`.
+  - [[business-rules/isah-track-operation-pattern]] — `TR\d\d` regex.
+- Opened Q-132..Q-147 (16 new questions, 1 `#safety-relevant`: Q-133 — `Employee.GetIsObsolete` fail-closed on ISAH outage).
+- Coverage delta: +8 done (Selection, Setting, Employee, User, Company, ShopDoc, PurDoc, MachGrp), +2 needs-review (Customer, Vendor — small, deferred). Totals: 67 done / 1090 todo / 445 config / 414 generated / 9 needs-review of 2025.
+- **Next:** ISAH dossier hierarchy (DossierMain, DossierDetail) then ISAH production hierarchy (ProductionHeader, PBOO, PBOM, PBOS, BillOfOper, BillOfMat).
+
 ## 2026-06-18 — Phase 3c-1: ICenterLib survey + foundation files
 
 - User chose ICenterLib as the next subsystem (after stopping Elumatec at 31/157 done).

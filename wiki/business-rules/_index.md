@@ -48,7 +48,7 @@ Surfaced during the Phase 2 architecture pass. Each is a candidate for a dedicat
 
 _(Each watchlist row becomes a `business-rules/<slug>.md` page during Phase 4. Use the [[../_templates/business-rule|template]] and link back here.)_
 
-### Written so far
+### Written so far (16 rules; 10 `#safety-relevant`)
 
 - [[elu-tool-max-cut-depth]] — per-tool `TMaxCut` from the tool DB; **the live primary step-depth rule**. **`#safety-relevant`**
 - [[elu-max-step-depth]] — `EluMaxStepDepth*` per-material step-depth limits (now documented as a **fallback** rule, currently inactive). **`#safety-relevant`**
@@ -64,6 +64,8 @@ _(Each watchlist row becomes a `business-rules/<slug>.md` page during Phase 4. U
 - [[icenter-status-code-default-range]] — default work-view 40-49. `#needs-review`
 - [[icenterlib-maintenance-window]] — default 01-04 if `My.Settings` unset. `#needs-review`
 - [[smt-deburr-speed]] — `0.225 m²/min` hard-coded. **`#safety-relevant`**
+- [[isah-company-codes]] — JAZO vs FlowGrill: `041/JAZO` vs `042/FLOWGRIL`. `#needs-review`
+- [[isah-track-operation-pattern]] — `TR\d\d` regex flags machine-group as track-op. `#needs-review`
 
 ### By severity (will be filled by Phase 4 / lint pass)
 - `#safety-relevant` — 10 of the 14 written rules + the watchlist below
