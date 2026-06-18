@@ -9,6 +9,21 @@ tags: [meta, log]
 
 # Operation Log
 
+## 2026-06-18 — Phase 3c-4: ISAH production hierarchy
+
+- Documented the 6-file ISAH production hierarchy (2,409 lines) as a single grouped module note [[modules/isah-production-hierarchy]]: ProductionHeader + PBOO + PBOM + PBOS + BillOfOper + BillOfMat.
+- Closes the chain dossier-detail → `GenProductionHeader` → ProductionHeader → PBOO → ShopDoc (confirming Q-136 that the started/finished state lives on T_ProdBillOfOper).
+- Wrote 1 new business-rule note: [[business-rules/isah-prod-header-format]] — every ProductionHeader dossier code is `PD\d{8}`.
+- Notable findings:
+  - Q-158: `PBOS.IP_Ins_ProdBOS` builds 60 lines of inline T-SQL (DECLARE @x; SELECT @x = ...; EXECUTE IP_ins_ProdBOS) instead of calling the SP directly with parameters. Reads like an ISAH reference-snippet transliterated verbatim.
+  - Q-160: ShopDoc status code `"20"` = "started" hardcoded in `ProductionHeader.SetOperStarted`. Enumerate full status-code set.
+  - Q-163: `BillOfMat.ApplySurfTreatment` and [[modules/workprep-operation-substitution|`OperationSubstitutionHandler`]] share an undocumented schema contract on `DtObjects` (with per-MachGrp `MachSetupTime_<code>`, `MonoMachCycleTime_<code>` etc. columns).
+  - Q-165: All six classes hardcode `IsahUserCode = "ISAH"` for write operations — drift from `Common.APPLISAHUSERCODE = "ICENTER"`. Audit-trail correctness question.
+  - Q-167: `PD\d{8}` regex is unanchored — should be `^PD\d{8}$`.
+- Opened 10 new Q-158..Q-167 (0 `#safety-relevant`).
+- Coverage delta: +6 done. Totals: 79 done / 1078 todo / 445 config / 414 generated / 9 needs-review of 2025. ISAH coverage now 22/65 (one third).
+- **Next:** ISAH Part + dispatch (Part.vb 49 KB — biggest non-TimeRegistration ISAH file).
+
 ## 2026-06-18 — Phase 3c-3: ISAH dossier hierarchy
 
 - Documented the ISAH dossier hierarchy (6 files) as a single grouped module note [[modules/isah-dossier]]: DossierMain + DossierDetail + DossierDetailExtra + DossierDetailExtraDto + DossierDocFolder + Helpers/DossierDetailExtraHelper.

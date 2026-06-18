@@ -24,6 +24,16 @@ _(Append as you go. Newest at the top.)_
 
 | ID | Date | Page | Question | Severity / tag |
 |----|------|------|----------|----------------|
+| **Q-167** | 2026-06-18 | [[../business-rules/isah-prod-header-format]] | `PD\d{8}` regex unanchored — should be `^PD\d{8}$`. | low |
+| **Q-166** | 2026-06-18 | [[../business-rules/isah-prod-header-format]] | Confirm `PD` prefix universal across current + future JAZO entities. | low |
+| **Q-165** | 2026-06-18 | [[../modules/isah-production-hierarchy]] | All ISAH writes use `IsahUserCode = "ISAH"`, not `APPLISAHUSERCODE = "ICENTER"`. Audit-trail correctness? | medium |
+| **Q-164** | 2026-06-18 | [[../modules/isah-production-hierarchy]] | Document time-unit conventions: `MachCycleTime` sec, `MonoMachCycleTime_<code>` hours after `/3600`. | medium |
+| **Q-163** | 2026-06-18 | [[../modules/isah-production-hierarchy]] | Document the `DtObjects` schema shared between `BillOfMat.ApplySurfTreatment` and `OperationSubstitutionHandler.Execute`. | medium |
+| **Q-162** | 2026-06-18 | [[../modules/isah-production-hierarchy]] | Document `BOOPartDescription` / `ICenterPartCalcPartCode` correlation-key convention. | low |
+| **Q-161** | 2026-06-18 | [[../modules/isah-production-hierarchy]] | Document `LineNrStepSize = 5` line-number gap convention (PBOO + PBOS). | low |
+| **Q-160** | 2026-06-18 | [[../modules/isah-production-hierarchy]] | ShopDoc status code `"20"` = "started" hardcoded. Enumerate full status-code set. | medium |
+| **Q-159** | 2026-06-18 | [[../modules/isah-production-hierarchy]] | `ProductionHeader.SetStatus` discards SP `@LastUpdatedOn` output param. Cache it? | low |
+| **Q-158** | 2026-06-18 | [[../modules/isah-production-hierarchy]] | `PBOS.IP_Ins_ProdBOS` uses inline T-SQL string-concat instead of parametrised SP call. Refactor? | medium |
 | **Q-157** | 2026-06-18 | [[../business-rules/isah-dossier-mount-partcodes]] | Unify the hard-coded mount-detail part-codes and the `Plan*PartCode` constants into a shared registry? | low |
 | **Q-156** | 2026-06-18 | [[../business-rules/isah-dossier-mount-partcodes]] | SME-friendly meanings for `MONTAGE TP`, `090`, `PLAN EXT MONT`, `CSA00011`. Is the set complete? | medium |
 | **Q-155** | 2026-06-18 | [[../modules/isah-dossier]] | `DossierDetailExtraHelper` uses an iCenter-DB BaseAddress switch while connections use the in-process `UseIsahTestDb`. Coordinated? | medium |

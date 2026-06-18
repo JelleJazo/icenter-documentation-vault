@@ -1948,8 +1948,8 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `ISAH\BillOfMat.vb` | todo | — | — |
-| `ISAH\BillOfOper.vb` | todo | — | — |
+| `ISAH\BillOfMat.vb` | done | [[modules/isah-production-hierarchy]] | 2026-06-18 |
+| `ISAH\BillOfOper.vb` | done | [[modules/isah-production-hierarchy]] | 2026-06-18 |
 | `ISAH\CallRegistration.vb` | todo | — | — |
 | `ISAH\Company.vb` | done | [[modules/isah-identity]] | 2026-06-18 |
 | `ISAH\Contact.vb` | todo | — | — |
@@ -1995,10 +1995,10 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `ISAH\PartDispatchCollectorDataService.vb` | todo | — | — |
 | `ISAH\PartSelection.vb` | todo | — | — |
 | `ISAH\PartVendor.vb` | todo | — | — |
-| `ISAH\PBOM.vb` | todo | — | — |
-| `ISAH\PBOO.vb` | todo | — | — |
-| `ISAH\PBOS.vb` | todo | — | — |
-| `ISAH\ProductionHeader.vb` | todo | — | — |
+| `ISAH\PBOM.vb` | done | [[modules/isah-production-hierarchy]] | 2026-06-18 |
+| `ISAH\PBOO.vb` | done | [[modules/isah-production-hierarchy]] | 2026-06-18 |
+| `ISAH\PBOS.vb` | done | [[modules/isah-production-hierarchy]] | 2026-06-18 |
+| `ISAH\ProductionHeader.vb` | done | [[modules/isah-production-hierarchy]] | 2026-06-18 |
 | `ISAH\PurchaseDocumentPartLine.vb` | todo | — | — |
 | `ISAH\PurDoc.vb` | done | [[modules/isah-shop-and-pur-doc]] | 2026-06-18 |
 | `ISAH\Selection.vb` | done | [[modules/isah-lookups]] | 2026-06-18 |
@@ -2571,8 +2571,8 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 |---------|------:|-----:|-----:|-------:|----------:|-----:|-------------:|
 | iCENTER | 1237 | 56 | 475 | 358 | 341 | 0 | 7 |
 | TruTopsLib | 65 | 0 | 57 | 6 | 2 | 0 | 0 |
-| ICenterLib | 723 | 17 | 552 | 81 | 71 | 0 | 2 |
-| **TOTAL** | **2025** | **73** | **1084** | **445** | **414** | **0** | **9** |
+| ICenterLib | 723 | 23 | 546 | 81 | 71 | 0 | 2 |
+| **TOTAL** | **2025** | **79** | **1078** | **445** | **414** | **0** | **9** |
 
 ### Per iCENTER sub-folder
 
