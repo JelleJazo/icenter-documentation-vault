@@ -7,51 +7,36 @@ updated: 2026-06-18T00:00:00
 # Recent Context
 
 ## Last Updated
-2026-06-18. Phase 3b-1: Office → shop-floor handoff batch landed (Sales / Engineering / WorkPreparation / Production).
+2026-06-18. Phase 3c-1: ICenterLib survey + foundation files landed.
 
 ## Key Recent Facts
 - Scope: three projects (iCENTER 1237 + TruTopsLib 65 + ICenterLib 723 = **2025 files**).
-- Coverage now: **56 done, 7 needs-review, 1103 todo, 445 config, 414 generated**.
-- 106 open SME questions (Q-001, Q-006, Q-031, Q-034 resolved). **42 are `#safety-relevant`**.
-- 10 business-rule notes (9 safety-relevant).
-- Elumatec subsystem stopped at 31/157 done per user direction; now pivoted to office-to-shop-floor.
-- Coverage in this batch:
-  - **Sales**: 1/1 done.
-  - **Engineering**: 8 done + 1 needs-review out of 9 .vb non-Designer files.
-  - **WorkPreparation**: 4/4 done.
-  - **Production** (root + ProfileMilling): 6/6 done.
+- Coverage now: **59 done, 7 needs-review, 1100 todo, 445 config, 414 generated**.
+- 131 open SME questions (Q-001, Q-006, Q-031, Q-034 resolved). **53 are `#safety-relevant`**.
+- 14 business-rule notes (10 safety-relevant).
+- ICenterLib opened: top-MOC + 3 root-file deep-dives (Common, Connections, AppSettings). 3/723 done.
 
-## Office → shop-floor summary (this batch)
-- **Sub-MOC** at [[mocs/office-to-shopfloor]] catalogues the full handoff: ISAH order → Sales team → Engineering owner → WorkPreparation (outsource / op-substitution) → Production (per-machine cut-items + UniLink CSV import).
-- **Sales/FrmCustomerTeam** assigns customers to teams `031/032/033` (hard-coded) via ISAH `T_Customer`.
-- **WorkPreparation/IPBatchCollector** is a single SQL query against ISAH `T_ProductionHeader + JZ_ProdRefNr + T_ProdBillOfOper`. Only surfaces rows with a `JZ_ProdRefNr` entry (Q-099).
-- **WorkPreparation/OutsourceOperationsHandler** is the big one (~540 lines): packages STEP+PDF docs per vendor, creates ISAH PurDoc via `PurOrd.CreatePurOrdByExtOperParts("UITBESTEDING01", ...)`, drops zip into `IsahDoc\Purchase\<PurOrdNr>\01\`, marks ShopDoc as started + IPparts as completed. Hard-coded: `UITBESTEDING01`, `AutoSendEmail=False`, `MICROSOFTPRINTTOPDF` sticker printer, only `ProfileId=1` implemented.
-- **WorkPreparation/OperationSubstitutionHandler** swaps `<From>` for `<To>` machine-group across DataTables. **Likely bug found** (Q-095, safety-relevant): `SubstituteInSurfTreatmentPart` iterates `dtSurfTreatmentOper` and vice versa — swapped sources.
-- **Production/ProductionProfileCutItemsHandler** implements only 3 iCenter operations (1→A01,A07; 9→S01; 31→A07,A01). Operations 1 and 31 have **same set, reversed order** (Q-106). Constructor `MachineId = Math.Max(iPPartId, 0)` looks like a copy-paste error (Q-101).
-- **Production/ProfileMilling** (5 files) is the **UniLink CSV import pipeline** — iCenter → CAM counterpart to the Elumatec output. Validates every profile has `Series` filled AND a matching DXF in UniLink, else throws. `PMMExportHandler` wipes all `<PMMEXPORT3D>` XML attributes when updating (Q-103).
-- **Engineering**: 9 files. Notable: `FrmDrwCheck` embeds PDF-XChange ActiveX with the license key from `app.config`; `FrmDesignCodeTool` is a WebView2 wrapper around `tekeningnummers.jazo.com` with JavaScript injection (brittle, Q-090); `ModelCopies/CopyLocalizer` has 1 active sub-class and 1 dead (`UitsparingVoorplaatMeerpslAlu`, Q-089).
+## ICenterLib summary (this batch)
+- **35 top-level folders catalogued** in [[mocs/icenterlib]]. Biggest: SmtProduction (128), CAD (127), Resources (75), ISAH (65), PCFNet (45), UserControls (34), ProductDb (31), iCenter (29), DataHandler (23), Production (23), MySystem (22), CadBatchServer (17), JIBA (14).
+- **[[modules/icenterlib-common]]** — 533-line static-helper class. Defines IA/IAK/PRN part-code prefixes, `GuestEmpId = "0000"`, 40-49 work-view status range, terminal-server/RAS/ADS hostname branching, `IsSharedWindowsAccount` recognises only `"PVS"`. **Common.GetTableData uses `EXEC('SELECT * FROM ' + @TableName)`** (Q-109, `#safety-relevant`).
+- **[[modules/icenterlib-connections]]** — 15 connection factories. **All hard-coded creds in source**: iCenter / JIBA / Windchill / ProductDb / Isah / TruTops Oseon all share password `p2yeXeC7`; ISAH `sa` login uses `koyTRedgh&*(kl:[`; Kardex uses `Kardex/K@rdex951`; ZeroCode service has API key + base64 password as constants. **Q-107, Q-108, Q-118, Q-119** all `#safety-relevant`. `ConnectICenter2Development` connects to raw IP `10.11.70.32` as developer `sander-h`.
+- **[[modules/icenterlib-appsettings]]** — wraps the iCenter DB `T_ApplicationSettings` table via `SIP_GetAppSetting` SP. `IsInsideMaintenanceWindow` reads `My.Settings` of the *consuming* assembly (Q-112). `SmtDeburrSpeed = 0.225 / 60` m²/sec is a `Public Const` here (process-relevant constant in the wrong file — Q-122).
+- **4 new business-rule notes**: [[business-rules/icenter-part-code-prefixes]], [[business-rules/icenter-status-code-default-range]], [[business-rules/icenterlib-maintenance-window]], [[business-rules/smt-deburr-speed]].
+- **`Connections.UseIsahTestDb`** is a `Public Shared` field (process-mutable). Switches all iCenter→ISAH connections to test DB. Single global toggle.
 
 ## Recent Changes
-- Created [[mocs/office-to-shopfloor]] sub-MOC.
-- Created 7 module notes: [[modules/sales-customer-team]], [[modules/workprep-outsource-operations]], [[modules/workprep-operation-substitution]], [[modules/workprep-ipbatch-collector]], [[modules/production-profile-cut-items]], [[modules/production-profile-milling-import]], [[modules/engineering-overview]].
-- Created 3 business-rule notes: [[business-rules/sales-team-codes]], [[business-rules/outsource-ext-oper-part-code]], [[business-rules/icenter-operation-machgrp-mapping]].
-- Opened Q-082..Q-106 (25 new questions, 11 `#safety-relevant`).
-- Updated [[_coverage]] (+20 done in 4 folders); rollup totals.
-- Updated [[mocs/_index]], [[business-rules/_index]], [[needs-review/_index]].
-
-## Notable findings (probable bugs)
-- **Q-095** — `OperationSubstitutionHandler`: `*Part` iterates `dtSurfTreatmentOper` and `*Oper` iterates `dtSurfTreatmentPart`. Either harmless (both tables share the column) or a real bug (each updates the wrong table). `#safety-relevant`
-- **Q-101** — `ProductionProfileCutItemsHandler.New`: `MachineId = Math.Max(iPPartId, 0)` — looks like `iPPartId` was meant to be `machineId`. `#safety-relevant`
-- **Q-100** — `ProductionProfileCutItemsHandler.Write`: `Clear(MachineId)` runs unconditionally; a model-lookup failure wipes the machine's previous cut-items. `#safety-relevant`
+- Created [[mocs/icenterlib]] top-MOC catalogueing all 35 folders + roadmap.
+- Created 3 module notes: [[modules/icenterlib-common]], [[modules/icenterlib-connections]], [[modules/icenterlib-appsettings]].
+- Created 4 business-rule notes (one of which — `smt-deburr-speed` — is the first business-rule note for a non-Elumatec subsystem).
+- Opened Q-107..Q-131 (25 new questions, 11 `#safety-relevant`). Most consequential: Q-107 (hard-coded DB creds), Q-119 (sa login), Q-118 (dev IP in source), Q-109 (EXEC SQL pattern), Q-114 (SQL string concat).
 
 ## Active Threads
-- Recommended next batches:
-  1. **CadBatchserver** (27 files) — the headless mode + 16 `Job*.vb` classes (JobAutoManufacturing, JobCreateProdOrd, JobPublishCreo, JobSendEmail, JobRebootMonitor, etc.). Each `Job*` is a candidate business rule. This is the scheduled-work side of iCenter.
-  2. **Classes/** (111 files) — core domain classes. Needs a sub-MOC due to size. Subfolders: Coating/, Connectivity/, PreSelectMachGrpCodes/, Production/, StickersAndLabels/, Toolbox/.
-  3. **Forms/** (127 .vb non-Designer) — the dialog gallery, including the ShopProcess sub-folder.
-  4. **SmtManufacturing** (63 files) — sheet metal subsystem.
-  5. **Companion projects** — ICenterLib (723 files) and TruTopsLib (65 files) are in scope but completely untouched. ISAH/JIBA/CAD/SmtProduction plumbing all lives there.
+- Recommended next batches per the ICenterLib roadmap in [[mocs/icenterlib]]:
+  1. **ISAH/** (65 files) — every Sales/WorkPreparation/Production note already references `oISAH`. Highest-priority subsystem. Will need a sub-MOC + ~10-15 module notes covering the major entities (TimeRegistration 72 KB, Part 49 KB, ProductionHeader 45 KB, Icenter2Isah 38 KB, PBOO 31 KB, DossierDetail 28 KB, BillOfMat 26 KB, DossierMain 19 KB, Employee 17 KB, PBOS/PBOM 11+10 KB, BillOfOper 9 KB, ShopDoc 8 KB).
+  2. **iCenter/** (29 files) — `ProductionMachines` (41 KB), `IPPart` (19 KB), `IPBatch` (13 KB), `Client`, `IPOrder`, `Servicedesk`, etc.
+  3. **SmtProduction/** (128 files) — TruTops Oseon plumbing. Needs a sub-MOC.
+  4. **CAD/** (127 files) — Creo + Windchill PLM. Needs a sub-MOC.
 
 ## Notes from working tree
 - Three Obsidian auto-stubs at wiki root (`jiba-portal.md`, `kardex.md`, `trutops-oseon.md`) and `.obsidian/` autoupdates remain unstaged.
-- `architecture/external-surface.md` was reformatted by the user / a linter (table markdown changed) — leaving as-is per intent.
+- `architecture/external-surface.md` user-reformatted (table layout changed) — kept as-is.

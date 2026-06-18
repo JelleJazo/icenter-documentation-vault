@@ -24,6 +24,31 @@ _(Append as you go. Newest at the top.)_
 
 | ID | Date | Page | Question | Severity / tag |
 |----|------|------|----------|----------------|
+| **Q-131** | 2026-06-18 | [[../business-rules/smt-deburr-speed]] | Should `SmtDeburrSpeed` be runtime-tunable via `T_ApplicationSettings`? | medium |
+| **Q-130** | 2026-06-18 | [[../business-rules/smt-deburr-speed]] | Should `SmtDeburrSpeed` be material-aware (alu vs steel vs stainless)? | safety-relevant |
+| **Q-129** | 2026-06-18 | [[../business-rules/icenterlib-maintenance-window]] | Enumerate callsites of `IsInsideMaintenanceWindow` and document what each one gates. | medium |
+| **Q-128** | 2026-06-18 | [[../business-rules/icenter-status-code-default-range]] | Confirm "default work view shows 40-49" matches operator expectation. | medium |
+| **Q-127** | 2026-06-18 | [[../business-rules/icenter-status-code-default-range]] | Enumerate every iCenter status code (40-49 + 04-09 colour-mapped). SME-friendly names per code. | medium |
+| **Q-126** | 2026-06-18 | [[../business-rules/icenter-part-code-prefixes]] | Document the `IAK` (copy) workflow — when is a part copied? | low |
+| **Q-125** | 2026-06-18 | [[../business-rules/icenter-part-code-prefixes]] | Confirm IA/IAK/PRN are the only prefixes the factory recognises. | low |
+| **Q-124** | 2026-06-18 | [[../modules/icenterlib-appsettings]] | `AppSettings.Update` has no INSERT fallback — how are new settings created? | low |
+| **Q-123** | 2026-06-18 | [[../modules/icenterlib-appsettings]] | `SettingContainsValue` implicitly adds `"*"` wildcard. Intentional? | medium |
+| **Q-122** | 2026-06-18 | [[../modules/icenterlib-appsettings]] | `SmtDeburrSpeed` lives in `AppSettings.vb` — why here and not next to the SMT calculator? | low |
+| **Q-121** | 2026-06-18 | [[../modules/icenterlib-connections]] | `ConnectICenter` has a commented-out `iCenterTest` catalog alternate. Document the iCenterTest catalog purpose. | low |
+| **Q-120** | 2026-06-18 | [[../modules/icenterlib-connections]] | `GetCrystalReportHttpClient` reads `ElfsquadApiBaseUrl` then overwrites with hard-coded URL. Remove dead read. | low |
+| **Q-119** | 2026-06-18 | [[../modules/icenterlib-connections]] | `ConnectIsahSA` uses ISAH `sa` login. Which iCenter operations need `sa`? Move to least-privilege? | safety-relevant |
+| **Q-118** | 2026-06-18 | [[../modules/icenterlib-connections]] | `ConnectICenter2Development` connects to raw IP `10.11.70.32` as `sander-h`. Developer machine. Remove from production? | safety-relevant |
+| **Q-117** | 2026-06-18 | [[../modules/icenterlib-common]] | `OpenWebPage(url, UseIE:=True)` still callable. IE end-of-life 2022. Confirm no live callers. | low |
+| **Q-116** | 2026-06-18 | [[../modules/icenterlib-common]] | `GetStatusCodeColor` colour mapping for status codes 04-09 — what do they mean to SMEs? | medium |
+| **Q-115** | 2026-06-18 | [[../modules/icenterlib-common]] | `IsSharedWindowsAccount` recognises only `"PVS"`. Confirm no other shared accounts. | medium |
+| **Q-114** | 2026-06-18 | [[../modules/icenterlib-common]] | `GetSqlInString` string concat — apostrophe in any value breaks SQL. Audit callers. | safety-relevant |
+| **Q-113** | 2026-06-18 | [[../business-rules/smt-deburr-speed]] | `SmtDeburrSpeed = 0.225 m²/min` — SME confirm. When was it measured? | safety-relevant |
+| **Q-112** | 2026-06-18 | [[../business-rules/icenterlib-maintenance-window]] | `IsInsideMaintenanceWindow` reads `My.Settings.MaintenanceWindowStart/End` — confirm iCenter's `app.config` has them. | medium |
+| **Q-111** | 2026-06-18 | [[../modules/icenterlib-appsettings]] | `GetDecryptedSetting` reads cipher key from same DB table as encrypted value. Threat model? | safety-relevant |
+| **Q-110** | 2026-06-18 | [[../modules/icenterlib-connections]] | `Connections.UseIsahTestDb` is process-mutable. Confirm production never sets it accidentally. | safety-relevant |
+| **Q-109** | 2026-06-18 | [[../modules/icenterlib-common]] | `Common.GetTableData` uses server-side `EXEC` with table-name string concat. Untrusted callers? | safety-relevant |
+| **Q-108** | 2026-06-18 | [[../modules/icenterlib-connections]] | `GetZeroCodeParameters` hard-coded API key + base64-encoded password. | safety-relevant |
+| **Q-107** | 2026-06-18 | [[../modules/icenterlib-connections]] | Hard-coded DB credentials throughout (incl. ISAH `sa`). Move to secret store. | safety-relevant |
 | **Q-106** | 2026-06-18 | [[../business-rules/icenter-operation-machgrp-mapping]] | Ordering of MachGrpCodes between operations 1 and 31 — is `GetMBomMultilevel` order-sensitive? | safety-relevant |
 | **Q-105** | 2026-06-18 | [[../modules/engineering-overview]] | `frmGenericStatus`'s commented-out PDF-XChange viewer activation — deliberately disabled or forgotten? | low |
 | **Q-104** | 2026-06-18 | [[../modules/engineering-overview]] | Order-number convention: position 2 = `"0"` means quote, otherwise order. Confirm with SME. | low |
@@ -186,3 +211,13 @@ _(Append as you go. Newest at the top.)_
 | Q-100 | [[../modules/production-profile-cut-items]] | Unconditional `Clear(MachineId)` |
 | Q-101 | [[../modules/production-profile-cut-items]] | `MachineId = Math.Max(iPPartId, 0)` copy-paste |
 | Q-106 | [[../business-rules/icenter-operation-machgrp-mapping]] | Operation 1 vs 31 MachGrpCode ordering |
+| Q-107 | [[../modules/icenterlib-connections]] | Hard-coded DB creds (incl. ISAH `sa`) |
+| Q-108 | [[../modules/icenterlib-connections]] | ZeroCode API key + password in source |
+| Q-109 | [[../modules/icenterlib-common]] | `GetTableData` server-side EXEC pattern |
+| Q-110 | [[../modules/icenterlib-connections]] | `UseIsahTestDb` process-mutable test/prod toggle |
+| Q-111 | [[../modules/icenterlib-appsettings]] | Encrypted-setting key in same DB table |
+| Q-113 | [[../business-rules/smt-deburr-speed]] | `SmtDeburrSpeed = 0.225` calibration confirmation |
+| Q-114 | [[../modules/icenterlib-common]] | `GetSqlInString` apostrophe injection |
+| Q-118 | [[../modules/icenterlib-connections]] | Dev IP `10.11.70.32` connection in source |
+| Q-119 | [[../modules/icenterlib-connections]] | `sa` login for ISAH — least privilege |
+| Q-130 | [[../business-rules/smt-deburr-speed]] | Material-aware deburr speed |

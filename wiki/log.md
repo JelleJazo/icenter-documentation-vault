@@ -9,6 +9,29 @@ tags: [meta, log]
 
 # Operation Log
 
+## 2026-06-18 — Phase 3c-1: ICenterLib survey + foundation files
+
+- User chose ICenterLib as the next subsystem (after stopping Elumatec at 31/157 done).
+- Created [[mocs/icenterlib]] top-MOC catalogueing 35 top-level folders + the 723-file scope. Lays out a per-priority roadmap (ISAH > iCenter > SmtProduction > CAD > PCFNet > the rest).
+- Wrote 3 root-file module notes:
+  - [[modules/icenterlib-common]] — static helpers + magic constants (533 lines). Defines IA/IAK/PRN part-code prefixes, `GuestEmpId="0000"`, 40-49 work-view status range, terminal-server/RAS/ADS hostname branching, `IsSharedWindowsAccount → only "PVS"`. Found `GetTableData` server-side `EXEC` pattern (Q-109).
+  - [[modules/icenterlib-connections]] — 15 connection factories. **All hard-coded credentials** including ISAH `sa` (Q-107, Q-108, Q-118, Q-119). `ConnectICenter2Development` connects to raw dev IP `10.11.70.32` as `sander-h`. `UseIsahTestDb` is process-mutable (Q-110).
+  - [[modules/icenterlib-appsettings]] — `T_ApplicationSettings` reader via `SIP_GetAppSetting` SP. `IsInsideMaintenanceWindow` reads `My.Settings` (Q-112). `SmtDeburrSpeed = 0.225 m²/sec` constant lives here (Q-122).
+- Wrote 4 new business-rule notes:
+  - [[business-rules/icenter-part-code-prefixes]] — IA / IAK / PRN.
+  - [[business-rules/icenter-status-code-default-range]] — default work-view 40-49.
+  - [[business-rules/icenterlib-maintenance-window]] — default 01:00-04:00 if `My.Settings` unset.
+  - [[business-rules/smt-deburr-speed]] — `0.225 m²/min` hard-coded.
+- Opened 25 new Q-107..Q-131 (11 `#safety-relevant`). Most consequential:
+  - **Q-107**: hard-coded DB credentials throughout `Connections.vb` — `p2yeXeC7` shared across iCenter/JIBA/Windchill/ProductDb/Isah/TruTops Oseon; ISAH `sa` with literal password; Kardex creds.
+  - **Q-109**: `Common.GetTableData(TableName)` uses `EXEC('SELECT * FROM ' + @TableName)`.
+  - **Q-118**: `ConnectICenter2Development` hard-codes a developer's IP + Windows-username + plaintext password.
+  - **Q-119**: ISAH `sa` login used by `ConnectIsahSA`; document who needs it.
+  - **Q-114**: `Common.GetSqlInString` string-concats values — apostrophe in any value breaks SQL.
+- Coverage delta: +3 done (Common.vb, Connections.vb, AppSettings.vb). Totals: 59 done / 1100 todo / 445 config / 414 generated / 7 needs-review of 2025.
+- **Next:** ISAH subsystem deep-dive (65 files; the most-referenced ICenterLib folder from iCENTER).
+
+
 Append-only chronological record. **Newest entries at the top.** Never edit past entries.
 
 ---

@@ -19,6 +19,7 @@ Confirmed from the Phase 2 architecture pass — each maps to a top-level `iCENT
   - **[[elumatec-works|Elumatec Works/Replacements pipeline]]** — feature classes (Circle/Drill/Rectangle/...) + 19 replacement macros. `#safety-relevant`. **Sub-hub written 2026-06-18.**
   - **[[elumatec-ncpipeline|Elumatec NC structure + emission]]** — `Job`/`Bar`/`Cut`/`Plane` in-memory model + the `.ecw` parser + AUF & EluXml serialisers (20 files). `#safety-relevant`. **Sub-hub written 2026-06-18.**
 - **[[office-to-shopfloor|Office → shop-floor handoff]]** — `Sales/`, `Engineering/`, `WorkPreparation/`, `Production/` (20 files): customer-team assignment, engineer assignment, outsourcing pipeline, operation substitution, profile-mill cut-items, UniLink CSV import. `#safety-relevant`. **Hub written 2026-06-18.**
+- **[[icenterlib|ICenterLib top-level]]** — the 723-file shared library (35 folders): Common, AppSettings, Connections + all the per-system wrappers (ISAH, iCenter, SmtProduction, CAD, PCFNet, …). `#safety-relevant`. **Top-MOC + 3 root files written 2026-06-18.**
 - **Sheet-metal (SMT) subsystem** — `SmtManufacturing/`, `Modules\Main.vb` Oseon services, parts of `CadBatchserver/Job*Smt*` — Trumpf / TruTops Oseon integration. `#safety-relevant`
 - **CAD pipeline** — `CAD/`, `CadBatchserver/`, `CAM/`, Creo integration. `#safety-relevant`
 - **Engineering → Production handoff** — `Engineering/`, `WorkPreparation/`, `Production/`, ProductionDossier entities.

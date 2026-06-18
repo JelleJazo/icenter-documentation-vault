@@ -1599,10 +1599,10 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
 | `app.config` | config | config / project metadata | — |
-| `AppSettings.vb` | todo | — | — |
-| `Common.vb` | todo | — | — |
+| `AppSettings.vb` | done | [[modules/icenterlib-appsettings]] | 2026-06-18 |
+| `Common.vb` | done | [[modules/icenterlib-common]] | 2026-06-18 |
 | `ComputerSetting.vb` | todo | — | — |
-| `Connections.vb` | todo | — | — |
+| `Connections.vb` | done | [[modules/icenterlib-connections]] | 2026-06-18 |
 | `ICenterLib.vbproj` | config | config / project metadata | — |
 | `ICenterLib.vbproj.user` | config | config / project metadata | — |
 | `ICenterLib.vbproj.vspscc` | config | config / project metadata | — |
@@ -2571,8 +2571,8 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 |---------|------:|-----:|-----:|-------:|----------:|-----:|-------------:|
 | iCENTER | 1237 | 56 | 475 | 358 | 341 | 0 | 7 |
 | TruTopsLib | 65 | 0 | 57 | 6 | 2 | 0 | 0 |
-| ICenterLib | 723 | 0 | 571 | 81 | 71 | 0 | 0 |
-| **TOTAL** | **2025** | **56** | **1103** | **445** | **414** | **0** | **7** |
+| ICenterLib | 723 | 3 | 568 | 81 | 71 | 0 | 0 |
+| **TOTAL** | **2025** | **59** | **1100** | **445** | **414** | **0** | **7** |
 
 ### Per iCENTER sub-folder
 

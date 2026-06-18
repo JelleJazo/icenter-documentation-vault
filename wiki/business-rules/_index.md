@@ -60,8 +60,12 @@ _(Each watchlist row becomes a `business-rules/<slug>.md` page during Phase 4. U
 - [[sales-team-codes]] — hard-coded `{031, 032, 033}` sales teams. `#needs-review`
 - [[outsource-ext-oper-part-code]] — `UITBESTEDING01` hard-coded outsource part code. **`#safety-relevant`**
 - [[icenter-operation-machgrp-mapping]] — `iCenterOperationId → MachGrpCodes` mapping (1, 9, 31 only). **`#safety-relevant`**
+- [[icenter-part-code-prefixes]] — IA / IAK / PRN. `#needs-review`
+- [[icenter-status-code-default-range]] — default work-view 40-49. `#needs-review`
+- [[icenterlib-maintenance-window]] — default 01-04 if `My.Settings` unset. `#needs-review`
+- [[smt-deburr-speed]] — `0.225 m²/min` hard-coded. **`#safety-relevant`**
 
 ### By severity (will be filled by Phase 4 / lint pass)
-- `#safety-relevant` — 9 of the 10 written rules + the watchlist below
-- `#needs-review` — all watchlist rows + the 10 written rules above
+- `#safety-relevant` — 10 of the 14 written rules + the watchlist below
+- `#needs-review` — all watchlist rows + the 14 written rules above
 - `#dead-code` — [[elu-forster-thumbhole-step-depth]]
