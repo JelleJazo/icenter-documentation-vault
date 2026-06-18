@@ -70,6 +70,10 @@ _(Each watchlist row becomes a `business-rules/<slug>.md` page during Phase 4. U
 - [[isah-prod-header-format]] — `PD\d{8}` regex defines every ProductionHeader dossier code. `#needs-review`
 - [[isah-partdispatch-process-status]] — 3-state enum `NietVerwerken/KlaarVoorVerwerken/Verwerkt`. `#needs-review`
 - [[isah-partdispatch-collector-filters]] — hardcoded `M38` / `KD%` / `ALG` / `'40'` / `FinishedInd=0`. **`#safety-relevant`**
+- [[isah-dtr-status-codes]] — pre-migration 2-char `AO/AW/IO/IW/...` state machine. `#dead-code` in production.
+- [[isah-hourcodes]] — `"01"` cycle / `"02"` setup / `"AW"` presence. **`#safety-relevant`**
+- [[isah-timereg-minute-granularity]] — `Second` is dropped by design. **`#safety-relevant`**
+- [[isah-timereg-write-pacing]] — `TempDelayForSql = 1000` 1-second pause between writes. **`#safety-relevant`**
 
 ### By severity (will be filled by Phase 4 / lint pass)
 - `#safety-relevant` — 10 of the 14 written rules + the watchlist below

@@ -24,6 +24,24 @@ _(Append as you go. Newest at the top.)_
 
 | ID | Date | Page | Question | Severity / tag |
 |----|------|------|----------|----------------|
+| **Q-196** | 2026-06-18 | [[../business-rules/isah-timereg-write-pacing]] | With 1s pacing, two writes can still land in the same minute. Bump to 60s or accept? | medium |
+| **Q-195** | 2026-06-18 | [[../business-rules/isah-hourcodes]] | `"AW"` is read but never written by iCenter. Document the contract with ISAH's own clock-in flow. | medium |
+| **Q-194** | 2026-06-18 | [[../business-rules/isah-hourcodes]] | HourCodes are bare strings — wrap in enum / `Public Const` registry to prevent typos. | low |
+| **Q-193** | 2026-06-18 | [[../business-rules/isah-dtr-status-codes]] | DTR conversion table is non-total — `AO` on `WorkCode` returns `""`. Throw or stay silent? | low |
+| **Q-192** | 2026-06-18 | [[../modules/isah-time-registration]] | `TimeRegCollector.TempDelayForSql` is `Public` (caller-mutable). Make `Private` or surface as explicit option. | low |
+| **Q-191** | 2026-06-18 | [[../modules/isah-time-registration]] | `TimeRegCollector.ProcessCollections` doesn't roll back — SetStarted failure doesn't prevent SetFinished. ShopDoc could be finished without being started. | safety-relevant |
+| **Q-190** | 2026-06-18 | [[../modules/isah-time-registration]] | `TimeRegInputType = 1` (was 2) — RR 2022-07-25 fix for missing JournaalPosten. Regression test? | low |
+| **Q-189** | 2026-06-18 | [[../modules/isah-time-registration]] | `CreateCombinedTimeRegLines` forces `StartDate = 00:01` — time-reg timestamp doesn't reflect when work actually happened. | safety-relevant |
+| **Q-188** | 2026-06-18 | [[../modules/isah-time-registration]] | Refactor `ChangeToShopDoc` / `ChangeAssistantsToShopDoc` to remove the recursive-escape trick. | low |
+| **Q-187** | 2026-06-18 | [[../business-rules/isah-timereg-minute-granularity]] | Document the minute-granularity design; explain why sub-minute precision was rejected. | medium |
+| **Q-186** | 2026-06-18 | [[../modules/isah-time-registration]] | Document EmpId `S*` convention — what does the `S` prefix mean? | medium |
+| **Q-185** | 2026-06-18 | [[../modules/isah-time-registration]] | Harmonise `IsahUserCode` — TimeRegistration uses `Common.APPLISAHUSERCODE` while production/dossier classes hardcode `"ISAH"`. | medium |
+| **Q-184** | 2026-06-18 | [[../modules/isah-time-registration]] | `ChangeToShopDoc` silently substitutes ShopDocCode when MachGrp-resolution finds a different one. | safety-relevant |
+| **Q-183** | 2026-06-18 | [[../modules/isah-time-registration]] | `ChangeToShopDoc` outer Try/Catch swallows all exceptions — partial mutation possible. | safety-relevant |
+| **Q-182** | 2026-06-18 | [[../modules/isah-time-registration]] | `ChangeToShopDoc` refuses to act if Employee not present. Combined with `GetIsObsolete` fail-closed, ISAH outage prevents all clocking. | safety-relevant |
+| **Q-181** | 2026-06-18 | [[../business-rules/isah-timereg-write-pacing]] | Document the motivation for `TempDelayForSql = 1000`. | medium |
+| **Q-180** | 2026-06-18 | [[../modules/isah-time-registration]] | `T40 → P02` debug MachGrp substitution. Why production-side fix for a debug employee? | low |
+| **Q-179** | 2026-06-18 | [[../modules/isah-time-registration]] | TimeRegistration uses `Common.APPLISAHUSERCODE` while production/dossier hardcode `"ISAH"`. Harmonise (cross-ref Q-165). | medium |
 | **Q-178** | 2026-06-18 | [[../business-rules/isah-partdispatch-collector-filters]] | Multi-dispatch-target support — refactor path if JAZO needs a second collector for a different machine group? | medium |
 | **Q-177** | 2026-06-18 | [[../business-rules/isah-partdispatch-process-status]] | Add `Unknown = 0` to `PartDispatch.ProcessStatus` enum and validate at writer? | low |
 | **Q-176** | 2026-06-18 | [[../business-rules/isah-partdispatch-process-status]] | Document the 1→2→3 transitions: who moves 2→3? Is 3→2 re-open ever legitimate? | medium |

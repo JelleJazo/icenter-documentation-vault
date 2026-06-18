@@ -9,6 +9,28 @@ tags: [meta, log]
 
 # Operation Log
 
+## 2026-06-18 — Phase 3c-6: ISAH TimeRegistration deep-dive
+
+- Documented `TimeRegistration.vb` (1274 lines, biggest single ISAH file) and `TimeRegCollector.vb` (147 lines) as a single grouped module note [[modules/isah-time-registration]].
+- Wrote 4 new business-rule notes:
+  - [[business-rules/isah-dtr-status-codes]] — pre-migration 2-char state machine (`AO/AW/IO/IW/II/OO/OW/OI`). `#dead-code` in production (`UseIsahNoDtrTimeReg = True`).
+  - [[business-rules/isah-hourcodes]] — `"01"` cycle / `"02"` setup / `"AW"` presence; setup and cycle written as separate rows.
+  - [[business-rules/isah-timereg-minute-granularity]] — `Second` is dropped *by design*.
+  - [[business-rules/isah-timereg-write-pacing]] — `TempDelayForSql = 1000` 1-second pacing, likely a workaround for the minute-granularity collision.
+- **6 new `#safety-relevant` findings**:
+  - Q-182: `ChangeToShopDoc` refuses to act if Employee not present. Combined with `GetIsObsolete` fail-closed → ISAH outage prevents all clocking.
+  - Q-183: `ChangeToShopDoc` outer Try/Catch swallows all exceptions — partial mutation possible.
+  - Q-184: `ChangeToShopDoc` silently substitutes ShopDocCode when MachGrp-resolution finds a different one.
+  - Q-189: `CreateCombinedTimeRegLines` forces StartDate = 00:01 — time-reg timestamp doesn't reflect when work actually happened.
+  - Q-191: `TimeRegCollector.ProcessCollections` doesn't roll back — ShopDoc could be finished without being started.
+  - (Plus Q-179..Q-196 — 18 total new questions.)
+- Other interesting findings: `T40 → P02` debug MachGrp rewrite (Q-180); EmpId `S*` special-case (Q-186); `TimeRegInputType = 1` post-2022-07-25 fix for missing JournaalPosten (Q-190); minute-granularity is intentional (commented-out `TotalSeconds` alternative on line 881).
+- TimeRegistration correctly uses `Common.APPLISAHUSERCODE = "ICENTER"` for writes while production/dossier classes hardcode `"ISAH"` — drift (Q-185 + Q-165).
+- TimeRegCollector.SetFinished is the **live path** that calls `SetShopDocFinInd(True)` — the same call that's commented-out in OutsourceOperationsHandler (Q-094 connection).
+- Fixed a mojibake bug in _coverage.md where the em-dash `—` had been corrupted to `â€”` in an earlier write (TimeReg rows).
+- Coverage delta: +2 done. Totals: 88 done / 1069 todo / 445 config / 414 generated / 9 needs-review of 2025. ISAH coverage now **31/65 (48%)**.
+- **Next:** Icenter2Isah (38 KB) — the sync layer between iCenter2 (out-of-scope sibling) and ISAH.
+
 ## 2026-06-18 — Phase 3c-5: ISAH Part + dispatch
 
 - Documented the 7-file ISAH Part subsystem as a single grouped module note [[modules/isah-part-and-dispatch]]: Part (49 KB) + PartDispatch (8 KB) + PartDispatchCollectorDataService (root + DataServices namespaces) + PartDataService (4 KB) + PartSelection (3 KB) + PartVendor (1 KB).
