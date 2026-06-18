@@ -1957,13 +1957,13 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `ISAH\CustomerRelation.vb` | done | [[modules/isah-leaves]] | 2026-06-18 |
 | `ISAH\CustomerSelection.vb` | done | [[modules/isah-leaves]] | 2026-06-18 |
 | `ISAH\Database.vb` | done | [[modules/isah-leaves]] | 2026-06-18 |
-| `ISAH\DataServices\EmployeeDataService.vb` | todo | â€” | â€” |
-| `ISAH\DataServices\IsahCustomisingElfsquadDataService.vb` | todo | â€” | â€” |
-| `ISAH\DataServices\MemoDetailDataService.vb` | todo | â€” | â€” |
+| `ISAH\DataServices\EmployeeDataService.vb` | done | [[modules/isah-sub-services]] | 2026-06-18 |
+| `ISAH\DataServices\IsahCustomisingElfsquadDataService.vb` | done | [[modules/isah-sub-services]] | 2026-06-18 |
+| `ISAH\DataServices\MemoDetailDataService.vb` | done | [[modules/isah-sub-services]] | 2026-06-18 |
 | `ISAH\DataServices\PartDataService.vb` | done | [[modules/isah-part-and-dispatch]] | 2026-06-18 |
 | `ISAH\DataServices\PartDispatchCollectorDataService.vb` | done | [[modules/isah-part-and-dispatch]] | 2026-06-18 |
-| `ISAH\DataServices\ToolboxDataService.vb` | todo | â€” | â€” |
-| `ISAH\DataServices\UpdateProdLeadTimeDataService.vb` | todo | â€” | â€” |
+| `ISAH\DataServices\ToolboxDataService.vb` | done | [[modules/isah-sub-services]] | 2026-06-18 |
+| `ISAH\DataServices\UpdateProdLeadTimeDataService.vb` | done | [[modules/isah-sub-services]] | 2026-06-18 |
 | `ISAH\DateDimension.vb` | done | [[modules/isah-leaves]] | 2026-06-18 |
 | `ISAH\DeliveryLine.vb` | done | [[modules/isah-leaves]] | 2026-06-18 |
 | `ISAH\Design.vb` | done | [[modules/isah-leaves]] | 2026-06-18 |
@@ -1976,13 +1976,13 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `ISAH\FrmJConfigParamDesignCode.Designer.vb` | generated | VS designer partial | â€” |
 | `ISAH\FrmJConfigParamDesignCode.resx` | generated | resource bundle (designer-managed) | â€” |
 | `ISAH\FrmJConfigParamDesignCode.vb` | done | [[modules/isah-leaves]] | 2026-06-18 |
-| `ISAH\Handlers\UpdateProdLeadTimeHandler.vb` | todo | â€” | â€” |
+| `ISAH\Handlers\UpdateProdLeadTimeHandler.vb` | done | [[modules/isah-sub-services]] | 2026-06-18 |
 | `ISAH\Helpers\DossierDetailExtraHelper.vb` | done | [[modules/isah-dossier]] | 2026-06-18 |
-| `ISAH\Helpers\EncryptionHelper.vb` | todo | â€” | â€” |
-| `ISAH\Helpers\TextStyling\HtmlPlainTextHelper.vb` | todo | â€” | â€” |
-| `ISAH\Helpers\TextStyling\IPlainTextHelper.vb` | todo | â€” | â€” |
-| `ISAH\Helpers\TextStyling\PlainTextHelper.vb` | todo | â€” | â€” |
-| `ISAH\Helpers\TextStyling\RtfPlainTextHelper.vb` | todo | â€” | â€” |
+| `ISAH\Helpers\EncryptionHelper.vb` | done | [[modules/isah-sub-services]] | 2026-06-18 |
+| `ISAH\Helpers\TextStyling\HtmlPlainTextHelper.vb` | done | [[modules/isah-sub-services]] | 2026-06-18 |
+| `ISAH\Helpers\TextStyling\IPlainTextHelper.vb` | done | [[modules/isah-sub-services]] | 2026-06-18 |
+| `ISAH\Helpers\TextStyling\PlainTextHelper.vb` | done | [[modules/isah-sub-services]] | 2026-06-18 |
+| `ISAH\Helpers\TextStyling\RtfPlainTextHelper.vb` | done | [[modules/isah-sub-services]] | 2026-06-18 |
 | `ISAH\Icenter2Isah.vb` | done | [[modules/isah-icenter-to-isah]] | 2026-06-18 |
 | `ISAH\IsahFieldML.vb` | done | [[modules/isah-leaves]] | 2026-06-18 |
 | `ISAH\JConfigParam.vb` | done | [[modules/isah-leaves]] | 2026-06-18 |
@@ -2009,8 +2009,8 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `ISAH\TimeRegistration.vb` | done | [[modules/isah-time-registration]] | 2026-06-18 |
 | `ISAH\User.vb` | done | [[modules/isah-identity]] | 2026-06-18 |
 | `ISAH\Vendor.vb` | done | [[modules/isah-leaves]] | 2026-06-18 |
-| `ISAH\ViewModels\CustomerAddressViewModel.vb` | todo | â€” | â€” |
-| `ISAH\ViewModels\PartBasicViewModel.vb` | todo | â€” | â€” |
+| `ISAH\ViewModels\CustomerAddressViewModel.vb` | done | [[modules/isah-sub-services]] | 2026-06-18 |
+| `ISAH\ViewModels\PartBasicViewModel.vb` | done | [[modules/isah-sub-services]] | 2026-06-18 |
 | `ISAH\WeighingFactor.vb` | done | [[modules/isah-leaves]] | 2026-06-18 |
 | `ISAH\WorkView.vb` | done | [[modules/isah-leaves]] | 2026-06-18 |
 
@@ -2571,8 +2571,8 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 |---------|------:|-----:|-----:|-------:|----------:|-----:|-------------:|
 | iCENTER | 1237 | 56 | 475 | 358 | 341 | 0 | 7 |
 | TruTopsLib | 65 | 0 | 57 | 6 | 2 | 0 | 0 |
-| ICenterLib | 723 | 53 | 516 | 81 | 71 | 0 | 0 |
-| **TOTAL** | **2025** | **109** | **1048** | **445** | **414** | **0** | **7** |
+| ICenterLib | 723 | 66 | 503 | 81 | 71 | 0 | 0 |
+| **TOTAL** | **2025** | **122** | **1035** | **445** | **414** | **0** | **7** |
 
 ### Per iCENTER sub-folder
 
