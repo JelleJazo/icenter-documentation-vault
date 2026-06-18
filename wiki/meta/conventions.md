@@ -33,7 +33,7 @@ type: <one of the types above>
 status: <todo | draft | done | needs-review>
 module: "<project path, e.g. JAZO.iCenter.Domain>"   # for module/rule/concept notes
 source-paths:                                         # for any note that points at code
-  - "C:\\DevOps\\iCenter2\\path\\to\\file.cs"
+  - "C:\\DevOps\\iCenter\\iCenter\\iCENTER\\path\\to\\File.vb"
 tags: [<at least one>]
 last-reviewed: YYYY-MM-DD                             # set when status flips to done
 ---

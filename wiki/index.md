@@ -11,7 +11,7 @@ tags: [meta, index]
 
 The master catalog. Every page in the wiki is reachable from here (directly or via a sub-index).
 
-> **Source codebase:** `C:\DevOps\iCenter2\` (git tracked, ~30 JAZO.iCenter.* .NET projects)
+> **Source codebase:** `C:\DevOps\iCenter\iCenter\iCENTER\` — single VB.NET WinForms project (`iCenter.vbproj`) with ~30 sub-folders covering CAD/CAM, Sales, WorkPreparation, Production, Engineering, and external-system integrations.
 > **Mission:** Full file coverage + business-logic surfacing. See [[../CLAUDE|standing instructions]].
 
 ---
@@ -43,6 +43,8 @@ The master catalog. Every page in the wiki is reachable from here (directly or v
 
 See [[_coverage]] for authoritative status. Summary updated by the lint pass.
 
-| Module / project | Files | Done | Todo | Needs-review |
-|------------------|------:|-----:|-----:|-------------:|
-| _(inventory not yet run — Phase 1 pending)_ | — | — | — | — |
+| Sub-folder | Files | Done | Todo | Needs-review |
+|------------|------:|-----:|-----:|-------------:|
+| **iCENTER (all)** | **1237** | 0 | 535 | 0 |
+
+> 535 todo entries are mostly `.vb` source. 341 are `generated` (`*.Designer.vb` + `*.resx`) and 361 are `config` (assets, project metadata, signing keys). Full per-folder breakdown lives in [[_coverage]].

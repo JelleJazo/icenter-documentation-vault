@@ -3,7 +3,7 @@ type: architecture
 title: "iCenter — Executive Overview"
 status: stub
 module: ""
-source-paths: ["C:\\DevOps\\iCenter2"]
+source-paths: ["C:\\DevOps\\iCenter\\iCenter\\iCENTER"]
 last-reviewed: ""
 tags: [overview, needs-review]
 ---

@@ -2,7 +2,13 @@
 
 ## Mission
 
-Build a complete Obsidian wiki for this legacy codebase, which controls business processes in a production factory (sales, engineering, work preparation, production, transport). Two non-negotiable goals:
+Build a complete Obsidian wiki for this legacy codebase, which controls business processes in a production factory (sales, engineering, work preparation, production, transport).
+
+The folders to analyze are inside:
+
+C:\DevOps\iCenter\iCenter\iCENTER
+
+Two non-negotiable goals:
 
 1. FULL COVERAGE — every source file is accounted for: documented, or explicitly marked (config/generated/dead).
 2. BUSINESS LOGIC — every rule affecting a factory or business process is surfaced,
