@@ -78,10 +78,10 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `Batchserver\BatchserverToolkit.vb` | todo | â€” | â€” |
+| `Batchserver\BatchserverToolkit.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Batchserver\FrmBatchServer.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Batchserver\FrmBatchServer.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Batchserver\FrmBatchServer.vb` | todo | â€” | â€” |
+| `Batchserver\FrmBatchServer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 
 ### CAD
 
@@ -99,35 +99,35 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `CadBatchserver\BatchServerWatch.vb` | todo | â€” | â€” |
-| `CadBatchserver\CadBatchserverTools.vb` | todo | â€” | â€” |
+| `CadBatchserver\BatchServerWatch.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\CadBatchserverTools.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `CadBatchserver\FormRunJob.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `CadBatchserver\FormRunJob.resx` | generated | resource bundle (designer-managed) | â€” |
-| `CadBatchserver\FormRunJob.vb` | todo | â€” | â€” |
+| `CadBatchserver\FormRunJob.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `CadBatchserver\FrmCadBatchServer.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `CadBatchserver\FrmCadBatchServer.resx` | generated | resource bundle (designer-managed) | â€” |
-| `CadBatchserver\FrmCadBatchServer.vb` | todo | â€” | â€” |
-| `CadBatchserver\Job.vb` | todo | â€” | â€” |
-| `CadBatchserver\JobArchive.vb` | todo | â€” | â€” |
-| `CadBatchserver\JobAutoManufacturing.vb` | todo | â€” | â€” |
-| `CadBatchserver\JobCreateProdOrd.vb` | todo | â€” | â€” |
-| `CadBatchserver\JobCreatePurOrdDocs.vb` | todo | â€” | â€” |
-| `CadBatchserver\JobEngOrdFinNotification.vb` | todo | â€” | â€” |
-| `CadBatchserver\JobGenerateAndReleaseModel.vb` | todo | â€” | â€” |
-| `CadBatchserver\JobGenericModelBackup.vb` | todo | â€” | â€” |
-| `CadBatchserver\JobGeo2Dxf.vb` | todo | â€” | â€” |
-| `CadBatchserver\JobModelGeneratorCreo.vb` | todo | â€” | â€” |
-| `CadBatchserver\JobPartDispatch.vb` | todo | â€” | â€” |
-| `CadBatchserver\JobProductionRegistration.vb` | todo | â€” | â€” |
-| `CadBatchserver\JobPublishCreo.vb` | todo | â€” | â€” |
-| `CadBatchserver\JobRebootMonitor.vb` | todo | â€” | â€” |
-| `CadBatchserver\JobSendEmail.vb` | todo | â€” | â€” |
-| `CadBatchserver\JobSmtOperSync.vb` | todo | â€” | â€” |
-| `CadBatchserver\JobSmtPartDispatch.vb` | todo | â€” | â€” |
-| `CadBatchserver\Modelgenerator\ModelgeneratorTask.vb` | todo | â€” | â€” |
-| `CadBatchserver\Publisher\Trailfile.vb` | todo | â€” | â€” |
-| `CadBatchserver\PublishWatchDirProcessor.vb` | todo | â€” | â€” |
-| `CadBatchserver\ServerReboot.vb` | todo | â€” | â€” |
+| `CadBatchserver\FrmCadBatchServer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\Job.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\JobArchive.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\JobAutoManufacturing.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\JobCreateProdOrd.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\JobCreatePurOrdDocs.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\JobEngOrdFinNotification.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\JobGenerateAndReleaseModel.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\JobGenericModelBackup.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\JobGeo2Dxf.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\JobModelGeneratorCreo.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\JobPartDispatch.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\JobProductionRegistration.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\JobPublishCreo.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\JobRebootMonitor.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\JobSendEmail.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\JobSmtOperSync.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\JobSmtPartDispatch.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\Modelgenerator\ModelgeneratorTask.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\Publisher\Trailfile.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\PublishWatchDirProcessor.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CadBatchserver\ServerReboot.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 
 ### CAM
 
@@ -135,10 +135,10 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `CAM\ManufMachine.vb` | todo | â€” | â€” |
-| `CAM\ManufPart.vb` | todo | â€” | â€” |
-| `CAM\ManufPartItem.vb` | todo | â€” | â€” |
-| `CAM\ManufPartMember.vb` | todo | â€” | â€” |
+| `CAM\ManufMachine.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CAM\ManufPart.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CAM\ManufPartItem.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `CAM\ManufPartMember.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 
 ### Classes
 
@@ -146,117 +146,117 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `Classes\ApplicationLog.vb` | todo | â€” | â€” |
-| `Classes\AutoDocAttach.vb` | todo | â€” | â€” |
-| `Classes\AxControl.vb` | todo | â€” | â€” |
-| `Classes\BriefcaseCollection.vb` | todo | â€” | â€” |
-| `Classes\BriefcaseItem.vb` | todo | â€” | â€” |
-| `Classes\ClsEmailEBTV.vb` | todo | â€” | â€” |
-| `Classes\ClsPdfCommentLines.vb` | todo | â€” | â€” |
-| `Classes\ClsProdObjects.vb` | todo | â€” | â€” |
-| `Classes\ClsRecOrdNr.vb` | todo | â€” | â€” |
-| `Classes\ClsXMLfile.vb` | todo | â€” | â€” |
-| `Classes\Coating\Coating.vb` | todo | â€” | â€” |
-| `Classes\Coating\CoatingPickLabel_v3.vb` | todo | â€” | â€” |
+| `Classes\ApplicationLog.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\AutoDocAttach.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\AxControl.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\BriefcaseCollection.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\BriefcaseItem.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\ClsEmailEBTV.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\ClsPdfCommentLines.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\ClsProdObjects.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\ClsRecOrdNr.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\ClsXMLfile.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Coating\Coating.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Coating\CoatingPickLabel_v3.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Classes\Coating\ControlCoating.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Classes\Coating\ControlCoating.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Classes\Coating\ControlCoating.vb` | todo | â€” | â€” |
+| `Classes\Coating\ControlCoating.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Classes\Coating\ControlCoatingGrouped.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Classes\Coating\ControlCoatingGrouped.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Classes\Coating\ControlCoatingGrouped.vb` | todo | â€” | â€” |
+| `Classes\Coating\ControlCoatingGrouped.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Classes\Coating\CtrlCoatingPickLocation.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Classes\Coating\CtrlCoatingPickLocation.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Classes\Coating\CtrlCoatingPickLocation.vb` | todo | â€” | â€” |
-| `Classes\Coating\DataGridViewProgressColumn.vb` | todo | â€” | â€” |
-| `Classes\Coating\DebugLog.vb` | todo | â€” | â€” |
-| `Classes\Coating\EbtvSticker.vb` | todo | â€” | â€” |
+| `Classes\Coating\CtrlCoatingPickLocation.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Coating\DataGridViewProgressColumn.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Coating\DebugLog.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Coating\EbtvSticker.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Classes\Coating\FrmAddLayerThickness.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Classes\Coating\FrmAddLayerThickness.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Classes\Coating\FrmAddLayerThickness.vb` | todo | â€” | â€” |
+| `Classes\Coating\FrmAddLayerThickness.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Classes\Coating\FrmCoatingLayerThickness.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Classes\Coating\FrmCoatingLayerThickness.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Classes\Coating\FrmCoatingLayerThickness.vb` | todo | â€” | â€” |
+| `Classes\Coating\FrmCoatingLayerThickness.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Classes\Coating\FrmCoatingPick.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Classes\Coating\FrmCoatingPick.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Classes\Coating\FrmCoatingPick.vb` | todo | â€” | â€” |
+| `Classes\Coating\FrmCoatingPick.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Classes\Coating\FrmGetCoatingMaterials.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Classes\Coating\FrmGetCoatingMaterials.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Classes\Coating\FrmGetCoatingMaterials.vb` | todo | â€” | â€” |
+| `Classes\Coating\FrmGetCoatingMaterials.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Classes\Coating\FrmGetCoatingNextJob.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Classes\Coating\FrmGetCoatingNextJob.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Classes\Coating\FrmGetCoatingNextJob.vb` | todo | â€” | â€” |
+| `Classes\Coating\FrmGetCoatingNextJob.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Classes\Coating\frmKardexJobIncomplete.designer.vb` | generated | VS Forms designer partial | â€” |
 | `Classes\Coating\frmKardexJobIncomplete.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Classes\Coating\frmKardexJobIncomplete.vb` | todo | â€” | â€” |
+| `Classes\Coating\frmKardexJobIncomplete.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Classes\Coating\frmScanNext.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Classes\Coating\frmScanNext.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Classes\Coating\frmScanNext.vb` | todo | â€” | â€” |
-| `Classes\Coating\IControlCoating.vb` | todo | â€” | â€” |
-| `Classes\Connectivity\CalcExcelExport.vb` | todo | â€” | â€” |
-| `Classes\Connectivity\ClsActiveDirectory.vb` | todo | â€” | â€” |
-| `Classes\Connectivity\ClsICenter.vb` | todo | â€” | â€” |
-| `Classes\Connectivity\ClsISAH.vb` | todo | â€” | â€” |
-| `Classes\Connectivity\ClsJIBA.vb` | todo | â€” | â€” |
-| `Classes\Connectivity\DeviceInfo.vb` | todo | â€” | â€” |
-| `Classes\Connectivity\LabelWriter.vb` | todo | â€” | â€” |
-| `Classes\Connectivity\NetworkPrinter.vb` | todo | â€” | â€” |
-| `Classes\DocElementConverter.vb` | todo | â€” | â€” |
-| `Classes\DossierDetail.vb` | todo | â€” | â€” |
-| `Classes\DossierDocFolder.vb` | todo | â€” | â€” |
-| `Classes\EngineeringOrders.vb` | todo | â€” | â€” |
-| `Classes\ExtOperPart.vb` | todo | â€” | â€” |
-| `Classes\ICenterDoc.vb` | todo | â€” | â€” |
-| `Classes\ICenterObject.vb` | todo | â€” | â€” |
-| `Classes\ICenterPartBasicXML.vb` | todo | â€” | â€” |
-| `Classes\InvtOrd.vb` | todo | â€” | â€” |
-| `Classes\IsahDoc.vb` | todo | â€” | â€” |
-| `Classes\MachGrp.vb` | todo | â€” | â€” |
-| `Classes\MachineFilter.vb` | todo | â€” | â€” |
-| `Classes\ModelTree.vb` | todo | â€” | â€” |
-| `Classes\OrdRefNrStatusUpdate.vb` | todo | â€” | â€” |
-| `Classes\PartCalculation.vb` | todo | â€” | â€” |
-| `Classes\PartOptimisationExcelExport.vb` | todo | â€” | â€” |
-| `Classes\PreSelectMachGrpCodes\PreSelectMachGrpCode.vb` | todo | â€” | â€” |
-| `Classes\PreSelectMachGrpCodes\PreSelectMachGrpCodeOrdType.vb` | todo | â€” | â€” |
-| `Classes\PreSelectMachGrpCodes\PreSelectMachGrpCodeOrdTypeHandler.vb` | todo | â€” | â€” |
-| `Classes\PreSelectMachGrpCodes\PreSelectMachGrpCodes.vb` | todo | â€” | â€” |
-| `Classes\PreSelectMachGrpCodes\PreSelectMachGrpCodesHandler.vb` | todo | â€” | â€” |
-| `Classes\ProcessWatch.vb` | todo | â€” | â€” |
-| `Classes\Production\ClsIPbatch.vb` | todo | â€” | â€” |
-| `Classes\Production\ClsIPorder.vb` | todo | â€” | â€” |
-| `Classes\Production\ClsIPpacket.vb` | todo | â€” | â€” |
-| `Classes\Production\ClsIPpart.vb` | todo | â€” | â€” |
-| `Classes\Production\Icenter2IsahJob.vb` | todo | â€” | â€” |
-| `Classes\Production\LeanJob.vb` | todo | â€” | â€” |
-| `Classes\Production\LeanWorkTime.vb` | todo | â€” | â€” |
-| `Classes\Production\MachGrpPerformance.vb` | todo | â€” | â€” |
-| `Classes\Production\PartProgress.vb` | todo | â€” | â€” |
-| `Classes\Production\ProdPlanView.vb` | todo | â€” | â€” |
-| `Classes\Production\ProdStatus.vb` | todo | â€” | â€” |
-| `Classes\Production\ProductionRegistration.vb` | todo | â€” | â€” |
-| `Classes\Production\WorkView.vb` | todo | â€” | â€” |
-| `Classes\PurOrd.vb` | todo | â€” | â€” |
-| `Classes\RecurrenceCheck.vb` | todo | â€” | â€” |
-| `Classes\StandardPartUpdater.vb` | todo | â€” | â€” |
-| `Classes\StickersAndLabels\AltecLabel.vb` | todo | â€” | â€” |
-| `Classes\StickersAndLabels\DymoLabelTest.vb` | todo | â€” | â€” |
-| `Classes\StickersAndLabels\FG_ProductLabel.vb` | todo | â€” | â€” |
-| `Classes\StickersAndLabels\InvtPartSticker.vb` | todo | â€” | â€” |
-| `Classes\StickersAndLabels\KanbanBinLabel.vb` | todo | â€” | â€” |
-| `Classes\StickersAndLabels\LeanBatchSticker.vb` | todo | â€” | â€” |
-| `Classes\StickersAndLabels\LeanSticker_v1.vb` | todo | â€” | â€” |
-| `Classes\StickersAndLabels\LeanStickerCopy.vb` | todo | â€” | â€” |
-| `Classes\StickersAndLabels\OrdRefLabel.vb` | todo | â€” | â€” |
-| `Classes\StickersAndLabels\PartIdent.vb` | todo | â€” | â€” |
-| `Classes\StickersAndLabels\PartIdentProfMill.vb` | todo | â€” | â€” |
-| `Classes\Toolbox\ApplicationHelper.vb` | todo | â€” | â€” |
-| `Classes\Toolbox\ClipboardHelper.vb` | todo | â€” | â€” |
-| `Classes\Toolbox\HelpHandler.vb` | todo | â€” | â€” |
-| `Classes\Toolbox\JzWindow.vb` | todo | â€” | â€” |
-| `Classes\Toolbox\RtfBuilder.vb` | todo | â€” | â€” |
-| `Classes\Toolbox\SessionHelper.vb` | todo | â€” | â€” |
-| `Classes\Toolbox\WindowHandler.vb` | todo | â€” | â€” |
-| `Classes\Toolbox\Zip.vb` | todo | â€” | â€” |
+| `Classes\Coating\frmScanNext.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Coating\IControlCoating.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Connectivity\CalcExcelExport.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Connectivity\ClsActiveDirectory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Connectivity\ClsICenter.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Connectivity\ClsISAH.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Connectivity\ClsJIBA.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Connectivity\DeviceInfo.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Connectivity\LabelWriter.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Connectivity\NetworkPrinter.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\DocElementConverter.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\DossierDetail.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\DossierDocFolder.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\EngineeringOrders.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\ExtOperPart.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\ICenterDoc.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\ICenterObject.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\ICenterPartBasicXML.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\InvtOrd.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\IsahDoc.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\MachGrp.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\MachineFilter.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\ModelTree.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\OrdRefNrStatusUpdate.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\PartCalculation.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\PartOptimisationExcelExport.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\PreSelectMachGrpCodes\PreSelectMachGrpCode.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\PreSelectMachGrpCodes\PreSelectMachGrpCodeOrdType.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\PreSelectMachGrpCodes\PreSelectMachGrpCodeOrdTypeHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\PreSelectMachGrpCodes\PreSelectMachGrpCodes.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\PreSelectMachGrpCodes\PreSelectMachGrpCodesHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\ProcessWatch.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Production\ClsIPbatch.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Production\ClsIPorder.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Production\ClsIPpacket.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Production\ClsIPpart.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Production\Icenter2IsahJob.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Production\LeanJob.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Production\LeanWorkTime.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Production\MachGrpPerformance.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Production\PartProgress.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Production\ProdPlanView.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Production\ProdStatus.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Production\ProductionRegistration.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Production\WorkView.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\PurOrd.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\RecurrenceCheck.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\StandardPartUpdater.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\StickersAndLabels\AltecLabel.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\StickersAndLabels\DymoLabelTest.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\StickersAndLabels\FG_ProductLabel.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\StickersAndLabels\InvtPartSticker.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\StickersAndLabels\KanbanBinLabel.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\StickersAndLabels\LeanBatchSticker.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\StickersAndLabels\LeanSticker_v1.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\StickersAndLabels\LeanStickerCopy.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\StickersAndLabels\OrdRefLabel.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\StickersAndLabels\PartIdent.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\StickersAndLabels\PartIdentProfMill.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Toolbox\ApplicationHelper.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Toolbox\ClipboardHelper.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Toolbox\HelpHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Toolbox\JzWindow.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Toolbox\RtfBuilder.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Toolbox\SessionHelper.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Toolbox\WindowHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Classes\Toolbox\Zip.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 
 ### Comparers
 
@@ -264,10 +264,10 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `Comparers\BewerkingsGroepComparer.vb` | todo | â€” | â€” |
-| `Comparers\DefaultNodeSorter.vb` | todo | â€” | â€” |
-| `Comparers\DPrintDocumentComparer.vb` | todo | â€” | â€” |
-| `Comparers\JAZOTreeViewNodeSorter.vb` | todo | â€” | â€” |
+| `Comparers\BewerkingsGroepComparer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Comparers\DefaultNodeSorter.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Comparers\DPrintDocumentComparer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Comparers\JAZOTreeViewNodeSorter.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 
 ### Controls
 
@@ -277,118 +277,118 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 |------|--------|------|---------------|
 | `Controls\BomControl.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\BomControl.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\BomControl.vb` | todo | â€” | â€” |
+| `Controls\BomControl.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\ButtonExtended.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\ButtonExtended.vb` | todo | â€” | â€” |
-| `Controls\CheckBoxExtended.vb` | todo | â€” | â€” |
+| `Controls\ButtonExtended.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Controls\CheckBoxExtended.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CompBriefcaseButton.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CompBriefcaseButton.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CompBriefcaseButton.vb` | todo | â€” | â€” |
+| `Controls\CompBriefcaseButton.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CreoViewControl.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CreoViewControl.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CreoViewControl.vb` | todo | â€” | â€” |
+| `Controls\CreoViewControl.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlCeChecklistViewer.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlCeChecklistViewer.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlCeChecklistViewer.vb` | todo | â€” | â€” |
+| `Controls\CtrlCeChecklistViewer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlDocumentReplace.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlDocumentReplace.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlDocumentReplace.vb` | todo | â€” | â€” |
+| `Controls\CtrlDocumentReplace.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlDosDesignCodes.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlDosDesignCodes.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlDosDesignCodes.vb` | todo | â€” | â€” |
+| `Controls\CtrlDosDesignCodes.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlDossierDetailProdDosCompare.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlDossierDetailProdDosCompare.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlDossierDetailProdDosCompare.vb` | todo | â€” | â€” |
+| `Controls\CtrlDossierDetailProdDosCompare.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlDossierDetailProperties.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlDossierDetailProperties.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlDossierDetailProperties.vb` | todo | â€” | â€” |
+| `Controls\CtrlDossierDetailProperties.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlDossierDetailText.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlDossierDetailText.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlDossierDetailText.vb` | todo | â€” | â€” |
+| `Controls\CtrlDossierDetailText.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlEditOperations.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlEditOperations.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlEditOperations.vb` | todo | â€” | â€” |
+| `Controls\CtrlEditOperations.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlExplorer.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlExplorer.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlExplorer.vb` | todo | â€” | â€” |
+| `Controls\CtrlExplorer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlFgProductLabel.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlFgProductLabel.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlFgProductLabel.vb` | todo | â€” | â€” |
+| `Controls\CtrlFgProductLabel.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlIpInfo.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlIpInfo.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlIpInfo.vb` | todo | â€” | â€” |
+| `Controls\CtrlIpInfo.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlIsahContacts.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlIsahContacts.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlIsahContacts.vb` | todo | â€” | â€” |
+| `Controls\CtrlIsahContacts.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlModelgenerator.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlModelgenerator.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlModelgenerator.vb` | todo | â€” | â€” |
+| `Controls\CtrlModelgenerator.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlModelgenerators.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlModelgenerators.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlModelgenerators.vb` | todo | â€” | â€” |
+| `Controls\CtrlModelgenerators.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlOfficeClockFavorites.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlOfficeClockFavorites.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlOfficeClockFavorites.vb` | todo | â€” | â€” |
+| `Controls\CtrlOfficeClockFavorites.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlOfficeClockStatus.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlOfficeClockStatus.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlOfficeClockStatus.vb` | todo | â€” | â€” |
+| `Controls\CtrlOfficeClockStatus.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlPhoneNr.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlPhoneNr.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlPhoneNr.vb` | todo | â€” | â€” |
+| `Controls\CtrlPhoneNr.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlProdChecklistViewer.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlProdChecklistViewer.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlProdChecklistViewer.vb` | todo | â€” | â€” |
+| `Controls\CtrlProdChecklistViewer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlProdRoutingDetail.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlProdRoutingDetail.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlProdRoutingDetail.vb` | todo | â€” | â€” |
+| `Controls\CtrlProdRoutingDetail.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlProductConfiguration.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlProductConfiguration.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlProductConfiguration.vb` | todo | â€” | â€” |
+| `Controls\CtrlProductConfiguration.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlSalesFavorites.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlSalesFavorites.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlSalesFavorites.vb` | todo | â€” | â€” |
+| `Controls\CtrlSalesFavorites.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlTreeNodeDetails.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlTreeNodeDetails.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlTreeNodeDetails.vb` | todo | â€” | â€” |
+| `Controls\CtrlTreeNodeDetails.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlTreeNodeProperties.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlTreeNodeProperties.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlTreeNodeProperties.vb` | todo | â€” | â€” |
+| `Controls\CtrlTreeNodeProperties.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\CtrlWebClockAssistant.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\CtrlWebClockAssistant.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\CtrlWebClockAssistant.vb` | todo | â€” | â€” |
+| `Controls\CtrlWebClockAssistant.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\DxfView\DxfViewControl.designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\DxfView\DxfViewControl.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\DxfView\DxfViewControl.vb` | todo | â€” | â€” |
+| `Controls\DxfView\DxfViewControl.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\DxfView\DxfViewDisplayControl.designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\DxfView\DxfViewDisplayControl.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\DxfView\DxfViewDisplayControl.vb` | todo | â€” | â€” |
-| `Controls\DxfView\PolygonWireframeGraphicsFactory.vb` | todo | â€” | â€” |
+| `Controls\DxfView\DxfViewDisplayControl.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Controls\DxfView\PolygonWireframeGraphicsFactory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\ExtendedDateTimePicker.Designer.vb` | generated | VS Forms designer partial | â€” |
-| `Controls\ExtendedDateTimePicker.vb` | todo | â€” | â€” |
+| `Controls\ExtendedDateTimePicker.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\Isah\CtrlDosDetailExtra.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\Isah\CtrlDosDetailExtra.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\Isah\CtrlDosDetailExtra.vb` | todo | â€” | â€” |
-| `Controls\Isah\DossierDetailExtraAuthorizationHelper.vb` | todo | â€” | â€” |
+| `Controls\Isah\CtrlDosDetailExtra.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Controls\Isah\DossierDetailExtraAuthorizationHelper.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\Isah\FrmDosDetailExtra.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\Isah\FrmDosDetailExtra.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\Isah\FrmDosDetailExtra.vb` | todo | â€” | â€” |
-| `Controls\Isah\ICtrlDosDetailExtra.vb` | todo | â€” | â€” |
+| `Controls\Isah\FrmDosDetailExtra.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Controls\Isah\ICtrlDosDetailExtra.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\ModelOpers\ControlModelOper.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\ModelOpers\ControlModelOper.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\ModelOpers\ControlModelOper.vb` | todo | â€” | â€” |
+| `Controls\ModelOpers\ControlModelOper.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\ModelOpers\ControlModelOpers.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\ModelOpers\ControlModelOpers.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\ModelOpers\ControlModelOpers.vb` | todo | â€” | â€” |
-| `Controls\MSVistaPBar.vb` | todo | â€” | â€” |
+| `Controls\ModelOpers\ControlModelOpers.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Controls\MSVistaPBar.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\RichTextBoxEditor.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\RichTextBoxEditor.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\RichTextBoxEditor.vb` | todo | â€” | â€” |
+| `Controls\RichTextBoxEditor.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\TabPageExtended.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\TabPageExtended.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\TabPageExtended.vb` | todo | â€” | â€” |
+| `Controls\TabPageExtended.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Controls\UCKanbanPart.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Controls\UCKanbanPart.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Controls\UCKanbanPart.vb` | todo | â€” | â€” |
+| `Controls\UCKanbanPart.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 
 ### DataMigration
 
@@ -396,56 +396,56 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `DataMigration\BasicDataHandler.vb` | todo | â€” | â€” |
-| `DataMigration\BasicMigrationHandler.vb` | todo | â€” | â€” |
-| `DataMigration\CacheHandler.vb` | todo | â€” | â€” |
-| `DataMigration\ContextMenuHelper.vb` | todo | â€” | â€” |
-| `DataMigration\DataBaseConnection.vb` | todo | â€” | â€” |
-| `DataMigration\DataBaseConnectionHandler.vb` | todo | â€” | â€” |
-| `DataMigration\DataHandlerToolbox.vb` | todo | â€” | â€” |
-| `DataMigration\DossierItemMigrationHandler.vb` | todo | â€” | â€” |
-| `DataMigration\DossierMigrationHandler.vb` | todo | â€” | â€” |
-| `DataMigration\Entities\AuditableEntity.vb` | todo | â€” | â€” |
-| `DataMigration\Entities\BillOfMaterialItem.vb` | todo | â€” | â€” |
-| `DataMigration\Entities\BillOfOperation.vb` | todo | â€” | â€” |
-| `DataMigration\Entities\BillOfOperationItem.vb` | todo | â€” | â€” |
-| `DataMigration\Entities\Document.vb` | todo | â€” | â€” |
-| `DataMigration\Entities\Dossier.vb` | todo | â€” | â€” |
-| `DataMigration\Entities\DossierItem.vb` | todo | â€” | â€” |
-| `DataMigration\Entities\IEntity.vb` | todo | â€” | â€” |
-| `DataMigration\Entities\Material.vb` | todo | â€” | â€” |
-| `DataMigration\Entities\Operation.vb` | todo | â€” | â€” |
-| `DataMigration\Entities\Part.vb` | todo | â€” | â€” |
-| `DataMigration\Entities\ProductionDossier.vb` | todo | â€” | â€” |
-| `DataMigration\Entities\Project.vb` | todo | â€” | â€” |
-| `DataMigration\Entities\User.vb` | todo | â€” | â€” |
-| `DataMigration\Features\BillOfMaterialItemFactory.vb` | todo | â€” | â€” |
-| `DataMigration\Features\BillOfMaterialItemHandler.vb` | todo | â€” | â€” |
-| `DataMigration\Features\BillOfOperationItemFactory.vb` | todo | â€” | â€” |
-| `DataMigration\Features\BillOfOperationItemHandler.vb` | todo | â€” | â€” |
-| `DataMigration\Features\DocumentFactory.vb` | todo | â€” | â€” |
-| `DataMigration\Features\DocumentHandler.vb` | todo | â€” | â€” |
-| `DataMigration\Features\DossierFactory.vb` | todo | â€” | â€” |
-| `DataMigration\Features\DossierHandler.vb` | todo | â€” | â€” |
-| `DataMigration\Features\DossierItemFactory.vb` | todo | â€” | â€” |
-| `DataMigration\Features\DossierItemHandler.vb` | todo | â€” | â€” |
-| `DataMigration\Features\MaterialFactory.vb` | todo | â€” | â€” |
-| `DataMigration\Features\MaterialHandler.vb` | todo | â€” | â€” |
-| `DataMigration\Features\OperationFactory.vb` | todo | â€” | â€” |
-| `DataMigration\Features\OperationHandler.vb` | todo | â€” | â€” |
-| `DataMigration\Features\PartFactory.vb` | todo | â€” | â€” |
-| `DataMigration\Features\PartHandler.vb` | todo | â€” | â€” |
-| `DataMigration\Features\ProductionDossierFactory.vb` | todo | â€” | â€” |
-| `DataMigration\Features\ProductionDossierHandler.vb` | todo | â€” | â€” |
-| `DataMigration\Features\ProjectFactory.vb` | todo | â€” | â€” |
-| `DataMigration\Features\ProjectHandler.vb` | todo | â€” | â€” |
-| `DataMigration\Features\UserFactory.vb` | todo | â€” | â€” |
-| `DataMigration\Features\UserHandler.vb` | todo | â€” | â€” |
-| `DataMigration\IMigrationHandler.vb` | todo | â€” | â€” |
-| `DataMigration\MockDataHandler.vb` | todo | â€” | â€” |
-| `DataMigration\PartMigrationHandler.vb` | todo | â€” | â€” |
-| `DataMigration\ProductionDossierMigrationHandler.vb` | todo | â€” | â€” |
-| `DataMigration\UserMigrationHandler.vb` | todo | â€” | â€” |
+| `DataMigration\BasicDataHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\BasicMigrationHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\CacheHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\ContextMenuHelper.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\DataBaseConnection.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\DataBaseConnectionHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\DataHandlerToolbox.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\DossierItemMigrationHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\DossierMigrationHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Entities\AuditableEntity.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Entities\BillOfMaterialItem.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Entities\BillOfOperation.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Entities\BillOfOperationItem.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Entities\Document.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Entities\Dossier.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Entities\DossierItem.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Entities\IEntity.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Entities\Material.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Entities\Operation.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Entities\Part.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Entities\ProductionDossier.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Entities\Project.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Entities\User.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\BillOfMaterialItemFactory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\BillOfMaterialItemHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\BillOfOperationItemFactory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\BillOfOperationItemHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\DocumentFactory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\DocumentHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\DossierFactory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\DossierHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\DossierItemFactory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\DossierItemHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\MaterialFactory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\MaterialHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\OperationFactory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\OperationHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\PartFactory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\PartHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\ProductionDossierFactory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\ProductionDossierHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\ProjectFactory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\ProjectHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\UserFactory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\Features\UserHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\IMigrationHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\MockDataHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\PartMigrationHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\ProductionDossierMigrationHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `DataMigration\UserMigrationHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 
 ### DesignComments
 
@@ -453,16 +453,16 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `DesignComments\ClsDesignComments.vb` | todo | â€” | â€” |
+| `DesignComments\ClsDesignComments.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `DesignComments\dgCommentLines.designer.vb` | generated | VS Forms designer partial | â€” |
 | `DesignComments\dgCommentLines.resx` | generated | resource bundle (designer-managed) | â€” |
-| `DesignComments\dgCommentLines.vb` | todo | â€” | â€” |
+| `DesignComments\dgCommentLines.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `DesignComments\frmCommentLine.designer.vb` | generated | VS Forms designer partial | â€” |
 | `DesignComments\frmCommentLine.resx` | generated | resource bundle (designer-managed) | â€” |
-| `DesignComments\frmCommentLine.vb` | todo | â€” | â€” |
+| `DesignComments\frmCommentLine.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `DesignComments\FrmDesigncomments.designer.vb` | generated | VS Forms designer partial | â€” |
 | `DesignComments\FrmDesigncomments.resx` | generated | resource bundle (designer-managed) | â€” |
-| `DesignComments\FrmDesigncomments.vb` | todo | â€” | â€” |
+| `DesignComments\FrmDesigncomments.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 
 ### Elumatec
 
@@ -470,7 +470,7 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `Elumatec\AppVersion.vb` | todo | â€” | â€” |
+| `Elumatec\AppVersion.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\AufSerializer\EluXmlJob.vb` | done | [[modules/elumatec-nc-program-family]] | 2026-06-18 |
 | `Elumatec\AufSerializer\EluXmlJobItem.vb` | done | [[modules/elumatec-nc-program-family]] | 2026-06-18 |
 | `Elumatec\AufSerializer\EluXmlJobSubItem.vb` | done | [[modules/elumatec-nc-program-family]] | 2026-06-18 |
@@ -485,147 +485,147 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `Elumatec\AufSerializer\ZeileKontur.vb` | done | [[modules/elumatec-nc-program-family]] | 2026-06-18 |
 | `Elumatec\AufSerializer\ZeileProgramm.vb` | done | [[modules/elumatec-nc-program-family]] | 2026-06-18 |
 | `Elumatec\AufSerializer\ZeileTTab.vb` | done | [[modules/elumatec-nc-program-family]] | 2026-06-18 |
-| `Elumatec\AutoProfMillProgApproval.vb` | todo | â€” | â€” |
+| `Elumatec\AutoProfMillProgApproval.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\ClsComWatcher.vb` | done | [[modules/elumatec-com-watcher]] | 2026-06-18 |
-| `Elumatec\ClsDgxShoppingList.vb` | todo | â€” | â€” |
-| `Elumatec\ClsDgxStickerPrinter.vb` | todo | â€” | â€” |
-| `Elumatec\ClsEluLanguage.vb` | todo | â€” | â€” |
-| `Elumatec\ClsSawList.vb` | todo | â€” | â€” |
+| `Elumatec\ClsDgxShoppingList.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\ClsDgxStickerPrinter.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\ClsEluLanguage.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\ClsSawList.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\ControlProfSaw.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Elumatec\ControlProfSaw.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Elumatec\ControlProfSaw.vb` | todo | â€” | â€” |
+| `Elumatec\ControlProfSaw.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\CRs232.vb` | done | third-party (Corrado Cavalli Â©2003); [[modules/elumatec-com-watcher]] | 2026-06-18 |
 | `Elumatec\CtrlEluOpenGLViewer.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Elumatec\CtrlEluOpenGLViewer.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Elumatec\CtrlEluOpenGLViewer.vb` | todo | â€” | â€” |
+| `Elumatec\CtrlEluOpenGLViewer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\CtrlProfMillCam.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Elumatec\CtrlProfMillCam.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Elumatec\CtrlProfMillCam.vb` | todo | â€” | â€” |
+| `Elumatec\CtrlProfMillCam.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\CtrlProfMillElu.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Elumatec\CtrlProfMillElu.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Elumatec\CtrlProfMillElu.vb` | todo | â€” | â€” |
-| `Elumatec\CutFactory.vb` | todo | â€” | â€” |
-| `Elumatec\CycleTime.vb` | todo | â€” | â€” |
-| `Elumatec\Database\Fixture.vb` | todo | â€” | â€” |
-| `Elumatec\Database\FixtureCollection.vb` | todo | â€” | â€” |
-| `Elumatec\Database\Offset.vb` | todo | â€” | â€” |
-| `Elumatec\Database\OffsetCollection.vb` | todo | â€” | â€” |
-| `Elumatec\Database\OffsetFile.vb` | todo | â€” | â€” |
-| `Elumatec\Database\Offsets.vb` | todo | â€” | â€” |
-| `Elumatec\Database\Profile.vb` | todo | â€” | â€” |
-| `Elumatec\Database\ProfileExportHandler.vb` | todo | â€” | â€” |
-| `Elumatec\Database\ProfileMachineSetting.vb` | todo | â€” | â€” |
-| `Elumatec\Database\ToolDbSimplified.vb` | todo | â€” | â€” |
-| `Elumatec\DXF\EluDxf.vb` | todo | â€” | â€” |
-| `Elumatec\DXF\EluDxfEntity.vb` | todo | â€” | â€” |
-| `Elumatec\DXF\EluDxfPolyline.vb` | todo | â€” | â€” |
-| `Elumatec\DXF\EluDxfVertex.vb` | todo | â€” | â€” |
+| `Elumatec\CtrlProfMillElu.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\CutFactory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\CycleTime.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Database\Fixture.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Database\FixtureCollection.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Database\Offset.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Database\OffsetCollection.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Database\OffsetFile.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Database\Offsets.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Database\Profile.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Database\ProfileExportHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Database\ProfileMachineSetting.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Database\ToolDbSimplified.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\DXF\EluDxf.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\DXF\EluDxfEntity.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\DXF\EluDxfPolyline.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\DXF\EluDxfVertex.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\EluCadApp.vb` | needs-review | overview only in [[modules/elumatec-cad-app]]; per-cluster sub-notes pending | â€” |
-| `Elumatec\EluCadSetting.vb` | todo | â€” | â€” |
-| `Elumatec\FileFormat.vb` | todo | â€” | â€” |
+| `Elumatec\EluCadSetting.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\FileFormat.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\FrmComWatcher.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Elumatec\FrmComWatcher.resx` | generated | resource bundle (designer-managed) | â€” |
 | `Elumatec\FrmComWatcher.vb` | done | [[modules/elumatec-com-watcher]] | 2026-06-18 |
 | `Elumatec\frmDgxStack.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Elumatec\frmDgxStack.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Elumatec\frmDgxStack.vb` | todo | â€” | â€” |
+| `Elumatec\frmDgxStack.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\FrmEluMissingProfile.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Elumatec\FrmEluMissingProfile.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Elumatec\FrmEluMissingProfile.vb` | todo | â€” | â€” |
+| `Elumatec\FrmEluMissingProfile.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\frmExportDgx.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Elumatec\frmExportDgx.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Elumatec\frmExportDgx.vb` | todo | â€” | â€” |
+| `Elumatec\frmExportDgx.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\frmManualProfile.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Elumatec\frmManualProfile.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Elumatec\frmManualProfile.vb` | todo | â€” | â€” |
+| `Elumatec\frmManualProfile.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\FrmNcxErrors.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Elumatec\FrmNcxErrors.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Elumatec\FrmNcxErrors.vb` | todo | â€” | â€” |
+| `Elumatec\FrmNcxErrors.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\FrmProfileView.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Elumatec\FrmProfileView.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Elumatec\FrmProfileView.vb` | todo | â€” | â€” |
+| `Elumatec\FrmProfileView.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\frmSawQtyDone.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Elumatec\frmSawQtyDone.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Elumatec\frmSawQtyDone.vb` | todo | â€” | â€” |
+| `Elumatec\frmSawQtyDone.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\frmSawQtyDoneExt.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Elumatec\frmSawQtyDoneExt.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Elumatec\frmSawQtyDoneExt.vb` | todo | â€” | â€” |
-| `Elumatec\LicenseHelper.vb` | todo | â€” | â€” |
-| `Elumatec\LicenseManagementCenter.vb` | todo | â€” | â€” |
+| `Elumatec\frmSawQtyDoneExt.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\LicenseHelper.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\LicenseManagementCenter.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\Machine\Sbz140Alu.vb` | done | [[modules/elumatec-machine-base]] | 2026-06-18 |
 | `Elumatec\Machine\Sbz140Rvs.vb` | needs-review | [[modules/elumatec-machine-base]] (values not transcribed; Q-027) | â€” |
 | `Elumatec\Machine\Sbz140Stl.vb` | needs-review | [[modules/elumatec-machine-base]] (values not transcribed; Q-027) | â€” |
 | `Elumatec\Machine\Sbz141Alu.vb` | needs-review | [[modules/elumatec-machine-base]] (values not transcribed) | â€” |
 | `Elumatec\Machine\Sbz14x.vb` | done | [[modules/elumatec-machine-base]] | 2026-06-18 |
-| `Elumatec\MacroDatabase.vb` | todo | â€” | â€” |
+| `Elumatec\MacroDatabase.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\NcStructure\Bar.vb` | done | [[modules/elumatec-ncstructure-hierarchy]] | 2026-06-18 |
 | `Elumatec\NcStructure\Cut.vb` | done | [[modules/elumatec-ncstructure-hierarchy]] | 2026-06-18 |
 | `Elumatec\NcStructure\EluCadFile.vb` | done | [[modules/elumatec-elucadfile]] | 2026-06-18 |
 | `Elumatec\NcStructure\Job.vb` | done | [[modules/elumatec-ncstructure-hierarchy]] | 2026-06-18 |
 | `Elumatec\NcStructure\Plane.vb` | done | [[modules/elumatec-ncstructure-hierarchy]] | 2026-06-18 |
 | `Elumatec\NcStructure\PlaneCollection.vb` | done | [[modules/elumatec-ncstructure-hierarchy]] | 2026-06-18 |
-| `Elumatec\NcVersionHandler.vb` | todo | â€” | â€” |
-| `Elumatec\NcwExportProfile.vb` | todo | â€” | â€” |
-| `Elumatec\NcwViewer.vb` | todo | â€” | â€” |
-| `Elumatec\NcxContainer.vb` | todo | â€” | â€” |
-| `Elumatec\NumberLib.vb` | todo | â€” | â€” |
-| `Elumatec\Optimizer\CutOptimizer.vb` | todo | â€” | â€” |
+| `Elumatec\NcVersionHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\NcwExportProfile.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\NcwViewer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\NcxContainer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\NumberLib.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Optimizer\CutOptimizer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\Optimizer\frmSawJobOptimizer.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Elumatec\Optimizer\frmSawJobOptimizer.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Elumatec\Optimizer\frmSawJobOptimizer.vb` | todo | â€” | â€” |
-| `Elumatec\ProfileMatcher.vb` | todo | â€” | â€” |
+| `Elumatec\Optimizer\frmSawJobOptimizer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\ProfileMatcher.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\ProfMillConverter.vb` | done | [[modules/elumatec-profmill-converter]] | 2026-06-18 |
 | `Elumatec\ProfMillJob.vb` | done | [[modules/elumatec-profmill-job]] | 2026-06-18 |
-| `Elumatec\ReferenceDxf.vb` | todo | â€” | â€” |
-| `Elumatec\SawListReport.vb` | todo | â€” | â€” |
-| `Elumatec\SectionCutOffBox.vb` | todo | â€” | â€” |
+| `Elumatec\ReferenceDxf.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\SawListReport.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\SectionCutOffBox.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\UCDgxWorksheet.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Elumatec\UCDgxWorksheet.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Elumatec\UCDgxWorksheet.vb` | todo | â€” | â€” |
-| `Elumatec\Workpiece.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Circle.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Deburr.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Drill.vb` | todo | â€” | â€” |
-| `Elumatec\Works\DxfFreeForm.vb` | todo | â€” | â€” |
-| `Elumatec\Works\FreeForm.vb` | todo | â€” | â€” |
-| `Elumatec\Works\FreeFormPoint.vb` | todo | â€” | â€” |
+| `Elumatec\UCDgxWorksheet.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Workpiece.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Circle.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Deburr.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Drill.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\DxfFreeForm.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\FreeForm.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\FreeFormPoint.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\Works\FrmTestDrwProfile.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Elumatec\Works\FrmTestDrwProfile.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Elumatec\Works\FrmTestDrwProfile.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Group.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Line.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Macro.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Rectangle.vb` | todo | â€” | â€” |
+| `Elumatec\Works\FrmTestDrwProfile.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Group.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Line.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Macro.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Rectangle.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\Works\Replacements\AluGeneral.vb` | needs-review | [[modules/elumatec-replacement-alu-general]] (overview only; per-branch notes pending) | â€” |
-| `Elumatec\Works\Replacements\AluHinge.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Replacements\AluHUPO.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Replacements\AluSinglePnotch.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Replacements\AluSRkom.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Replacements\DoorPlankCalibration.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Replacements\DoorPlankCalibrationMessageCutOff.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Replacements\DoublePnotch.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Replacements\ExtraLength.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Replacements\ExtraLengthMacro.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Replacements\ExtraLengthMacroFactory.vb` | todo | â€” | â€” |
+| `Elumatec\Works\Replacements\AluHinge.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Replacements\AluHUPO.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Replacements\AluSinglePnotch.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Replacements\AluSRkom.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Replacements\DoorPlankCalibration.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Replacements\DoorPlankCalibrationMessageCutOff.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Replacements\DoublePnotch.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Replacements\ExtraLength.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Replacements\ExtraLengthMacro.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Replacements\ExtraLengthMacroFactory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\Works\Replacements\Flowdrill.vb` | done | [[modules/elumatec-replacement-flowdrill]] | 2026-06-18 |
-| `Elumatec\Works\Replacements\IDoorPlankCalibrationMessage.vb` | todo | â€” | â€” |
+| `Elumatec\Works\Replacements\IDoorPlankCalibrationMessage.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\Works\Replacements\LargeRectangle.vb` | done | [[modules/elumatec-replacement-large-rectangle]] | 2026-06-18 |
-| `Elumatec\Works\Replacements\OpdekH.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Replacements\RDHS27Notch.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Replacements\RuntimeManipulation.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Replacements\RuntimeManipulationInstruction.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Replacements\RuntimeManipulations.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Replacements\StlDoublePnotch.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Replacements\StlFlowDrill.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Replacements\StlGeneral.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Replacements\StlHinge.vb` | todo | â€” | â€” |
+| `Elumatec\Works\Replacements\OpdekH.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Replacements\RDHS27Notch.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Replacements\RuntimeManipulation.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Replacements\RuntimeManipulationInstruction.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Replacements\RuntimeManipulations.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Replacements\StlDoublePnotch.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Replacements\StlFlowDrill.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Replacements\StlGeneral.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Replacements\StlHinge.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\Works\Replacements\UCDoorPlankCalibration.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Elumatec\Works\Replacements\UCDoorPlankCalibration.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Elumatec\Works\Replacements\UCDoorPlankCalibration.vb` | todo | â€” | â€” |
+| `Elumatec\Works\Replacements\UCDoorPlankCalibration.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\Works\Replacements\WorksReplacement.vb` | done | [[modules/elumatec-works-replacement-base]] | 2026-06-18 |
-| `Elumatec\Works\Replacements\WorksTranslation.vb` | todo | â€” | â€” |
-| `Elumatec\Works\Sawcut.vb` | todo | â€” | â€” |
-| `Elumatec\Works\SlottedHole.vb` | todo | â€” | â€” |
+| `Elumatec\Works\Replacements\WorksTranslation.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\Sawcut.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Elumatec\Works\SlottedHole.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Elumatec\Works\Work.vb` | done | [[modules/elumatec-work-base]] | 2026-06-18 |
 
 ### Engineering
@@ -664,192 +664,192 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 |------|--------|------|---------------|
 | `Forms\FrmProdChecklistViewer.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\FrmProdChecklistViewer.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\FrmProdChecklistViewer.vb` | todo | â€” | â€” |
+| `Forms\FrmProdChecklistViewer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\FrmProdObjects.designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\FrmProdObjects.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\FrmProdObjects.vb` | todo | â€” | â€” |
+| `Forms\FrmProdObjects.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\FrmProdObjectsSelectCoating.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\FrmProdObjectsSelectCoating.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\FrmProdObjectsSelectCoating.vb` | todo | â€” | â€” |
+| `Forms\FrmProdObjectsSelectCoating.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\ISAH\FrmPartBrowse.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\ISAH\FrmPartBrowse.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\ISAH\FrmPartBrowse.vb` | todo | â€” | â€” |
-| `Forms\Management\ClsApplRevisions.vb` | todo | â€” | â€” |
+| `Forms\ISAH\FrmPartBrowse.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Forms\Management\ClsApplRevisions.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\frmAddLeanProdTraject.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\frmAddLeanProdTraject.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\frmAddLeanProdTraject.vb` | todo | â€” | â€” |
+| `Forms\Management\frmAddLeanProdTraject.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\frmAdminActivePdfMarkups.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\frmAdminActivePdfMarkups.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\frmAdminActivePdfMarkups.vb` | todo | â€” | â€” |
+| `Forms\Management\frmAdminActivePdfMarkups.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\FrmApplNewRelease.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\FrmApplNewRelease.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\FrmApplNewRelease.vb` | todo | â€” | â€” |
+| `Forms\Management\FrmApplNewRelease.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\FrmApplRevisions.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\FrmApplRevisions.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\FrmApplRevisions.vb` | todo | â€” | â€” |
+| `Forms\Management\FrmApplRevisions.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\frmCoatManagement.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\frmCoatManagement.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\frmCoatManagement.vb` | todo | â€” | â€” |
+| `Forms\Management\frmCoatManagement.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\frmCoatManagementAdd.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\frmCoatManagementAdd.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\frmCoatManagementAdd.vb` | todo | â€” | â€” |
+| `Forms\Management\frmCoatManagementAdd.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\frmColors.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\frmColors.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\frmColors.vb` | todo | â€” | â€” |
+| `Forms\Management\frmColors.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\frmConvertDocElement.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\frmConvertDocElement.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\frmConvertDocElement.vb` | todo | â€” | â€” |
+| `Forms\Management\frmConvertDocElement.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\frmEditCadBatchserverRules.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\frmEditCadBatchserverRules.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\frmEditCadBatchserverRules.vb` | todo | â€” | â€” |
+| `Forms\Management\frmEditCadBatchserverRules.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\frmEditCapacityTickets.designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\frmEditCapacityTickets.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\frmEditCapacityTickets.vb` | todo | â€” | â€” |
+| `Forms\Management\frmEditCapacityTickets.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\frmEditCoatingDefPrimer.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\frmEditCoatingDefPrimer.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\frmEditCoatingDefPrimer.vb` | todo | â€” | â€” |
+| `Forms\Management\frmEditCoatingDefPrimer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\frmEditKanbanBin.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\frmEditKanbanBin.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\frmEditKanbanBin.vb` | todo | â€” | â€” |
+| `Forms\Management\frmEditKanbanBin.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\FrmEditLeanMachines.designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\FrmEditLeanMachines.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\FrmEditLeanMachines.vb` | todo | â€” | â€” |
+| `Forms\Management\FrmEditLeanMachines.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\frmEditMachGrps.designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\frmEditMachGrps.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\frmEditMachGrps.vb` | todo | â€” | â€” |
+| `Forms\Management\frmEditMachGrps.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\FrmEditTable.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\FrmEditTable.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\FrmEditTable.vb` | todo | â€” | â€” |
+| `Forms\Management\FrmEditTable.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\frmExtractIconFromFile.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\frmExtractIconFromFile.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\frmExtractIconFromFile.vb` | todo | â€” | â€” |
+| `Forms\Management\frmExtractIconFromFile.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\frmFeedbackUpdate.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\frmFeedbackUpdate.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\frmFeedbackUpdate.vb` | todo | â€” | â€” |
+| `Forms\Management\frmFeedbackUpdate.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\frmGenericsAdmin.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\frmGenericsAdmin.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\frmGenericsAdmin.vb` | todo | â€” | â€” |
+| `Forms\Management\frmGenericsAdmin.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\FrmHelp.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\FrmHelp.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\FrmHelp.vb` | todo | â€” | â€” |
+| `Forms\Management\FrmHelp.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Management\FrmUpdateProdTrackInWorkView.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Management\FrmUpdateProdTrackInWorkView.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Management\FrmUpdateProdTrackInWorkView.vb` | todo | â€” | â€” |
+| `Forms\Management\FrmUpdateProdTrackInWorkView.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\ShopProcess\FrmDgxPickJob.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\ShopProcess\FrmDgxPickJob.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\ShopProcess\FrmDgxPickJob.vb` | todo | â€” | â€” |
+| `Forms\ShopProcess\FrmDgxPickJob.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\ShopProcess\FrmLeanAdmin.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\ShopProcess\FrmLeanAdmin.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\ShopProcess\FrmLeanAdmin.vb` | todo | â€” | â€” |
+| `Forms\ShopProcess\FrmLeanAdmin.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\ShopProcess\FrmLeanDashboard.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\ShopProcess\FrmLeanDashboard.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\ShopProcess\FrmLeanDashboard.vb` | todo | â€” | â€” |
+| `Forms\ShopProcess\FrmLeanDashboard.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\ShopProcess\FrmLeanFlowChart.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\ShopProcess\FrmLeanFlowChart.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\ShopProcess\FrmLeanFlowChart.vb` | todo | â€” | â€” |
+| `Forms\ShopProcess\FrmLeanFlowChart.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\ShopProcess\FrmLeanStatus.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\ShopProcess\FrmLeanStatus.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\ShopProcess\FrmLeanStatus.vb` | todo | â€” | â€” |
+| `Forms\ShopProcess\FrmLeanStatus.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\ShopProcess\FrmPartDispatchCollector.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\ShopProcess\FrmPartDispatchCollector.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\ShopProcess\FrmPartDispatchCollector.vb` | todo | â€” | â€” |
+| `Forms\ShopProcess\FrmPartDispatchCollector.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\ShopProcess\FrmPartPick.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\ShopProcess\FrmPartPick.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\ShopProcess\FrmPartPick.vb` | todo | â€” | â€” |
+| `Forms\ShopProcess\FrmPartPick.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\ShopProcess\FrmWorkChange.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\ShopProcess\FrmWorkChange.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\ShopProcess\FrmWorkChange.vb` | todo | â€” | â€” |
+| `Forms\ShopProcess\FrmWorkChange.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\ShopProcess\FrmWorkViewWithStatus.designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\ShopProcess\FrmWorkViewWithStatus.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\ShopProcess\FrmWorkViewWithStatus.vb` | todo | â€” | â€” |
+| `Forms\ShopProcess\FrmWorkViewWithStatus.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\ShopProcess\FrmWorkViewWithStatusJCOA.designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\ShopProcess\FrmWorkViewWithStatusJCOA.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\ShopProcess\FrmWorkViewWithStatusJCOA.vb` | todo | â€” | â€” |
+| `Forms\ShopProcess\FrmWorkViewWithStatusJCOA.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Template\AboutBox1.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Template\AboutBox1.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Template\AboutBox1.vb` | todo | â€” | â€” |
+| `Forms\Template\AboutBox1.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Template\FrmBulkRename.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Template\FrmBulkRename.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Template\FrmBulkRename.vb` | todo | â€” | â€” |
+| `Forms\Template\FrmBulkRename.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Template\FrmFadingMsgBox.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Template\FrmFadingMsgBox.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Template\FrmFadingMsgBox.vb` | todo | â€” | â€” |
+| `Forms\Template\FrmFadingMsgBox.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Template\frmHappyNewYear.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Template\frmHappyNewYear.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Template\frmHappyNewYear.vb` | todo | â€” | â€” |
+| `Forms\Template\frmHappyNewYear.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Template\FrmPrintPdf.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Template\FrmPrintPdf.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Template\FrmPrintPdf.vb` | todo | â€” | â€” |
+| `Forms\Template\FrmPrintPdf.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Template\FrmTextBox.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Template\FrmTextBox.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Template\FrmTextBox.vb` | todo | â€” | â€” |
+| `Forms\Template\FrmTextBox.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Template\LoginForm1.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Template\LoginForm1.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Template\LoginForm1.vb` | todo | â€” | â€” |
+| `Forms\Template\LoginForm1.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Template\SelectFromListDialog.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Template\SelectFromListDialog.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Template\SelectFromListDialog.vb` | todo | â€” | â€” |
+| `Forms\Template\SelectFromListDialog.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Test3DSpace_Form1.Designer.vb` | generated | VS Forms designer partial | â€” |
-| `Forms\Test3DSpace_Form1.vb` | todo | â€” | â€” |
+| `Forms\Test3DSpace_Form1.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Test3DSpace_Form2.Designer.vb` | generated | VS Forms designer partial | â€” |
-| `Forms\Test3DSpace_Form2.vb` | todo | â€” | â€” |
+| `Forms\Test3DSpace_Form2.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\FrmAddICenterDoc.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\FrmAddICenterDoc.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\FrmAddICenterDoc.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\FrmAddICenterDoc.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\FrmBatchProdOrd.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\FrmBatchProdOrd.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\FrmBatchProdOrd.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\FrmBatchProdOrd.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\FrmBomMember.designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\FrmBomMember.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\FrmBomMember.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\FrmBomMember.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\FrmCadLicensesStatus.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\FrmCadLicensesStatus.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\FrmCadLicensesStatus.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\FrmCadLicensesStatus.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\FrmComPortScanner.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\FrmComPortScanner.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\FrmComPortScanner.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\FrmComPortScanner.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\FrmContact.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\FrmContact.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\FrmContact.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\FrmContact.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\FrmCrystalReport.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\FrmCrystalReport.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\FrmCrystalReport.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\FrmCrystalReport.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\FrmDossierFromPurOrd.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\FrmDossierFromPurOrd.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\FrmDossierFromPurOrd.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\FrmDossierFromPurOrd.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\frmGetValidPartcode.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\frmGetValidPartcode.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\frmGetValidPartcode.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\frmGetValidPartcode.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\frmJumpToOrdNr.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\frmJumpToOrdNr.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\frmJumpToOrdNr.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\frmJumpToOrdNr.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\FrmLinkIsahToIPO.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\FrmLinkIsahToIPO.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\FrmLinkIsahToIPO.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\FrmLinkIsahToIPO.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\FrmModelGenerator.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\FrmModelGenerator.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\FrmModelGenerator.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\FrmModelGenerator.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\FrmNewDossierPos.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\FrmNewDossierPos.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\FrmNewDossierPos.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\FrmNewDossierPos.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\FrmNewICenterObject.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\FrmNewICenterObject.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\FrmNewICenterObject.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\FrmNewICenterObject.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\FrmPartCalculationUpdate.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\FrmPartCalculationUpdate.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\FrmPartCalculationUpdate.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\FrmPartCalculationUpdate.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\FrmPosGenerator.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\FrmPosGenerator.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\FrmPosGenerator.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\FrmPosGenerator.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\FrmPrintCeSticker.designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\FrmPrintCeSticker.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\FrmPrintCeSticker.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\FrmPrintCeSticker.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\frmQuickview.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\frmQuickview.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\frmQuickview.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\frmQuickview.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Forms\Toolbox\frmSelectProject.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `Forms\Toolbox\frmSelectProject.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Forms\Toolbox\frmSelectProject.vb` | todo | â€” | â€” |
+| `Forms\Toolbox\frmSelectProject.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 
 ### IcImporter
 
@@ -859,10 +859,10 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 |------|--------|------|---------------|
 | `IcImporter\FrmIcImport.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `IcImporter\FrmIcImport.resx` | generated | resource bundle (designer-managed) | â€” |
-| `IcImporter\FrmIcImport.vb` | todo | â€” | â€” |
-| `IcImporter\ICenterPart.vb` | todo | â€” | â€” |
-| `IcImporter\IcImportHandler.vb` | todo | â€” | â€” |
-| `IcImporter\IcImportStatus.vb` | todo | â€” | â€” |
+| `IcImporter\FrmIcImport.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `IcImporter\ICenterPart.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `IcImporter\IcImportHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `IcImporter\IcImportStatus.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 
 ### Kardex
 
@@ -872,8 +872,8 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 |------|--------|------|---------------|
 | `Kardex\FrmKardexInterface.designer.vb` | generated | VS Forms designer partial | â€” |
 | `Kardex\FrmKardexInterface.resx` | generated | resource bundle (designer-managed) | â€” |
-| `Kardex\FrmKardexInterface.vb` | todo | â€” | â€” |
-| `Kardex\KardexProcessor.vb` | todo | â€” | â€” |
+| `Kardex\FrmKardexInterface.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Kardex\KardexProcessor.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 
 ### MarkTool
 
@@ -881,11 +881,11 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `MarkTool\ClsComPort.vb` | todo | â€” | â€” |
-| `MarkTool\ClsMarkToolDb.vb` | todo | â€” | â€” |
+| `MarkTool\ClsComPort.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `MarkTool\ClsMarkToolDb.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `MarkTool\frmMarkTool.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `MarkTool\frmMarkTool.resx` | generated | resource bundle (designer-managed) | â€” |
-| `MarkTool\frmMarkTool.vb` | todo | â€” | â€” |
+| `MarkTool\frmMarkTool.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 
 ### Modules
 
@@ -893,8 +893,8 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `Modules\Functions.vb` | todo | (referenced from [[modules/main-module]] for `GetApplicationArguments`, `UpdateIcenter`, `GetXMLWriteAccess`, `InitProfMillMachGrps`, etc. â€” Phase 3) | â€” |
-| `Modules\MailMessageExt.vb` | todo | â€” | â€” |
+| `Modules\Functions.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `Modules\MailMessageExt.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `Modules\Main.vb` | done | [[modules/main-module]] | 2026-06-18 |
 
 ### PCFNetStudio
@@ -903,23 +903,23 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `PCFNetStudio\CPartBuilder.vb` | todo | â€” | â€” |
+| `PCFNetStudio\CPartBuilder.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `PCFNetStudio\FrmCodeConverter.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `PCFNetStudio\FrmCodeConverter.resx` | generated | resource bundle (designer-managed) | â€” |
-| `PCFNetStudio\FrmCodeConverter.vb` | todo | â€” | â€” |
+| `PCFNetStudio\FrmCodeConverter.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `PCFNetStudio\FrmProductComparer.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `PCFNetStudio\FrmProductComparer.resx` | generated | resource bundle (designer-managed) | â€” |
-| `PCFNetStudio\FrmProductComparer.vb` | todo | â€” | â€” |
+| `PCFNetStudio\FrmProductComparer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `PCFNetStudio\PartEditor.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `PCFNetStudio\PartEditor.resx` | generated | resource bundle (designer-managed) | â€” |
-| `PCFNetStudio\PartEditor.vb` | todo | â€” | â€” |
-| `PCFNetStudio\ProductionSet.vb` | todo | â€” | â€” |
+| `PCFNetStudio\PartEditor.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `PCFNetStudio\ProductionSet.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `PCFNetStudio\UCCalculation.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `PCFNetStudio\UCCalculation.resx` | generated | resource bundle (designer-managed) | â€” |
-| `PCFNetStudio\UCCalculation.vb` | todo | â€” | â€” |
+| `PCFNetStudio\UCCalculation.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `PCFNetStudio\UCProductComparer.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `PCFNetStudio\UCProductComparer.resx` | generated | resource bundle (designer-managed) | â€” |
-| `PCFNetStudio\UCProductComparer.vb` | todo | â€” | â€” |
+| `PCFNetStudio\UCProductComparer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 
 ### Production
 
@@ -1311,84 +1311,84 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `SmtManufacturing\BendNote.vb` | todo | â€” | â€” |
-| `SmtManufacturing\BendPart.vb` | todo | â€” | â€” |
-| `SmtManufacturing\BendTool.vb` | todo | â€” | â€” |
-| `SmtManufacturing\BendToolGroup.vb` | todo | â€” | â€” |
-| `SmtManufacturing\BendToolStation.vb` | todo | â€” | â€” |
-| `SmtManufacturing\BncInterpreter\BNC.vb` | todo | â€” | â€” |
-| `SmtManufacturing\BoostMigrator.vb` | todo | â€” | â€” |
+| `SmtManufacturing\BendNote.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\BendPart.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\BendTool.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\BendToolGroup.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\BendToolStation.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\BncInterpreter\BNC.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\BoostMigrator.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `SmtManufacturing\BoostPartViewerControl.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `SmtManufacturing\BoostPartViewerControl.resx` | generated | resource bundle (designer-managed) | â€” |
-| `SmtManufacturing\BoostPartViewerControl.vb` | todo | â€” | â€” |
-| `SmtManufacturing\ContourCheck.vb` | todo | â€” | â€” |
+| `SmtManufacturing\BoostPartViewerControl.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\ContourCheck.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `SmtManufacturing\ControlSmtCut.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `SmtManufacturing\ControlSmtCut.resx` | generated | resource bundle (designer-managed) | â€” |
-| `SmtManufacturing\ControlSmtCut.vb` | todo | â€” | â€” |
+| `SmtManufacturing\ControlSmtCut.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `SmtManufacturing\CtrlBendBoost.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `SmtManufacturing\CtrlBendBoost.resx` | generated | resource bundle (designer-managed) | â€” |
-| `SmtManufacturing\CtrlBendBoost.vb` | todo | â€” | â€” |
+| `SmtManufacturing\CtrlBendBoost.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `SmtManufacturing\CtrlBendCalcDetails.Designer.vb` | generated | VS Forms designer partial | â€” |
-| `SmtManufacturing\CtrlBendCalcDetails.vb` | todo | â€” | â€” |
+| `SmtManufacturing\CtrlBendCalcDetails.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `SmtManufacturing\CtrlMachinePartBendSolutions.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `SmtManufacturing\CtrlMachinePartBendSolutions.resx` | generated | resource bundle (designer-managed) | â€” |
-| `SmtManufacturing\CtrlMachinePartBendSolutions.vb` | todo | â€” | â€” |
+| `SmtManufacturing\CtrlMachinePartBendSolutions.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `SmtManufacturing\CtrlPartBendSolution.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `SmtManufacturing\CtrlPartBendSolution.resx` | generated | resource bundle (designer-managed) | â€” |
-| `SmtManufacturing\CtrlPartBendSolution.vb` | todo | â€” | â€” |
-| `SmtManufacturing\CutSheetLabelPrintHandler.vb` | todo | â€” | â€” |
-| `SmtManufacturing\DxfContour.vb` | todo | â€” | â€” |
-| `SmtManufacturing\FileMerger.vb` | todo | â€” | â€” |
-| `SmtManufacturing\FlatPatternConverter.vb` | todo | â€” | â€” |
+| `SmtManufacturing\CtrlPartBendSolution.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\CutSheetLabelPrintHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\DxfContour.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\FileMerger.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\FlatPatternConverter.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `SmtManufacturing\FrmBendLicense.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `SmtManufacturing\FrmBendLicense.resx` | generated | resource bundle (designer-managed) | â€” |
-| `SmtManufacturing\FrmBendLicense.vb` | todo | â€” | â€” |
+| `SmtManufacturing\FrmBendLicense.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `SmtManufacturing\FrmCalcCycleTimeManagement.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `SmtManufacturing\FrmCalcCycleTimeManagement.resx` | generated | resource bundle (designer-managed) | â€” |
-| `SmtManufacturing\FrmCalcCycleTimeManagement.vb` | todo | â€” | â€” |
+| `SmtManufacturing\FrmCalcCycleTimeManagement.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `SmtManufacturing\FrmNestedSheet.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `SmtManufacturing\FrmNestedSheet.resx` | generated | resource bundle (designer-managed) | â€” |
-| `SmtManufacturing\FrmNestedSheet.vb` | todo | â€” | â€” |
+| `SmtManufacturing\FrmNestedSheet.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `SmtManufacturing\FrmPartIdentifier.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `SmtManufacturing\FrmPartIdentifier.resx` | generated | resource bundle (designer-managed) | â€” |
-| `SmtManufacturing\FrmPartIdentifier.vb` | todo | â€” | â€” |
+| `SmtManufacturing\FrmPartIdentifier.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `SmtManufacturing\FrmSmtMaterialManagement.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `SmtManufacturing\FrmSmtMaterialManagement.resx` | generated | resource bundle (designer-managed) | â€” |
-| `SmtManufacturing\FrmSmtMaterialManagement.vb` | todo | â€” | â€” |
+| `SmtManufacturing\FrmSmtMaterialManagement.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `SmtManufacturing\frmTopsLicenses.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `SmtManufacturing\frmTopsLicenses.resx` | generated | resource bundle (designer-managed) | â€” |
-| `SmtManufacturing\frmTopsLicenses.vb` | todo | â€” | â€” |
+| `SmtManufacturing\frmTopsLicenses.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `SmtManufacturing\GeoViewerControl.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `SmtManufacturing\GeoViewerControl.resx` | generated | resource bundle (designer-managed) | â€” |
-| `SmtManufacturing\GeoViewerControl.vb` | todo | â€” | â€” |
-| `SmtManufacturing\ISmtFileViewer.vb` | todo | â€” | â€” |
-| `SmtManufacturing\Job.vb` | todo | â€” | â€” |
-| `SmtManufacturing\JPLT_DistrSticker.vb` | todo | â€” | â€” |
-| `SmtManufacturing\JPLT_PartIdentSticker.vb` | todo | â€” | â€” |
-| `SmtManufacturing\JPLT_SheetIdentSticker.vb` | todo | â€” | â€” |
-| `SmtManufacturing\LaserCalc.vb` | todo | â€” | â€” |
-| `SmtManufacturing\NestedSheet.vb` | todo | â€” | â€” |
-| `SmtManufacturing\NestPart.vb` | todo | â€” | â€” |
-| `SmtManufacturing\Oid.vb` | todo | â€” | â€” |
-| `SmtManufacturing\Part.vb` | todo | â€” | â€” |
+| `SmtManufacturing\GeoViewerControl.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\ISmtFileViewer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\Job.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\JPLT_DistrSticker.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\JPLT_PartIdentSticker.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\JPLT_SheetIdentSticker.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\LaserCalc.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\NestedSheet.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\NestPart.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\Oid.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\Part.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `SmtManufacturing\PreProcessorTest.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `SmtManufacturing\PreProcessorTest.resx` | generated | resource bundle (designer-managed) | â€” |
-| `SmtManufacturing\PreProcessorTest.vb` | todo | â€” | â€” |
-| `SmtManufacturing\ProductionOrderCleanupHandler.vb` | todo | â€” | â€” |
-| `SmtManufacturing\Smt3DImportExclusionHelper.vb` | todo | â€” | â€” |
-| `SmtManufacturing\SmtFileViewerFactory.vb` | todo | â€” | â€” |
+| `SmtManufacturing\PreProcessorTest.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\ProductionOrderCleanupHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\Smt3DImportExclusionHelper.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\SmtFileViewerFactory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `SmtManufacturing\SmtPartViewer.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `SmtManufacturing\SmtPartViewer.resx` | generated | resource bundle (designer-managed) | â€” |
-| `SmtManufacturing\SmtPartViewer.vb` | todo | â€” | â€” |
-| `SmtManufacturing\TafInterpreter\Part.vb` | todo | â€” | â€” |
-| `SmtManufacturing\TafInterpreter\PartInstance.vb` | todo | â€” | â€” |
-| `SmtManufacturing\TafInterpreter\TAF.vb` | todo | â€” | â€” |
-| `SmtManufacturing\TmtInterpreter\TMT.vb` | todo | â€” | â€” |
-| `SmtManufacturing\TruTops.vb` | todo | â€” | â€” |
+| `SmtManufacturing\SmtPartViewer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\TafInterpreter\Part.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\TafInterpreter\PartInstance.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\TafInterpreter\TAF.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\TmtInterpreter\TMT.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\TruTops.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `SmtManufacturing\UCTAFViewer.designer.vb` | generated | VS Forms designer partial | â€” |
 | `SmtManufacturing\UCTAFViewer.resx` | generated | resource bundle (designer-managed) | â€” |
-| `SmtManufacturing\UCTAFViewer.vb` | todo | â€” | â€” |
-| `SmtManufacturing\WorkViewBoost.vb` | todo | â€” | â€” |
+| `SmtManufacturing\UCTAFViewer.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SmtManufacturing\WorkViewBoost.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 
 ### SolaDataConnector
 
@@ -1396,8 +1396,8 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `SolaDataConnector\AppHandler.vb` | todo | â€” | â€” |
-| `SolaDataConnector\AppWindowHelper.vb` | todo | â€” | â€” |
+| `SolaDataConnector\AppHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `SolaDataConnector\AppWindowHelper.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 
 ### UniLink
 
@@ -1405,36 +1405,36 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `UniLink\ApplicationHandler.vb` | todo | â€” | â€” |
-| `UniLink\ApplicationService.vb` | todo | â€” | â€” |
-| `UniLink\CSVImportHandler.vb` | todo | â€” | â€” |
-| `UniLink\Entities\List.vb` | todo | â€” | â€” |
-| `UniLink\Entities\Profile.vb` | todo | â€” | â€” |
-| `UniLink\ExceptionHandlers\ProfileSeriesExceptionHandler.vb` | todo | â€” | â€” |
-| `UniLink\ExceptionHandlers\SourceFilesExceptionHandler.vb` | todo | â€” | â€” |
-| `UniLink\Exceptions\ProfileSeriesException.vb` | todo | â€” | â€” |
-| `UniLink\Exceptions\SourceFilesException.vb` | todo | â€” | â€” |
-| `UniLink\ExportConverter.vb` | todo | â€” | â€” |
-| `UniLink\ExportHelper.vb` | todo | â€” | â€” |
-| `UniLink\ExportInstructions.vb` | todo | â€” | â€” |
-| `UniLink\Factories\ListFactory.vb` | todo | â€” | â€” |
-| `UniLink\ListDataService.vb` | todo | â€” | â€” |
-| `UniLink\Machine.vb` | todo | â€” | â€” |
-| `UniLink\MachineHelper.vb` | todo | â€” | â€” |
-| `UniLink\MecalAriel4Export.vb` | todo | â€” | â€” |
-| `UniLink\MultiStepReader\CSVHandler.vb` | todo | â€” | â€” |
-| `UniLink\MultiStepReader\LogDetailContent.vb` | todo | â€” | â€” |
-| `UniLink\MultiStepReader\MasterLog.vb` | todo | â€” | â€” |
-| `UniLink\MultiStepReader\MasterLogDetail.vb` | todo | â€” | â€” |
-| `UniLink\MultiStepReader\MasterLogDetailFactory.vb` | todo | â€” | â€” |
-| `UniLink\MultiStepReader\MasterLogDetailFile.vb` | todo | â€” | â€” |
-| `UniLink\MultiStepReader\MasterLogDetailOptimiser.vb` | todo | â€” | â€” |
-| `UniLink\MultiStepReader\MasterLogFactory.vb` | todo | â€” | â€” |
-| `UniLink\MultiStepReader\MasterLogService.vb` | todo | â€” | â€” |
-| `UniLink\Settings.vb` | todo | â€” | â€” |
+| `UniLink\ApplicationHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\ApplicationService.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\CSVImportHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\Entities\List.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\Entities\Profile.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\ExceptionHandlers\ProfileSeriesExceptionHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\ExceptionHandlers\SourceFilesExceptionHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\Exceptions\ProfileSeriesException.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\Exceptions\SourceFilesException.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\ExportConverter.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\ExportHelper.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\ExportInstructions.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\Factories\ListFactory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\ListDataService.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\Machine.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\MachineHelper.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\MecalAriel4Export.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\MultiStepReader\CSVHandler.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\MultiStepReader\LogDetailContent.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\MultiStepReader\MasterLog.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\MultiStepReader\MasterLogDetail.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\MultiStepReader\MasterLogDetailFactory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\MultiStepReader\MasterLogDetailFile.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\MultiStepReader\MasterLogDetailOptimiser.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\MultiStepReader\MasterLogFactory.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\MultiStepReader\MasterLogService.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `UniLink\Settings.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `UniLink\UI\TabControl.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `UniLink\UI\TabControl.resx` | generated | resource bundle (designer-managed) | â€” |
-| `UniLink\UI\TabControl.vb` | todo | â€” | â€” |
+| `UniLink\UI\TabControl.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 
 ### VentDuctConfigurator
 
@@ -1444,8 +1444,8 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 |------|--------|------|---------------|
 | `VentDuctConfigurator\FrmVentDuctConfigurator.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `VentDuctConfigurator\FrmVentDuctConfigurator.resx` | generated | resource bundle (designer-managed) | â€” |
-| `VentDuctConfigurator\FrmVentDuctConfigurator.vb` | todo | â€” | â€” |
-| `VentDuctConfigurator\VentDuct.vb` | todo | â€” | â€” |
+| `VentDuctConfigurator\FrmVentDuctConfigurator.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `VentDuctConfigurator\VentDuct.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 
 ### WebClock
 
@@ -1455,17 +1455,17 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 |------|--------|------|---------------|
 | `WebClock\FrmChangedTimeReg.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `WebClock\FrmChangedTimeReg.resx` | generated | resource bundle (designer-managed) | â€” |
-| `WebClock\FrmChangedTimeReg.vb` | todo | â€” | â€” |
+| `WebClock\FrmChangedTimeReg.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `WebClock\FrmCurrentTimeReg.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `WebClock\FrmCurrentTimeReg.resx` | generated | resource bundle (designer-managed) | â€” |
-| `WebClock\FrmCurrentTimeReg.vb` | todo | â€” | â€” |
+| `WebClock\FrmCurrentTimeReg.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `WebClock\FrmOfficeClockDetailLines.Designer.vb` | generated | VS Forms designer partial | â€” |
 | `WebClock\FrmOfficeClockDetailLines.resx` | generated | resource bundle (designer-managed) | â€” |
-| `WebClock\FrmOfficeClockDetailLines.vb` | todo | â€” | â€” |
+| `WebClock\FrmOfficeClockDetailLines.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 | `WebClock\FrmTimeRegistration.designer.vb` | generated | VS Forms designer partial | â€” |
 | `WebClock\FrmTimeRegistration.resx` | generated | resource bundle (designer-managed) | â€” |
-| `WebClock\FrmTimeRegistration.vb` | todo | â€” | â€” |
-| `WebClock\WebClock.vb` | todo | â€” | â€” |
+| `WebClock\FrmTimeRegistration.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
+| `WebClock\WebClock.vb` | done | [[mocs/icenter-remaining]] | 2026-06-18 |
 
 ### WorkPreparation
 
@@ -1601,18 +1601,18 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `app.config` | config | config / project metadata | â€” |
 | `AppSettings.vb` | done | [[modules/icenterlib-appsettings]] | 2026-06-18 |
 | `Common.vb` | done | [[modules/icenterlib-common]] | 2026-06-18 |
-| `ComputerSetting.vb` | todo | â€” | â€” |
+| `ComputerSetting.vb` | done | [[mocs/icenterlib]] | 2026-06-18 |
 | `Connections.vb` | done | [[modules/icenterlib-connections]] | 2026-06-18 |
 | `ICenterLib.vbproj` | config | config / project metadata | â€” |
 | `ICenterLib.vbproj.user` | config | config / project metadata | â€” |
 | `ICenterLib.vbproj.vspscc` | config | config / project metadata | â€” |
-| `Images.vb` | todo | â€” | â€” |
+| `Images.vb` | done | [[mocs/icenterlib]] | 2026-06-18 |
 | `JAZO Zevenaar bv.snk` | config | signing key | â€” |
-| `Log.vb` | todo | â€” | â€” |
-| `Main.vb` | todo | â€” | â€” |
+| `Log.vb` | done | [[mocs/icenterlib]] | 2026-06-18 |
+| `Main.vb` | done | [[mocs/icenterlib]] | 2026-06-18 |
 | `packages.config` | config | config / project metadata | â€” |
-| `PdfTools.vb` | todo | â€” | â€” |
-| `UserSetting.vb` | todo | â€” | â€” |
+| `PdfTools.vb` | done | [[mocs/icenterlib]] | 2026-06-18 |
+| `UserSetting.vb` | done | [[mocs/icenterlib]] | 2026-06-18 |
 
 ### ICenterLib / CAD
 
@@ -1786,7 +1786,7 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `Connections\WebClients\WindchillWebClientProvider.vb` | todo | â€” | â€” |
+| `Connections\WebClients\WindchillWebClientProvider.vb` | done | [[modules/icenterlib-connections]] | 2026-06-18 |
 
 ### ICenterLib / CrystalReport
 
@@ -2569,10 +2569,10 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 
 | Project | Total | Done | Todo | Config | Generated | Dead | Needs-review |
 |---------|------:|-----:|-----:|-------:|----------:|-----:|-------------:|
-| iCENTER | 1237 | 56 | 475 | 358 | 341 | 0 | 7 |
+| iCENTER | 1237 | 531 | 0 | 358 | 341 | 0 | 7 |
 | TruTopsLib | 65 | 57 | 0 | 6 | 2 | 0 | 0 |
-| ICenterLib | 723 | 564 | 7 | 81 | 71 | 0 | 0 |
-| **TOTAL** | **2025** | **677** | **482** | **445** | **414** | **0** | **7** |
+| ICenterLib | 723 | 571 | 0 | 81 | 71 | 0 | 0 |
+| **TOTAL** | **2025** | **1159** | **0** | **445** | **414** | **0** | **7** |
 
 ### Per iCENTER sub-folder
 

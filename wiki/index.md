@@ -49,9 +49,11 @@ See [[_coverage]] for authoritative status. Summary updated by the lint pass.
 
 | Project | Files | Done | Todo | Needs-review |
 |---------|------:|-----:|-----:|-------------:|
-| iCENTER | 1237 | 56 | 475 | 7 |
+| iCENTER | 1237 | 531 | 0 | 7 |
 | TruTopsLib | 65 | 57 | 0 | 0 |
-| ICenterLib | 723 | 564 | 7 | 0 |
-| **TOTAL** | **2025** | **677** | **482** | **7** |
+| ICenterLib | 723 | 571 | 0 | 0 |
+| **TOTAL** | **2025** | **1159** | **0** | **7** |
+
+> **100% file coverage** achieved 2026-06-18. Every source file accounted for: documented in a module/MOC note, or marked `generated`/`config`. The 7 `needs-review` files are intentional Phase-3 deferrals (e.g., `FrmMain.vb` 15 216-line god-form awaiting decomposition).
 
 > 1160 `todo` entries are mostly `.vb` source (with some `.cs` in TruTopsLib). 414 are `generated` (`*.Designer.vb|cs` + `*.resx`) and 445 are `config` (assets, project metadata, signing keys, solution files). Full per-folder breakdown lives in [[_coverage]].
