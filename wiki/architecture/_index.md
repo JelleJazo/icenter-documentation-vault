@@ -30,4 +30,4 @@ Cross-cutting structural views of the `iCENTER` project. Each note here is a *vi
 ## Related
 
 - [[../_coverage]] — Phase 1 file inventory.
-- [[../../CLAUDE]] — standing instructions.
+- [CLAUDE.md](../../CLAUDE.md) — standing instructions.

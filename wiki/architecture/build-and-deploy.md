@@ -90,7 +90,7 @@ References by `<HintPath>` to `\\jazo.local\dfs\Applications\Development\Dot Net
 | `ICenterLib` | `..\..\ICenterLib\ICenterLib\ICenterLib.vbproj` → `C:\DevOps\ICenterLib\ICenterLib\ICenterLib.vbproj` |
 | `TruTopsLib` | `..\TruTopsLib\TruTopsLib.vbproj` → `C:\DevOps\iCenter\iCenter\TruTopsLib\TruTopsLib.vbproj` |
 
-These projects are **outside this wiki's scope** per [[../../CLAUDE]] but compile into `iCenter.exe`. See [[project-references]] for the implications.
+These projects are **outside this wiki's scope** per [CLAUDE.md](../../CLAUDE.md) but compile into `iCenter.exe`. See [[project-references]] for the implications.
 
 ## Key decisions / surprises
 

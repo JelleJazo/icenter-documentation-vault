@@ -16,7 +16,7 @@ The master catalog. Every page in the wiki is reachable from here (directly or v
 > 2. `C:\DevOps\iCenter\iCenter\TruTopsLib\` — Trumpf TruTops file parser (`.vb` + `.cs`).
 > 3. `C:\Users\jelle-r\source\repos\JIBA\iCenter And Tools\ICenterLib\ICenterLib\` — shared lib hosting ISAH/JIBA/CAD/SmtProduction/PCFNet plumbing.
 >
-> **Mission:** Full file coverage + business-logic surfacing. See [[../CLAUDE|standing instructions]].
+> **Mission:** Full file coverage + business-logic surfacing. See [standing instructions](../CLAUDE.md).
 
 ---
 

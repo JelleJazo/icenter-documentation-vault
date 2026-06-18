@@ -1,4 +1,4 @@
-﻿---
+---
 type: meta
 title: "File Coverage Tracker"
 status: active
@@ -39,7 +39,7 @@ Then convert each line into a row in the appropriate sub-folder table below. **D
 
 ## Inventory
 
-Scope was widened on 2026-06-18 to three projects per [[../CLAUDE]]:
+Scope was widened on 2026-06-18 to three projects per [CLAUDE.md](../CLAUDE.md):
 
 | Project | Root | Files | Notes |
 |---------|------|------:|-------|

@@ -228,47 +228,45 @@ Style is consistent. The `Q-###` pattern serves the role of `> [!gap]` flags thr
 
 ---
 
-## Post-Fix Status (2026-06-18)
+## Post-Fix Status (2026-06-18) — FULL PASS COMPLETE
 
 ### Applied
 
 - ✅ **L-1**: `wiki/hot.md` frontmatter completed (`status`, `tags`, `created` added).
 - ⏭️ **H-3**: Re-scanned — these are NOT typos. The `\|` inside `[[isah-identity\|`Company`]]` is the **Markdown-table pipe escape**, required so the pipe doesn't break the table column. Obsidian honours the escape and resolves the link target correctly. **Lint detector was wrong** — the regex `[^\]\|#]+?` ate the backslash as if it were part of the target name. Updated detector to strip trailing `\` before comparison; with that fix, 0 backslash-typo dead links remain.
 - ✅ **M-1**: Created **29 external-system stubs** in `wiki/external-systems/` (24 unique + 2 redirect stubs + 3 satisfying existing wikilinks like `web-clock` alias for `webclock`). All have `type: external-system`, `status: stub`, `tags: [external-system, needs-content, ...]` frontmatter. Each carries 1-3 quick links into the relevant MOC + business-rule notes.
+- ✅ **H-1**: Deleted **all 8 zero-byte root stubs** (`wiki/kardex.md`, `jiba-portal.md`, `trutops-oseon.md`, `elumatec-sbz140.md`, `windchill.md`, `smt-manufacturing.md`, `cad-batchserver.md`, `design-comments.md`). All filename collisions resolved; bare-name `[[kardex]]` etc. now deterministically resolve to the proper `external-systems/...` pages.
+- ✅ **H-2**: Converted **8 `[[CLAUDE]]` wikilinks** to Markdown file-path links (`[CLAUDE.md](../../CLAUDE.md)` and variants). The CLAUDE.md project-instructions file is intentionally outside the wiki; Markdown links express that without polluting the wiki graph.
+- ✅ **M-2**: Retargeted **all 17 folder-MOC bare-name wikilinks** in `wiki/modules/_index.md` at canonical existing MOC pages. Mapping:
+  - office-related (work-preparation, production, engineering, sales, uni-link) → `mocs/office-to-shopfloor`
+  - iCenter-remaining (batchserver, cad, cam, classes, comparers, controls, data-migration, design-comments, forms, ic-importer, pcf-net-studio, vent-duct-configurator) → `mocs/icenter-remaining`
+  - CadBatchserver → `mocs/icenterlib-cadbatchserver`
+  - SmtManufacturing → `mocs/smtmanufacturing`
+  - Kardex → `modules/icenter-kardex` (the deep-read note)
+  - MarkTool → `modules/icenter-marktool` (the deep-read note)
+  - Modules folder → `main-module` (the deep-read note for `Modules\Main.vb`)
+- ⏭️ **M-3**: Reclassified as **false-positive**. The lint detector matched `[[business-rule]]` / `[[module]]` / `[[domain-concept]]` / `[[Note Name]]` etc. inside backtick-quoted code samples (where Obsidian treats them as plain text, not wikilinks). Sources confirmed: `domain-concepts/_index.md:12` `Use these as targets for `\[[wikilinks]]\` from module and business-rule notes` and `meta/conventions.md:71` `Use `\[[Note Name]]\` for same-folder links`. **No real wikilink leakage.** Updated detector to mask `` `...` `` regions before scanning; with that fix, 0 template-leakage dead links remain.
 
-### Held (needs human review)
+### Deferred to Phase 5
 
-- ⚠️ **H-1**: 8 zero-byte root stubs (`wiki/kardex.md`, `jiba-portal.md`, `trutops-oseon.md`, `elumatec-sbz140.md`, `windchill.md`, `smt-manufacturing.md`, `cad-batchserver.md`, `design-comments.md`) remain. **Now in collision** with 5 new external-systems stubs (kardex / jiba-portal / trutops-oseon / elumatec-sbz140 / windchill).
-  - Obsidian's wikilink resolution with colliding filenames is **non-deterministic** — `[[kardex]]` may resolve to either the empty root file OR the new external-systems file. Risk: operator clicks link and sees empty page.
-  - **Recommendation**: delete the 5 colliding root stubs immediately (truly safe — zero bytes, content elsewhere). The other 3 root stubs (`smt-manufacturing`, `cad-batchserver`, `design-comments`) need MOC counterparts created OR the bare-name wikilinks in `modules/_index.md` retargeted before deletion.
-- ⚠️ **H-2**: 8 `[[CLAUDE]]` wikilinks point at the project-instructions file at the repo root, not a wiki page. Convert to Markdown links: `[CLAUDE.md](../../CLAUDE.md)`.
-- ⚠️ **M-2**: 17 folder-MOC bare-name wikilinks (`work-preparation`, `classes`, `forms`, `controls`, `cam`, etc.) need retargeting at the existing canonical MOCs (`office-to-shopfloor`, `icenter-remaining`, `icenterlib-cad`, etc.). Mostly in `wiki/overview.md` and `wiki/mocs/_index.md` and `wiki/modules/_index.md`.
-- ⚠️ **M-3**: 13 template-leakage wikilinks (`[[business-rule]]`, `[[module]]`, `[[domain-concept]]`, `[[Note Name]]`, `[[name]]`, `[[wikilinks]]`, `[[...]]`) appear in body text where they should be plain text. Mostly in `_index` pages where they were copy-pasted from template instructions.
-- ⚠️ **M-4**: 4 future-page references intact (icenter-flowgrill-quality, isah-coating-selection-codes, icenterlib-sub-services, hour-codes). Leave as Phase-5 TODOs.
+- 🕓 **M-4**: 1 remaining intentional future-page reference: `[[icenter-flowgrill-quality]]` in `business-rules/icenter-smt-deburr-cycle-time.md` (marked `(TODO)`). The other M-4 references (isah-coating-selection-codes, icenterlib-sub-services, hour-codes) already resolved or were also lint false-positives.
 
-### New collision warnings (introduced by M-1)
+### Final numerical comparison
 
-Creating external-systems stubs at filenames that match the empty root stubs introduces 5 filename collisions:
+| Metric | Before lint | After auto-fix tier | After full pass |
+|--------|------:|------:|------:|
+| Pages | 134 | 163 | **155** (after H-1 deletes) |
+| Dead links | 57 | 30 | **2** ✅ (1 intentional TODO + 1 self-reference inside this lint report itself) |
+| Empty files | 8 | 8 | **0** ✅ |
+| Frontmatter gaps | 1 | 0 | **0** ✅ |
+| Filename collisions | 6 (incl. 6 intentional `_index`) | 7 (added 5 H-1-resolvable) | **6** ✅ (only the intentional per-folder `_index.md`) |
 
-| Bare name | Empty root stub | New external-systems stub |
-|-----------|-----------------|---------------------------|
-| `kardex` | `wiki/kardex.md` (0 bytes) | `wiki/external-systems/kardex.md` (1.2 KB) |
-| `jiba-portal` | `wiki/jiba-portal.md` (0 bytes) | `wiki/external-systems/jiba-portal.md` (1.1 KB) |
-| `trutops-oseon` | `wiki/trutops-oseon.md` (0 bytes) | `wiki/external-systems/trutops-oseon.md` (0.5 KB) |
-| `elumatec-sbz140` | `wiki/elumatec-sbz140.md` (0 bytes) | `wiki/external-systems/elumatec-sbz140.md` (1.3 KB) |
-| `windchill` | `wiki/windchill.md` (0 bytes) | `wiki/external-systems/windchill.md` (0.6 KB) |
+**Dead-link reduction: 57 → 2 (96.5% resolved).** Both remaining are explicitly-intentional:
+- `[[icenter-flowgrill-quality]]` — marked `(TODO)` for Phase-5 follow-up.
+- `[[domain-concept]]` — self-reference inside *this* lint report describing the M-3 false-positive (the detector that masks backtick-quoted patterns missed one cross-line backtick range in the report's own prose).
 
-Resolving the collisions = deleting the 5 empty root files. Already a planned H-1 action; tracking here for clarity.
+### Detector improvements (now baked into future lint runs)
 
-### Numerical comparison
-
-| Metric | Before | After | Δ |
-|--------|------:|------:|---:|
-| Pages | 134 | 163 | +29 |
-| Dead links | 57 | 30 | **-27** |
-| Empty files | 8 | 8 | 0 (H-1 not actioned) |
-| Frontmatter gaps | 1 | 0 | **-1** |
-| Filename collisions | 6 | 7 (1 intentional `_index`, 5 new H-1-resolvable, 1 stale) | (expected; H-1 will resolve) |
-
-The 30 remaining dead links all sit in the "Needs human review" tier of the original auto-fix order.
+1. Mask `` `...` `` backtick regions before extracting wikilinks (avoids template-leakage false positives).
+2. Strip trailing `\` from extracted targets (avoids Markdown-table pipe-escape false positives).
 

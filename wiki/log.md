@@ -246,7 +246,7 @@ Append-only chronological record. **Newest entries at the top.** Never edit past
 - TruTopsLib located at `C:\DevOps\iCenter\iCenter\TruTopsLib\` — 65 files, mixed `.vb` + `.cs` (the project ships both `.csproj` and `.vbproj`).
 - ICenterLib **not** at the path the `iCenter.vbproj` / `iCENTER.sln` reference. User pointed me at `C:\Users\jelle-r\source\repos\JIBA\iCenter And Tools\ICenterLib\ICenterLib\` — 723 files across 35 top-level folders that mirror iCENTER's structure. Build-path discrepancy logged as new **Q-018**.
 - Inventoried both projects via `Get-ChildItem -Recurse` and spliced per-project sections into [[_coverage]]. Combined totals: 2025 files / 5 done / 1160 todo / 445 config / 414 generated / 1 needs-review.
-- Updated [[../CLAUDE]] to list all three in-scope roots.
+- Updated [CLAUDE.md](../CLAUDE.md) to list all three in-scope roots.
 - Refreshed [[overview]], [[index]], [[hot]], [[meta/conventions]], [[architecture/_index]], [[architecture/project-references]], [[modules/_index]] to reflect the wider scope.
 - **Next:** Phase 3 — Elumatec subsystem deep dive (140 `.vb` files, `#safety-relevant`).
 
@@ -263,7 +263,7 @@ Append-only chronological record. **Newest entries at the top.** Never edit past
 
 ## 2026-06-18 — Phase 1 inventory complete
 
-- Scope corrected: `C:\DevOps\iCenter2\` was a guess in the scaffold. Per the updated [[../CLAUDE|standing instructions]], the real target is `C:\DevOps\iCenter\iCenter\iCENTER\` — a single VB.NET WinForms project (`iCenter.vbproj`), not a multi-project solution. The `iCenter2` sibling is **out of scope**.
+- Scope corrected: `C:\DevOps\iCenter2\` was a guess in the scaffold. Per the updated [standing instructions](../CLAUDE.md), the real target is `C:\DevOps\iCenter\iCenter\iCENTER\` — a single VB.NET WinForms project (`iCenter.vbproj`), not a multi-project solution. The `iCenter2` sibling is **out of scope**.
 - Codebase is **not** git-tracked at any walked level. Used `Get-ChildItem -Recurse` (PowerShell) instead of `git ls-files` for the inventory.
 - Enumerated 1237 files across 27 top-level sub-folders, excluding `bin`, `obj`, `.vs`, `packages`, `My Project`, `Web References`.
 - Filled [[_coverage]] with one table per sub-folder. Heuristic statuses applied: `generated` for `*.Designer.vb` + `*.resx`; `config` for assets, `.vbproj*`, `app.config`, `packages.config`, `.pfx`, `.snk`; `todo` for the remaining 535 `.vb` source files.

@@ -28,31 +28,31 @@ One note per major source file or tight group of files. Each entry mirrors a row
 
 ### Per-subsystem (one note per folder index; deep notes as needed)
 
-- [[batchserver|`Batchserver/`]] — generic post-`FrmMain` batch host. 3 `.vb` files.
-- [[cad-batchserver|`CadBatchserver/`]] — CAD job runner (`-m cadbatchserver`). 27 `.vb` files; one note per `Job*`.
-- [[cad|`CAD/`]] — 2 `.vb` files.
-- [[cam|`CAM/`]] — manufacturing-part classes. 4 `.vb` files.
-- [[classes|`Classes/`]] — core domain classes + helpers. **111 files** — needs sub-MOC. Subfolders: `Coating/`, `Connectivity/`, `PreSelectMachGrpCodes/`, `Production/`, `StickersAndLabels/`, `Toolbox/`.
-- [[comparers|`Comparers/`]] — `IComparer` implementations. 4 files.
-- [[controls|`Controls/`]] — custom WinForms user-controls. **78 `.vb`**. Sub: `Isah/`.
-- [[data-migration|`DataMigration/`]] — Entity + Handler + Factory pattern targeting `iCenter2NewestDataModel`. 50 files. Sub-MOC needed.
-- [[design-comments|`DesignComments/`]] — 7 files.
-- [[elumatec|`Elumatec/`]] — SBZ140 / DG profile-mill integration. **140 `.vb`** — biggest single-purpose subsystem. `#safety-relevant`. Subs: `AufSerializer/`, `Database/`, `Machine/`, `NCStructure/`, `Works/Replacements/`.
-- [[engineering|`Engineering/`]] — 15 files.
-- [[forms|`Forms/`]] — non-main dialogs / shop forms. **127 `.vb`** + 61 `.resx`. Subs include `ShopProcess/`.
-- [[ic-importer|`IcImporter/`]] — 5 files.
-- [[kardex|`Kardex/`]] — Kardex Shuttle integration. 3 files. `#safety-relevant`
-- [[mark-tool|`MarkTool/`]] — drawing-marker tool. 4 files.
-- [[modules-folder|`Modules/`]] — `Main.vb`, plus 2 others. (See [[main-module]].)
-- [[pcf-net-studio|`PCFNetStudio/`]] — PCFNet integration. 12 files.
-- [[production|`Production/`]] — production-floor logic. 6 files.
+- [[../mocs/icenter-remaining|`Batchserver/`]] — generic post-`FrmMain` batch host. 3 `.vb` files.
+- [[../mocs/icenterlib-cadbatchserver|`CadBatchserver/`]] — CAD job runner (`-m cadbatchserver`). 27 `.vb` files; one note per `Job*`.
+- [[../mocs/icenter-remaining|`CAD/`]] — 2 `.vb` files.
+- [[../mocs/icenter-remaining|`CAM/`]] — manufacturing-part classes. 4 `.vb` files.
+- [[../mocs/icenter-remaining|`Classes/`]] — core domain classes + helpers. **111 files**. Subfolders: `Coating/` (deep-read at [[icenter-coating]]), `Connectivity/`, `PreSelectMachGrpCodes/`, `Production/`, `StickersAndLabels/`, `Toolbox/`.
+- [[../mocs/icenter-remaining|`Comparers/`]] — `IComparer` implementations. 4 files.
+- [[../mocs/icenter-remaining|`Controls/`]] — custom WinForms user-controls. **78 `.vb`**. Sub: `Isah/`.
+- [[../mocs/icenter-remaining|`DataMigration/`]] — Entity + Handler + Factory pattern targeting `iCenter2NewestDataModel`. 50 files. Likely `#dead-code` (Q-314).
+- [[../mocs/icenter-remaining|`DesignComments/`]] — 7 files.
+- [[../mocs/elumatec|`Elumatec/`]] — SBZ140 / DG profile-mill integration. **140 `.vb`** — biggest single-purpose subsystem. `#safety-relevant`. Subs: `AufSerializer/`, `Database/`, `Machine/`, `NCStructure/`, `Works/Replacements/`.
+- [[../mocs/office-to-shopfloor|`Engineering/`]] — 15 files.
+- [[../mocs/icenter-remaining|`Forms/`]] — non-main dialogs / shop forms. **127 `.vb`** + 61 `.resx`. Subs include `ShopProcess/`.
+- [[../mocs/icenter-remaining|`IcImporter/`]] — 5 files.
+- [[icenter-kardex|`Kardex/`]] — Kardex Shuttle integration. 3 files. `#safety-relevant`
+- [[icenter-marktool|`MarkTool/`]] — Telesis laser engraver COM-port driver. 4 files. `#safety-relevant`
+- [[main-module|`Modules/`]] — `Main.vb`, plus 2 others.
+- [[../mocs/icenter-remaining|`PCFNetStudio/`]] — PCFNet integration. 12 files.
+- [[../mocs/office-to-shopfloor|`Production/`]] — production-floor logic. 6 files.
 - `Resources/` — 354 image / icon assets. Not documented individually; covered by [[../_coverage]] as `config`.
-- [[sales|`Sales/`]] — 2 files.
-- [[smt-manufacturing|`SmtManufacturing/`]] — sheet-metal (Trumpf/Oseon) UI + logic. **63 `.vb`** — sub-MOC needed. `#safety-relevant`
-- [[sola-data-connector|`SolaDataConnector/`]] — 2 files.
-- [[uni-link|`UniLink/`]] — 29 files. Likely an external system bridge. `#needs-review`
-- [[vent-duct-configurator|`VentDuctConfigurator/`]] — ventilation-duct configurator. 3 files.
-- [[web-clock|`WebClock/`]] — time-registration UI. 9 files.
-- [[work-preparation|`WorkPreparation/`]] — werkvoorbereiding. 5 files.
+- [[../mocs/office-to-shopfloor|`Sales/`]] — 2 files.
+- [[../mocs/smtmanufacturing|`SmtManufacturing/`]] — sheet-metal (Trumpf/Oseon) UI + logic. **63 `.vb`** — MOC + deep-reads of `FlatPatternConverter.vb` + `Part.vb`. `#safety-relevant`
+- [[../external-systems/sola-data-connector|`SolaDataConnector/`]] — 2 files.
+- [[../mocs/office-to-shopfloor|`UniLink/`]] — 29 files. CSV-import pipeline. `#needs-review`
+- [[../mocs/icenter-remaining|`VentDuctConfigurator/`]] — ventilation-duct configurator. 3 files.
+- [[../external-systems/webclock|`WebClock/`]] — time-registration UI. 9 files.
+- [[../mocs/office-to-shopfloor|`WorkPreparation/`]] — werkvoorbereiding. 5 files.
 
 > **Most entries above are stubs** (not yet written) — that's expected for Phase 2. Phase 3 fills each one. Don't follow the link if it's red unless you're ready to write the note.

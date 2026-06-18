@@ -26,7 +26,7 @@ Everything `iCenter.exe` compiles against — the in-tree companion projects, th
 
 > ⚠️ The reference inside `iCenter.vbproj` line 3335 (`..\..\ICenterLib\ICenterLib\ICenterLib.vbproj`) and `iCENTER.sln` line 11 (`..\ICenterLib\ICenterLib\ICenterLib.vbproj`) both resolve to `C:\DevOps\iCenter\ICenterLib\ICenterLib\` — a path that does **not** exist on this machine. The actual source lives under the user's personal `source\repos\` tree. The build relies on this directory being present on each developer's box; CI behavior unclear. `#needs-review` (tracked as **Q-018**).
 
-Both projects are now part of this wiki's scope per the 2026-06-18 [[../../CLAUDE|standing-instructions]] update. Their types are everywhere in the iCENTER source. The `Imports` block in `iCenter.vbproj` (lines 277–289) makes them ambiently available:
+Both projects are now part of this wiki's scope per the 2026-06-18 [standing-instructions](../../CLAUDE.md) update. Their types are everywhere in the iCENTER source. The `Imports` block in `iCenter.vbproj` (lines 277–289) makes them ambiently available:
 
 ```xml
 <Import Include="ICenterLib" />
