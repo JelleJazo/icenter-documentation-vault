@@ -9,6 +9,22 @@ tags: [meta, log]
 
 # Operation Log
 
+## 2026-06-18 — MILESTONE: Phase 4 complete
+
+After the Phase 3 100% file-coverage milestone, Phase 4 delivered 6 priority deep-reads across the highest-stakes subsystems:
+
+1. **Kardex** — KardexProcessor pipeline, FrmKardexInterface, KD06A/KD10A warehouse split, JobStatusId state machine, hard-coded XSLT UNC `\\JAZO.LOCAL\DFS\JIBA.NET\XSLT\PartDispatch\Isah2KardexOrder.xslt` as single point of failure.
+2. **MarkTool** — Telesis laser engraver COM-port driver (9600 8N1), IPpart-prefix Modelname substitution hazard, 100-second blocking retry on busy port.
+3. **Classes/Coating** — `Coating.Executor` 5-state enum, JCOA/JALU/JSTL/EBTV dept-code resolution, `CoatingPickLabel_v3` A4 printer with defensive UX for missing operations, `EbtvSticker` flagged dead-code.
+4. **PCFNet/GenericPart (82 KB)** — the configurator base class. Regenerate lifecycle, DLL-from-disk loader, AddSurfaceTreatment with EBTV billed-by-mass branch, ApplyFasteners with AJPKL7000 trigger, ~PHANTOM SubPartCode pattern.
+5. **Production/ProductionProfileCutItem + CEChecklist** — Elumatec cut-data persistence + EU CE-marking regulatory checklist. Magic Dutch "Art.nr" column literal contract. JIBA T_XmlData storage with XmlDataGroupId=9.
+6. **TruTopsLib/LayerConverter + MigrationFix full audit** — full DXF colour/layer rewrite pipeline, MigrationFix.TEMPLATEDXF resolution (= Creo's `pro-manuf\SheetMetal\template_with_bendinfo.dxf`), JAZO-shifted AutoCAD ACI palette.
+7. **SmtManufacturing MOC** — 47-file hub. FlatPatternConverter (84 KB) + Part (81 KB) public-surface deep-reads. Trumpf XData app-ids TC_BEND_DATA / TC_SE_BEND_DATA. `c:\work\` vs `c:\temp\` convention documented.
+
+13 new business-rule notes (now 47 total). 213 new SME questions (Q-191 → Q-403 grew across phases; Phase 4 alone added Q-219..Q-403 = 185).
+
+5 commits pushed (`ce68da3..ded8056`) plus rollup commits = ~25 total Phase-1..4 commits.
+
 ## 2026-06-18 — MILESTONE: 100% file coverage achieved
 
 After Phase 3a–3g, every source file in all three projects (2025 files total) is accounted for:
