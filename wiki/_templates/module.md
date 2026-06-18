@@ -2,9 +2,9 @@
 type: module
 title: ""
 status: draft
-module: "JAZO.iCenter.<Project>"
+module: "iCENTER/<SubFolder>"
 source-paths:
-  - "C:\\DevOps\\iCenter2\\JAZO.iCenter.<Project>\\<path>\\<File>.cs"
+  - "C:\\DevOps\\iCenter\\iCenter\\iCENTER\\<SubFolder>\\<File>.vb"
 last-reviewed: ""
 tags: [module]
 created: YYYY-MM-DD

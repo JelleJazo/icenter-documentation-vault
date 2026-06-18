@@ -1,7 +1,7 @@
 ---
 type: moc
 title: "Maps of Content — Index"
-status: stub
+status: draft
 tags: [moc]
 created: 2026-06-18
 updated: 2026-06-18
@@ -11,19 +11,24 @@ updated: 2026-06-18
 
 A MOC is a subsystem hub: a single page that gathers everything (modules, rules, external systems, concepts, open questions) relevant to one subsystem. They are the navigation backbone of the wiki.
 
-## Pages
+## Subsystem MOCs (one per logical area, to be authored in Phase 3)
 
-_(One MOC per subsystem, created as Phase 3 progresses. Use the [[../_templates/moc|moc template]].)_
+Confirmed from the Phase 2 architecture pass — each maps to a top-level `iCENTER\` folder cluster:
 
-### Likely MOCs (one per logical subsystem)
-- Sheet-metal pipeline MOC
-- Order / workflow MOC
-- Authentication MOC
-- Front-end (Blazor / React / WPF / WinForms) MOC
-- Background services / installer MOC
-- Migration & data lifecycle MOC
+- **Elumatec subsystem** — `Elumatec/` (+ `Modules/`, `Production/ProfileMilling`) — CAD→NC pipeline for SBZ140 / DG machines. `#safety-relevant`
+- **Sheet-metal (SMT) subsystem** — `SmtManufacturing/`, `Modules\Main.vb` Oseon services, parts of `CadBatchserver/Job*Smt*` — Trumpf / TruTops Oseon integration. `#safety-relevant`
+- **CAD pipeline** — `CAD/`, `CadBatchserver/`, `CAM/`, Creo integration. `#safety-relevant`
+- **Engineering → Production handoff** — `Engineering/`, `WorkPreparation/`, `Production/`, ProductionDossier entities.
+- **Sales / Order intake** — `Sales/`, parts of `Forms/`, ProductDb integration.
+- **Coating subsystem** — `Classes\Coating\` (12+ files), `CoatingPickTimeWarning`, Kardex job flow.
+- **Stickers / labels / printing** — `Classes\StickersAndLabels\`, Dymo, GhostScript, PDF-XChange.
+- **Data migration** — `DataMigration/` (50 files), `iCenter2NewestDataModel`.
+- **Kardex / storage** — `Kardex/`, `Isah2KardexExportPath`. `#safety-relevant`
+- **Time registration** — `WebClock/`, `Classes\Production\LeanWorkTime`, ISAH.TimeRegistration.
+- **External systems hub** — points to [[../external-systems/_index]] (already a MOC).
+- **Build / deploy / signing** — points to [[../architecture/build-and-deploy]].
 
-Each MOC should link to:
+Each MOC links to:
 - All [[../modules/_index|modules]] in that subsystem
 - All [[../business-rules/_index|business rules]] it owns
 - All [[../external-systems/_index|external systems]] it touches

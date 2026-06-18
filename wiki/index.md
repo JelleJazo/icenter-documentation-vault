@@ -45,6 +45,6 @@ See [[_coverage]] for authoritative status. Summary updated by the lint pass.
 
 | Sub-folder | Files | Done | Todo | Needs-review |
 |------------|------:|-----:|-----:|-------------:|
-| **iCENTER (all)** | **1237** | 0 | 535 | 0 |
+| **iCENTER (all)** | **1237** | 5 | 532 | 1 |
 
-> 535 todo entries are mostly `.vb` source. 341 are `generated` (`*.Designer.vb` + `*.resx`) and 361 are `config` (assets, project metadata, signing keys). Full per-folder breakdown lives in [[_coverage]].
+> 532 todo entries are mostly `.vb` source. 341 are `generated` (`*.Designer.vb` + `*.resx`) and 358 are `config` (assets, project metadata, signing keys). 5 root/`Modules` files documented in Phase 2 (see [[architecture/_index]]); `FrmMain.vb` flagged `needs-review` pending its Phase-3 split. Full per-folder breakdown lives in [[_coverage]].

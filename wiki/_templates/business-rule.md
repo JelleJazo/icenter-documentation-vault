@@ -2,9 +2,9 @@
 type: business-rule
 title: ""
 status: needs-review
-module: "JAZO.iCenter.<Project>"
+module: "iCENTER/<SubFolder>"
 source-paths:
-  - "C:\\DevOps\\iCenter2\\<path>\\<File>.cs"
+  - "C:\\DevOps\\iCenter\\iCenter\\iCENTER\\<SubFolder>\\<File>.vb"
 last-reviewed: ""
 tags: [business-rule, needs-review]
 created: YYYY-MM-DD
@@ -24,8 +24,8 @@ updated: YYYY-MM-DD
 
 ## The code (minimal quote)
 
-```csharp
-// Only the few lines that EMBODY the rule. Not the whole method.
+```vb
+' Only the few lines that EMBODY the rule. Not the whole method.
 ```
 
 ## Why this is a business rule

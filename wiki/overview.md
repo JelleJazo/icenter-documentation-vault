@@ -1,33 +1,81 @@
 ---
 type: architecture
 title: "iCenter — Executive Overview"
-status: stub
+status: draft
 module: ""
-source-paths: ["C:\\DevOps\\iCenter\\iCenter\\iCENTER"]
+source-paths:
+  - "C:\\DevOps\\iCenter\\iCenter\\iCENTER"
 last-reviewed: ""
 tags: [overview, needs-review]
+created: 2026-06-18
+updated: 2026-06-18
 ---
 
 # iCenter — Executive Overview
 
-> **Status:** stub. To be filled during **Phase 2 — Architecture** after the file inventory is complete.
+> **Status:** draft. Filled during Phase 2 (architecture pass). Refined as Phase 3 module notes land.
 
 ## What iCenter is
 
-_(One paragraph: what the system does at the factory, who the users are, what production processes it touches. Fill from SME interview + entry-point reading.)_
+A long-running VB.NET Windows-Forms application that sits at the centre of JAZO Zevenaar's manufacturing IT stack. It connects the **ISAH ERP** (orders, BOMs, time registration) to **CAD/PLM** (Creo, Windchill, Solid Edge), to **sheet-metal MES** (Trumpf TruTops Oseon), and to physical CNC profile-mill machines (Elumatec SBZ140 and Door+Gate), plus a Kardex vertical-lift storage system, label printers, and an internal portal (JIBA). Roles range from engineers and work preparators (*werkvoorbereiders*) to shop-floor operators using lean-mode kiosk views.
+
+It is one executable (`iCenter.exe`, .NET 4.8, x86, WinExe) that can run in [several modes](architecture/runtime-modes.md): the default interactive UI, a CAD batch worker (`-m cadbatchserver`), a self-updater (`-m updateicenter`), plus generic/COM-port post-main workers gated by globals.
+
+> This wiki covers the `iCENTER\` VB.NET project only. Two companion projects (`ICenterLib`, `TruTopsLib`) carry the bulk of the data-access and PLM/CAD plumbing and are referenced into the build but **out of scope** per [[../CLAUDE]]. See [[needs-review/_index]] **Q-001**.
 
 ## What it controls
 
-_(Bullet list of physical processes/equipment under iCenter's control. Each item should link to an [[external-systems/_index|external system]] note. Mark anything safety-relevant.)_
+- **Elumatec SBZ140** profile mill (aluminum + steel) — NC programs, offsets, license management, possibly serial-COM monitoring. `#safety-relevant` See [[external-systems/elumatec-sbz140]].
+- **Elumatec Door+Gate (DG)** profile mill variant. `#safety-relevant`
+- **Trumpf sheet-metal machines via TruTops Oseon** — part/document/status data services drive the MES; iCenter writes parts and reads status. `#safety-relevant` See [[external-systems/trutops-oseon]].
+- **PTC Creo** — model generation, publish, view embed. `#safety-relevant` if iCenter changes CAD files.
+- **Kardex Shuttle** — XML drops at `\\JAZO.LOCAL\DFS\PM\Kardex Shuttle\XmlXchange\In\Put\` + a web UI; storage retrievals. `#safety-relevant` (drives lift movements via Kardex's own interface).
+- **Dymo label printers** + thermal stickers — kanban bin, IPpart, ord-ref labels.
+- **PDF print pipeline** via GhostScript and PDF-XChange Viewer (ActiveX + EXE).
+- **Email** via MS Outlook COM and the sibling `jMailLauncher` EXE.
 
 ## Top-level architecture
 
-_(Diagram or short prose: where the entry points live, where the data flows, where it terminates. Link to [[architecture/_index|Architecture]].)_
+See [[architecture/_index]] for the views. Quick map:
 
-## Key modules
+```
+                     +----------------+
+                     |  iCenter.exe   |
+                     |  (.NET 4.8 x86)|
+                     +-------+--------+
+                             |
+       +---------------------+---------------------+
+       |                                           |
+  Modules\Main.vb (Sub Main)                  FrmMain (15 200 lines)
+       |                                           |
+  globals + singletons:                       all interactive UI:
+  oICENTER, oISAH, oJIBA,                     treeview, search, print,
+  Oseon services, prodMachines,               coating, work prep,
+  Sola, Elfsquad ...                          production, sales, ...
+       |                                           |
+       +------> External systems  <----------------+
+                (see architecture/external-surface)
+```
 
-_(Linked list of [[modules/_index|module]] notes once Phase 3 starts.)_
+Single process, no service-bus. All integration is direct: DB→DB, file drop→file drop, HTTP→HTTP, COM→COM. Failures propagate to the user via `MsgBox` + `oApplicationLog`.
+
+## Key modules (Phase 3 will populate these)
+
+- [[modules/main-module|Modules\Main.vb]] — entry, globals, mode dispatch.
+- [[modules/elumatec|Elumatec/]] — profile-mill subsystem. `#safety-relevant`
+- [[modules/smt-manufacturing|SmtManufacturing/]] — sheet-metal subsystem. `#safety-relevant`
+- [[modules/cad-batchserver|CadBatchserver/]] — headless CAD job runner.
+- [[modules/work-preparation|WorkPreparation/]] — werkvoorbereiding.
+- [[modules/production|Production/]] — shop-floor.
+
+Full list: [[modules/_index]] / [[_coverage]].
 
 ## Open questions
 
-See [[needs-review/_index|Needs Review]] for the full queue.
+See [[needs-review/_index]] for the full queue. Phase 2 surfaced **17 open questions** (Q-001 through Q-017), including:
+
+- Scope of companion projects (Q-001).
+- Hard-coded secrets in source (Q-007, Q-016).
+- Disabled signing pipeline since 2023-07-18 (Q-010).
+- Whether the various `#safety-relevant` integrations have failure-mode docs (Q-017).
+- The exact behavior of `Elumatec.FrmComWatcher` — likely a serial-COM driver (Q-006). `#safety-relevant`

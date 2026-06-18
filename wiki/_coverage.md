@@ -51,17 +51,17 @@ _One table per top-level sub-folder of `iCENTER\`. Files at the root of `iCENTER
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `app.config` | config | config / project metadata | — |
-| `ApplicationEvents.vb` | todo | — | — |
+| `app.config` | done | covered in [[architecture/build-and-deploy]] + [[architecture/external-surface]] | 2026-06-18 |
+| `ApplicationEvents.vb` | done | empty `My.MyApplication` partial; covered in [[architecture/entry-points]] | 2026-06-18 |
 | `FrmMain.Designer.vb` | generated | VS Forms designer partial | — |
 | `FrmMain.resx` | generated | resource bundle (designer-managed) | — |
-| `FrmMain.vb` | todo | — | — |
-| `iCenter.vbproj` | config | config / project metadata | — |
-| `iCenter.vbproj.user` | config | config / project metadata | — |
-| `iCenter.vbproj.vspscc` | config | config / project metadata | — |
-| `JAZO Comodo Code Signing Certificate.pfx` | config | signing key | — |
-| `JAZO Zevenaar bv.snk` | config | signing key | — |
-| `packages.config` | config | config / project metadata | — |
+| `FrmMain.vb` | needs-review | 15 216-line god-form; Phase 3 will split into multiple notes. Briefly characterized in [[architecture/entry-points]] + [[architecture/global-state]]. | — |
+| `iCenter.vbproj` | done | covered in [[architecture/build-and-deploy]] + [[architecture/project-references]] | 2026-06-18 |
+| `iCenter.vbproj.user` | config | per-user VS metadata | — |
+| `iCenter.vbproj.vspscc` | config | source-control plugin metadata | — |
+| `JAZO Comodo Code Signing Certificate.pfx` | config | signing key (Authenticode; expired 2023-07 per inline comment in vbproj) | — |
+| `JAZO Zevenaar bv.snk` | config | strong-name signing key | — |
+| `packages.config` | done | covered in [[architecture/build-and-deploy]] | 2026-06-18 |
 
 ### Batchserver
 
@@ -884,9 +884,9 @@ _One table per top-level sub-folder of `iCENTER\`. Files at the root of `iCENTER
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `Modules\Functions.vb` | todo | — | — |
+| `Modules\Functions.vb` | todo | (referenced from [[modules/main-module]] for `GetApplicationArguments`, `UpdateIcenter`, `GetXMLWriteAccess`, `InitProfMillMachGrps`, etc. — Phase 3) | — |
 | `Modules\MailMessageExt.vb` | todo | — | — |
-| `Modules\Main.vb` | todo | — | — |
+| `Modules\Main.vb` | done | [[modules/main-module]] | 2026-06-18 |
 
 ### PCFNetStudio
 
@@ -1480,7 +1480,7 @@ _Heuristic snapshot from the Phase 1 pass. Refined by [[meta/conventions|the lin
 
 | Folder | Total | Done | Todo | Config | Generated | Dead | Needs-review |
 |--------|------:|-----:|-----:|-------:|----------:|-----:|-------------:|
-| (root) | 11 | 0 | 2 | 7 | 2 | 0 | 0 |
+| (root) | 11 | 4 | 0 | 5 | 2 | 0 | 1 |
 | Batchserver | 4 | 0 | 2 | 0 | 2 | 0 | 0 |
 | CAD | 3 | 0 | 1 | 0 | 2 | 0 | 0 |
 | CadBatchserver | 29 | 0 | 25 | 0 | 4 | 0 | 0 |
@@ -1496,7 +1496,7 @@ _Heuristic snapshot from the Phase 1 pass. Refined by [[meta/conventions|the lin
 | IcImporter | 6 | 0 | 4 | 0 | 2 | 0 | 0 |
 | Kardex | 4 | 0 | 2 | 0 | 2 | 0 | 0 |
 | MarkTool | 5 | 0 | 3 | 0 | 2 | 0 | 0 |
-| Modules | 3 | 0 | 3 | 0 | 0 | 0 | 0 |
+| Modules | 3 | 1 | 2 | 0 | 0 | 0 | 0 |
 | PCFNetStudio | 17 | 0 | 7 | 0 | 10 | 0 | 0 |
 | Production | 6 | 0 | 6 | 0 | 0 | 0 | 0 |
 | Resources | 354 | 0 | 0 | 354 | 0 | 0 | 0 |
@@ -1507,4 +1507,4 @@ _Heuristic snapshot from the Phase 1 pass. Refined by [[meta/conventions|the lin
 | VentDuctConfigurator | 4 | 0 | 2 | 0 | 2 | 0 | 0 |
 | WebClock | 13 | 0 | 5 | 0 | 8 | 0 | 0 |
 | WorkPreparation | 6 | 0 | 4 | 0 | 2 | 0 | 0 |
-| **TOTAL** | **1237** | **0** | **535** | **361** | **341** | **0** | **0** |
+| **TOTAL** | **1237** | **5** | **532** | **358** | **341** | **0** | **1** |
