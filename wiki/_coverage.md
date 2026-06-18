@@ -1498,15 +1498,15 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
 | `app.config` | config | config / project metadata | â€” |
-| `FileReaderHelper.cs` | todo | â€” | â€” |
-| `FileReaderHelper.vb` | todo | â€” | â€” |
+| `FileReaderHelper.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `FileReaderHelper.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
 | `JAZO Zevenaar bv.snk` | config | signing key | â€” |
-| `LayerConverter.cs` | todo | â€” | â€” |
-| `LayerConverter.vb` | todo | â€” | â€” |
-| `MigrationFix.cs` | todo | â€” | â€” |
-| `MigrationFix.vb` | todo | â€” | â€” |
-| `PMILabel.cs` | todo | â€” | â€” |
-| `PMILabelCollection.cs` | todo | â€” | â€” |
+| `LayerConverter.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `LayerConverter.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `MigrationFix.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `MigrationFix.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `PMILabel.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `PMILabelCollection.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
 | `Resources.Designer.cs` | generated | VS designer partial | â€” |
 | `Resources.resx` | generated | resource bundle (designer-managed) | â€” |
 | `TruTopsLib.csproj` | config | config / project metadata | â€” |
@@ -1520,16 +1520,16 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `GeoInterpreter\FlatGeometry.cs` | todo | â€” | â€” |
-| `GeoInterpreter\FlatGeometry.vb` | todo | â€” | â€” |
-| `GeoInterpreter\FlatGeometryDxfExport.cs` | todo | â€” | â€” |
-| `GeoInterpreter\FlatGeometryDxfExport.vb` | todo | â€” | â€” |
-| `GeoInterpreter\FlatGeometryGeoExport.cs` | todo | â€” | â€” |
-| `GeoInterpreter\FlatGeometryGeoExport.vb` | todo | â€” | â€” |
-| `GeoInterpreter\FlatGeometryReader.cs` | todo | â€” | â€” |
-| `GeoInterpreter\FlatGeometryReader.vb` | todo | â€” | â€” |
-| `GeoInterpreter\IFlatGeometryExport.cs` | todo | â€” | â€” |
-| `GeoInterpreter\IFlatGeometryExport.vb` | todo | â€” | â€” |
+| `GeoInterpreter\FlatGeometry.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `GeoInterpreter\FlatGeometry.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `GeoInterpreter\FlatGeometryDxfExport.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `GeoInterpreter\FlatGeometryDxfExport.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `GeoInterpreter\FlatGeometryGeoExport.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `GeoInterpreter\FlatGeometryGeoExport.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `GeoInterpreter\FlatGeometryReader.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `GeoInterpreter\FlatGeometryReader.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `GeoInterpreter\IFlatGeometryExport.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `GeoInterpreter\IFlatGeometryExport.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
 
 ### TruTopsLib / PMI
 
@@ -1537,11 +1537,11 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `PMI\IPmiLabel.vb` | todo | â€” | â€” |
-| `PMI\PMILabel.vb` | todo | â€” | â€” |
-| `PMI\PMILabelCollection.vb` | todo | â€” | â€” |
-| `PMI\PmiLabelCountersink.vb` | todo | â€” | â€” |
-| `PMI\PmiLabelThreadNote.vb` | todo | â€” | â€” |
+| `PMI\IPmiLabel.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `PMI\PMILabel.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `PMI\PMILabelCollection.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `PMI\PmiLabelCountersink.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `PMI\PmiLabelThreadNote.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
 
 ### TruTopsLib / TopsFile
 
@@ -1549,40 +1549,40 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `TopsFile\BendLine.cs` | todo | â€” | â€” |
-| `TopsFile\BendLine.vb` | todo | â€” | â€” |
-| `TopsFile\Body.cs` | todo | â€” | â€” |
-| `TopsFile\Body.vb` | todo | â€” | â€” |
-| `TopsFile\Bounds.cs` | todo | â€” | â€” |
-| `TopsFile\Bounds.vb` | todo | â€” | â€” |
-| `TopsFile\Contour.cs` | todo | â€” | â€” |
-| `TopsFile\Contour.vb` | todo | â€” | â€” |
-| `TopsFile\DataTypeHandler.cs` | todo | â€” | â€” |
-| `TopsFile\DataTypeHandler.vb` | todo | â€” | â€” |
-| `TopsFile\Parameters.cs` | todo | â€” | â€” |
-| `TopsFile\Parameters.vb` | todo | â€” | â€” |
-| `TopsFile\Point.cs` | todo | â€” | â€” |
-| `TopsFile\Point.vb` | todo | â€” | â€” |
-| `TopsFile\PointCollection.cs` | todo | â€” | â€” |
-| `TopsFile\PointCollection.vb` | todo | â€” | â€” |
-| `TopsFile\Properties.cs` | todo | â€” | â€” |
-| `TopsFile\Properties.vb` | todo | â€” | â€” |
-| `TopsFile\SubContour\Arc.cs` | todo | â€” | â€” |
-| `TopsFile\SubContour\Arc.vb` | todo | â€” | â€” |
-| `TopsFile\SubContour\Circle.cs` | todo | â€” | â€” |
-| `TopsFile\SubContour\Circle.vb` | todo | â€” | â€” |
-| `TopsFile\SubContour\Fillet.cs` | todo | â€” | â€” |
-| `TopsFile\SubContour\Fillet.vb` | todo | â€” | â€” |
-| `TopsFile\SubContour\Line.cs` | todo | â€” | â€” |
-| `TopsFile\SubContour\Line.vb` | todo | â€” | â€” |
-| `TopsFile\SubContour\SubContour.cs` | todo | â€” | â€” |
-| `TopsFile\SubContour\SubContour.vb` | todo | â€” | â€” |
-| `TopsFile\SubContour\Text.cs` | todo | â€” | â€” |
-| `TopsFile\SubContour\Text.vb` | todo | â€” | â€” |
-| `TopsFile\TextCollection.cs` | todo | â€” | â€” |
-| `TopsFile\TextCollection.vb` | todo | â€” | â€” |
-| `TopsFile\TTInfo.cs` | todo | â€” | â€” |
-| `TopsFile\TTInfo.vb` | todo | â€” | â€” |
+| `TopsFile\BendLine.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\BendLine.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\Body.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\Body.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\Bounds.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\Bounds.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\Contour.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\Contour.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\DataTypeHandler.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\DataTypeHandler.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\Parameters.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\Parameters.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\Point.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\Point.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\PointCollection.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\PointCollection.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\Properties.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\Properties.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\SubContour\Arc.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\SubContour\Arc.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\SubContour\Circle.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\SubContour\Circle.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\SubContour\Fillet.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\SubContour\Fillet.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\SubContour\Line.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\SubContour\Line.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\SubContour\SubContour.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\SubContour\SubContour.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\SubContour\Text.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\SubContour\Text.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\TextCollection.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\TextCollection.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\TTInfo.cs` | done | [[mocs/trutopslib]] | 2026-06-18 |
+| `TopsFile\TTInfo.vb` | done | [[mocs/trutopslib]] | 2026-06-18 |
 
 
 
@@ -2570,9 +2570,9 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 | Project | Total | Done | Todo | Config | Generated | Dead | Needs-review |
 |---------|------:|-----:|-----:|-------:|----------:|-----:|-------------:|
 | iCENTER | 1237 | 56 | 475 | 358 | 341 | 0 | 7 |
-| TruTopsLib | 65 | 0 | 57 | 6 | 2 | 0 | 0 |
+| TruTopsLib | 65 | 57 | 0 | 6 | 2 | 0 | 0 |
 | ICenterLib | 723 | 564 | 7 | 81 | 71 | 0 | 0 |
-| **TOTAL** | **2025** | **620** | **539** | **445** | **414** | **0** | **7** |
+| **TOTAL** | **2025** | **677** | **482** | **445** | **414** | **0** | **7** |
 
 ### Per iCENTER sub-folder
 
