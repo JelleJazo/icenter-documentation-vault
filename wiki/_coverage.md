@@ -1912,35 +1912,35 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 
 | File | Status | Note | Last reviewed |
 |------|--------|------|---------------|
-| `iCenter\BillOfOper.vb` | todo | â€” | â€” |
-| `iCenter\Client.vb` | todo | â€” | â€” |
+| `iCenter\BillOfOper.vb` | done | [[modules/icenterlib-icenter-batch-hierarchy]] | 2026-06-18 |
+| `iCenter\Client.vb` | done | [[modules/icenterlib-icenter-production-machines]] | 2026-06-18 |
 | `iCenter\CtrlImageIdentification.designer.vb` | generated | VS designer partial | â€” |
 | `iCenter\CtrlImageIdentification.resx` | generated | resource bundle (designer-managed) | â€” |
-| `iCenter\CtrlImageIdentification.vb` | todo | â€” | â€” |
+| `iCenter\CtrlImageIdentification.vb` | done | [[modules/icenterlib-icenter-identification]] | 2026-06-18 |
 | `iCenter\CtrlRadButtonIdent.designer.vb` | generated | VS designer partial | â€” |
-| `iCenter\CtrlRadButtonIdent.vb` | todo | â€” | â€” |
-| `iCenter\DataServices\CoatingLayerThicknessDataService.vb` | todo | â€” | â€” |
-| `iCenter\DossierContactFavorite.vb` | todo | â€” | â€” |
-| `iCenter\ExternalReference.vb` | todo | â€” | â€” |
-| `iCenter\ExternalReferences.vb` | todo | â€” | â€” |
+| `iCenter\CtrlRadButtonIdent.vb` | done | [[modules/icenterlib-icenter-identification]] | 2026-06-18 |
+| `iCenter\DataServices\CoatingLayerThicknessDataService.vb` | done | [[modules/icenterlib-icenter-leaves]] | 2026-06-18 |
+| `iCenter\DossierContactFavorite.vb` | done | [[modules/icenterlib-icenter-leaves]] | 2026-06-18 |
+| `iCenter\ExternalReference.vb` | done | [[modules/icenterlib-icenter-leaves]] | 2026-06-18 |
+| `iCenter\ExternalReferences.vb` | done | [[modules/icenterlib-icenter-leaves]] | 2026-06-18 |
 | `iCenter\FrmIdentification.designer.vb` | generated | VS designer partial | â€” |
 | `iCenter\FrmIdentification.resx` | generated | resource bundle (designer-managed) | â€” |
-| `iCenter\FrmIdentification.vb` | todo | â€” | â€” |
-| `iCenter\IPBatch.vb` | todo | â€” | â€” |
-| `iCenter\IPOrder.vb` | todo | â€” | â€” |
-| `iCenter\IPPacket.vb` | todo | â€” | â€” |
-| `iCenter\IPPart.vb` | todo | â€” | â€” |
-| `iCenter\Part.vb` | todo | â€” | â€” |
-| `iCenter\ProductionMachineMultiPurpose.vb` | todo | â€” | â€” |
-| `iCenter\ProductionMachines.vb` | todo | â€” | â€” |
-| `iCenter\Servicedesk.vb` | todo | â€” | â€” |
-| `iCenter\SurfaceTreatmentDefinition.vb` | todo | â€” | â€” |
-| `iCenter\TimeRegistration.vb` | todo | â€” | â€” |
-| `iCenter\WebClockAssistant\WebClockAssistantAnonymousHandler.vb` | todo | â€” | â€” |
-| `iCenter\WebClockAssistant\WebClockAssistantGenericHandler.vb` | todo | â€” | â€” |
-| `iCenter\WebClockAssistant\WebClockAssistantRepository.vb` | todo | â€” | â€” |
-| `iCenter\WebClockAssistant\WebClockAssistantUserSelectionHandler.vb` | todo | â€” | â€” |
-| `iCenter\XmlFile.vb` | todo | â€” | â€” |
+| `iCenter\FrmIdentification.vb` | done | [[modules/icenterlib-icenter-identification]] | 2026-06-18 |
+| `iCenter\IPBatch.vb` | done | [[modules/icenterlib-icenter-batch-hierarchy]] | 2026-06-18 |
+| `iCenter\IPOrder.vb` | done | [[modules/icenterlib-icenter-batch-hierarchy]] | 2026-06-18 |
+| `iCenter\IPPacket.vb` | done | [[modules/icenterlib-icenter-batch-hierarchy]] | 2026-06-18 |
+| `iCenter\IPPart.vb` | done | [[modules/icenterlib-icenter-batch-hierarchy]] | 2026-06-18 |
+| `iCenter\Part.vb` | done | [[modules/icenterlib-icenter-leaves]] | 2026-06-18 |
+| `iCenter\ProductionMachineMultiPurpose.vb` | done | [[modules/icenterlib-icenter-production-machines]] | 2026-06-18 |
+| `iCenter\ProductionMachines.vb` | done | [[modules/icenterlib-icenter-production-machines]] | 2026-06-18 |
+| `iCenter\Servicedesk.vb` | done | [[modules/icenterlib-icenter-leaves]] | 2026-06-18 |
+| `iCenter\SurfaceTreatmentDefinition.vb` | done | [[modules/icenterlib-icenter-leaves]] | 2026-06-18 |
+| `iCenter\TimeRegistration.vb` | done | [[modules/icenterlib-icenter-leaves]] | 2026-06-18 |
+| `iCenter\WebClockAssistant\WebClockAssistantAnonymousHandler.vb` | done | [[modules/icenterlib-icenter-identification]] | 2026-06-18 |
+| `iCenter\WebClockAssistant\WebClockAssistantGenericHandler.vb` | done | [[modules/icenterlib-icenter-identification]] | 2026-06-18 |
+| `iCenter\WebClockAssistant\WebClockAssistantRepository.vb` | done | [[modules/icenterlib-icenter-identification]] | 2026-06-18 |
+| `iCenter\WebClockAssistant\WebClockAssistantUserSelectionHandler.vb` | done | [[modules/icenterlib-icenter-identification]] | 2026-06-18 |
+| `iCenter\XmlFile.vb` | done | [[modules/icenterlib-icenter-leaves]] | 2026-06-18 |
 
 ### ICenterLib / ISAH
 
@@ -2571,8 +2571,8 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 |---------|------:|-----:|-----:|-------:|----------:|-----:|-------------:|
 | iCENTER | 1237 | 56 | 475 | 358 | 341 | 0 | 7 |
 | TruTopsLib | 65 | 0 | 57 | 6 | 2 | 0 | 0 |
-| ICenterLib | 723 | 66 | 503 | 81 | 71 | 0 | 0 |
-| **TOTAL** | **2025** | **122** | **1035** | **445** | **414** | **0** | **7** |
+| ICenterLib | 723 | 90 | 481 | 81 | 71 | 0 | 0 |
+| **TOTAL** | **2025** | **146** | **1013** | **445** | **414** | **0** | **7** |
 
 ### Per iCENTER sub-folder
 
