@@ -24,6 +24,17 @@ _(Append as you go. Newest at the top.)_
 
 | ID | Date | Page | Question | Severity / tag |
 |----|------|------|----------|----------------|
+| **Q-178** | 2026-06-18 | [[../business-rules/isah-partdispatch-collector-filters]] | Multi-dispatch-target support — refactor path if JAZO needs a second collector for a different machine group? | medium |
+| **Q-177** | 2026-06-18 | [[../business-rules/isah-partdispatch-process-status]] | Add `Unknown = 0` to `PartDispatch.ProcessStatus` enum and validate at writer? | low |
+| **Q-176** | 2026-06-18 | [[../business-rules/isah-partdispatch-process-status]] | Document the 1→2→3 transitions: who moves 2→3? Is 3→2 re-open ever legitimate? | medium |
+| **Q-175** | 2026-06-18 | [[../modules/isah-part-and-dispatch]] | Document `'M38'` MachGrp role (dispatch-collector target) and `'KD%'` warehouse-prefix convention. | medium |
+| **Q-174** | 2026-06-18 | [[../modules/isah-part-and-dispatch]] | `PartDataService.GetByDesignCode` lists 136 columns explicitly. Document the explicit-vs-`*` data-service policy. | low |
+| **Q-173** | 2026-06-18 | [[../modules/isah-part-and-dispatch]] | `PartDispatch.IP_Ins_PartDispatch` has 35 parameters — refactor to parameter object? | low |
+| **Q-172** | 2026-06-18 | [[../modules/isah-part-and-dispatch]] | Root vs DataServices versions of `PartDispatchCollectorDataService.CalculateJobDone` can produce different `JobDoneInd`. Confirm callers don't compare. | safety-relevant |
+| **Q-171** | 2026-06-18 | [[../modules/isah-part-and-dispatch]] | Document `VPR-` PartCode prefix and `VPR-INVULLEN` sentinel. | low |
+| **Q-170** | 2026-06-18 | [[../modules/isah-part-and-dispatch]] | `Part.GetPartField(name)` does 1 round-trip per field. Cache per-call? | medium |
+| **Q-169** | 2026-06-18 | [[../modules/isah-part-and-dispatch]] | `@MachGrpCode` parameter in dispatch-collector query is bound but never referenced; `'M38'` is the real filter. Remove dead param. | medium |
+| **Q-168** | 2026-06-18 | [[../modules/isah-part-and-dispatch]] | Two `PartDispatchCollectorDataService` classes (root + DataServices namespace) with ~95% identical code. Pick one. | medium |
 | **Q-167** | 2026-06-18 | [[../business-rules/isah-prod-header-format]] | `PD\d{8}` regex unanchored — should be `^PD\d{8}$`. | low |
 | **Q-166** | 2026-06-18 | [[../business-rules/isah-prod-header-format]] | Confirm `PD` prefix universal across current + future JAZO entities. | low |
 | **Q-165** | 2026-06-18 | [[../modules/isah-production-hierarchy]] | All ISAH writes use `IsahUserCode = "ISAH"`, not `APPLISAHUSERCODE = "ICENTER"`. Audit-trail correctness? | medium |

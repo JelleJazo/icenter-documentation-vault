@@ -9,6 +9,20 @@ tags: [meta, log]
 
 # Operation Log
 
+## 2026-06-18 — Phase 3c-5: ISAH Part + dispatch
+
+- Documented the 7-file ISAH Part subsystem as a single grouped module note [[modules/isah-part-and-dispatch]]: Part (49 KB) + PartDispatch (8 KB) + PartDispatchCollectorDataService (root + DataServices namespaces) + PartDataService (4 KB) + PartSelection (3 KB) + PartVendor (1 KB).
+- **Q-168** (medium): `PartDispatchCollectorDataService` exists in **two files** (root + DataServices namespace) with the same class name and ~95% identical code. Pick one.
+- **Q-172** (`#safety-relevant`): the two implementations of `CalculateJobDone` are **subtly different** — root version adds a `PickedQty < InvtQty` cross-check and emits a "calc mismatch" log on disagreement. **Same input → different `JobDoneInd` output** depending on which version the caller imported.
+- **Q-169** (medium): `@MachGrpCode` parameter in the dispatch-collector query is bound but never referenced — hardcoded `'M38'` is the real filter.
+- Wrote 2 new business-rule notes:
+  - [[business-rules/isah-partdispatch-process-status]] — 3-state Dutch-named enum.
+  - [[business-rules/isah-partdispatch-collector-filters]] (`#safety-relevant`) — five hardcoded filters.
+- Other findings: `Part.GetPartField(name)` standard read pattern (1 round-trip per field, Q-170); `IP_Ins_PartDispatch` 35 parameters (Q-173); coating sentinels `VPR-` / `VPR-INVULLEN` / SelectionCodes `'018'`/`'024'`/`'025'`.
+- Opened 11 new Q-168..Q-178 (1 `#safety-relevant`).
+- Coverage delta: +7 done. Totals: 86 done / 1071 todo / 445 config / 414 generated / 9 needs-review of 2025. ISAH coverage now **29/65 (45%)**.
+- **Next:** ISAH TimeRegistration deep-dive (72 KB).
+
 ## 2026-06-18 — Phase 3c-4: ISAH production hierarchy
 
 - Documented the 6-file ISAH production hierarchy (2,409 lines) as a single grouped module note [[modules/isah-production-hierarchy]]: ProductionHeader + PBOO + PBOM + PBOS + BillOfOper + BillOfMat.

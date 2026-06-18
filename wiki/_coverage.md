@@ -1960,8 +1960,8 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `ISAH\DataServices\EmployeeDataService.vb` | todo | — | — |
 | `ISAH\DataServices\IsahCustomisingElfsquadDataService.vb` | todo | — | — |
 | `ISAH\DataServices\MemoDetailDataService.vb` | todo | — | — |
-| `ISAH\DataServices\PartDataService.vb` | todo | — | — |
-| `ISAH\DataServices\PartDispatchCollectorDataService.vb` | todo | — | — |
+| `ISAH\DataServices\PartDataService.vb` | done | [[modules/isah-part-and-dispatch]] | 2026-06-18 |
+| `ISAH\DataServices\PartDispatchCollectorDataService.vb` | done | [[modules/isah-part-and-dispatch]] | 2026-06-18 |
 | `ISAH\DataServices\ToolboxDataService.vb` | todo | — | — |
 | `ISAH\DataServices\UpdateProdLeadTimeDataService.vb` | todo | — | — |
 | `ISAH\DateDimension.vb` | todo | — | — |
@@ -1990,11 +1990,11 @@ Tables below are grouped per project. Phase 1 status heuristic: `generated` for 
 | `ISAH\MachGrp.vb` | done | [[modules/isah-machgrp]] | 2026-06-18 |
 | `ISAH\MemoDetailElfsquadConfiguration.vb` | todo | — | — |
 | `ISAH\MultiFinance.vb` | todo | — | — |
-| `ISAH\Part.vb` | todo | — | — |
-| `ISAH\PartDispatch.vb` | todo | — | — |
-| `ISAH\PartDispatchCollectorDataService.vb` | todo | — | — |
-| `ISAH\PartSelection.vb` | todo | — | — |
-| `ISAH\PartVendor.vb` | todo | — | — |
+| `ISAH\Part.vb` | done | [[modules/isah-part-and-dispatch]] | 2026-06-18 |
+| `ISAH\PartDispatch.vb` | done | [[modules/isah-part-and-dispatch]] | 2026-06-18 |
+| `ISAH\PartDispatchCollectorDataService.vb` | done | [[modules/isah-part-and-dispatch]] | 2026-06-18 |
+| `ISAH\PartSelection.vb` | done | [[modules/isah-part-and-dispatch]] | 2026-06-18 |
+| `ISAH\PartVendor.vb` | done | [[modules/isah-part-and-dispatch]] | 2026-06-18 |
 | `ISAH\PBOM.vb` | done | [[modules/isah-production-hierarchy]] | 2026-06-18 |
 | `ISAH\PBOO.vb` | done | [[modules/isah-production-hierarchy]] | 2026-06-18 |
 | `ISAH\PBOS.vb` | done | [[modules/isah-production-hierarchy]] | 2026-06-18 |
@@ -2571,8 +2571,8 @@ _Heuristic snapshot updated whenever new projects come into scope or files trans
 |---------|------:|-----:|-----:|-------:|----------:|-----:|-------------:|
 | iCENTER | 1237 | 56 | 475 | 358 | 341 | 0 | 7 |
 | TruTopsLib | 65 | 0 | 57 | 6 | 2 | 0 | 0 |
-| ICenterLib | 723 | 23 | 546 | 81 | 71 | 0 | 2 |
-| **TOTAL** | **2025** | **79** | **1078** | **445** | **414** | **0** | **9** |
+| ICenterLib | 723 | 30 | 539 | 81 | 71 | 0 | 2 |
+| **TOTAL** | **2025** | **86** | **1071** | **445** | **414** | **0** | **9** |
 
 ### Per iCENTER sub-folder
 
